@@ -13,7 +13,7 @@
                 <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
                 <p class="date">
                     {{ if eq .Lang "fr" }}
-                        {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) | humanize }}&nbsp;{{ .Date.Year }}
+                        {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) }}&nbsp;{{ .Date.Year }}
                     {{ else }}
                         {{ .Date.Format "January 2, 2006" }}
                     {{ end }}
