@@ -9,45 +9,15 @@ Once cloned, use `yarn` or `npm install` to fetch all dependencies.
 ## Build
 
 ```bash
-hugo
-```
-
-## NPM tasks
-
-```bash
 npm run build
 ```
 
-This task compiles SCSS, runs autoprefixer, and builds the website (via `hugo`)
+This will run `webpack` to build the CSS and Javascript, and `hugo` to generate the site.
+
+## Serve
 
 ```bash
 npm run serve
 ```
 
-This task compiles SCSS, runs autoprefixer, and serves the website (via `hugo serve`)
-
-```bash
-npm run watch:css
-```
-
-This task compiles SCSS and watches for changes.
-
-```bash
-npm run watch:all
-```
-
-This task compiles SCSS, runs autoprefixer, and serves the website. Will automatically rebuild the site on any file change.
-
-## Misc
-
-```bash
-npm run scss
-```
-
-Builds CSS file from source
-
-```bash
-npm run autoprefixer
-```
-
-Runs autoprefixer on compiled CSS file
+This will do the same as `npm run build`, and will monitor changes for any `.scss` or `.js` file.
