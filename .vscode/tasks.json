@@ -5,11 +5,6 @@
     "tasks": [
         {
             "type": "npm",
-            "script": "build:scss",
-            "problemMatcher": []
-        },
-        {
-            "type": "npm",
             "script": "build",
             "problemMatcher": []
         },
@@ -20,7 +15,7 @@
         },
         {
             "type": "npm",
-            "script": "watch:all",
+            "script": "watch",
             "problemMatcher": []
         }
     ]

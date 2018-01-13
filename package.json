@@ -4,25 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "scss": "node-sass --output-style compressed ./assets/scss/main.scss ./static/css/main.css",
-    "autoprefixer": "postcss -u autoprefixer -r ./static/css/main.css",
-    "build": "npm run scss && npm run autoprefixer && hugo",
-    "serve": "npm run scss && npm run autoprefixer && hugo serve",
-    "watch:css": "onchange './assets/scss/*.scss' -- npm run build",
-    "watch:all": "parallelshell 'npm run serve' 'npm run watch:css' 'webpack --watch'"
+    "build": "webpack && hugo",
+    "serve": "webpack && hugo serve",
+    "watch": "parallelshell 'hugo serve' 'webpack --watch'"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.4",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "bulma": "^0.6.1",
+    "css-loader": "^0.28.8",
     "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.7.2",
-    "onchange": "^3.3.0",
     "parallelshell": "^3.0.2",
-    "postcss-cli": "^4.1.1",
     "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
     "webpack": "^3.10.0"
   }
 }
