@@ -6,6 +6,9 @@ cover:
     author: Nong Vang
     link: https://unsplash.com/@californong
 menu: blog
+links:
+    devto: https://dev.to/fbnlsr/lets-talk-about-emojis-2788
+    medium: https://medium.com/@fbnlsr/lets-talk-about-emojis-d0a07c88b319
 ---
 Emojis are everywhere. From Twitter to Facebook Chat, they've grown to become Oxford's 2015 [Word of the Year](http://time.com/4114886/oxford-word-of-the-year-2015-emoji/) and even featured in a [horrendous movie](https://www.rottentomatoes.com/m/the_emoji_movie). But what about outside SMS and instant messaging? What about using emojis inside code comments or even git commit messages? Let's find out how we can make the best use of these funny little pictures.
 
