@@ -1,7 +1,9 @@
 .about {
-    h1 {
+    h2 {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
     }
 
     .is-about-text {
@@ -22,7 +24,7 @@
         }
     }
 
-    h2 {
+    h3 {
         text-align: center;
         font-weight: bold;
         font-size: 1.25rem;
@@ -48,7 +50,7 @@
         color: $background;
         margin: 0;
         padding: 0 10rem;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
 
         .is-savoir-faire-block {
             position: relative;
@@ -61,7 +63,7 @@
                 z-index: 2;
             }
 
-            h3 {
+            h4 {
                 position: relative;
                 font-weight: bold;
                 font-size: 2rem;
@@ -84,5 +86,31 @@
                 z-index: 1;
             }
         }
+    }
+
+    .is-get-in-touch {
+        text-align: center;
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.15;
+        }
+
+        a, a:hover, a:visited {
+            text-decoration: none;
+            color: $blue;
+        }
+
+        .is-email,
+        .is-phone {
+            font-weight: 300;
+            font-size: 2.5rem;
+            color: $blue;
+            margin: 2rem;
+        }
+    }
+    img {
+        display: block;
+        margin: 4rem auto;
     }
 }

@@ -7,7 +7,7 @@ title: About me
 <p>I love challenges, new projects, and solving problems. Oh, and Spaces > Tabs.</p>
 </div>
 
-## Tools / Frameworks / Libraries I love to use
+### Tools & frameworks I love to use
 
 <div class="is-about-tools">
     <div class="columns">
@@ -40,26 +40,38 @@ title: About me
     </div>
 </div>
 
-# Savoir faire
+## Savoir faire
 
 <div class="is-savoir-faire-blocks has-background-blue columns">
 
 <div class="is-savoir-faire-block column">
 <i class="fas fa-code"></i>
-<h3>Code</h3>
+<h4>Code</h4>
 <p>I do <strong>Frontend integration</strong>, in a <strong>RWD / Mobile First</strong> strategy. I also design full-fledged web apps thanks to my experience in <strong>Backend OOP</strong> and <strong>Database design</strong>. I mainly work with solid frameworks, such as <strong>Symfony</strong> and <strong>Laravel</strong>. If the project calls for it, I set up a <strong>Unit Testing</strong> strategy.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
 <i class="fas fa-cogs"></i>
-<h3>Workflow</h3>
+<h4>Workflow</h4>
 <p>Thanks to various experiences in an <strong>Agile / Scrum</strong> environment, I am as capable of working alone as in a team. I can also set up a <strong>streamlined workflow</strong> thanks to <strong>Automation Scripts</strong>. This allows for a <strong>Continuous Integration</strong> workflow and helps preventing regressions.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
 <i class="fas fa-puzzle-piece"></i>
-<h3>Best Practices</h3>
+<h4>Best Practices</h4>
 <p>I love conventions. I always try to find and apply best practices. My code respects <strong>coding standards</strong> and is <strong>PSR-2 compliant</strong>. I also love workflows that adapt to projects, and use the <strong>Git / GitHub Flow</strong>. I often use code formatters, such as <strong>Prettier</strong>, <strong>PHP Code Sniffer</strong>.</p>
 </div>
 
 </div>
+
+## Let's get in touch!
+
+<div class="is-get-in-touch">
+<p>If you want to know more, you can check some of <a href="/projects">my projects</a>, or read <a href="/blog">my blog</a>.</p>
+<p>You can also send me an email at:</p>
+<p class="is-email"><a href="mailto:hello@primative.net">hello@primative.net</a></p>
+<p>Or give me a call:</p>
+<p class="is-phone"><a href="tel:+33603351963">+33 (0)6 03 35 19 63</a></p>
+</div>
+
+![Big bullet](/img/bullet-big.png)

@@ -8,7 +8,7 @@ slug: a-propos
 <p>J’aime les défis, les nouveaux projets et résoudre des problèmes. Oh, et Espaces > Tabs.</p>
 </div>
 
-## Outils / Frameworks / Librairies que j’aime utiliser
+### Outils & frameworks que j’aime utiliser
 
 <div class="is-about-tools">
     <div class="columns">
@@ -41,26 +41,38 @@ slug: a-propos
     </div>
 </div>
 
-# Savoir faire
+## Savoir faire
 
 <div class="is-savoir-faire-blocks has-background-blue columns">
 
 <div class="is-savoir-faire-block column">
 <i class="fas fa-code"></i>
-<h3>Code</h3>
+<h4>Code</h4>
 <p>Je fais de l'<strong>intégration Frontend</strong>, dans une <strong>stratégie RWD / Mobile First</strong>. Je design aussi des applications web complètes grâce à mon expérience en <strong>POO Backend</strong> et <strong>design de BDD</strong>. Je travaille principalement avec des frameworks solides, comme <strong>Symfony</strong> et <strong>Laravel</strong>. Si le projet le demande, je met en place une stratégie de <strong>Tests Unitaires</strong>.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
 <i class="fas fa-cogs"></i>
-<h3>Workflow</h3>
+<h4>Workflow</h4>
 <p>Grâce à de nombreuses expériences dans des environements <strong>Agile / Scrum</strong>, je suis autant capable de travailler seul ou en équipe. Je peux aussi mettre en place un <strong>flux de travail rationel</strong> grâce à des <strong>scripts automatisés</strong>. Cela permet la mise en place d'une <strong>Intégration Continue</strong> et prévient les régressions.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
 <i class="fas fa-puzzle-piece"></i>
-<h3>Meilleures Pratiques</h3>
+<h4>Meilleures Pratiques</h4>
 <p>J'aime les conventions. J'essaie toujours de trouver et appliquer les meilleures pratiques. Mon code respecte les <strong>normes de codage</strong> et est <strong>conforme au PSR-2</strong>. J'aime aussi les flux de travail qui s'adaptent aux projets, et j'utilise les méthodes <strong>Git / GitHub Flow</strong>. J'utilise souvent des formateurs de code, comme <strong>Prettier</strong> ou <strong>PHP Code Sniffer</strong>.</p>
 </div>
 
 </div>
+
+## Prenons contact !
+
+<div class="is-get-in-touch">
+<p>Si vous voulez en savoir plus, vous pouvez voir quelques un de <a href="/fr/projets">mes projets</a>, ou lire <a href="/fr/blog">mon blog</a>.</p>
+<p>Vous pouvez aussi m'envoyer un email à&nbsp;:</p>
+<p class="is-email"><a href="mailto:hello@primative.net">hello@primative.net</a></p>
+<p>Ou m'appeler directement au&nbsp;:</p>
+<p class="is-phone"><a href="tel:+33603351963">06 03 35 19 63</a></p>
+</div>
+
+![Big bullet](/img/bullet-big.png)
