@@ -4,6 +4,9 @@
 ### Hugo ###
 hugo.exe
 /public/
+/static/css/main.css
+/static/js/main.js
+
 ### macOS ###
 *.DS_Store
 .AppleDouble
