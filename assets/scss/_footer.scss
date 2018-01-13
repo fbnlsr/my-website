@@ -1,0 +1,47 @@
+.site-footer {
+    background-color: $footerbg;
+    border-top: 1px solid $gray1;
+    padding: 1rem 3rem;
+    font-size: .8rem;
+    color: $gray2;
+    height: 70px;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        margin-right: .7rem;
+        font-weight: bold;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .lang {
+        text-transform: uppercase;
+        color: inherit;
+    }
+
+    .columns {
+        margin: 0;
+
+        .column {
+            padding: 0;
+        }
+    }
+
+    .column-right {
+        position: relative;
+
+        .content {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+}

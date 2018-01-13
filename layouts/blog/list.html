@@ -1,0 +1,34 @@
+{{ partial "header.html" . }}
+
+{{ partial "nav.html" . }}
+
+    <h1>{{ i18n "thoughts" }}</h1>
+
+    <div class="blog-list">
+
+        <p class="year">2018</p>
+        {{ range where .Data.Pages "Section" .Section  }}
+            {{ if eq (.Date.Format "2006") "2018" }}
+            <div class="blog-post">
+                <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                <p class="date">{{ .Date.Format "January 2, 2006" }}
+                    {{ if isset .Params "category" }}&nbsp;—&nbsp;{{ delimit .Params.category ", " | humanize }}{{end}}
+                </p>
+            </div>
+            {{ end }}
+        {{ end }}
+
+        <p class="year">2017</p>
+        {{ range where .Data.Pages "Section" .Section  }}
+            {{ if eq (.Date.Format "2006") "2017" }}
+            <div class="blog-post">
+                <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                <p class="date">{{ .Date.Format "January 2, 2006" }}
+                    {{ if isset .Params "category" }}&nbsp;—&nbsp;{{ delimit .Params.category ", " | humanize }}{{end}}
+                </p>
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+
+{{ partial "footer.html" . }}

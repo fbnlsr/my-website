@@ -1,0 +1,67 @@
+@import "~bulma/bulma.sass";
+@import "variables";
+@import "home";
+@import "about";
+@import "blog";
+@import "footer";
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+body {
+    background-color: $background;
+    color: $text;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.site {
+    flex: 1;
+}
+
+.nav-home {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 70px;
+    padding-left: 3rem;
+    background-color: transparent;
+
+    .logo-header {
+        display: block;
+        width: 50px;
+        height: 35px;
+        position: relative;
+        top: 20px;
+        right: 3rem;
+    }
+
+    .navbar-item {
+        color: inherit;
+        margin-right: 2rem;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+            background-color: transparent;
+            color: inherit;
+        }
+
+        &.is-active {
+            border-bottom: 3px solid $blue;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}

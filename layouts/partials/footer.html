@@ -1,0 +1,37 @@
+</main>
+<footer class="site-footer footer">
+    <div class="columns">
+        <div class="column is-one-fifth">
+            <div class="columns">
+                <div class="contact column">
+                    <p><strong>Contact</strong></p>
+                    <p><a href="tel:+33603351963">+33&nbsp;(0)6&nbsp;03&nbsp;35&nbsp;19&nbsp;63</a></p>
+                </div>
+
+                <div class="siret column">
+                    <p><strong>SIRET</strong></p>
+                    <p>75068729500014</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column column-right has-text-right">
+            <div class="content">
+                {{ if not .IsHome }}
+                    {{ if .IsTranslated }}
+                        {{ range .AllTranslations }}
+                            <a class="lang" href="{{ .Permalink }}">{{ .Lang }}</a>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                <a href="https://twitter.com/fbnlsr"><i class="fab fa-twitter"></i></a>
+                <a href="/blog/index.xml"><i class="fas fa-rss"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

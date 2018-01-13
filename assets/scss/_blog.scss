@@ -1,0 +1,138 @@
+.blog-list {
+    text-align: center;
+
+    .year {
+        font-weight: 300;
+        font-size: 1.75rem;
+        margin-bottom: .75rem;
+    }
+
+    .blog-post {
+        .title {
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin-bottom: 0;
+
+            a, a:visited, a:active, a:hover {
+                text-decoration: none;
+                color: inherit;
+                color: $blue;
+            }
+        }
+
+        .date {
+            font-size: .8rem;
+            margin-top: .2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.go-to-top {
+    transition: all .25s ease-out;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    background-color: $blue;
+    color: $background;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    text-align: center;
+    opacity: 0;
+
+        a, a:visited, a:hover {
+            color: inherit;
+            width: 25px;
+            height: 25px;
+            display: block;
+        }
+}
+
+.blog-post {
+    .title-container {
+        height: 350px;
+
+        .background-cover {
+            background-position: center center;
+            background-size: cover;
+
+            .background-shroud {
+                background: rgba($black, .45);
+            }
+        }
+
+        &.no-cover {
+            background: transparent;
+            height: 100px;
+
+            .title {
+                color: $text;
+                line-height:100px;
+                text-shadow: initial;
+                margin-top: 3rem;
+            }
+        }
+
+        .title {
+            text-align: center;
+            color: $background;
+            font-weight: 300;
+            font-size: 3rem;
+            text-shadow: 2px 2px 2px $black;
+            line-height: 350px;
+        }
+    }
+
+    .is-cover-author {
+        color: $gray1;
+        font-size: .8rem;
+        text-align: right;
+        position: relative;
+        right: 1rem;
+        margin-bottom: -1rem;
+
+        a, a:visited, a:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    .date {
+        text-align: center;
+        color: $gray1;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    article {
+
+        p, h1, h2, h3, h4, h5, h6 {
+            max-width: 800px;
+            margin: auto;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        pre {
+            margin-bottom: 1rem;
+
+            code {
+                display: block;
+                max-width: 960px;
+                margin: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<div class="column is-half nav-home">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-menu">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main -}}
+                <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+            {{- end }}
+        </div>
+    </nav>
+</div>

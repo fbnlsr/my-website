@@ -1,0 +1,11 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main -}}
+            <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+        {{- end }}
+    </div>
+    <div class="navbar-brand">
+        <a href="/"><img class="logo-header" src="/img/logo-header.png" alt="Primative logo"></a>
+    </div>
+</nav>

@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+{{ partial "nav-home.html" . }}
+
+<div class="home-columns columns">
+
+    <div class="column is-half is-home-left-column">
+        <img src="/img/logo.png" alt="Primative logo">
+        <p>Primative</p>
+    </div>
+
+    <div class="column has-background-blue is-home-right-column">
+
+        <div class="lang-choser">
+        {{ if .IsTranslated }}
+            {{ range .AllTranslations }}
+                <a class="lang" href="{{ .Permalink }}">{{ .Lang }}</a>
+            {{ end }}
+        {{ end }}
+        </div>
+
+        {{.Content}}
+
+        <div class="social">
+            <ul>
+                <li><a href="https://twitter.com/fbnlsr"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://github.com/fbnlsr"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/fbnlsr/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="mailto:hello@primative.net"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+{{ partial "footer.html" . }}

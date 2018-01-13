@@ -1,0 +1,88 @@
+.about {
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .is-about-text {
+        padding: 1.5rem;
+        color: $background;
+        margin-bottom: 4rem;
+
+        p {
+            font-size: 1.15rem;
+            max-width: 800px;
+            margin: auto;
+            margin-bottom: 1rem;
+            line-height: 1.25;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        clear: both;
+    }
+
+    .is-about-tools {
+        max-width: 800px;
+        margin: auto;
+        clear: both;
+        margin-bottom: 4rem;
+
+        ul {
+            li {
+                list-style-image: url('../img/bullet.png');
+                margin-left: 100px;
+            }
+        }
+    }
+
+    .is-savoir-faire-blocks {
+        color: $background;
+        margin: 0;
+        padding: 0 10rem;
+        margin-bottom: 5rem;
+
+        .is-savoir-faire-block {
+            position: relative;
+            overflow: hidden;
+            margin: 0 1rem;
+            padding: 1rem;
+
+            p {
+                position: relative;
+                z-index: 2;
+            }
+
+            h3 {
+                position: relative;
+                font-weight: bold;
+                font-size: 2rem;
+                text-align: center;
+                z-index: 2;
+            }
+
+            strong {
+                color: inherit;
+            }
+
+            .fa-cogs,
+            .fa-puzzle-piece,
+            .fa-code {
+                font-size: 10rem;
+                position: absolute;
+                left: calc(50% - 10rem);
+                top: -4rem;
+                color: lighten($blue, 10%);
+                z-index: 1;
+            }
+        }
+    }
+}

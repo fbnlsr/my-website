@@ -1,0 +1,47 @@
+title: Primative – Web development
+enableEmoji: true
+DefaultContentLanguage: en
+enableRobotsTXT: true
+disableHugoGeneratorInject: true
+enableMissingTranslationPlaceholders: true
+googleAnalytics: UA-28964878-1
+pygmentStyle: dracula
+baseUrl: https://primative.net
+sectionPagesMenu: main
+
+permalinks:
+  blog: /:section/:slug/
+  about: /:slug
+
+blackfriday:
+  angledQuotes: true
+
+languages:
+  en:
+    menu:
+      main:
+        - name: Home
+          url: /
+          weight: 1
+        - name: About
+          url: /about
+          identifier: about
+          weight: 2
+        - name: Blog
+          url: /blog
+          identifier: blog
+          weight: 3
+  fr:
+    menu:
+      main:
+        - name: Accueil
+          url: /
+          weight: 1
+        - name: À propos
+          url: /a-propos
+          identifier: about
+          weight: 2
+        - name: Blog
+          url: /blog
+          identifier: blog
+          weight: 3
