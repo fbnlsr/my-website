@@ -21,3 +21,15 @@ npm run serve
 ```
 
 This will do the same as `npm run build`, and will monitor changes for any `.scss` or `.js` file.
+
+## Commit emojis
+
+| Short-code   | Emoji | Meaning                    |
+| ------------ | :---: | -------------------------- |
+| `:wrench:`   |  🔧   | Change configuration       |
+| `:bug:`      |  🐛   | Fix bug                    |
+| `:sparkles:` |  ✨   | New feature                |
+| `:art:`      |  🎨   | Clean code                 |
+| `:pencil2:`  |  ✏️   | Add text / write blog post |
+| `:memo:`     |  📝   | Documentation related      |
+| `:iphone:`   |  📱   | Responsive design work     |
