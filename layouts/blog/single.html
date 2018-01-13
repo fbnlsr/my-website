@@ -31,7 +31,12 @@
             {{ end }}
         </p>
     {{end}}
-    <p class="date">Published on {{ .Date.Format "January 2, 2006" }}</p>
+    <p class="date">
+        {{ if eq .Lang "fr" }}
+            Publié le {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) | humanize }}&nbsp;{{ .Date.Year }}
+        {{ else }}
+            Published on {{ .Date.Format "January 2, 2006" }}</p>
+        {{ end }}
     <article>
         {{ .Content }}
     </article>

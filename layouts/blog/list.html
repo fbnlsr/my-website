@@ -11,7 +11,12 @@
             {{ if eq (.Date.Format "2006") "2018" }}
             <div class="blog-post">
                 <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-                <p class="date">{{ .Date.Format "January 2, 2006" }}
+                <p class="date">
+                    {{ if eq .Lang "fr" }}
+                        {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) | humanize }}&nbsp;{{ .Date.Year }}
+                    {{ else }}
+                        {{ .Date.Format "January 2, 2006" }}
+                    {{ end }}
                     {{ if isset .Params "category" }}&nbsp;—&nbsp;{{ delimit .Params.category ", " | humanize }}{{end}}
                 </p>
             </div>
@@ -23,7 +28,12 @@
             {{ if eq (.Date.Format "2006") "2017" }}
             <div class="blog-post">
                 <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-                <p class="date">{{ .Date.Format "January 2, 2006" }}
+                <p class="date">
+                    {{ if eq .Lang "fr" }}
+                        {{ .Date.Format "2 January 2006" }}
+                    {{ else }}
+                        {{ .Date.Format "January 2, 2006" }}
+                    {{ end }}
                     {{ if isset .Params "category" }}&nbsp;—&nbsp;{{ delimit .Params.category ", " | humanize }}{{end}}
                 </p>
             </div>
