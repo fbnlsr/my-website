@@ -3,3 +3,9 @@ other = "Thoughts"
 
 [site-title]
 other = "Fabien Lasserre - Full Stack Web Developer"
+
+[posted-to]
+other = "This article has also been posted to:"
+
+[twitter-share]
+other = "Did you like this article? Share it on Twitter!"

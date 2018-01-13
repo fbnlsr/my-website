@@ -40,6 +40,37 @@
     <article>
         {{ .Content }}
     </article>
+
+    <img class="is-bullet-end-article" src="/img/bullet-big.png" alt="Bullet">
+
+    <div class="is-twitter-share">
+        <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via=fbnlsr">{{ i18n "twitter-share" }}</a>
+    </div>
+
+    {{ if or .Params.links.devto .Params.links.medium }}
+    <div class="links">
+        <p>{{ i18n "posted-to" }}</p>
+        <ul>
+            {{ if .Params.links.devto }}
+            <li>
+                <a class="devto" href="{{ .Params.links.devto }}">
+                    <img src="/img/devto.jpg" alt="Dev.to">
+                </a>
+            </li>
+            {{ end }}
+            {{ if .Params.links.medium }}
+            <li>
+                <a class="medium" href="{{ .Params.links.medium }}">
+                    <img src="/img/medium.jpg" alt="Medium">
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
+    <hr>
+
 </div>
 
 {{ partial "footer.html" . }}

@@ -3,3 +3,9 @@ other = "Pensées"
 
 [site-title]
 other = "Fabien Lasserre - Développeur Web Full Stack"
+
+[posted-to]
+other = "Cet article a aussi été publié sur :"
+
+[twitter-share]
+other = "Vous avez aimé cet article ? Partagez-le sur Twitter !"
