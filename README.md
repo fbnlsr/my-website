@@ -24,12 +24,13 @@ This will do the same as `npm run build`, and will monitor changes for any `.scs
 
 ## Commit emojis
 
-| Short-code   | Emoji | Meaning                    |
-| ------------ | :---: | -------------------------- |
-| `:wrench:`   |  🔧   | Change configuration       |
-| `:bug:`      |  🐛   | Fix bug                    |
-| `:sparkles:` |  ✨   | New feature                |
-| `:art:`      |  🎨   | Clean code                 |
-| `:pencil2:`  |  ✏️   | Add text / write blog post |
-| `:memo:`     |  📝   | Documentation related      |
-| `:iphone:`   |  📱   | Responsive design work     |
+| Short-code   | Emoji | Meaning                     |
+| ------------ | :---: | --------------------------- |
+| `:wrench:`   |  🔧   | Change configuration        |
+| `:bug:`      |  🐛   | Fix bug                     |
+| `:sparkles:` |  ✨   | New feature                 |
+| `:art:`      |  🎨   | Clean code                  |
+| `:pencil2:`  |  ✏️   | Add text / write blog post  |
+| `:memo:`     |  📝   | Documentation related       |
+| `:iphone:`   |  📱   | Responsive design work      |
+| `:lipstick:` |  💄   | Updating UI and style files |
