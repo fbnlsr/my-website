@@ -4,7 +4,6 @@ DefaultContentLanguage: en
 enableRobotsTXT: true
 disableHugoGeneratorInject: true
 enableMissingTranslationPlaceholders: true
-googleAnalytics: UA-28964878-1
 pygmentStyle: dracula
 baseUrl: https://primative.net
 sectionPagesMenu: main
