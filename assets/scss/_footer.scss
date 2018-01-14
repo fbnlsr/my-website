@@ -10,7 +10,6 @@
         text-decoration: none;
         color: inherit;
         margin-right: .7rem;
-        font-weight: bold;
 
         &:last-child {
             margin-right: 0;
@@ -24,6 +23,11 @@
     .lang {
         text-transform: uppercase;
         color: inherit;
+        font-weight: bold;
+
+        &.is-active {
+            border-bottom: 1px solid $gray2;
+        }
     }
 
     .columns {

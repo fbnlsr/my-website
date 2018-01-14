@@ -46,6 +46,10 @@
             color: inherit;
             margin-right: 1rem;
 
+            &.is-active {
+                border-bottom: 1px solid $background;
+            }
+
             &:last-child {
                 margin-right: 0;
             }

@@ -12,8 +12,9 @@
 
         <div class="lang-choser">
         {{ if .IsTranslated }}
+            {{ $currentLang := .Site.Language.Lang }}
             {{ range .AllTranslations }}
-                <a class="lang" href="{{ .Permalink }}">{{ .Lang }}</a>
+                <a class="lang {{ if eq .Lang $currentLang }}is-active{{end}}" href="{{ .Permalink }}">{{ .Lang }}</a>
             {{ end }}
         {{ end }}
         </div>

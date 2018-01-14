@@ -18,9 +18,10 @@
         <div class="column column-right has-text-right">
             <div class="content">
                 {{ if not .IsHome }}
+                    {{ $currentLang := .Site.Language.Lang }}
                     {{ if .IsTranslated }}
                         {{ range .AllTranslations }}
-                            <a class="lang" href="{{ .Permalink }}">{{ .Lang }}</a>
+                            <a class="lang {{ if eq .Lang $currentLang }}is-active{{end}}" href="{{ .Permalink }}">{{ .Lang }}</a>
                         {{ end }}
                     {{ end }}
                 {{ end }}
