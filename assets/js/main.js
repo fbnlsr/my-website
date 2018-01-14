@@ -9,10 +9,10 @@ let domReady = (callback) => {
 let displayTopArrow = (topArrow, scroll_pos) => {
     if (scroll_pos > 100) {
         topArrow.style.opacity = 1;
-        topArrow.style.bottom = "120px";
+        topArrow.style.bottom = "80px";
     } else {
         topArrow.style.opacity = 0;
-        topArrow.style.bottom = "100px";
+        topArrow.style.bottom = "60px";
     }
 }
 
