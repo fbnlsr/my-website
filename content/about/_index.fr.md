@@ -1,6 +1,5 @@
 ---
 title: À propos
-slug: a-propos
 ---
 <div class="has-background-blue is-about-text">
 <p>Je suis un développeur web autodidacte. J’ai commencé à coder il y a plus de dix ans. Cela est rapidement devenu une passion et je suis freelance depuis 2012.</p>

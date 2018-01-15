@@ -10,7 +10,6 @@ sectionPagesMenu: main
 
 permalinks:
   blog: /:section/:slug/
-  about: /:slug
 
 blackfriday:
   angledQuotes: true
@@ -37,7 +36,7 @@ languages:
           url: /
           weight: 1
         - name: À propos
-          url: /a-propos
+          url: /about
           identifier: about
           weight: 2
         - name: Blog
