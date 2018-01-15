@@ -67,7 +67,7 @@ title: À propos
 ## Prenons contact !
 
 <div class="is-get-in-touch">
-<p>Si vous voulez en savoir plus, vous pouvez voir quelques un de <a href="/fr/projets">mes projets</a>, ou lire <a href="/fr/blog">mon blog</a>.</p>
+<p>Si vous voulez en savoir plus, vous pouvez voir quelques un de <a href="/fr/projects">mes projets</a>, ou lire <a href="/fr/blog">mon blog</a>.</p>
 <p>Vous pouvez aussi m'envoyer un email à&nbsp;:</p>
 <p class="is-email"><a href="mailto:hello@primative.net">hello@primative.net</a></p>
 <p>Ou m'appeler directement au&nbsp;:</p>
