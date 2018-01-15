@@ -55,8 +55,11 @@
         height: 350px;
 
         .background-cover {
-            background-position: center center;
+            background-attachment: fixed;
+            // background-position: center -300px;
+            background-position: center top;
             background-size: cover;
+            background-repeat: no-repeat;
 
             .background-shroud {
                 background: rgba($black, .45);
@@ -102,7 +105,7 @@
     .date {
         text-align: center;
         color: $gray1;
-        margin-top: 1rem;
+        margin-top: 2rem;
         margin-bottom: 4rem;
     }
 
