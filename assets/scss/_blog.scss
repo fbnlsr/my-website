@@ -108,31 +108,164 @@
 
     article {
 
-        p, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25rem;
+        padding: 0 1rem;
+
+        p, h1, h2, h3, h4, h5, h6, ol, ul, blockquote {
             max-width: 800px;
             margin: auto;
-            font-family: 'Open Sans', sans-serif;
+            text-align: left;
+            margin-bottom: 1rem;
         }
 
-        p {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.5rem;
         }
 
         h2 {
-            font-weight: bold;
             font-size: 1.75rem;
-            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        ol, ul {
+            padding-left: 4rem;
+
+            ul {
+                list-style: circle;
+            }
+        }
+
+        ul {
+            list-style: disc;
+
+            &.task-list {
+                list-style: none;
+                padding-left: 2rem;
+            }
+        }
+
+        ol {
+            list-style: decimal;
+
+            ol {
+                list-style: upper-roman;
+            }
+        }
+
+        blockquote {
+            position: relative;
+            border-left: 4px solid $blue;
+            background-color: $footerbg;
+            font-style: italic;
+            max-width: 850px;
+            padding: 1rem;
+            margin: 1.5rem auto;
+
+            &:before {
+                content: "“";
+                position: absolute;
+                top: -4.5rem;
+                left: 0;
+                font-size: 8rem;
+                color: darken($footerbg, 10%);
+            }
+
+            &:after {
+                content: "”";
+                position: absolute;
+                bottom: -7.5rem;
+                right: 1rem;
+                font-size: 8rem;
+                color: darken($footerbg, 10%);
+            }
+
+            p:last-child {
+                margin-bottom: 0;
+            }
         }
 
         pre {
+            max-width: 850px;
+            margin: auto;
             margin-bottom: 1rem;
+            font-family: 'Ubuntu Mono', monospace;
+            font-size: 1.25rem;
+            background-color: $background;
+            border-top: 1px solid darken($background, 5%);
+            border-bottom: 1px solid darken($background, 5%);
+            border-right: 1px solid darken($background, 5%);
+            padding: 0;
 
             code {
-                display: block;
-                max-width: 960px;
-                margin: auto;
+                padding: .75rem;
+                font-family: inherit;
+                border-left: 4px solid $blue;
             }
+        }
+
+        hr {
+            margin: 1rem auto;
+        }
+
+        table {
+            max-width: 960px;
+            margin: auto;
+
+            th {
+                border-bottom: 1px solid $text;
+            }
+
+            th,td {
+                padding: 0 1rem;
+            }
+
+            th[align="center"],
+            td[align="center"] {
+                text-align: center;
+            }
+
+            th[align="right"],
+            td[align="right"] {
+                text-align: right;
+            }
+
+            margin-bottom: 1rem;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            margin-bottom: 1rem;
+        }
+
+        figure {
+            img {
+                margin-bottom: 1rem;
+            }
+
+            figcaption {
+                h4 {
+                    text-align: center;
+                    font-weight: normal;
+                    font-size: .8rem;
+                    color: $gray1;
+                    position: relative;
+                    top: -.8rem;
+                }
+            }
+        }
+
+        .footnotes {
+            font-size: .8rem;
+            color: $gray1;
         }
     }
 

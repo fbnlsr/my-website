@@ -1,3 +1,5 @@
+let hljs = require("highlight.js");
+
 let last_known_scroll_position = 0;
 let ticking = false;
 let topArrow = document.getElementById('topArrow');
@@ -33,4 +35,5 @@ window.addEventListener('scroll', function (e) {
 
 domReady(function() {
     // DOM is ready and waiting
+    hljs.initHighlightingOnLoad();
 });
