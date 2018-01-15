@@ -20,7 +20,15 @@ This will run `webpack` to build the CSS and Javascript, and `hugo` to generate 
 npm run serve
 ```
 
-This will do the same as `npm run build`, and will monitor changes for any `.scss` or `.js` file.
+This will do the same as `npm run build`, and run Hugo's built-in web server.
+
+## Watch
+
+```bash
+npm run watch
+```
+
+This will do the same as `npm run serve` and monitor changes for any `.scss` or `.js` file, thus rebuilding the site on any change.
 
 ## Commit emojis
 
