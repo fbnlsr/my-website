@@ -24,10 +24,13 @@ As Hacker News user *connorshea* pointed out:
 
 This could be applied to what happened at Gitlab. It feels amazing that for such critical tasks (you don't delete a whole database directory every day), they don't rely to the most simple and effective management system: checklists. It is used around the globe whenever a system is at risk. Airline pilots, surgeons and nurses, army crew, they all have checklists. It is the safenet against repetitive and menial tasks. That's why you'll see airline pilots talking through everything they're doing during an emergency procedure, with their co-pilot enforcing what they're about to do. It usually goes like this:
 
-– "I'm about to turn off A/C.
-– Green for turning off A/C.
-– A/C is turned off.
-– Confirmed. A/C is turned off".
+> – "I'm about to turn off A/C.
+>
+> – Green for turning off A/C.
+>
+> – A/C is turned off.
+>
+> – Confirmed. A/C is turned off".
 
 This is greatly exagerated as I haven't flown a plane in.. well ever. But you get my point. Each and every step is monitored and confirmed by a fellow crewman. If you want to know more you can read this Wikipedia article about [crew resource management](https://en.wikipedia.org/wiki/Crew_resource_management).
 
