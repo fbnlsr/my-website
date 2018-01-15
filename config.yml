@@ -7,6 +7,7 @@ enableMissingTranslationPlaceholders: true
 pygmentStyle: dracula
 baseUrl: https://primative.net
 sectionPagesMenu: main
+googleAnalytics: UA-28964878-1
 
 permalinks:
   blog: /:section/:slug/
