@@ -20,7 +20,7 @@ let displayTopArrow = (topArrow, scrollPos) => {
 }
 
 let changeCoverPos = (scrollPos) => {
-    articleCover.style.backgroundPositionY = -(scrollPos * 1.15) + "px";
+    articleCover.style.backgroundPositionY = -(scrollPos * 1.1) + "px";
 }
 
 window.addEventListener('scroll', function (e) {

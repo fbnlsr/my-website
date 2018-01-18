@@ -60,6 +60,8 @@
             background-position: center top;
             background-size: cover;
             background-repeat: no-repeat;
+            transition: 0s linear;
+            transition-property: background-position;
 
             .background-shroud {
                 background: rgba($black, .45);
