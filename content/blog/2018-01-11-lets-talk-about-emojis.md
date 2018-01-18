@@ -36,7 +36,7 @@ Using shortcuts is an elegant solution to circumvent emojis not being interprete
 
 Emojis can also add a lot of clarity to commit messages. Compare these two sequences:
 
-```
+```markdown
 - Fix editing user not being saved to the database
 - Cleanup code
 - Add the ability to edit a user
@@ -45,7 +45,7 @@ Emojis can also add a lot of clarity to commit messages. Compare these two seque
 
 &nbsp;
 
-```
+```markdown
 - 🐛 Fix editing user not being saved to the database
 - 📝 Cleanup code
 - ✨ Add the ability to edit a user
@@ -56,7 +56,7 @@ You can immediately see where bugs were fixed and where new features were added.
 
 On a platform that doesn't support emojis, this would be read as:
 
-```
+```markdown
 - :bug: Fix editing user not being saved to the database
 - :memo: Cleanup code
 - :sparkles: Add the ability to edit a user
