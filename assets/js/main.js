@@ -20,7 +20,10 @@ let displayTopArrow = (topArrow, scrollPos) => {
 }
 
 let changeCoverPos = (scrollPos) => {
-    articleCover.style.backgroundPositionY = -(scrollPos * 1.1) + "px";
+    let speed = .15;
+    let windowOffset = window.pageYOffset,
+    scrollPosition = "0 -" + (windowOffset * speed) + "px";
+    articleCover.style.backgroundPosition = scrollPosition;
 }
 
 window.addEventListener('scroll', function (e) {
@@ -30,7 +33,7 @@ window.addEventListener('scroll', function (e) {
         window.requestAnimationFrame(function() {
             // Cover paralax
             if (articleCover) {
-                changeCoverPos(last_known_scroll_position);
+                setInterval(changeCoverPos(last_known_scroll_position), 10);
             }
 
             // Go to top arrow

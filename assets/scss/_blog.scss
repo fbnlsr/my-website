@@ -55,10 +55,7 @@
         height: 350px;
 
         .background-cover {
-            background-attachment: fixed;
-            // background-position: center -300px;
-            background-position: center top;
-            background-size: cover;
+            background-position: top left;
             background-repeat: no-repeat;
             transition: 0s linear;
             transition-property: background-position;
