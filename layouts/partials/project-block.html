@@ -1,0 +1,26 @@
+<div class="project">
+    <div class="infos">
+        <p class="title">{{ .name }}</p>
+        {{ if .type }}
+            <p class="type">{{ .type }}</p>
+        {{ end }}
+        {{ if .work }}
+            <p class="work">{{ .work }}</p>
+        {{ end }}
+        {{ if .description }}
+            <div class="description">{{ .description | markdownify }}</div>
+        {{ end }}
+        {{ if .client }}
+            <p class="client">Client: {{ .client }}</p>
+        {{ end }}
+        {{ if .url }}
+            <p class="url" target="_blank"><a href="{{ .url }}">{{ .url }}</a></p>
+        {{ end }}
+    </div>
+    <div class="cover">
+        {{ if .cover }}
+            <img src="/img/projects/{{ .cover }}" alt="Cover image">
+        {{ end }}
+    </div>
+</div>
+<hr class="bullet">

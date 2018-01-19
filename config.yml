@@ -13,6 +13,8 @@ permalinks:
 
 blackfriday:
   angledQuotes: true
+  extensions:
+    - hardLineBreak
 
 languages:
   en:
@@ -25,10 +27,14 @@ languages:
           url: /about
           identifier: about
           weight: 2
+        - name: Projects
+          url: /projects
+          identifier: projects
+          weight: 3
         - name: Blog
           url: /blog
           identifier: blog
-          weight: 3
+          weight: 4
   fr:
     menu:
       main:
@@ -39,7 +45,11 @@ languages:
           url: /about
           identifier: about
           weight: 2
+        - name: Projets
+          url: /projects
+          identifier: projects
+          weight: 3
         - name: Blog
           url: /blog
           identifier: blog
-          weight: 3
+          weight: 4

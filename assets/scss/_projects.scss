@@ -1,0 +1,100 @@
+.projects {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 4rem;
+
+    .project {
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        &:hover {
+            // .infos .title {
+            //     left: calc(-1rem - 4px);
+            // }
+            .cover img {
+                opacity: 1;
+            }
+        }
+
+        .infos {
+            width: 490px;
+            float: left;
+
+            .title {
+                position: relative;
+                left: 0;
+                padding-left: 1rem;
+                border-left: 4px solid $blue;
+                margin-bottom: .5rem;
+                transition: all .2s ease-out;
+            }
+
+            .work {
+                font-weight: bold;
+                color: $gray1;
+                margin-bottom: 1rem;
+            }
+
+            .description {
+                p {
+                    margin-bottom: 1rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .description,
+            .client {
+                margin-bottom: 1rem;
+            }
+
+            .link {
+                margin-bottom: 0;
+            }
+        }
+
+        .cover {
+            float: right;
+
+            img {
+                display: block;
+                border-radius: 5px;
+                border: 1px solid rgba($gray1, .6);
+                opacity: .8;
+                transition: all .2s ease-out;
+            }
+        }
+    }
+
+    .bullet {
+        display: block;
+        margin: auto;
+        margin: 4rem 8rem;
+        position: relative;
+
+        &:after {
+            content: "";
+            height: 12px;
+            width: 12px;
+            background-image: url('/img/bullet.png');
+            position: absolute;
+            left: calc(50% - 12px);
+            top: -6px;
+        }
+
+        &:last-child {
+            display: none;
+            margin: 0;
+
+            &:after {
+                content: "";
+                background-image: none;
+            }
+        }
+    }
+}
