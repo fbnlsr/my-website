@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack && hugo",
-    "serve": "webpack && hugo serve",
-    "watch": "parallelshell 'hugo serve' 'webpack --watch'"
+    "serve": "webpack && hugo serve --disableFastRender",
+    "watch": "parallelshell 'hugo serve --disableFastRender' 'webpack --watch'"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
