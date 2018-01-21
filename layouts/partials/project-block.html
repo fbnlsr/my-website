@@ -1,25 +1,25 @@
 <div class="project">
     <div class="infos">
-        <p class="title">{{ .name }}</p>
-        {{ if .type }}
-            <p class="type">{{ .type }}</p>
+        <p class="title">{{ .Params.name }}</p>
+        {{ if .Params.type }}
+            <p class="type">
+                {{ .Params.type }}
+                {{ if .Params.client }}&nbsp;–&nbsp;{{ .Params.client }}{{ end }}
+            </p>
         {{ end }}
-        {{ if .work }}
-            <p class="work">{{ .work }}</p>
+        {{ if .Params.work }}
+            <p class="work">{{ .Params.work }}</p>
         {{ end }}
-        {{ if .description }}
-            <div class="description">{{ .description | markdownify }}</div>
+        {{ if .Params.description }}
+            <div class="description">{{ .Params.description | markdownify }}</div>
         {{ end }}
-        {{ if .client }}
-            <p class="client">Client: {{ .client }}</p>
-        {{ end }}
-        {{ if .url }}
-            <p class="url" target="_blank"><a href="{{ .url }}">{{ .url }}</a></p>
-        {{ end }}
+        <div class="btn is-project-btn">
+            <a href="{{ .Permalink }}" class="btn is-project-btn">View project</a>
+        </div>
     </div>
     <div class="cover">
-        {{ if .cover }}
-            <img src="/img/projects/{{ .cover }}" alt="Cover image">
+        {{ if .Params.cover }}
+            <img src="/img/projects/{{ .Params.cover }}" alt="Cover image">
         {{ end }}
     </div>
 </div>
