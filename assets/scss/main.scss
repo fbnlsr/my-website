@@ -1,3 +1,11 @@
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 @import "~bulma/bulma.sass";
 @import "variables";
 @import "home";
@@ -69,4 +77,33 @@ h1 {
 
 hr {
     background-color: $blue;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-radius: 4px;
+    color: $blue;
+
+
+    a {
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid $blue;
+        padding: .5rem .75rem;
+        color: $blue;
+        transition: all .2s ease-out;
+
+        &:hover,
+        &:active,
+        &:visited {
+            color: inherit;
+        }
+
+        &:hover {
+            background-color: $blue;
+            color: $background;
+        }
+    }
 }

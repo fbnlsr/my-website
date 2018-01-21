@@ -4,11 +4,7 @@
     margin-bottom: 4rem;
 
     .project {
-        &:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+        @include clearfix;
 
         &:hover {
             // .infos .title {
