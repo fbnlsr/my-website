@@ -175,19 +175,19 @@
             &:before {
                 content: "“";
                 position: absolute;
-                top: -4.5rem;
+                top: -6rem;
                 left: 0;
                 font-size: 8rem;
-                color: darken($footerbg, 10%);
+                color: darken($footerbg, 5%);
             }
 
             &:after {
                 content: "”";
                 position: absolute;
-                bottom: -7.5rem;
+                bottom: -9rem;
                 right: 1rem;
                 font-size: 8rem;
-                color: darken($footerbg, 10%);
+                color: darken($footerbg, 5%);
             }
 
             p:last-child {
