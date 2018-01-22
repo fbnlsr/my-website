@@ -9,3 +9,9 @@ other = "This article has also been posted to:"
 
 [twitter-share]
 other = "Did you like this article? Share it on Twitter!"
+
+[thisProjectUsed]
+other = "Used for this project:"
+
+[projectClient]
+other = "Client:"

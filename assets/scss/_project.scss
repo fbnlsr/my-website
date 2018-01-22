@@ -87,6 +87,18 @@
         line-height: 1.8;
         margin-bottom: 4rem;
 
+        .is-long-description {
+            margin-bottom: 1rem;
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
         .is-project-used {
             display: block;
             border-left: 4px solid $blue;

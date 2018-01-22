@@ -43,12 +43,18 @@
 
     <div class="is-description-block columns">
         <div class="column">
-            {{ .Params.longDescription }}
+            <div class="is-long-description">
+                {{ .Params.description | markdownify }}
+                {{ .Params.longDescription | markdownify }}
+            </div>
+            <div class="is-client">
+                <p><strong>{{ i18n "projectClient" }}</strong> {{ .Params.client }}</p>
+            </div>
         </div>
         {{ if .Params.techUsed }}
         <div class="column is-one-quarter">
             <span class="is-project-used">
-                <p><strong>This project used:</strong></p>
+                <p><strong>{{ i18n "thisProjectUsed" }}</strong></p>
                 <ul>
                     {{ range .Params.techUsed }}
                         <li>{{ . }}</li>
