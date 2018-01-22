@@ -19,7 +19,33 @@
     .logo {
         display: block;
         margin: 2rem auto;
+        margin-bottom: 0;
         width: 250px;
+        stroke: $blue;
+        fill: $background;
+        stroke-width: .5px;
+
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation-name: dash, paint;
+        animation-duration: 10s, .7s;
+        animation-timing-function: ease-out, ease-out;
+        animation-direction: forwards, forwards;
+        animation-fill-mode: forwards, forwards;
+        animation-delay: 0s, 1.5s;
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes paint {
+    to {
+        stroke-width: 0;
+        fill: $blue;
     }
 }
 
