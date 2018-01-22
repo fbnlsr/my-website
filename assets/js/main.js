@@ -1,3 +1,5 @@
+global.jQuery = require("jquery");
+require("slick-carousel");
 let hljs = require("highlight.js");
 
 let last_known_scroll_position = 0;
@@ -49,5 +51,32 @@ window.addEventListener('scroll', function (e) {
 
 domReady(function() {
     // DOM is ready and waiting
+    // Initializing HighlightJS
     hljs.initHighlightingOnLoad();
+
+    let slickCarousel = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        cssEase: 'ease-in-out',
+        variableWidth: true,
+        asNavFor: '.slick-nav, .is-laptop-content, .is-mobile-content',
+        draggable: true,
+    }
+
+    let slickNav = {
+        autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        appendDots: '.slideshow-markers',
+        asNavFor: '.is-laptop-content, .is-mobile-content',
+        focusOnSelect: true,
+    }
+
+    // Initializing Slick Carousel
+    jQuery('.is-laptop-content').slick(slickCarousel);
+    jQuery('.is-mobile-content').slick(slickCarousel);
+    jQuery('.slick-nav').slick(slickNav);
 });

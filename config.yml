@@ -10,6 +10,7 @@ googleAnalytics: UA-28964878-1
 
 permalinks:
   blog: /:section/:slug/
+  projects: /:section/:slug/
 
 blackfriday:
   angledQuotes: true

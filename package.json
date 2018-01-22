@@ -16,9 +16,11 @@
     "css-loader": "^0.28.8",
     "extract-text-webpack-plugin": "^3.0.2",
     "highlight.js": "^9.12.0",
+    "jquery": "^3.3.1",
     "node-sass": "^4.7.2",
     "parallelshell": "^3.0.2",
     "sass-loader": "^6.0.6",
+    "slick-carousel": "^1.8.1",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0"
   }

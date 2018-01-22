@@ -11,9 +11,11 @@
 @import "home";
 @import "about";
 @import "projects";
+@import "project";
 @import "blog";
 @import "footer";
 @import "~highlight.js/styles/github-gist.css";
+@import "~slick-carousel/slick/slick.scss";
 
 html, body {
     padding: 0;

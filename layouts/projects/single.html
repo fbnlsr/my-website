@@ -1,0 +1,63 @@
+{{ partial "header.html" . }}
+
+{{ partial "nav.html" . }}
+
+<div class="go-to-top" id="topArrow">
+    <a href="#top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+</div>
+
+<div class="project">
+    <h1>{{ .Title }}</h1>
+
+    <div class="is-showcase">
+        <div class="is-laptop">
+            <img src="/img/laptop.png" alt="Laptop">
+            <div class="is-laptop-content is-slick as-nav">
+                {{ range .Params.gallery }}
+                    <div><img src="/img/projects/{{ . }}" alt="Project image"></div>
+                {{ end }}
+            </div>
+        </div>
+        {{ if .Params.galleryMobile }}
+            <div class="is-mobile">
+                <img src="/img/mobile.png" alt="Mobile">
+                <div class="is-mobile-content is-slick as-nav">
+                    {{ range .Params.galleryMobile }}
+                        <div><img src="/img/projects/{{ . }}" alt="Project image"></div>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+        <div class="slideshow-markers slick-nav">
+                {{ range .Params.gallery }}
+                    <div></div>
+                {{ end }}
+        </div>
+    </div>
+
+    <div class="is-description-block columns">
+        <div class="column">
+            {{ .Params.longDescription }}
+        </div>
+        <div class="column is-one-quarter">
+            <span class="is-project-used">
+                <p><strong>This project used:</strong></p>
+                <ul>
+                    {{ range .Params.techUsed }}
+                        <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </span>
+        </div>
+    </div>
+
+    {{ if .Params.projectUrl }}
+        <div class="btn is-project-url-btn">
+            <a href="{{ .Params.projectUrl }}" target="_blank">View the website</a>
+        </div>
+    {{ end }}
+</div>
+
+{{ partial "footer.html" }}

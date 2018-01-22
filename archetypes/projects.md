@@ -1,12 +1,16 @@
 ---
 weight:
 slug:
-name:
-type:
+title:
+projectType:
+work:
 description:
 longDescription:
+techUsed:
 client:
-url:
+projectUrl:
 cover:
 gallery:
+galleryMobile:
+menu: projects
 ---
