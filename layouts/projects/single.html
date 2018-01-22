@@ -12,6 +12,7 @@
     <h1>{{ .Title }}</h1>
 
     <div class="is-showcase">
+        {{ if .Params.gallery }}
         <div class="is-laptop">
             <img src="/img/laptop.png" alt="Laptop">
             <div class="is-laptop-content is-slick as-nav">
@@ -20,6 +21,7 @@
                 {{ end }}
             </div>
         </div>
+        {{ end }}
         {{ if .Params.galleryMobile }}
             <div class="is-mobile">
                 <img src="/img/mobile.png" alt="Mobile">
@@ -30,17 +32,20 @@
                 </div>
             </div>
         {{ end }}
+        {{ if .Params.gallery }}
         <div class="slideshow-markers slick-nav">
-                {{ range .Params.gallery }}
-                    <div></div>
-                {{ end }}
+            {{ range .Params.gallery }}
+                <div></div>
+            {{ end }}
         </div>
+        {{ end }}
     </div>
 
     <div class="is-description-block columns">
         <div class="column">
             {{ .Params.longDescription }}
         </div>
+        {{ if .Params.techUsed }}
         <div class="column is-one-quarter">
             <span class="is-project-used">
                 <p><strong>This project used:</strong></p>
@@ -51,6 +56,7 @@
                 </ul>
             </span>
         </div>
+        {{ end }}
     </div>
 
     {{ if .Params.projectUrl }}

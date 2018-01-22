@@ -6,7 +6,7 @@
 
     <h1>{{ .Title }}</h1>
 
-    {{ range where .Data.Pages "Section" .Section  }}
+    {{ range (where .Data.Pages "Section" .Section).ByWeight.Reverse  }}
         {{ partial "project-block.html" . }}
     {{ end }}
 
