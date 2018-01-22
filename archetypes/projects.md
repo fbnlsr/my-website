@@ -1,5 +1,6 @@
 ---
 weight:
+date: {{ .Date }}
 slug:
 title:
 projectType:
