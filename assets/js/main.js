@@ -59,9 +59,14 @@ domReady(function() {
         slidesToScroll: 1,
         arrows: false,
         cssEase: 'ease-in-out',
-        variableWidth: true,
         asNavFor: '.slick-nav, .is-laptop-content, .is-mobile-content',
         draggable: true,
+        mobileFirst: true,
+        variableWidth: false,
+        adaptativeHeight: false,
+        lazyload: 'ondemand',
+        centerMode: true,
+        centerPadding: 0,
     }
 
     let slickNav = {
@@ -79,4 +84,10 @@ domReady(function() {
     jQuery('.is-laptop-content').slick(slickCarousel);
     jQuery('.is-mobile-content').slick(slickCarousel);
     jQuery('.slick-nav').slick(slickNav);
+
+    // Refreshing on resize
+    jQuery(window).on('resize orientationchange', function() {
+        jQuery('.is-laptop-content').slick('resize');
+        jQuery('.is-mobile-content').slick('resize');
+    });
 });

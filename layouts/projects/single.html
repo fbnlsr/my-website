@@ -14,7 +14,6 @@
     <div class="is-showcase">
         {{ if .Params.gallery }}
         <div class="is-laptop">
-            <img src="/img/laptop.png" alt="Laptop">
             <div class="is-laptop-content is-slick as-nav">
                 {{ range .Params.gallery }}
                     <div><img src="/img/projects/{{ . }}" alt="Project image"></div>
@@ -24,7 +23,6 @@
         {{ end }}
         {{ if .Params.galleryMobile }}
             <div class="is-mobile">
-                <img src="/img/mobile.png" alt="Mobile">
                 <div class="is-mobile-content is-slick as-nav">
                     {{ range .Params.galleryMobile }}
                         <div><img src="/img/projects/{{ . }}" alt="Project image"></div>
