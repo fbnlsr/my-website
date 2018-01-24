@@ -46,6 +46,14 @@
         }
     }
 
+    .is-savoir-faire-header {
+        padding: 0 10rem;
+        text-align: center;
+        font-size: 3rem;
+        color: $blue;
+        margin-bottom: 0rem;
+    }
+
     .is-savoir-faire-blocks {
         color: $background;
         margin: 0;
@@ -53,22 +61,22 @@
         margin-bottom: 4rem;
 
         .is-savoir-faire-block {
+            background-color: $blue;
             position: relative;
             overflow: hidden;
             margin: 0 1rem;
-            padding: 1rem;
-
-            p {
-                position: relative;
-                z-index: 2;
-            }
+            padding: 1rem 2rem 1rem 2rem;
+            overflow: visible;
+            border-radius: 4px;
+            line-height: 1.5;
 
             h4 {
                 position: relative;
-                font-weight: bold;
+                font-weight: 300;
+                color: $background;
                 font-size: 2rem;
                 text-align: center;
-                z-index: 2;
+                margin-bottom: 1rem;
             }
 
             strong {
@@ -78,10 +86,11 @@
             .fa-cogs,
             .fa-puzzle-piece,
             .fa-code {
-                font-size: 10rem;
+                font-size: 4rem;
                 position: absolute;
-                left: calc(50% - 10rem);
-                top: -4rem;
+                // left: calc(50% - 10rem);
+                top: 1rem;
+                left: -1rem;
                 color: lighten($blue, 10%);
                 z-index: 1;
             }

@@ -40,25 +40,22 @@ title: About me
     </div>
 </div>
 
-## Savoir faire
+## What I do
 
-<div class="is-savoir-faire-blocks has-background-blue columns">
+<div class="is-savoir-faire-blocks columns">
 
 <div class="is-savoir-faire-block column">
-<i class="fas fa-code"></i>
 <h4>Code</h4>
 <p>I do <strong>Frontend integration</strong>, in a <strong>RWD / Mobile First</strong> strategy. I also design full-fledged web apps thanks to my experience in <strong>Backend OOP</strong> and <strong>Database design</strong>. I mainly work with solid frameworks, such as <strong>Symfony</strong> and <strong>Laravel</strong>. If the project calls for it, I set up a <strong>Unit Testing</strong> strategy.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
-<i class="fas fa-cogs"></i>
 <h4>Workflow</h4>
 <p>Thanks to various experiences in an <strong>Agile / Scrum</strong> environment, I am as capable of working alone as in a team. I can also set up a <strong>streamlined workflow</strong> thanks to <strong>Automation Scripts</strong>. This allows for a <strong>Continuous Integration</strong> workflow and helps preventing regressions.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
-<i class="fas fa-puzzle-piece"></i>
-<h4>Best Practices</h4>
+<h4>Method</h4>
 <p>I love conventions. I always try to find and apply best practices. My code respects <strong>coding standards</strong> and is <strong>PSR-2 compliant</strong>. I also love workflows that adapt to projects, and use the <strong>Git / GitHub Flow</strong>. I often use code formatters, such as <strong>Prettier</strong>, <strong>PHP Code Sniffer</strong>.</p>
 </div>
 
