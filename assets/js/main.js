@@ -53,12 +53,12 @@ window.addEventListener('scroll', function (e) {
     }
 });
 
-
+// DOM is ready and waiting
 domReady(function() {
-    // DOM is ready and waiting
     // Initializing HighlightJS
     hljs.initHighlightingOnLoad();
 
+    // Slick carousel configuration
     let slickCarousel = {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -94,6 +94,14 @@ domReady(function() {
     jQuery(window).on('resize orientationchange', function() {
         jQuery('.is-laptop-content').slick('resize');
         jQuery('.is-mobile-content').slick('resize');
+    });
+
+    // Lazyload images
+    [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = function() {
+            img.removeAttribute('data-src');
+        };
     });
 
     // Get all "navbar-burger" elements
