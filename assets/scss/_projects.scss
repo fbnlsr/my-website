@@ -66,14 +66,6 @@
             background-color: rgba($gray1, .6);
             border: 1px solid rgba($gray1, .6);
 
-            .fa-camera {
-                position: absolute;
-                top: calc(50% - 1.5rem);
-                left: calc(50% - 1.5rem);
-                color: darken($background, 20%);
-                font-size: 3rem;
-            }
-
             img {
                 display: block;
                 position: relative;
