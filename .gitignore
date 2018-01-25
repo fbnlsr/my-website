@@ -5,7 +5,9 @@
 hugo.exe
 /public/
 /static/css/main.css
+/static/css/main.css.map
 /static/js/main.js
+/static/js/main.js.map
 
 ### macOS ###
 *.DS_Store
@@ -109,3 +111,4 @@ typings/
 
 
 # End of https://www.gitignore.io/api/node,hugo,sass,macos,visualstudiocode
+static/js/main.js.map
