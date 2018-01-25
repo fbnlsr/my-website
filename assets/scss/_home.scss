@@ -85,6 +85,7 @@
         a, a:visited {
             color: inherit;
             margin-right: 1rem;
+            text-decoration: none;
 
             &.is-active {
                 border-bottom: 1px solid $background;
