@@ -41,6 +41,23 @@
             </div>
             {{ end }}
         {{ end }}
+
+        <p class="year">2016</p>
+        {{ range where .Data.Pages "Section" .Section  }}
+            {{ if eq (.Date.Format "2006") "2016" }}
+            <div class="blog-post">
+                <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                <p class="date">
+                    {{ if eq .Lang "fr" }}
+                        {{ .Date.Format "2 January 2006" }}
+                    {{ else }}
+                        {{ .Date.Format "January 2, 2006" }}
+                    {{ end }}
+                    {{ if isset .Params "category" }}&nbsp;—&nbsp;{{ delimit .Params.category ", " | humanize }}{{end}}
+                </p>
+            </div>
+            {{ end }}
+        {{ end }}
     </div>
 
 {{ partial "footer.html" . }}
