@@ -14,7 +14,7 @@ A couple of months ago I bought myself a [Pebble](https://www.pebble.com/). It's
 
 Another cool feature is its ability to track sleeping patterns. Thanks to its built-in gyroscope, it can detect wrist movements and deduce if I'm sleeping or not. Granted, it's not 100% bullet-proof, but it does a good job at giving a broad idea of how good (or bad) my sleeping habits are. And boy they are terrible.
 
-<img src="http://primative.net/wp-content/uploads/sleeping-patterns.png" alt="" width="613" height="496" class="aligncenter size-full wp-image-223" />
+![My sleep pattern for the past week](/img/posts/sleeping-patterns.png)
 
 According to my Pebble, I sleep 7 hours 3 minutes per night on a 30 days average, with an average deep sleep duration of 1h 48m. It's not *that* bad, but when you take into account that during a same week I can sleep from 3h 55m one day to 9h 18m another, there's clearly something really wrong with my sleep schedule.
 
@@ -26,7 +26,7 @@ The average human needs [between 7 and 8 hours of sleep](https://sleepfoundation
 
 Yeah, that's not taking into account the absolutely amazing capacity of the human brain to slack off.
 
-<img src="http://primative.net/wp-content/uploads/chuck-and-beans.jpg" alt="" width="550" height="629" class="aligncenter size-full wp-image-219" />
+![Coffee is good](/img/posts/chuck-and-beans.jpg)
 
 Getting more sleep has been a goal of mine for 2017. I've already taken some steps towards this, removing my tablet from the nightstand and replacing it with [a good book](https://www.amazon.com/dp/1421586207/). But I still need to slap myself on the wrist and stop spending my evenings reading about code or cruising around [Tamriel](https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim) or [Dust2](https://en.wikipedia.org/wiki/Counter-Strike:_Global_Offensive).
 
