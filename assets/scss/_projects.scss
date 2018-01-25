@@ -109,10 +109,14 @@
         }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 900px) {
         .project {
             margin-bottom: 4rem;
             padding: 0 1rem;
+
+            .cover {
+                display: none;
+            }
 
             .infos {
                 width: initial;
