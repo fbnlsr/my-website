@@ -10,7 +10,7 @@
     <div class="navbar-menu">
         <div class="navbar-start">
             {{ range .Site.Menus.main -}}
-                <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}/">{{ .Name }}</a>
+                <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
             {{- end }}
         </div>
 

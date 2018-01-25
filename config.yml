@@ -25,15 +25,15 @@ languages:
           url: /
           weight: 1
         - name: About
-          url: /about
+          url: /about/
           identifier: about
           weight: 2
         - name: Projects
-          url: /projects
+          url: /projects/
           identifier: projects
           weight: 3
         - name: Blog
-          url: /blog
+          url: /blog/
           identifier: blog
           weight: 4
   fr:
@@ -43,14 +43,14 @@ languages:
           url: /
           weight: 1
         - name: À propos
-          url: /about
+          url: /about/
           identifier: about
           weight: 2
         - name: Projets
-          url: /projects
+          url: /projects/
           identifier: projects
           weight: 3
         - name: Blog
-          url: /blog
+          url: /blog/
           identifier: blog
           weight: 4
