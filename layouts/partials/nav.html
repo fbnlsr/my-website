@@ -1,11 +1,26 @@
+{{ $currentPage := . }}
 <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-menu">
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main -}}
-            <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-        {{- end }}
-    </div>
     <div class="navbar-brand">
-        <a href="/"><img class="logo-header" src="/img/logo.svg" alt="Primative logo"></a>
+        <button class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            {{ range .Site.Menus.main -}}
+                <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}/">{{ .Name }}</a>
+            {{- end }}
+        </div>
+
+        <div class="navbar-end">
+            <a href="/"><img class="logo-header" src="/img/logo.svg" alt="Primative logo"></a>
+        </div>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+        {{ range .Site.Menus.main -}}
+            <span><a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a></span>
+        {{ end }}
     </div>
 </nav>
