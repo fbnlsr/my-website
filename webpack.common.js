@@ -29,8 +29,8 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin({
             filename: "css/main.css",
-            allChunks: true
-            // disable: process.env.NODE_ENV === "development"
+            allChunks: true,
+            disable: process.env.NODE_ENV === "development"
         })
     ]
 };
