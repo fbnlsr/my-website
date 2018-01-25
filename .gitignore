@@ -112,3 +112,4 @@ typings/
 
 # End of https://www.gitignore.io/api/node,hugo,sass,macos,visualstudiocode
 static/js/main.js.map
+.vscode/settings.json
