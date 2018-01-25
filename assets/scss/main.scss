@@ -43,7 +43,7 @@ body {
 
 .navbar {
     height: 70px;
-    padding-left: 3rem;
+    padding-left: 1rem;
     background-color: transparent;
 
     .logo-header {
@@ -67,6 +67,48 @@ body {
         &.is-active {
             border-bottom: 3px solid $blue;
         }
+    }
+
+    .navbar-burger {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        border: 0;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    #navMenu {
+        position: fixed;
+        top: 0;
+        width: 80%;
+        z-index: 9000;
+
+        .navbar-menu {
+            background-color: $background;
+        }
+
+        .navbar-item {
+            border: 0;
+            margin-right: 0;
+            text-align: right;
+
+            &.is-active {
+                background-color: $blue;
+                color: $background;
+            }
+
+            &:hover {
+                background-color: inherit;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding-left: initial;
     }
 }
 
