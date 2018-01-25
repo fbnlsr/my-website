@@ -59,7 +59,7 @@
 
 .is-home-right-column {
     color: $background;
-    padding: 100px 0 0 0;
+    padding: 100px 3rem 0 3rem;
     overflow-y: scroll;
     margin: 0 -20px 0 0;
     position: absolute;
@@ -67,6 +67,11 @@
     right: 0;
     left: 50%;
     bottom: 70px;
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
 
     .lang-choser {
         color: $background;

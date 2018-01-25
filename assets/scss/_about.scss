@@ -69,6 +69,7 @@
             overflow: visible;
             border-radius: 4px;
             line-height: 1.5;
+            box-shadow: 0 10px 10px -10px $text;
 
             h4 {
                 position: relative;
@@ -123,13 +124,14 @@
         margin: 4rem auto;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1200px) {
         .is-savoir-faire-blocks {
             padding: 0;
 
             .is-savoir-faire-block {
                 margin: 0;
                 border-radius: 0;
+                box-shadow: none;
             }
         }
 

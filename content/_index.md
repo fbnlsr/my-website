@@ -13,6 +13,6 @@ Since 2012, I’ve been working with many different clients, helping them findin
 
 I mainly work with modern tools and frameworks, such as Laravel, Symfony, VueJS....
 
-Read more about me, or check a few of my projects.
+Read more [about me](/about/), or check a few of [my projects](/projects/).
 
 I’m currently available for freelancing, feel free to contact me!
