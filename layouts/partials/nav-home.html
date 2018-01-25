@@ -1,10 +1,24 @@
 <div class="column is-half nav-home">
     <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <button class="button navbar-burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
         <div class="navbar-menu">
-            {{ $currentPage := . }}
+            <div class="navbar-start">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main -}}
+                    <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                {{- end }}
+            </div>
+        </div>
+        <div class="navbar-menu is-hidden-desktop" id="navMenu">
             {{ range .Site.Menus.main -}}
-                <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            {{- end }}
+                <span><a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a></span>
+            {{ end }}
         </div>
     </nav>
 </div>

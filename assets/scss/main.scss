@@ -46,6 +46,10 @@ body {
     padding-left: 1rem;
     background-color: transparent;
 
+    @media only screen and (max-width: 768px) {
+        height: initial;
+    }
+
     .logo-header {
         display: block;
         width: 50px;
@@ -75,6 +79,7 @@ body {
         right: 0;
         background-color: transparent;
         border: 0;
+        z-index: 2000;
 
         &:hover {
             background-color: transparent;
@@ -85,7 +90,7 @@ body {
         position: fixed;
         top: 0;
         width: 80%;
-        z-index: 9000;
+        z-index: 2000;
 
         .navbar-menu {
             background-color: $background;
@@ -97,12 +102,14 @@ body {
             text-align: right;
 
             &.is-active {
-                background-color: $blue;
-                color: $background;
+                a {
+                    border-bottom: 2px solid $blue;
+                }
             }
 
             &:hover {
                 background-color: inherit;
+                color: $text;
             }
         }
     }

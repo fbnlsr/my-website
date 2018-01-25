@@ -108,4 +108,24 @@
             }
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        .project {
+            margin-bottom: 4rem;
+            padding: 0 1rem;
+
+            .infos {
+                width: initial;
+                max-width: 490px;
+                float: initial;
+                margin: auto;
+
+                .is-project-btn {
+                    display: block;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }

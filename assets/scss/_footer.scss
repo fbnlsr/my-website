@@ -48,4 +48,26 @@
             transform: translateY(-50%);
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+        height: initial;
+        position: relative;
+
+        .contact,
+        .siret {
+            margin-bottom: 1rem;
+        }
+        .column-right {
+            .content {
+                position: relative;
+                right: initial;
+                top: initial;
+                transform: initial;
+                text-align: center;
+                font-size: 1.15rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
 }

@@ -2,11 +2,7 @@
 
 {{ partial "nav.html" . }}
 
-<div class="go-to-top" id="topArrow">
-    <a href="#top">
-        <i class="fas fa-chevron-up"></i>
-    </a>
-</div>
+{{ partial "go-to-top.html"}}
 
 <div class="blog-post">
     <div class="title-container {{ if not .Params.cover.image }} no-cover{{end}}">
@@ -21,7 +17,7 @@
         {{ if .Params.cover.image }}</div></div>{{ end }}
     </div>
     {{ if .Params.cover.author }}
-        <p class="is-cover-author">
+        <p class="is-cover-author is-hidden-mobile">
             {{ if .Params.cover.link }}
                 <a href="{{ .Params.cover.link }}">
             {{ end }}
@@ -69,7 +65,7 @@
     </div>
     {{ end }}
 
-    <hr>
+    <hr class="is-hidden-mobile">
 
 </div>
 

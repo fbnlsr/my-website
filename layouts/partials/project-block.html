@@ -17,10 +17,10 @@
             <a href="{{ .Permalink }}" class="btn is-project-btn">View project</a>
         </div>
     </div>
-    <div class="cover">
+    <div class="cover is-hidden-mobile">
         {{ if .Params.cover }}
             <img data-src="/img/projects/{{ .Params.cover }}" alt="Cover image" width="300" height="190">
         {{ end }}
     </div>
 </div>
-<hr class="bullet">
+<hr class="bullet is-hidden-mobile">

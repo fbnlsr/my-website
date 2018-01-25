@@ -122,4 +122,26 @@
         display: block;
         margin: 4rem auto;
     }
+
+    @media only screen and (max-width: 768px) {
+        .is-savoir-faire-blocks {
+            padding: 0;
+
+            .is-savoir-faire-block {
+                margin: 0;
+                border-radius: 0;
+            }
+        }
+
+        .is-get-in-touch {
+            .is-email,
+            .is-phone {
+                font-size: 1.5rem;
+            }
+        }
+
+        img {
+            display: none;
+        }
+    }
 }

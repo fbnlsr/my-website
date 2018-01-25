@@ -1,6 +1,10 @@
 .home-columns {
     margin: 0;
     height: calc(100vh - 140px);
+
+    @media only screen and (max-width: 768px) {
+        height: initial;
+    }
 }
 
 .has-background {
@@ -33,6 +37,10 @@
         animation-direction: forwards, forwards;
         animation-fill-mode: forwards, forwards;
         animation-delay: 0s, 1.5s;
+    }
+
+    @media only screen and (max-width: 768px) {
+        display: none;
     }
 }
 
@@ -81,6 +89,12 @@
                 margin-right: 0;
             }
         }
+
+        @media only screen and (max-width: 768px) {
+            text-align: left;
+            left: 20px;
+            right: 0;
+        }
     }
 
     h1 {
@@ -126,6 +140,30 @@
                     margin-right: 0;
                 }
             }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        left: 0;
+        overflow-y: hidden;
+        bottom: initial;
+        margin: 0;
+        padding: 0 1rem;
+        position: relative;
+
+        .social {
+            margin-top: 20px;
+            margin-bottom: 2rem;
+        }
+
+        img {
+            width: 170px;
+            height: 170px;
+            margin: 20px auto;
+        }
+
+        p {
+            line-height: 1.85;
         }
     }
 }
