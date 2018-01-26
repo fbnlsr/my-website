@@ -3,7 +3,7 @@ title: Fabien Lasserre, développeur web à Bordeaux, France.
 ---
 # Bonjour !
 
-![Hey c'est moi !](/img/me.jpg)
+![Hey c'est moi !](/img/me230.jpg)
 
 Je m’appelle Fabien,
 
