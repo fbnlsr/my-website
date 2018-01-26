@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.common.js && hugo",
     "serve": "webpack --config webpack.common.js && hugo serve --disableFastRender",
     "watch": "parallelshell 'hugo serve --disableFastRender' 'webpack --watch --config webpack.common.js'",
-    "prod": "webpack -p --config webpack.prod.js"
+    "prod": "webpack -p --config webpack.prod.js && hugo"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
