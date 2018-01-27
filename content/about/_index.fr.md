@@ -42,22 +42,19 @@ title: À propos
 
 ## Savoir faire
 
-<div class="is-savoir-faire-blocks has-background-blue columns">
+<div class="is-savoir-faire-blocks columns">
 
 <div class="is-savoir-faire-block column">
-<i class="fas fa-code"></i>
 <h4>Code</h4>
 <p>Je fais de l'<strong>intégration Frontend</strong>, dans une <strong>stratégie RWD / Mobile First</strong>. Je design aussi des applications web complètes grâce à mon expérience en <strong>POO Backend</strong> et <strong>design de BDD</strong>. Je travaille principalement avec des frameworks solides, comme <strong>Symfony</strong> et <strong>Laravel</strong>. Si le projet le demande, je met en place une stratégie de <strong>Tests Unitaires</strong>.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
-<i class="fas fa-cogs"></i>
 <h4>Workflow</h4>
 <p>Grâce à de nombreuses expériences dans des environements <strong>Agile / Scrum</strong>, je suis autant capable de travailler seul ou en équipe. Je peux aussi mettre en place un <strong>flux de travail rationel</strong> grâce à des <strong>scripts automatisés</strong>. Cela permet la mise en place d'une <strong>Intégration Continue</strong> et prévient les régressions.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
-<i class="fas fa-puzzle-piece"></i>
 <h4>Meilleures Pratiques</h4>
 <p>J'aime les conventions. J'essaie toujours de trouver et appliquer les meilleures pratiques. Mon code respecte les <strong>normes de codage</strong> et est <strong>conforme au PSR-2</strong>. J'aime aussi les flux de travail qui s'adaptent aux projets, et j'utilise les méthodes <strong>Git / GitHub Flow</strong>. J'utilise souvent des formateurs de code, comme <strong>Prettier</strong> ou <strong>PHP Code Sniffer</strong>.</p>
 </div>
