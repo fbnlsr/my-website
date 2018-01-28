@@ -10,17 +10,17 @@ links:
     devto: https://dev.to/fbnlsr/lets-talk-about-emojis-2788
     medium: https://medium.com/@fbnlsr/lets-talk-about-emojis-d0a07c88b319
 ---
-Les emojis sont partout. De Twitter à Facebook Chat, ils sont devenu le [Mot de l'Année 2015](http://time.com/4114886/oxford-word-of-the-year-2015-emoji/) pour Oxford, et on a même pu les voir dans un [film épouvantable](https://www.rottentomatoes.com/m/the_emoji_movie). Mais qu'en est-il en dehors des SMS et de la messagerie instantanée ? Quid de l'utilisation des emojis dans les commentaires de code ou même les messages de commit ? Voyons voir comment utiliser au mieux ces petites images marrantes.
+Les emojis sont partout. De Twitter à Facebook Chat, ils sont devenus le [Mot de l'Année 2015](http://time.com/4114886/oxford-word-of-the-year-2015-emoji/) pour Oxford, et on a même pu les voir dans un [film épouvantable](https://www.rottentomatoes.com/m/the_emoji_movie). Mais qu'en est-il en dehors des SMS et de la messagerie instantanée ? Quid de l'utilisation des emojis dans les commentaires de code ou même les messages de commit ? Voyons voir comment utiliser au mieux ces petites images marrantes.
 
 Contrairement à ce que peuvent penser les gens, les emojis existent depuis bien longtemps. Le premier emoji date de 1999, et a été créé par Shigetaka Kurita, un employé de la société japonaise de télécommunications NTT Docomo. Tout d'abord utilisé uniquement au Japon, il aura fallu attendre dix ans pour que certains d'entre eux soient ajoutés à l'espace de caractères Unicode. Ainsi, en octobre 2010, le Standard Unicode 6.0 sort officiellement, et avec lui 722 emojis. Ils ne vivent pas dans leur bloc dédié cependant et sont disséminés un peu partout dans les tables Unicode. Il a fallu des années pour que de multiples ingénieurs de Google et Apple arrivent à convaincre le Comité Technique de Unicode de les ajouter. Maintenant, les emojis font partie de la vie de tous les jours.
 
-Il existe même des bizarreries et autres faits marrants autour de ces petites images. Par exemple : les emojis peuvent varier d'une plateforme à une autre. À cause de ceci, l'emoji "calendrier" est représenté pour toujours montrer la date du 17 juillet sur les produits Apple (date représentant le l'annonce de iCal en 2002). C'est ainsi que par "erreur", le 17 juillet a été déclaré comme le Jour Mondial de l'Emoji.
+Il existe même des bizarreries et autres faits marrants autour de ces petites images. Par exemple : les emojis peuvent varier d'une plateforme à une autre. À cause de ceci, l'emoji "calendrier" est représenté pour toujours montrer la date du 17 juillet sur les produits Apple (date représentant l'annonce de iCal en 2002). C'est ainsi que par "erreur", le 17 juillet a été déclaré comme le Jour Mondial de l'Emoji.
 
-Les emojis sont aussi représentés différemment entre les plateformes, et peuvent donc être interprétés différemment. Prenez par exemple l'emoji `astonished face`. Le premier est l'interprétation d'Apple, le second celui de Samsung.
+Les emojis sont aussi représentés différemment entre les plateformes, et peuvent donc être *interprétés* différemment. Prenez par exemple l'emoji `astonished face`. Le premier est l'interprétation d'Apple, le second celui de Samsung.
 
 ![emoji1](/img/posts/emoji1.png)
 
-Celle d'Apple semble plus "sage" que celle de Samsung, vous ne trouvez pas ?
+Celle d'Apple semble plus "sage" que celle de Samsung, vous ne trouvez pas ?
 
 Parfois, c'est le contraire. Dans cet exemple, l'interprétation de Samsung pour la `pouting face` semble moins "énervée" que celle de Twitter.
 
@@ -30,9 +30,9 @@ Mais assez d'histoire, parlons de code.
 
 ## Les emojis dans les messages de commit
 
-Github a popularisé le support des emojis dans leur écosystème dans un [post de 2012](https://github.com/blog/1289-emoji-autocomplete) grâce à leur fameux raccourci "`:`". Grâce à ce dernier, si vous voules utiliser l'emoji `fox face` 🦊 quelque part dans Github (un message de commit, une issue ou un gist), vous pouvez simplement utiliser `:fox_face:` à la place et ce sera automatiquement interprété et remplacé.
+Github a popularisé le support des emojis dans leur écosystème dans un [post de 2012](https://github.com/blog/1289-emoji-autocomplete) grâce à leur fameux raccourci "`:`". Grâce à ce dernier, si vous voulez utiliser l'emoji `fox face` 🦊 quelque part dans Github (un message de commit, une issue ou un gist), vous pouvez simplement utiliser `:fox_face:` à la place et ce sera automatiquement interprété et remplacé.
 
-Utiliser des raccourcis est une solution élégante face au problèmes des emojis non interprétés. Vous ne courrez pas le risque de casser quelque chose et même s'ils ne sont pas (ou mal) rendus, le message est toujours lisible.
+Utiliser des raccourcis est une solution élégante face au problème des emojis non interprétés. Vous ne courrez pas le risque de casser quelque chose et même s'ils ne sont pas (ou mal) rendus, le message est toujours lisible.
 
 Les emojis peuvent aussi ajouter plus de clarté aux messages de commit. Comparez ces deux séquences :
 
@@ -65,11 +65,11 @@ Sur une plateforme qui ne supporte pas les emojis, cela donne ceci :
 
 Clairement pas aussi fun, mais toujours totalement lisible.
 
-L'industrie s'est approprié ces raccourcis et est allé [beaucoup plus loin](https://www.webpagefx.com/tools/emoji-cheat-sheet/) que de simples emojis. Bien sûr c'est sympa d'utiliser 🐛 pour parler de la résolution d'un bug, mais essayez d'utiliser `:trollface:` sur Slack ou Redmine. Boom, vous êtes désormais le nouveau mec cool du quartier. Mais attention à ne pas trop les utiliser, vous ne voulez pas être *ce gars*.
+L'industrie s'est appropriée ces raccourcis et est allé [beaucoup plus loin](https://www.webpagefx.com/tools/emoji-cheat-sheet/) que de simples emojis. Bien sûr c'est sympa d'utiliser 🐛 pour parler de la résolution d'un bug, mais essayez d'utiliser `:trollface:` sur Slack ou Redmine. Boom, vous êtes désormais le nouveau mec cool du quartier. Mais attention à ne pas trop les utiliser, vous ne voulez pas être *ce gars*.
 
 **Mon conseil :** N'hésitez pas à utiliser des emojis dans les messages de commit, mais préférez les raccourcis. Je vous suggère aussi de ne pas trop en faire et garder une liste de quelques un pour noter les actions majeures (résolution de bug, fonctionnalité, style, nettoyage de code, etc...).
 
-Si vous ne savez pas par où commencer ou voulez suggérer une ligne à votre équipe, je recommande chaudement le [Gitmoji](https://gitmoji.carloscuesta.me/) de Carlos Cuesta. Il existe même une ligne de commande très pratique (simplement appelée [`gitmoji-cli`](https://github.com/carloscuesta/gitmoji-cli)) qui vous aidera à écrire vos messages de commit au travers d'une interface interactive. Gitmoji est même utilisé dans la [ligne directrice de contribution](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages) d'Atom.
+Si vous ne savez pas par où commencer ou voulez suggérer une ligne à suivre à votre équipe, je recommande chaudement le [Gitmoji](https://gitmoji.carloscuesta.me/) de Carlos Cuesta. Il existe même une ligne de commande très pratique (simplement appelée [`gitmoji-cli`](https://github.com/carloscuesta/gitmoji-cli)) qui vous aidera à écrire vos messages de commit par le biais d'une interface interactive. Gitmoji est même utilisé dans la [ligne directrice de contribution](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages) d'Atom.
 
 ## Les emojis dans du code
 
@@ -80,19 +80,19 @@ Techniquement, vous *pourriez* utiliser des emojis dans du code informatique, ma
 "🇨🇦".length         // retourne 4
 ```
 
-Il ne faut pas oublier que les emojis peuvent être connectés (un peu à la manière des ligatures de Fira Code que certains apprécient tant). C'est de cette manière que vous pouvez avoir des modificateurs de couleur de peau (appelés `EMOJI MODIFIER FITZPATRICK TYPE-1`, `-2`, `-3`, `-4`, `-5` et `-6`. Je ne plaisante pas). Ou même mieux, si vous combinez les emojis 👨, 👩 et 👧 vous obtenez une famille complète 👨‍👩‍👧 ! Voyons celui-ci dans Javascript.
+Il ne faut pas oublier que les emojis peuvent être connectés (un peu à la manière des ligatures de Fira Code que certains apprécient tant). C'est de cette manière que vous pouvez avoir des modificateurs de couleur de peau (appelés `EMOJI MODIFIER FITZPATRICK TYPE-1`, `-2`, `-3`, `-4`, `-5` et `-6`. Je ne plaisante pas). Ou même mieux, si vous combinez les emojis 👨, 👩 et 👧 vous obtenez une famille complète 👨‍👩‍👧 ! Voyons celui-ci dans Javascript.
 
 ```javascript
 "👨‍👩‍👧".length         // retourne 5
 ```
 
-Pourquoi 5 ? Car non seulement vous obtenez la longueur de chacun des symboles dont cet emoji est fait, mais il utilise aussi deux `ZWJ` (Zero Width Joiner) comme "colle". Vous pouvez voir ceci en action : copiez/collez cet emoji dans VS Code par exemple, et il vous faudra cinq fois la touche "flèche" pour le traverser.
+Pourquoi 5 ? Car non seulement vous obtenez la longueur de chacun des symboles dont cet emoji est fait, mais il utilise aussi deux `ZWJ` (Zero Width Joiner) comme "colle". Vous pouvez voir ceci en action : copiez/collez cet emoji dans VS Code par exemple, et il vous faudra cinq fois la touche "flèche" pour le traverser.
 
 **Mon conseil :** N'utilisez pas d'emoji dans du code, tout simplement. Mais vous pouvez toujours les utiliser dans vos vues. Les navigateurs web ont de très bonnes capacités en ce qui concerne les emojis, et savent comment basculer vers une police qui *va* afficher votre icône "pouce levé". Mais attention lors de l'utilisation de raccourcis dans des interprètes de code dans ces vues, en particulier si vous affichez des blocs de code sur votre site. Cela peut vous jouer des tours et par exemple interpréter `h:m:s` comme `hⓂ️️s`, ce qui rend le bloc inutile.
 
 ## Les emojis dans les commentaires
 
-Qu'en est-il donc des commentaires de code ? Mettez des emojis partout ! Autant que je sache, vous n'êtes pas susceptible de casser quelque chose en les utilisant dans les commentaires. Les éditeurs de code modernes (Atom, VS Code, Sublime, Intellij...) ont un très bon support des emojis. Ils peuvent même se rendre très utiles pour faire ressortir quelque chose.
+Qu'en est-il donc des commentaires de code ? Mettez des emojis partout ! Autant que je sache, vous n'êtes pas susceptible de casser quelque chose en les utilisant dans les commentaires. Les éditeurs de code modernes (Atom, VS Code, Sublime, Intellij...) ont un très bon support des emojis. Ils peuvent même se rendre très utiles pour faire ressortir quelque chose.
 
 ```javascript
 /**
@@ -120,4 +120,4 @@ Si vous voulez en savoir plus sur les emojis, je vous conseille les travaux de [
 
 Je recommande aussi le billet d'Angela Guzman sur la [création des emojis d'Apple](https://medium.com/@agzmn/the-making-of-apples-emoji-how-designing-these-tiny-icons-changed-my-life-16317250a9ee). Angela écrit comment elle et son mentor Raymond on designé plus de 500 emojis pendant son stage en 2008. Cela a changé sa vie, et son travail est maintenant dans les mains de millions de gens.
 
-Alors allez-y et utilisez des emojis partout ! Vous améliorerez la lecture de votre travail et casserez avec la monotonie d'un écran fade rempli de lignes de code. 😄
+Alors allez-y et utilisez des emojis partout ! Vous améliorerez la lecture de votre travail et casserez avec la monotonie d'un écran fade rempli de lignes de code. 😄
