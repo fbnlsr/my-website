@@ -60,7 +60,6 @@ title: About
 ## What I do
 
 <div class="is-savoir-faire-blocks columns">
-
 <div class="is-savoir-faire-block column">
 <h4>Code</h4>
 <p>I design full-fledged web apps thanks to my experience in <strong>Backend OOP</strong> and <strong>Database design</strong>. I mainly work with solid frameworks, such as <strong>Symfony</strong> and <strong>Laravel</strong>. If the project calls for it, I set up a <strong>Unit Testing</strong> strategy. I also do <strong>Frontend integration</strong>, in a <strong>RWD / Mobile First</strong> strategy. </p>
@@ -75,7 +74,6 @@ title: About
 <h4>Method</h4>
 <p>I love conventions. I always try to find and apply best practices. My code respects <strong>coding standards</strong> and is <strong>PSR-2 compliant</strong>. I also love workflows that adapt to projects, and use the <strong>Git / GitHub Flow</strong>. I often use code formatters and linters, such as <strong>Prettier</strong>, <strong>ESLint</strong> or <strong>PHP Code Sniffer</strong>.</p>
 </div>
-
 </div>
 
 ## Let's get in touch!

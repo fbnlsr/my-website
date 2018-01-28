@@ -75,7 +75,6 @@ title: À propos
 <h4>Meilleures Pratiques</h4>
 <p>J'aime les conventions. J'essaie toujours de trouver et appliquer les meilleures pratiques. Mon code respecte les <strong>normes de codage</strong> et est <strong>conforme au PSR-2</strong>. J'aime aussi les flux de travail qui s'adaptent aux projets, et j'utilise les méthodes <strong>Git / GitHub Flow</strong>. J'utilise souvent des formateurs de code, comme <strong>Prettier</strong> ou <strong>PHP Code Sniffer</strong>.</p>
 </div>
-
 </div>
 
 ## Prenons contact !
