@@ -19,7 +19,7 @@
     </div>
     <div class="cover is-hidden-mobile">
         {{ if .Params.cover }}
-            <img data-src="/img/projects/{{ .Params.cover }}" alt="Cover image" width="300" height="190">
+        <a href="{{ .Permalink }}"><img data-src="/img/projects/{{ .Params.cover }}" alt="Cover image" width="300" height="190"></a>
         {{ end }}
     </div>
 </div>
