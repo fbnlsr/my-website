@@ -37,6 +37,23 @@ title: À propos
                 <li>iTerm2 / zsh</li>
             </ul>
         </div>
+        <div class="column is-mobile-block is-hidden-desktop is-hidden-tablet">
+            <ul>
+                <li><strong>HTML5 / CSS3</strong></li>
+                <li><strong>Javascript (jQuery / ES6)</strong></li>
+                <li><strong>PHP</strong></li>
+                <li><strong>VueJS</strong></li>
+                <li><strong>Laravel</strong></li>
+                <li><strong>Symfony 3</strong></li>
+                <li><strong>Wordpress</strong></li>
+                <li><strong>Webpack</strong></li>
+                <li>Vagrant (Homestead)</li>
+                <li>Git</li>
+                <li>Jekyll / Hugo</li>
+                <li>Less / Sass</li>
+                <li>Prettier</li>
+            </ul>
+        </div>
     </div>
 </div>
 

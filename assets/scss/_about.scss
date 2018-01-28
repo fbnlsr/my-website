@@ -30,6 +30,7 @@
         font-size: 1.25rem;
         margin-bottom: 2rem;
         clear: both;
+        padding: 0 1rem;
     }
 
     .is-about-tools {
@@ -42,6 +43,15 @@
             li {
                 list-style-image: url('../img/bullet.png');
                 margin-left: 100px;
+            }
+        }
+
+        .is-mobile-block {
+            max-width: 350px;
+            margin: auto;
+
+            li {
+                margin-left: 40px;
             }
         }
     }
@@ -65,7 +75,7 @@
             position: relative;
             overflow: hidden;
             margin: 0 1rem;
-            padding: 1rem 2rem 1rem 2rem;
+            padding: 1rem;
             overflow: visible;
             border-radius: 4px;
             line-height: 1.5;
@@ -104,6 +114,7 @@
         p {
             margin-bottom: 1rem;
             line-height: 1.15;
+            padding: 0 1rem;
         }
 
         a, a:hover, a:visited {
