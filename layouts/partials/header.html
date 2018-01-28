@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ .Lang }}">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="/blog/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <title>{{ i18n "site-title" }} — {{.Title}}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+    <link href="/blog/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">
+    {{ if .Section }}
+    <title>{{ i18n "site-title" }} | {{ .Title | humanize }}</title>
+    {{ else }}
+    <title>{{ i18n "site-title" }}</title>
+    {{ end }}
+
+
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700" as="font" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" as="font" crossorigin>
     {{ if eq .Section "blog" }}
@@ -14,6 +21,55 @@
     {{ end }}
     <link rel="stylesheet" href="/css/main.css">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
+
+    <!-- SEO stuff -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    {{ if eq .Section "blog" }}
+    <meta name="description" content="{{ .Summary }}">
+    {{ else }}
+    <meta name="description" content="{{ i18n "siteDescription" }}">
+    {{ end }}
+
+    <!-- Open Graph -->
+    {{ $ogimage := "/img/primative-og.jpg" }}
+    <meta property="fb:app_id" content="796615263784091">
+    <meta property="og:title" content="{{ .Title }}">
+    {{ if eq .Section "blog" }}
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="Fabien Lasserre">
+    {{ if .Params.cover }}
+        {{ $ogimage := .Params.cover }}
+    {{ end }}
+    {{ else }}
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="{{ .Title }}">
+    {{ if eq .Section "blog" }}
+    <meta property="og:description" content="{{ .Summary }}">
+    {{ else }}
+    <meta property="og:description" content="{{ i18n "siteDescription" }}">
+    {{ end }}
+    <meta property="business:contact_data:street_address" content="13 Rue des Fleurs, Appt A205">
+    <meta property="business:contact_data:locality" content="Eysines">
+    <meta property="business:contact_data:postal_code" content="33320">
+    <meta property="business:contact_data:country_name" content="France">
+    <meta property="business:contact_data:email" content="hello@primative.net">
+    <meta property="business:contact_data:phone_number" content="+33603351963">
+    {{ end }}
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ $ogimage }}">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ $ogimage }}">
+    <meta name="twitter:site" content="@fbnlsr">
+    <meta name="twitter:creator" content="@fbnlsr">
+    <meta name="twitter:title" content="{{ .Title }}">
+    {{ if eq .Section "blog" }}
+    <meta name="twitter:description" content="{{ .Summary }}">
+    {{ else }}
+    <meta name="twitter:description" content="{{ i18n "siteDescription" }}">
+    {{ end }}
+
 </head>
 <body id="body">
 {{ template "_internal/google_analytics.html" . }}

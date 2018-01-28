@@ -1,5 +1,5 @@
 ---
-title: About me
+title: About
 ---
 <div class="has-background-blue is-about-text">
 <p>I am a self-taught web developer. I started coding more than ten years ago. It quickly grew into a passion and I’ve been freelancing since 2012.</p>

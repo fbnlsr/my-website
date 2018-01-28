@@ -18,3 +18,6 @@ other = "Client:"
 
 [contactTel]
 other = "+33 (0)6 03 35 19 63"
+
+[siteDescription]
+other = "I'm a Freelance Full Stack Web Developer based in Bordeaux, France. I do frontend and backend work, on large and modern frameworks such as Laravel, Symfony, VueJS and Wordpress."
