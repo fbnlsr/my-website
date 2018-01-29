@@ -2,7 +2,7 @@ comments:
   allowedFields: ["name", "email", "comment"]
   branch: "master"
   commitMessage: ":card_file_box: Add comment from Staticman"
-  filename: "{@id}"
+  filename: "{@timestamp}"
   format: "yaml"
   generatedFields:
     date:
@@ -11,7 +11,7 @@ comments:
         format: "timestamp-seconds"
   moderation: true
   name: "primative.net"
-  path: "data/comments/{options.lang}/{options.uid}"
+  path: "data/comments/{options.uid}"
   requiredFields: ["name", "email", "comment"]
   transforms:
     email: md5
