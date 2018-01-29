@@ -372,6 +372,7 @@
     max-width: 800px;
     margin: auto;
     margin-bottom: 2rem;
+    padding: 0 1rem;
 
     h2 {
         font-size: 2rem;
@@ -383,6 +384,7 @@
 .is-comment {
     box-shadow: none;
     border: 1px solid rgba($gray1, .4);
+    margin: 0 1rem;
 
     &.is-author {
         border-left: 4px solid $blue;
