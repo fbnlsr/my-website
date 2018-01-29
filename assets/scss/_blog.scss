@@ -52,17 +52,22 @@
 
 .blog-post {
     .title-container {
-        height: 350px;
+        height: calc(100vh - 70px);
+        transition: all .4s ease-in-out;
 
         .background-cover {
-            background-position: top left;
+            background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
             transition: 0s linear;
             transition-property: background-position;
 
             .background-shroud {
-                background: rgba($black, .45);
+                // background: rgba($black, .45);
+                background: rgba($black, .6);
+                height: calc(100vh - 70px);
+                position: relative;
+                transition: all .4s ease-in-out;
             }
         }
 
@@ -82,9 +87,23 @@
             text-align: center;
             color: $background;
             font-weight: 300;
-            font-size: 3rem;
+            font-size: 5rem;
             text-shadow: 2px 2px 2px $black;
-            line-height: 350px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 15%;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .date {
+            text-align: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -20px;
+            color: lighten($gray1, 10%);
         }
     }
 
@@ -114,6 +133,7 @@
         font-family: 'Open Sans', sans-serif;
         font-size: 1.25rem;
         padding: 0 1rem;
+        margin-top: 2rem;
 
         p, h1, h2, h3, h4, h5, h6, ol, ul, blockquote {
             max-width: 800px;

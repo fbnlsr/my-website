@@ -49,7 +49,7 @@ window.addEventListener('scroll', function (e) {
         window.requestAnimationFrame(function() {
             // Cover paralax
             if (articleCover) {
-                setInterval(changeCoverPos(last_known_scroll_position), 10);
+                // setInterval(changeCoverPos(last_known_scroll_position), 10);
             }
 
             // Go to top arrow
