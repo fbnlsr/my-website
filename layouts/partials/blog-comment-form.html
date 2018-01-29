@@ -1,0 +1,42 @@
+<div class="is-blog-comment-form">
+
+    <h2>{{ i18n "comments" }}</h2>
+
+    {{ partial "comments.html" . }}
+
+    <hr>
+
+    <div class="">
+        <h2>{{ i18n "addComment" }}</h2>
+
+        <form class="is-comment-form" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments">
+            <input type="hidden" name="options[uid]" value="{{ .UniqueID }}">
+            <div class="field">
+                <label class="label">{{ i18n "commentFormName" }}</label>
+                <div class="control">
+                    <input name="fields[name]" class="input" type="text" placeholder="{{ i18n "commentFormNamePlaceholder" }}" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">{{ i18n "commentFormEmail" }}</label>
+                <div class="control">
+                    <input name="fields[email]" class="input" type="email" placeholder="{{ i18n "commentFormEmailPlaceholder" }}" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">{{ i18n "commentFormComment" }}</label>
+                <div class="control">
+                    <textarea name="fields[comment]" class="textarea" placeholder="{{ i18n "commentFormCommentPlaceholder" }}" required></textarea>
+                </div>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button type="submit" class="button is-link is-submit-btn">{{ i18n "submitBtn" }}</button>
+                </div>
+                <div class="control">
+                    <button type="reset" class="button is-text">{{ i18n "cancelBtn" }}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

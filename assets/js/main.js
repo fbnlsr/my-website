@@ -1,16 +1,25 @@
-global.jQuery = require("jquery");
-
 require("slick-carousel");
 require("./fontawesome.js");
 require("./fa-brands.js");
 require("./fa-solid.js");
 
 let hljs = require("highlight.js");
+let $ = require("jquery");
 
 let last_known_scroll_position = 0;
 let ticking = false;
 let topArrow = document.getElementById('topArrow');
 let articleCover = document.getElementById('blog-post-cover');
+
+let getAll = (selector) => {
+    return Array.prototype.slice.call(document.querySelectorAll(selector), 0)
+}
+
+let closeModals = () => {
+    modals.forEach(function (el) {
+      el.classList.remove('is-active');
+    });
+}
 
 let domReady = (callback) => {
     document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
@@ -53,6 +62,10 @@ window.addEventListener('scroll', function (e) {
     }
 });
 
+// Modal control
+let modals = getAll('.modal');
+var modalCloses = getAll('.modal-background, .delete');
+
 // DOM is ready and waiting
 domReady(function() {
     // Initializing HighlightJS
@@ -86,14 +99,14 @@ domReady(function() {
     }
 
     // Initializing Slick Carousel
-    jQuery('.is-laptop-content').slick(slickCarousel);
-    jQuery('.is-mobile-content').slick(slickCarousel);
-    jQuery('.slick-nav').slick(slickNav);
+    $('.is-laptop-content').slick(slickCarousel);
+    $('.is-mobile-content').slick(slickCarousel);
+    $('.slick-nav').slick(slickNav);
 
     // Refreshing on resize
-    jQuery(window).on('resize orientationchange', function() {
-        jQuery('.is-laptop-content').slick('resize');
-        jQuery('.is-mobile-content').slick('resize');
+    $(window).on('resize orientationchange', function() {
+        $('.is-laptop-content').slick('resize');
+        $('.is-mobile-content').slick('resize');
     });
 
     // Lazyload images
@@ -125,5 +138,36 @@ domReady(function() {
         });
         });
     }
+
+    // Close button on modal
+    modalCloses.forEach(function (el) {
+        el.addEventListener('click', function () {
+            closeModals();
+        });
+    });
+
+    // Comment submission handling
+    $('.is-comment-form').submit(function () {
+        let form = this;
+        $(this).find('.is-submit-btn').addClass('is-loading');
+
+        $.ajax({
+          type: $(this).attr('method'),
+          url: $(this).attr('action'),
+          data: $(this).serialize(),
+          contentType: 'application/x-www-form-urlencoded',
+          success: function (data) {
+              $('.modal').addClass('is-active');
+              $('.is-comment-form').find('input').val('');
+              $('.is-comment-form').find('textarea').val('');
+              $('.is-comment-form').find('.is-submit-btn').removeClass('is-loading');
+          },
+          error: function (err) {
+            console.log(err);
+          }
+        });
+
+        return false;
+      });
 
 });

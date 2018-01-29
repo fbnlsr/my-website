@@ -4,7 +4,7 @@ enableRobotsTXT: true
 disableHugoGeneratorInject: true
 enableMissingTranslationPlaceholders: true
 pygmentStyle: dracula
-baseUrl: https://primative.netlify.com
+baseURL: "https://primative.netlify.com"
 sectionPagesMenu: main
 googleAnalytics: UA-28964878-1
 removePathAccents: true
@@ -17,6 +17,13 @@ blackfriday:
   angledQuotes: true
   extensions:
     - hardLineBreak
+
+params:
+  staticman:
+    endpoint: "https://api.staticman.net/v2/entry"
+    username: fbnlsr
+    repository: "primative.net"
+    branch: master
 
 languages:
   en:

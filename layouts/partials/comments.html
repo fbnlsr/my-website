@@ -1,0 +1,34 @@
+{{ $comments := readDir "data/comments" }}
+{{ $.Scratch.Add "hasComments" 0 }}
+{{ $entryId := .UniqueID }}
+{{ $siteUrl := .Site.BaseURL }}
+{{ range $comments }}
+    {{ if eq .Name $entryId }}
+    {{ $.Scratch.Add "hasComments" 1 }}
+    {{ range $index, $comments := (index $.Site.Data.comments $entryId ) }}
+
+    <div class="box is-comment {{ if eq .name "fbnlsr" }}is-author{{ end }}">
+        <article class="media">
+            <div class="media-left">
+            <figure class="image is-64x64 is-comment-avatar">
+                <img src="https://www.gravatar.com/avatar/{{ .email }}?s=50&d=mm" alt="Image">
+            </figure>
+            </div>
+            <div class="media-content">
+                <div class="content">
+                    <p>
+                        <strong>{{ .name }}</strong> <small>{{ dateFormat "Jan 2, 2006" .date }}.</small>
+                    <br>
+                    {{ .comment | markdownify | emojify }}
+                    </p>
+                </div>
+            </div>
+        </article>
+        </div>
+    {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ if eq ($.Scratch.Get "hasComments") 0 }}
+    <p>{{ i18n "noCommentsYet" }}</p>
+{{ end }}

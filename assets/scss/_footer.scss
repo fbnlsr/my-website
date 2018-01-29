@@ -71,3 +71,24 @@
         }
     }
 }
+
+.is-comment-modal {
+    .modal-card-body {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .is-twitter-share {
+            display: block;
+            margin: auto;
+            margin-top: 1rem;
+
+            a {
+                display: inline-block;
+            }
+        }
+    }
+}

@@ -32,6 +32,23 @@
     </div>
 </footer>
 
+<div class="modal is-comment-modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">{{ i18n "thankYou" }}</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <p>{{ i18n "commentSent" }}</p>
+            <p>{{ i18n "commentCTA" }}</p>
+            <div class="btn is-twitter-share">
+                <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via=fbnlsr">{{ i18n "twitter-share-modal" | safeHTML }}</a>
+            </div>
+        </section>
+    </div>
+  </div>
+
 <script src="/js/main.js" defer></script>
 
 </body>

@@ -40,7 +40,7 @@
     <img class="is-bullet-end-article" src="/img/bullet-big.png" alt="Bullet">
 
     <div class="btn is-twitter-share">
-        <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via=fbnlsr">{{ i18n "twitter-share" }}</a>
+        <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via=fbnlsr">{{ i18n "twitter-share" | safeHTML }}</a>
     </div>
 
     {{ if or .Params.links.devto .Params.links.medium }}
@@ -66,6 +66,8 @@
     {{ end }}
 
     <hr class="is-hidden-mobile">
+
+    {{ partial "blog-comment-form.html" . }}
 
 </div>
 

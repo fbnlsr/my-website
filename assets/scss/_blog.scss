@@ -314,8 +314,7 @@
 
     hr {
         max-width: 800px;
-        margin: auto;
-        margin-bottom: 3rem;
+        margin: 2rem auto;
     }
 
     @media only screen and (max-width: 768px) {
@@ -365,6 +364,50 @@
 
         .btn a {
             display: block;
+        }
+    }
+}
+
+.is-blog-comment-form {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 2rem;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
+
+.is-comment {
+    box-shadow: none;
+    border: 1px solid rgba($gray1, .4);
+
+    &.is-author {
+        border-left: 4px solid $blue;
+    }
+
+    .media {
+        padding: 0;
+    }
+    .is-comment-avatar,
+    .is-comment-avatar img {
+        display: block;
+        border-radius: 50%;
+    }
+    small {
+        font-size: .75rem;
+        color: $gray1;
+        float: right;
+    }
+    .content {
+        p {
+            margin-bottom: 1rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

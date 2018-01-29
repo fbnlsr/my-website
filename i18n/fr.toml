@@ -8,7 +8,10 @@ other = "Fabien Lasserre - Développeur Web Full Stack"
 other = "Cet article a aussi été publié sur :"
 
 [twitter-share]
-other = "Vous avez aimé cet article ? Partagez-le sur Twitter !"
+other = "<i class=\"fab fa-twitter\"></i>  Vous avez aimé cet article ? Partagez-le sur Twitter !"
+
+[twitter-share-modal]
+other = "<i class=\"fab fa-twitter\"></i> Partagez-le sur Twitter !"
 
 [thisProjectUsed]
 other = "Utilisé pour ce projet :"
@@ -21,3 +24,45 @@ other = "06 03 35 19 63"
 
 [siteDescription]
 other = "Je suis un Développeur Web Full Stack, basé à Bordeaux. Je travaille le frontend comme le backend, avec principalement des frameworks modernes comme Laravel, Symfony, VueJS ou encore Wordpress."
+
+[comments]
+other = "Commentaires :"
+
+[noCommentsYet]
+other = "Il n'y a pas encore de commentaires."
+
+[addComment]
+other = "Ajouter un commentaire :"
+
+[commentFormName]
+other = "Votre nom :"
+
+[commentFormNamePlaceholder]
+other = "Votre nom"
+
+[commentFormEmail]
+other = "Votre email :"
+
+[commentFormEmailPlaceholder]
+other = "Votre adresse email (pour récupérer votre Gravatar, elle n'est pas affichée publiquement)"
+
+[commentFormComment]
+other = "Commentaire :"
+
+[commentFormCommentPlaceholder]
+other = "Votre commentaire (markdown accepté)..."
+
+[submitBtn]
+other = "Envoyer"
+
+[cancelBtn]
+other = "Annuler"
+
+[thankYou]
+other = "Merci !"
+
+[commentSent]
+other = "Votre commentaire a été envoyé avec succès. Il apparaitra sur le site une fois approuvé."
+
+[commentCTA]
+other = "Si vous avez aimé cet article, n'hésitez pas à le partager sur Twitter !"
