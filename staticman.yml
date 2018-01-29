@@ -1,7 +1,7 @@
 comments:
   allowedFields: ["name", "email", "comment"]
   branch: "master"
-  commitMessage: ":speech_balloon: Add comment from Staticman"
+  commitMessage: ":card_file_box: Add comment from Staticman"
   filename: "{@id}"
   format: "yaml"
   generatedFields:
