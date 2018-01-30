@@ -53,7 +53,6 @@
 .blog-post {
     .title-container {
         height: calc(100vh - 70px);
-        transition: all .4s ease-in-out;
 
         .background-cover {
             background-position: center center;
@@ -64,7 +63,7 @@
 
             .background-shroud {
                 // background: rgba($black, .45);
-                background: rgba($black, .6);
+                background: linear-gradient(to top, rgba($black, .8), rgba($black, .6), transparent, transparent);
                 height: calc(100vh - 70px);
                 position: relative;
                 transition: all .4s ease-in-out;
@@ -102,7 +101,17 @@
             position: absolute;
             left: 0;
             right: 0;
-            bottom: -20px;
+            bottom: 0;
+            color: lighten($gray1, 10%);
+        }
+
+        .chevron {
+            display: block;
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            bottom: 15px;
             color: lighten($gray1, 10%);
         }
     }

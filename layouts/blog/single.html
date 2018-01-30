@@ -14,12 +14,13 @@
             {{ .Title }}
         </p>
         <p class="date">
-                {{ if eq .Lang "fr" }}
-                    Publié le {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) | humanize }}&nbsp;{{ .Date.Year }}
-                {{ else }}
-                    Published on {{ .Date.Format "January 2, 2006" }}
-                {{ end }}
-            </p>
+            {{ if eq .Lang "fr" }}
+                Publié le {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) | humanize }}&nbsp;{{ .Date.Year }}
+            {{ else }}
+                Published on {{ .Date.Format "January 2, 2006" }}
+            {{ end }}
+        </p>
+        <p class="chevron"><i class="fas fa-chevron-down"></i></p>
 
         {{ if .Params.cover.image }}</div></div>{{ end }}
     </div>
