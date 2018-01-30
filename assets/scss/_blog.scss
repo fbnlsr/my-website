@@ -78,8 +78,7 @@
             transition-property: background-position;
 
             .background-shroud {
-                // background: rgba($black, .45);
-                background: linear-gradient(to top, rgba($black, .8), rgba($black, .6), transparent, transparent);
+                background: linear-gradient(to top, rgba($black, .8), rgba($black, .5), transparent, transparent);
                 height: calc(100vh - 70px);
                 position: relative;
                 transition: all .4s ease-in-out;
@@ -371,6 +370,7 @@
 
                 .background-shroud {
                     background: none;
+                    height: initial;
                 }
             }
 
@@ -381,12 +381,16 @@
                 text-shadow: none;
                 padding: 0 1rem;
                 font-weight: bold;
+                position: relative;
+                height: initial;
             }
-        }
 
-        .date {
-            margin: 1rem 0;
-            font-size: .8rem;
+            .date {
+                margin: 1rem 0;
+                font-size: .8rem;
+                position: relative;
+                bottom: initial;
+            }
         }
 
         article,
