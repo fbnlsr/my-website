@@ -9,7 +9,6 @@ let $ = require("jquery");
 let last_known_scroll_position = 0;
 let ticking = false;
 let topArrow = document.getElementById('topArrow');
-let articleCover = document.getElementById('blog-post-cover');
 
 let getAll = (selector) => {
     return Array.prototype.slice.call(document.querySelectorAll(selector), 0)
@@ -35,23 +34,11 @@ let displayTopArrow = (topArrow, scrollPos) => {
     }
 }
 
-let changeCoverPos = (scrollPos) => {
-    let speed = .15;
-    let windowOffset = window.pageYOffset,
-    scrollPosition = "0 -" + (windowOffset * speed) + "px";
-    articleCover.style.backgroundPosition = scrollPosition;
-}
-
 window.addEventListener('scroll', function (e) {
     last_known_scroll_position = window.scrollY;
 
     if (!ticking) {
         window.requestAnimationFrame(function() {
-            // Cover paralax
-            if (articleCover) {
-                setInterval(changeCoverPos(last_known_scroll_position), 10);
-            }
-
             // Go to top arrow
             if (topArrow) {
                 displayTopArrow(topArrow, last_known_scroll_position);
