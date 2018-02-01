@@ -22,5 +22,18 @@
         {{ range .Site.Menus.main -}}
             <span><a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a></span>
         {{ end }}
+        <hr>
+        {{ if .IsTranslated }}
+            {{ $currentLang := .Site.Language.Lang }}
+            {{ range .Translations }}
+                <span><a class="navbar-item lang" href="{{ .Permalink }}">
+                        {{ if eq .Lang "fr" }}
+                        Passer en Français
+                        {{ else }}
+                        Switch to English
+                        {{ end }}
+                </a></span>
+            {{ end }}
+        {{ end }}
     </div>
 </nav>
