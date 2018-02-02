@@ -100,8 +100,18 @@ body {
         right: 0;
         z-index: 1000;
         background-color: $background;
-        font-size: 3rem;
-        padding-top: 20%;
+        font-size: 2.5rem;
+        padding-top: 3rem;
+        overflow: hidden;
+
+        .navbar-burger {
+            border: 0;
+            outline: 0;
+
+            &:focus {
+                outline: 0;
+            }
+        }
 
         .navbar-menu {
             background-color: $background;

@@ -27,11 +27,7 @@
             {{ $currentLang := .Site.Language.Lang }}
             {{ range .Translations }}
                 <span><a class="navbar-item lang" href="{{ .Permalink }}">
-                        {{ if eq .Lang "fr" }}
-                        Passer en Français
-                        {{ else }}
-                        Switch to English
-                        {{ end }}
+                        {{ .Lang }}
                 </a></span>
             {{ end }}
         {{ end }}
