@@ -66,3 +66,6 @@ other = "Votre commentaire a été envoyé avec succès. Il apparaitra sur le si
 
 [commentCTA]
 other = "Si vous avez aimé cet article, n'hésitez pas à le partager sur Twitter !"
+
+[viewProject]
+other = "Voir le projet"

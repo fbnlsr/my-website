@@ -14,7 +14,7 @@
             <div class="description">{{ .Params.description | markdownify }}</div>
         {{ end }}
         <div class="btn is-project-btn">
-            <a href="{{ .Permalink }}" class="btn is-project-btn">View project</a>
+            <a href="{{ .Permalink }}" class="btn is-project-btn">{{ i18n "viewProject" }}</a>
         </div>
     </div>
     <div class="cover is-hidden-mobile">
