@@ -13,6 +13,6 @@ Depuis 2012, je travaille avec de multiples clients, les aidants à trouver des 
 
 Je travaille principalement avec des outils et des frameworks modernes, comme Laravel, Symfony, VueJS...
 
-Découvrez-en en peu plus sur moi, ou regardez quelques un de mes projets.
+Découvrez-en en [peu plus sur moi](/fr/about), ou regardez quelques un de [mes projets](/fr/projects).
 
 Je suis actuellement disponible pour des missions en freelance, n’hésitez pas à me contacter !

@@ -2,7 +2,7 @@
 title: À propos
 ---
 <div class="has-background-blue is-about-text">
-<p>Je suis un développeur web autodidacte. J’ai commencé à coder il y a plus de dix ans. Cela est rapidement devenu une passion et je suis freelance depuis 2012.</p>
+<p>Je suis un développeur autodidacte. J’ai commencé à coder il y a plus de dix ans. C'est rapidement devenu une passion et je suis freelance depuis 2012.</p>
 <p>Je travaille avec des CMS open source, HTML, CSS, Javascript, PHP et MySQL. Mes clients sont des agences web ou des entreprises de toute taille.</p>
 <p>J’aime les défis, les nouveaux projets et résoudre des problèmes. Oh, et Espaces > Tabs.</p>
 </div>
@@ -68,12 +68,12 @@ title: À propos
 
 <div class="is-savoir-faire-block column">
 <h4>Workflow</h4>
-<p>Grâce à de nombreuses expériences dans des environements <strong>Agile / Scrum</strong>, je suis autant capable de travailler seul ou en équipe. Je peux aussi mettre en place un <strong>flux de travail rationel</strong> grâce à des <strong>scripts automatisés</strong>. Cela permet la mise en place d'une <strong>Intégration Continue</strong> et prévient les régressions.</p>
+<p>Grâce à de nombreuses expériences dans des environements <strong>Agile / Scrum</strong>, je suis autant capable de travailler seul qu'en équipe. Je peux aussi mettre en place un <strong>flux de travail rationel</strong> grâce à des <strong>scripts automatisés</strong>. Cela permet la mise en place d'une <strong>Intégration Continue</strong> et prévient les régressions.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
 <h4>Meilleures Pratiques</h4>
-<p>J'aime les conventions. J'essaie toujours de trouver et appliquer les meilleures pratiques. Mon code respecte les <strong>normes de codage</strong> et est <strong>conforme au PSR-2</strong>. J'aime aussi les flux de travail qui s'adaptent aux projets, et j'utilise les méthodes <strong>Git / GitHub Flow</strong>. J'utilise souvent des formateurs de code, comme <strong>Prettier</strong> ou <strong>PHP Code Sniffer</strong>.</p>
+<p>J'aime les conventions. J'essaie toujours de trouver et d'appliquer les meilleures pratiques de travail. Mon code respecte les <strong>normes de codage</strong> et est <strong>conforme au PSR-2</strong>. J'aime aussi les flux de travail qui s'adaptent aux projets, et j'utilise les méthodes <strong>Git / GitHub Flow</strong>. J'utilise souvent des formateurs de code, comme <strong>Prettier</strong> ou <strong>PHP Code Sniffer</strong>.</p>
 </div>
 </div>
 
