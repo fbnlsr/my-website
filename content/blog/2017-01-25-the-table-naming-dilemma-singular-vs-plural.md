@@ -20,7 +20,7 @@ Narayana "Vyas" Kondreddi (long-time DBA and SQL Engineer) wrote back in 2001:
 
 > Tables represent the instances of an entity. For example, you store all your customer information in a table. Here, 'customer' is an entity and all the rows in the customers table represent the instances of the entity 'customer'. So, why not name your table using the entity it represents, 'Customer'. Since the table is storing 'multiple instances' of customers, make your table name a plural word.
 
-It feels logical, and somewhat "natural". You store several customers inside a table (those "multiple instances"), so the table should naturally be names `customers`. It also makes sense when writing an SQL statement. When you want to go through all your customers, you `SELECT * FROM customers`...
+It feels logical, and somewhat "natural". You store several customers inside a table (those "multiple instances"), so the table should naturally be named `customers`. It also makes sense when writing an SQL statement. When you want to go through all your customers, you `SELECT * FROM customers`...
 
 When using plural name, one can consider a table like a crate containing several items. A crate of apples should be labelled *Apples*, whether it contains one or a hundred apples.
 

@@ -32,7 +32,7 @@
                 <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
                 <p class="date">
                     {{ if eq .Lang "fr" }}
-                        {{ .Date.Format "2 January 2006" }}
+                        {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) }}&nbsp;{{ .Date.Year }}
                     {{ else }}
                         {{ .Date.Format "January 2, 2006" }}
                     {{ end }}
@@ -49,7 +49,7 @@
                 <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
                 <p class="date">
                     {{ if eq .Lang "fr" }}
-                        {{ .Date.Format "2 January 2006" }}
+                        {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) }}&nbsp;{{ .Date.Year }}
                     {{ else }}
                         {{ .Date.Format "January 2, 2006" }}
                     {{ end }}
