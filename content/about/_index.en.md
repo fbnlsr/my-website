@@ -2,7 +2,7 @@
 title: About
 ---
 <div class="has-background-blue is-about-text">
-<p>I am a self-taught web developer. I started coding more than ten years ago. It quickly grew into a passion and I’ve been freelancing since 2012.</p>
+<p>I am a self-taught developer. I started coding more than ten years ago. It quickly grew into a passion and I’ve been freelancing since 2012.</p>
 <p>I work with open source CMS, HTML, CSS, Javascript, PHP and MySQL. My clients are usually web agencies or businesses of all sizes.</p>
 <p>I love challenges, new projects, and solving problems. Oh, and Spaces > Tabs.</p>
 </div>
@@ -62,12 +62,12 @@ title: About
 <div class="is-savoir-faire-blocks columns">
 <div class="is-savoir-faire-block column">
 <h4>Code</h4>
-<p>I design full-fledged web apps thanks to my experience in <strong>Backend OOP</strong> and <strong>Database design</strong>. I mainly work with solid frameworks, such as <strong>Symfony</strong> and <strong>Laravel</strong>. If the project calls for it, I set up a <strong>Unit Testing</strong> strategy. I also do <strong>Frontend integration</strong>, in a <strong>RWD / Mobile First</strong> strategy. </p>
+<p>I do <strong>Frontend integration</strong>, in a <strong>RWD / Mobile First strategy</strong>. I also design full-fledged web apps thanks to my experience in <strong>backend OOP</strong> and <strong>Database design</strong>. I mainly work with solid frameworks such as <strong>Symfony</strong> and <strong>Laravel</strong>. If the project calls for it, I set up a <strong>Unit Testing</strong> strategy.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
 <h4>Workflow</h4>
-<p>Thanks to my experience in an <strong>Agile / Scrum</strong> environment, I am as capable of working alone as within a team. I can also set up a <strong>streamlined workflow</strong> thanks to <strong>Automation Scripts</strong>. This allows for a <strong>Continuous Integration</strong> workflow and helps preventing regressions.</p>
+<p>Thanks to various experiences in an <strong>Agile / Scrum</strong> environment, I am as capable of working alone as within a team. I can also set up a <strong>streamlined workflow</strong> thanks to <strong>Automation Scripts</strong>. This allows for a <strong>Continuous Integration</strong> workflow and helps preventing regressions.</p>
 </div>
 
 <div class="is-savoir-faire-block column">
