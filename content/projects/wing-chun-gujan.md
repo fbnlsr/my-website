@@ -8,9 +8,9 @@ work: Hugo - Design, front and backend development.
 description: |
   Benjamin Gourven is a self-defense instructor in Gujan, a small town in the south west of France. He wanted a website that would present his activities as well as allow him to showcase a few pictures of his martial arts seminars.
 longDescription: |
-  The website is fairly simple, and since the client did not want to bother with a tedious admin system, we aggreed to use Hugo as a static website generator.
+  The website is fairly simple, and since the client did not want to bother with a tedious admin system, we aggreed to use <strong>Hugo</strong> as a static website generator.
 
-  The whole project is hosted on Netlify, with an SSL certificate provided by Let's Encrypt, and deploys itself automatically from Github.
+  The whole project is hosted on <strong>Netlify</strong>, with an SSL certificate provided by <strong>Let's Encrypt</strong>, and deploys itself automatically from Github.
 techUsed:
   - Hugo
   - Webpack

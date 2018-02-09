@@ -10,9 +10,9 @@ description: |
 
   Their primary goal was to offer a platform that would help show the work of their various talents.
 longDescription: |
-  The website makes heavy use of the Javascript library Masonry, used as a helper to organize the content which can be presented using various formats. A slight custom parallax effect had to be made for the front page.
+  The website makes heavy use of the Javascript library <strong>Masonry</strong>, used as a helper to organize the content which can be presented using various formats. A slight custom <strong>parallax effect</strong> had to be made for the front page.
 
-  The site allows the visitors to select photos and add them to a "lightbox", which is then used to generate a custom PDF file that acts as a digital contact sheet.
+  The site allows the visitors to select photos and add them to a "lightbox", which is then used to <strong>generate a custom PDF file</strong> that acts as a digital contact sheet.
 
   The navigation is minimalist to the point that it's almost invisible at first, as the client wished for a site that would show the artworks to their fullest.
 techUsed:

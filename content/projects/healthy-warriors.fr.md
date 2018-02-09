@@ -6,13 +6,13 @@ title: Healthy Warriors
 projectType: Site vitrine
 work: Wordpress - Développement front et back.
 description: |
-  Healthy Warriors est un cours de yoga basé à Paris, ainsi qu'un centre de fitness et un café healthy.
+  Healthy Warriors est un cours de yoga basé à Paris, ainsi qu'un centre de fitness et un café bien-être.
 
-  Pour leur site internet, ils voulaient quelque chose de visuelement attractif afin d'informer à leurs étudiants quant aux cours à venir et la présence des professeurs.
+  Pour leur site internet, ils souhaitaient un visuel attractif afin d'informer à leurs étudiants des cours à venir et de la présence des professeurs.
 longDescription: |
-  La modularité était le concept clé pour ce projet, car non seulement ce cours de yoga est une plaque tournante où des dizaines de professeurs venant des quatre coins du monde en font partie, mais c'est aussi un endroit où de multiples disciplines de yoga sont pratiquées.
+  La <strong>modularité</strong> était le concept clé pour ce projet, car non seulement ce cours de yoga est une plaque tournante où des dizaines de professeurs venant des quatre coins du monde en font partie, mais c'est aussi un endroit où de multiples disciplines de yoga sont pratiquées.
 
-  L'utilisation d'un système d'infobulles par l'intermédiaire d'effets au passage de la souris allié à la conception de types de contenu personnalisés nous ont permis de présenter ces diverses combinaisons.
+  L'utilisation d'un <strong>système d'infobulles</strong> par l'intermédiaire d'effets au passage de la souris alliée à la conception de <strong>types de contenu personnalisés</strong> nous ont permis de présenter ces diverses combinaisons.
 techUsed:
   - Wordpress
   - ACF

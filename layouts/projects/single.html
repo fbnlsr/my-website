@@ -38,11 +38,19 @@
     <div class="is-description-block columns">
         <div class="column">
             <div class="is-long-description">
-                {{ .Params.description | markdownify }}
-                {{ .Params.longDescription | markdownify }}
+                <p>{{ .Params.description | markdownify }}</p>
+
+                <p>{{ .Params.longDescription | markdownify }}</p>
             </div>
             <div class="is-client">
                 <p><strong>{{ i18n "projectClient" }}</strong> {{ .Params.client }}</p>
+            </div>
+            <div class="is-project-back-link">
+                {{ if eq .Site.Language.Lang "fr" }}
+                <p><a href="/fr/projects">Retour aux projets</a></p>
+                {{ else }}
+                <p><a href="/projects">Back to projects</a></p>
+                {{ end }}
             </div>
         </div>
         {{ if .Params.techUsed }}
@@ -64,6 +72,7 @@
             <a href="{{ .Params.projectUrl }}" target="_blank">View the website</a>
         </div>
     {{ end }}
+
 </div>
 
 {{ partial "footer.html" }}

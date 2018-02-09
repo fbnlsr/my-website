@@ -138,7 +138,7 @@
         max-width: 960px;
         margin: auto;
         line-height: 1.8;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
 
         .is-long-description {
             margin-bottom: 1rem;
@@ -150,6 +150,10 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+
+        .is-client {
+            margin-bottom: 1rem;
         }
 
         .is-project-used {

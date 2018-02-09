@@ -10,11 +10,11 @@ description: |
 
   Leur but premier est d'offrir une plateforme qui permet de mettre en avant le travail des différents talents qu'ils représentent.
 longDescription: |
-  Le site internet fait usage de la librairie Javascript Masonry, qui est utilisée afin d'organiser le contenu qui peut être présenté sous différents formats. Un léger effet Parralax personnalisé a été créé pour la page d'accueil.
+  Le site internet fait usage de la librairie Javascript <strong>Masonry</strong>, utilisée afin d'organiser le contenu qui peut être présenté sous différents formats. Un léger <strong>effet paralax</strong> personnalisé a été créé pour la page d'accueil.
 
-  Le site permet aux visiteurs de sélectionner des photos et les ajouter à une "lightbox", qui est ensuite utilisée pour générer un fichier PDF qui sert de planche-contact numérique.
+  Le site permet aux visiteurs de sélectionner des photos et les ajouter à une "lightbox", qui est ensuite utilisée pour <strong>générer un fichier PDF</strong> qui sert de planche-contact numérique.
 
-  La navigation est minimaliste au point d'être pratiquement invisible au début, car le client voulait un site qui mette le plus en avant possible les créations de ses artistes.
+  La navigation est minimaliste au point d'être pratiquement invisible au premier abord, le client final ayant exprimé le désir d'avoir un site qui met le plus en avant possible les créations de ses artistes.
 techUsed:
   - Wordpress
   - Masonry

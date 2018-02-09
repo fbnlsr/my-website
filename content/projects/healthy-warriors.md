@@ -11,9 +11,9 @@ description: |
   For their website, they needed something visually attractive which would inform their student about the upcoming classes and present the various teachers.
 
 longDescription: |
-  Modularity was the key concept for this project as not only this yoga class is the home for dozens of teachers coming from around the world, but it's also a place were several yoga disciplines are being taught.
+  <strong>Modularity</strong> was the key concept for this project as not only this yoga class is the home for dozens of teachers coming from around the world, but it's also a place were several yoga disciplines are being taught.
 
-  The use of mouse-hover effects and Wordpress Custom Post Types allowed us to present these combinations.
+  The use of a <strong>tooltip system</strong> triggered by mouse-hover effects and Wordpress <strong>Custom Post Types</strong> allowed us to present these combinations.
 techUsed:
   - Wordpress
   - ACF

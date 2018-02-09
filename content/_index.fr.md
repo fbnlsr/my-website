@@ -7,12 +7,10 @@ title: Fabien Lasserre, développeur web à Bordeaux, France.
 
 Je m’appelle Fabien,
 
-Je suis Dévelopeur Full Stack, basé à Bordeaux.
+Je suis Développeur Full Stack, basé à Bordeaux.
 
-Depuis 2012, je travaille avec de multiples clients, les aidants à trouver des façons innoventes pour présenter des choses sur le web.
-
-Je travaille principalement avec des outils et des frameworks modernes, comme Laravel, Symfony, VueJS...
+Depuis 2012, j'aide de nombreux clients à réaliser des choses innovantes sur le web. Je travaille principalement avec des outils et des frameworks modernes, tels que Wordpress, Laravel, Symfony, VueJS...
 
 Découvrez-en en [peu plus sur moi](/fr/about), ou regardez quelques un de [mes projets](/fr/projects).
 
-Je suis actuellement disponible pour des missions en freelance, n’hésitez pas à me contacter !
+Je suis actuellement disponible pour des missions en freelance, n’hésitez pas à [me contacter](/fr/about/#contact) !
