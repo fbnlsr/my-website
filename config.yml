@@ -48,7 +48,7 @@ languages:
     menu:
       main:
         - name: Accueil
-          url: /
+          url: /fr/
           weight: 1
         - name: À propos
           url: /about/
