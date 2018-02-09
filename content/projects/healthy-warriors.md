@@ -9,6 +9,7 @@ description: |
   Healthy Warriors is a yoga class based in Paris, as well as a fitness center and a healthy café.
 
   For their website, they needed something visually attractive which would inform their student about the upcoming classes and present the various teachers.
+
 longDescription: |
   Modularity was the key concept for this project as not only this yoga class is the home for dozens of teachers coming from around the world, but it's also a place were several yoga disciplines are being taught.
 
@@ -26,5 +27,8 @@ gallery:
   - healthy-warriors-2.jpg
   - healthy-warriors-3.jpg
 galleryMobile:
+  - healthy-warriors-1-mobile.jpg
+  - healthy-warriors-2-mobile.jpg
+  - healthy-warriors-3-mobile.jpg
 menu: projects
 ---

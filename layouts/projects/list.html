@@ -8,6 +8,8 @@
 
     <h1>{{ .Title }}</h1>
 
+    <div class="sample">{{ .Content }}</div>
+
     {{ range (where .Data.Pages "Section" .Section).ByWeight.Reverse  }}
         {{ partial "project-block.html" . }}
     {{ end }}

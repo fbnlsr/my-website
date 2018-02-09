@@ -3,6 +3,11 @@
     margin: auto;
     margin-bottom: 4rem;
 
+    .sample {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
     .project {
         @include clearfix;
 
