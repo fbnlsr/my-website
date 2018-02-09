@@ -20,7 +20,7 @@ other = "Utilisé pour ce projet :"
 other = "Client :"
 
 [contactTel]
-other = "06 03 35 19 63"
+other = "06&nbsp;03&nbsp;35&nbsp;19&nbsp;63"
 
 [siteDescription]
 other = "Je suis un Développeur Web Full Stack, basé à Bordeaux. Je travaille le frontend comme le backend, avec principalement des frameworks modernes comme Laravel, Symfony, VueJS ou encore Wordpress."
