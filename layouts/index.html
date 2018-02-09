@@ -12,7 +12,7 @@
 
     <div class="column has-background-blue is-home-right-column">
 
-        <div class="lang-choser">
+        <div class="lang-choser is-hidden-touch">
         {{ if .IsTranslated }}
             {{ $currentLang := .Site.Language.Lang }}
             {{ range .AllTranslations }}
