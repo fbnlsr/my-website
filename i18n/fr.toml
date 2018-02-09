@@ -69,3 +69,12 @@ other = "Si vous avez aimé cet article, n'hésitez pas à le partager sur Twitt
 
 [viewProject]
 other = "Voir le projet"
+
+[notFoundTitle]
+other = "404 - Page non trouvée"
+
+[notFoundContent]
+other = "Il semble que la page que vous avez demandé n'existe plus ou a été supprimée."
+
+[notFoundPlus]
+other = "Si vous voulez vous pouvez voir quelques un de <a href\"/fr/projects\">mes projets</a>, en savoir un peu plus <a href=\"/fr/about\">à propos de moi</a> ou lire mon <a href=\"/blog\"my blog."
