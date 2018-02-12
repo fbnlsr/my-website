@@ -38,14 +38,23 @@
     .navbar-burger {
         position: fixed;
         top: 0;
-        right: 0;
+        right: 1rem;
         background-color: transparent;
-        border: 0;
         z-index: 2000;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+
+        &:focus,
+        &:active {
+            border: none;
+            outline: none;
+        }
 
         span {
             height: 3px;
-            left: calc(50% - 30px);
+            left: calc(50% - 15px);
             width: 30px;
         }
 
