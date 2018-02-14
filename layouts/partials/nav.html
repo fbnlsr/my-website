@@ -15,7 +15,12 @@
         </div>
 
         <div class="navbar-end">
-            <a href="/"><img class="logo-header" src="/img/logo.svg" alt="Primative logo"></a>
+            {{ if eq .Lang "fr" }}
+                <a href="/fr/">
+            {{ else }}
+                <a href="/">
+            {{ end }}
+                <img class="logo-header" src="/img/logo.svg" alt="Primative logo"></a>
         </div>
     </div>
     <div class="navbar-menu is-hidden-desktop" id="navMenu">
