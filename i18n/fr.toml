@@ -78,3 +78,6 @@ other = "Il semble que la page que vous avez demandé n'existe plus ou a été s
 
 [notFoundPlus]
 other = "Si vous voulez vous pouvez voir quelques un de <a href\"/fr/projects\">mes projets</a>, en savoir un peu plus <a href=\"/fr/about\">à propos de moi</a> ou lire <a href=\"/blog\">mon blog</a>."
+
+[visitWebsite]
+other = "Visiter le site"
