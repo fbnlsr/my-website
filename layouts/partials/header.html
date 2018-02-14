@@ -55,11 +55,11 @@
     <meta property="business:contact_data:phone_number" content="+33603351963">
     {{ end }}
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:image" content="{{ $ogimage }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ $ogimage }}">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ $ogimage }}">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $ogimage }}">
     <meta name="twitter:site" content="@fbnlsr">
     <meta name="twitter:creator" content="@fbnlsr">
     <meta name="twitter:title" content="{{ .Title }}">
