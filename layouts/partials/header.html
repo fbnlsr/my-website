@@ -30,15 +30,11 @@
     {{ end }}
 
     <!-- Open Graph -->
-    {{ $ogimage := "img/primative-og.jpg" }}
     <meta property="fb:app_id" content="796615263784091">
     <meta property="og:title" content="{{ .Title }}">
     {{ if eq .Section "blog" }}
     <meta property="og:type" content="article">
     <meta property="article:author" content="Fabien Lasserre">
-    {{ if .Params.cover }}
-        {{ $ogimage := .Params.cover }}
-    {{ end }}
     {{ else }}
     <meta property="og:type" content="business.business">
     <meta property="og:title" content="{{ .Title }}">
@@ -55,11 +51,19 @@
     <meta property="business:contact_data:phone_number" content="+33603351963">
     {{ end }}
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ $ogimage }}">
+    {{ if eq .Section "blog" }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}/img/covers/{{ .Params.cover.image }}">
+    {{ else }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}/img/primative-og.jpg">
+    {{ end }}
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $ogimage }}">
+    {{ if eq .Section "blog" }}
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/covers/{{ .Params.cover.image }}">
+    {{ else }}
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/primative-og.jpg">
+    {{ end }}
     <meta name="twitter:site" content="@fbnlsr">
     <meta name="twitter:creator" content="@fbnlsr">
     <meta name="twitter:title" content="{{ .Title }}">
