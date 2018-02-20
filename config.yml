@@ -4,7 +4,7 @@ enableRobotsTXT: true
 disableHugoGeneratorInject: true
 enableMissingTranslationPlaceholders: true
 pygmentStyle: dracula
-baseURL: "https://primative.netlify.com"
+baseURL: "https://www.primative.net"
 sectionPagesMenu: main
 googleAnalytics: UA-28964878-1
 removePathAccents: true
