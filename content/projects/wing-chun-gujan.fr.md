@@ -6,10 +6,10 @@ title: Wing Chun Gujan
 projectType: Site vitrine
 work: Hugo - Design, développement front et back.
 description: |
-  Benjamin Gourven est un instructeur de self-défense à Gujan, une petite ville du sud-ouest de la France. Il voulait un site internet afin de présenter son activité et afficher quelques photos de ses séminaires d'arts martiaux.
+  Benjamin Gourven est instructeur de self-défense à Gujan, une petite ville du Sud-Ouest. Il souhaitait un site internet simple, qui lui permette de présenter son activité et de mettre en avant quelques photos de ses séminaires.
 
 longDescription: |
-  Le site internet est relativement simple, et vu que le client ne voulait pas s'embêter avec une interface d'administration fastidieuse, nous nous sommes accordés pour utiliser <strong>Hugo</strong> comme générateur de site statique.
+  Ne désirant pas avoir une interface d'administration compliquée, nous nous sommes donc accordés pour utiliser <strong>Hugo</strong> comme générateur de site statique.
 
   Le projet est hébergé sur <strong>Netlify</strong>, avec un certificat SSL fourni par <strong>Let's Encrypt</strong>, et se déploie automatiquement depuis Github.
 techUsed:

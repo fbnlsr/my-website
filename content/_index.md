@@ -13,4 +13,4 @@ Since 2012, I’ve been helping many clients achieve innovative things on the we
 
 Read more [about me](/about/), or check a few of [my projects](/projects/).
 
-I’m currently available for freelancing, feel free to [contact me](/about/#contact)!
+I’m available for freelancing, feel free to [contact me](/about/#contact)!
