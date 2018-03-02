@@ -10,7 +10,7 @@ links:
     devto:
     medium:
 ---
-Print and Web Agency [ComTogether](http://www.comtogether.fr/) has asked me to develop the new website for [CFA Le Vigean](cfa-levigean.fr), a formation center for students in various fields (dentistry, woodworking, geomatics engineering…).
+Print and Web Agency [ComTogether](http://www.comtogether.fr/) has asked me to develop the new website for [CFA Le Vigean](http://cfa-levigean.fr), a formation center for students in various fields (dentistry, woodworking, geomatics engineering…).
 
 The home page was designed internally by the agency, and the client was confident enough to trust me for the layout of the rest of the site, as well as the UX approach for the responsive design.
 
