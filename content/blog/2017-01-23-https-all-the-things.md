@@ -12,7 +12,7 @@ links:
 ---
 Starting with Chrome 56 (which should come out in a few days), Google will report websites that collect passwords or credit card numbers as non-secure if they are served through HTTP.
 
-{{< figure src="/img/posts/chrome56.png" title="Chrome 56 showing a non-secure page served through HTTP." >}}
+{{< figure src="/img/posts/chrome56.png" title="Chrome 56 showing a non-secure page served through HTTP." alt="Chrome56" >}}
 
 This is a huge deal, as it will enforce pretty much everyone to switch to HTTPS. The goal of Google has always been to provide a better and more secure web for the users. I believe that it's a good thing that such a giant is taking steps to enforce such measures. But the most important thing is not to train web developers to serve secure pages, but rather train users not to trust non-secure websites. This is why Chrome will gradually enhance the "Not Secure" notification, so that it appears with a red triangle, like the "broken HTTPS".
 
