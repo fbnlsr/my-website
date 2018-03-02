@@ -3,3 +3,8 @@
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.34"
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+      X-Content-Type-Options = "nosniff"
