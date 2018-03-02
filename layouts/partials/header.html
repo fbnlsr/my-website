@@ -24,7 +24,11 @@
     <!-- SEO stuff -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     {{ if eq .Section "blog" }}
-    <meta name="description" content="{{ .Summary }}">
+        {{ if isset .Params "pagedesc" }}
+        <meta name="description" content="{{ .Params.pagedesc }}">
+        {{ else }}
+        <meta name="description" content="{{ .Summary }}">
+        {{ end }}
     {{ else }}
     <meta name="description" content="{{ i18n "siteDescription" }}">
     {{ end }}
