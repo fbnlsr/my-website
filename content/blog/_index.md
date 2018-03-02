@@ -1,4 +1,4 @@
 ---
 title: Blog
-pagedesc: Random thoughts regarding the practice of web development and things that I love.
+pagedesc: "Random thoughts about the practice of web development, its techniques and best practices, and things that I love."
 ---
