@@ -27,8 +27,10 @@
         {{ if isset .Params "pagedesc" }}
         <meta name="description" content="{{ .Params.pagedesc }}">
         {{ else }}
-        <meta name="description" content="{{ .Summary }}">
+        <meta name="description" content="{{ .Summary | truncate 250 }}">
         {{ end }}
+    {{ else if eq .Section "projects" }}
+        <meta name="description" content="{{ .Params.description }}">
     {{ else }}
     <meta name="description" content="{{ i18n "siteDescription" }}">
     {{ end }}
@@ -36,23 +38,26 @@
     <!-- Open Graph -->
     <meta property="fb:app_id" content="796615263784091">
     <meta property="og:title" content="{{ .Title }}">
-    {{ if eq .Section "blog" }}
+    {{ if or (eq .Section "blog") (eq .Section "projects") }}
     <meta property="og:type" content="article">
     <meta property="article:author" content="Fabien Lasserre">
     {{ else }}
     <meta property="og:type" content="business.business">
     <meta property="og:title" content="{{ .Title }}">
-    {{ if eq .Section "blog" }}
-    <meta property="og:description" content="{{ .Summary }}">
-    {{ else }}
-    <meta property="og:description" content="{{ i18n "siteDescription" }}">
-    {{ end }}
     <meta property="business:contact_data:street_address" content="13 Rue des Fleurs, Appt A205">
     <meta property="business:contact_data:locality" content="Eysines">
     <meta property="business:contact_data:postal_code" content="33320">
     <meta property="business:contact_data:country_name" content="France">
     <meta property="business:contact_data:email" content="hello@primative.net">
     <meta property="business:contact_data:phone_number" content="+33603351963">
+    {{ end }}
+
+    {{ if eq .Section "blog" }}
+        <meta property="og:description" content="{{ .Summary }}">
+    {{ else if eq .Section "projects" }}
+        <meta property="og:description" content="{{ .Params.description }}">
+    {{ else }}
+    <meta property="og:description" content="{{ i18n "siteDescription" }}">
     {{ end }}
     <meta property="og:url" content="{{ .Permalink }}">
     {{ if eq .Section "blog" }}
@@ -73,6 +78,8 @@
     <meta name="twitter:title" content="{{ .Title }}">
     {{ if eq .Section "blog" }}
     <meta name="twitter:description" content="{{ .Summary }}">
+    {{ else if eq .Section "projects" }}
+        <meta name="twitter:description" content="{{ .Params.description }}">
     {{ else }}
     <meta name="twitter:description" content="{{ i18n "siteDescription" }}">
     {{ end }}
