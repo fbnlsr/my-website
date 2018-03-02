@@ -5,7 +5,7 @@ title: À propos
 <p>Développeur autodidacte, j’ai commencé à coder il y a plus de dix ans. C'est rapidement devenu une passion et je suis freelance depuis 2012.</p>
 <p>Je travaille avec des CMS open source, HTML, CSS, Javascript, PHP et MySQL. Mes clients sont des agences web et des entreprises de toutes tailles.</p>
 <p>J'aime les nouveaux projets, relever les défis et résoudre toute sorte de problèmes.</p>
-<p>Oh, et Espaces&nbsp;>&nbsp;Tabs.</p>
+<p>Oh, et Espaces&nbsp;&gt;&nbsp;Tabs.</p>
 </div>
 
 ### Outils & frameworks que j’aime utiliser
