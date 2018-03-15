@@ -20,7 +20,7 @@ According to my Pebble, I sleep 7 hours 3 minutes per night on a 30 days average
 
 My usual "worst" night is the one from sunday to monday, with an average of 5 hours of sleep. My "best" night is usually the one from saturday to sunday, with up to 11 hours (!) of sleep.
 
-The average human needs [between 7 and 8 hours of sleep](https://sleepfoundation.org/sites/default/files/SleepTimeRecommendations012615%5B1%5D-page-001_0.jpg) for optimal functions, which means I have a [sleep debt](http://www.health.harvard.edu/staying-healthy/repaying-your-sleep-debt) of about 30 minutes to an hour *per day*. That's a cumulated debt of about 4-5 hours per week. On the long run, such deprivation is the cause of stress, weight gain, fatigue, and even diabetes.
+The average human needs [between 7 and 8 hours of sleep](https://sleepfoundation.org/sites/default/files/SleepTimeRecommendations012615%5B1%5D-page-001_0.jpg) for optimal functions, which means I have a [sleep debt](http://www.health.harvard.edu/staying-healthy/repaying-your-sleep-debt) of about 30 minutes to an hour *per day*. That's a cumulated debt of about 4-5 hours per week. On the long run, such deprivation is the cause of stress, weight gain, fatigue, and even diabetes. If you need more info on the benefits of sleep, I highly suggest you [read this article](https://pillowpicker.com/health-wellbeing/benefits-of-sleep/) from Pillow Picker.
 
 > "But Fabien, all you need to do is go to sleep one hour earlier, that's all!"
 

@@ -20,7 +20,7 @@ D'après ma Pebble, je dors 7 heures et 3 minutes par nuit sur une moyenne de 30
 
 Ma "pire" nuit de la semaine est celle entre le dimanche et le lundi, avec une moyenne de 5 heures de sommeil. Ma "meilleure" nuit est en générale celle du samedi au dimanche avec jusqu'à 11 heures (!) de sommeil.
 
-Un humain normalement constitué a besoin de dormir [entre 7 et 8 heures](https://sleepfoundation.org/sites/default/files/SleepTimeRecommendations012615%5B1%5D-page-001_0.jpg) pour des fonctions optimales, ce qui veut dire que j'ai une [dette de sommeil](http://www.health.harvard.edu/staying-healthy/repaying-your-sleep-debt) de 30 minutes à une heure *par jour*. Cela fait une dette cumulée d'environ 4 à 5 heures par semaine. Sur le long terme, une telle privation peut causer du stress, un gain de poids, de la fatigue, et même du diabète.
+Un humain normalement constitué a besoin de dormir [entre 7 et 8 heures](https://sleepfoundation.org/sites/default/files/SleepTimeRecommendations012615%5B1%5D-page-001_0.jpg) pour des fonctions optimales, ce qui veut dire que j'ai une [dette de sommeil](http://www.health.harvard.edu/staying-healthy/repaying-your-sleep-debt) de 30 minutes à une heure *par jour*. Cela fait une dette cumulée d'environ 4 à 5 heures par semaine. Sur le long terme, une telle privation peut causer du stress, un gain de poids, de la fatigue, et même du diabète. Si vous voulez plus d'information sur les bienfaits du sommeil, je vous conseille de [lire cet article](https://pillowpicker.com/health-wellbeing/benefits-of-sleep/) de Pillow Picker.
 
 > "Mais Fabien, tu n'as qu'à aller au lit une heure plus tôt, c'est aussi simple !"
 
