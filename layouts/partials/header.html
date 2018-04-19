@@ -43,7 +43,6 @@
     <meta property="article:author" content="Fabien Lasserre">
     {{ else }}
     <meta property="og:type" content="business.business">
-    <meta property="og:title" content="{{ .Title }}">
     <meta property="business:contact_data:street_address" content="13 Rue des Fleurs, Appt A205">
     <meta property="business:contact_data:locality" content="Eysines">
     <meta property="business:contact_data:postal_code" content="33320">
@@ -68,21 +67,8 @@
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    {{ if eq .Section "blog" }}
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/posts/{{ .Params.cover.image }}">
-    {{ else }}
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/primative-og.jpg">
-    {{ end }}
     <meta name="twitter:site" content="@fbnlsr">
     <meta name="twitter:creator" content="@fbnlsr">
-    <meta name="twitter:title" content="{{ .Title }}">
-    {{ if eq .Section "blog" }}
-    <meta name="twitter:description" content="{{ .Summary }}">
-    {{ else if eq .Section "projects" }}
-        <meta name="twitter:description" content="{{ .Params.description }}">
-    {{ else }}
-    <meta name="twitter:description" content="{{ i18n "siteDescription" }}">
-    {{ end }}
 
 </head>
 <body id="body">
