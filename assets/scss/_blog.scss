@@ -87,13 +87,22 @@
 
         &.no-cover {
             background: transparent;
-            height: 100px;
+            height: initial;
 
             .title {
                 color: $text;
-                line-height:100px;
                 text-shadow: initial;
                 margin-top: 3rem;
+                position: relative;
+                bottom: initial;
+            }
+
+            .date {
+                position: relative;
+            }
+
+            .chevron {
+                display: none;
             }
         }
 
