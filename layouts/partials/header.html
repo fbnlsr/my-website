@@ -61,17 +61,17 @@
     {{ end }}
     <meta property="og:url" content="{{ .Permalink }}">
     {{ if eq .Section "blog" }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}img/posts/{{ .Params.cover.image }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}/img/posts/{{ .Params.cover.image }}">
     {{ else }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}img/primative-og.jpg">
+    <meta property="og:image" content="{{ .Site.BaseURL }}/img/primative-og.jpg">
     {{ end }}
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     {{ if eq .Section "blog" }}
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}img/posts/{{ .Params.cover.image }}">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/posts/{{ .Params.cover.image }}">
     {{ else }}
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}img/primative-og.jpg">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/primative-og.jpg">
     {{ end }}
     <meta name="twitter:site" content="@fbnlsr">
     <meta name="twitter:creator" content="@fbnlsr">
