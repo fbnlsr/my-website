@@ -10,7 +10,7 @@ links:
     devto:
     medium:
 ---
-J'utilise [Visual Studio Code](https://code.visualstudio.com/) comme principal éditeur de code depuis quelques années maintenant. J'avais pour habitude de travailler sous Sublime Text, qui est formidable (surtout venant de Notepad++). Mais il faut reconnaître que Microsoft fourni un travail énorme pour faire de son éditeur le meilleur qui soit, et les mises à jour mensuelles montrent à quel point ils sont dédiés à la tâche.
+J'utilise [Visual Studio Code](https://code.visualstudio.com/) comme principal éditeur de code depuis plus de deux ans maintenant. J'avais pour habitude de travailler sous Sublime Text, qui est formidable (surtout venant de Notepad++). Mais il faut reconnaître que Microsoft fourni un travail énorme pour faire de son éditeur le meilleur qui soit, et les mises à jour mensuelles montrent à quel point ils sont dédiés à la tâche.
 
 C'est donc mon éditeur de choix, mais un bon éditeur ne serait rien sans de bonnes extensions. J'ai compilé une liste des 10 extensions (et un peu plus) sans lesquelles je ne pourrais pas vivre. Elles me facilitent le travail et me permettent de gagner tellement de temps sur le long terme. Les voici (sans ordre spécial) :
 
