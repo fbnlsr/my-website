@@ -7,7 +7,7 @@
     {{ $.Scratch.Add "hasComments" 1 }}
     {{ range $index, $comments := (index $.Site.Data.comments $entryId ) }}
 
-    <div class="box is-comment {{ if eq .name "fbnlsr" }}is-author{{ end }}">
+    <div class="box is-comment {{ if or (eq .name "fbnlsr") (eq .name "Fabien Lasserre") }}is-author{{ end }}">
         <article class="media">
             <div class="media-left">
             <figure class="image is-64x64 is-comment-avatar">
