@@ -7,7 +7,7 @@ cover:
     link: "https://unsplash.com/photos/yEAOfWSdzgM"
 menu: blog
 links:
-    devto: https://dev.to/fbnlsr/10-essential-extensions-for-vscode-174i
+    devto: "https://dev.to/fbnlsr/10-essential-extensions-for-vscode-174i"
     medium:
 ---
 I've been using [Visual Studio Code](https://code.visualstudio.com/) as my main code editor for more than two years now. I used to work with Sublime Text, which was an amazing software (especially coming from Notepad++), but the guys at Microsoft are constantly doing an amazing job at making their editor the best out there, and their monthly update shows how dedicated they are to keep at improving it.
