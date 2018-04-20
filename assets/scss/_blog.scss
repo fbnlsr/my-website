@@ -326,6 +326,10 @@
             font-size: .8rem;
             color: $gray1;
         }
+
+        &.media {
+            margin-top: 0;
+        }
     }
 
     .is-bullet-end-article {
