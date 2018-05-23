@@ -1,5 +1,5 @@
 {
-  "name": "primative2018",
+  "name": "primative.net",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -10,22 +10,23 @@
     "prod": "webpack -p --config webpack.prod.js && hugo"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "bulma": "^0.6.1",
-    "css-loader": "^0.28.8",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "bulma": "^0.7.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "ga-lite": "^2.0.1",
     "highlight.js": "^9.12.0",
     "jquery": "^3.3.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.9.0",
     "parallelshell": "^3.0.2",
-    "sass-loader": "^6.0.6",
+    "sass-loader": "^7.0.1",
     "slick-carousel": "^1.8.1",
-    "style-loader": "^0.19.1",
-    "uglifyjs-webpack-plugin": "^1.1.6",
-    "webpack": "^3.10.0",
-    "webpack-merge": "^4.1.1"
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-merge": "^4.1.2"
   }
 }
