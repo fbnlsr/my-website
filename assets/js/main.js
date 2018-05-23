@@ -5,6 +5,10 @@ require("./fa-solid.js");
 
 let hljs = require("highlight.js");
 let $ = require("jquery");
+const galite = require('ga-lite');
+
+galite('create', 'UA-28964878-1', 'auto')
+galite('send', 'pageview')
 
 let last_known_scroll_position = 0;
 let ticking = false;
