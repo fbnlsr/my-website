@@ -15,7 +15,7 @@
     "babel-preset-env": "^1.7.0",
     "bulma": "^0.7.1",
     "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "ga-lite": "^2.0.1",
     "highlight.js": "^9.12.0",
     "jquery": "^3.3.1",
