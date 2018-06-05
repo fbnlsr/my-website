@@ -34,7 +34,7 @@
                 padding-left: 1rem;
                 border-left: 4px solid $blue;
                 margin-bottom: .5rem;
-                transition: all .2s ease-out;
+                transition: color .2s ease-out, background-color .2s ease-out;
             }
 
             .work {
