@@ -1,10 +1,10 @@
 [context.production.environment]
   HUGO_VERSION = "0.34"
-  YARN_VERSION = "1.7.0"
+  NPM_VERSION = "5.6.0"
 
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.34"
-  YARN_VERSION = "1.7.0"
+  NPM_VERSION = "5.6.0"
 
 [[headers]]
   for = "/*"
