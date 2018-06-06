@@ -4,8 +4,6 @@
 
 This is my personal website. It was made using [Hugo](https://gohugo.io/).
 
-Once cloned, use `yarn` or `npm install` to fetch all dependencies.
-
 ## Build
 
 ```bash
