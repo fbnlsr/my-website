@@ -20,7 +20,7 @@ VS Code provides a tiny preview box for colors in CSS files. Color Info allows y
 
 ![Color Info](/img/posts/color-infos.png)
 
-**[:emojisens:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)**
+**[:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)**
 
 You know [I love emojis](/blog/lets-talk-about-emojis/). This extension allows you to directly insert emojis or type emoji codes in your files. Say you wish to insert a joystick emoji. Just begin to type `:joy` for instance and you'll get an auto complete window pop up which will allow to directly insert the 🕹 icon. If you type in `::joy`, it'll insert `:joystick:` along with a preview of the emoji. It's great!
 

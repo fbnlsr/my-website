@@ -20,7 +20,7 @@ VS Code fournit une petite boîte de pré-visualisation pour les couleurs dans l
 
 ![Color Info](/img/posts/color-infos.png)
 
-**[:emojisens:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)**
+**[:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)**
 
 Vous savez que [j'adore les emojis](/fr/blog/parlons-un-peu-des-emojis/). Cette extensions permet d'insérer directement des emojis ou des shortcodes dans vos fichiers. Par exemple, imaginons que je veuille insérer l'emoji joystick. Il suffit de commencer à taper `:joy` et une fenêtre d'auto-complétion apparaît qui permet d'insérer directement 🕹 la bonne icône. Si vous tapez `::joy` cela permet d'insérer `:joystick:` avec une pré-visualisation de l'emoji concerné. C'est parfait !
 
