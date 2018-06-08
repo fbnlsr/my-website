@@ -21,7 +21,6 @@ collections:
     - label: "Date"
       name: "date"
       widget: "date"
-
     - label: "Cover image"
       name: "cover.image"
       widget: "image"
