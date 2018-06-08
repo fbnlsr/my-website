@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: netlifycms
+publish_mode: editorial_workflow
+media_folder: "static/img/uploads"
+public_folder: "/img/posts"
+collections:
+  name: "blog"
+  label: "Blog"
+  folder: "content/blog"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields:
+    - label: "Menu"
+      name: "menu"
+      widget: "hidden"
+      default: "blog"
+    - label: "Title"
+      name: "title"
+      widget: "string"
+    - label: "Date"
+      name: "date"
+      widget: "date"
+
+    - label: "Cover image"
+      name: "cover.image"
+      widget: "image"
+      required: false
+    - label: "Cover author"
+      name: "cover.author"
+      widget: "string"
+      required: false
+    - label: "Cover link"
+      name: "cover.link"
+      widget: "string"
+      required: false
+    - label: "Post content"
+      name: "body"
+      widget: "markdown"
+    - label: "Link to dev.to post"
+      name: "links.devto"
+      widget: "string"
+      required: false
+    - label: "Link to medium post"
+      name: "links.medium"
+      widget: "string"
+      required: false
