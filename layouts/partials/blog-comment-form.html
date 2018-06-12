@@ -9,12 +9,13 @@
     <div class="">
         <h2>{{ i18n "addComment" }}</h2>
 
-        <form class="is-comment-form" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments">
+        <form id="commentForm" class="is-comment-form" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments">
             <input type="hidden" name="options[uid]" value="{{ .UniqueID }}">
             <div class="field">
                 <label class="label">{{ i18n "commentFormName" }}</label>
                 <div class="control">
                     <input name="fields[name]" class="input" type="text" placeholder="{{ i18n "commentFormNamePlaceholder" }}" required>
+                    <input id="website" name="website" type="text" class="input" placeholder="Your website">
                 </div>
             </div>
             <div class="field">

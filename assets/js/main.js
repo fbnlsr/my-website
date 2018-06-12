@@ -138,27 +138,31 @@ domReady(function() {
     });
 
     // Comment submission handling
-    $('.is-comment-form').submit(function () {
-        let form = this;
-        $(this).find('.is-submit-btn').addClass('is-loading');
+    $('.is-comment-form').submit(function (e) {
+        if (document.getElementById('website').value.length != 0) {
+            console.log('error');
+            e.preventDefault();
+        } else {
+            let form = this;
+            $(this).find('.is-submit-btn').addClass('is-loading');
 
-        $.ajax({
-          type: $(this).attr('method'),
-          url: $(this).attr('action'),
-          data: $(this).serialize(),
-          contentType: 'application/x-www-form-urlencoded',
-          success: function (data) {
-              $('.modal').addClass('is-active');
-              $('.is-comment-form').find('input').val('');
-              $('.is-comment-form').find('textarea').val('');
-              $('.is-comment-form').find('.is-submit-btn').removeClass('is-loading');
-          },
-          error: function (err) {
-            console.log(err);
-          }
-        });
+            $.ajax({
+              type: $(this).attr('method'),
+              url: $(this).attr('action'),
+              data: $(this).serialize(),
+              contentType: 'application/x-www-form-urlencoded',
+              success: function (data) {
+                  $('.modal').addClass('is-active');
+                  $('.is-comment-form').find('input').val('');
+                  $('.is-comment-form').find('textarea').val('');
+                  $('.is-comment-form').find('.is-submit-btn').removeClass('is-loading');
+              },
+              error: function (err) {
+                console.log(err);
+              }
+            });
 
-        return false;
-      });
-
+            return false;
+        }
+    });
 });
