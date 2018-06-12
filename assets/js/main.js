@@ -140,7 +140,6 @@ domReady(function() {
     // Comment submission handling
     $('.is-comment-form').submit(function (e) {
         if (document.getElementById('website').value.length != 0) {
-            console.log('error');
             e.preventDefault();
         } else {
             let form = this;
