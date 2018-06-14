@@ -1,5 +1,5 @@
 ---
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - name: weight
@@ -16,9 +16,9 @@ fields:
   label: Title
   type: text
   hidden: false
-  default: 
+  default: ''
 - name: projectType
-  label: Projecttype
+  label: Project type
   type: text
   hidden: false
   default: 
@@ -33,12 +33,12 @@ fields:
   hidden: false
   default: 
 - name: longDescription
-  label: Longdescription
+  label: Long description
   type: textarea
   hidden: false
   default: 
 - name: techUsed
-  label: Techused
+  label: Tech used
   type: list
   hidden: false
   default: 
@@ -48,10 +48,10 @@ fields:
   hidden: false
   default: 
 - name: projectUrl
-  label: Projecturl
+  label: Project URL
   type: text
   hidden: false
-  default: 
+  default: ''
 - name: cover
   label: Cover
   type: file
@@ -63,20 +63,15 @@ fields:
   hidden: false
   default: 
 - name: galleryMobile
-  label: Gallerymobile
+  label: Gallery (mobile)
   type: list
   hidden: false
   default: 
-- name: type
-  label: Type
-  type: text
-  hidden: false
-  default: ''
 - name: date
   label: Date
   type: datetime
   hidden: false
-  default: 
+  default: ''
 - name: menu
   label: Menu
   type: text
