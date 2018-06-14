@@ -1,14 +1,17 @@
 ---
 title: My hectic sleep pattern
-date: 2017-02-07
-menu: blog
+date: 2017-02-07 00:00:00 +0000
 cover:
-    image: dominik-qn-1320.jpg
-    author: Dominic QN
-    link: https://unsplash.com/@dominik_qn
+  image: dominik-qn-1320.jpg
+  author: Dominic QN
+  link: https://unsplash.com/@dominik_qn
 links:
-    devto:
-    medium:
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 31
+
 ---
 A couple of months ago I bought myself a [Pebble](https://www.pebble.com/). It's a nifty little device which acts as an extension to my phone, directly strapped to my wrist. Thanks to it I can quickly send pre-recorded messages with the press of a few buttons, but most importantly get notifications on new messages, them being emails, SMS or even Telegram messages. Which can get a bit invasive especially when my friend Edouard spams me with Wu-Tang Clan lyrics. All in all, it's really an amazing gadget and I'm really happy with it.
 

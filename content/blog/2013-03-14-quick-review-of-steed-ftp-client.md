@@ -1,15 +1,18 @@
 ---
 title: Quick Review of Steed FTP Client
-draft: true
-date: 2013-01-14
+date: 2013-01-14 00:00:00 +0000
 cover:
-    image:
-    author:
-    link:
-menu: blog
+  image: 
+  author: 
+  link: 
 links:
-    devto:
-    medium:
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 23
+draft: true
+
 ---
 ![Steed](/img/posts/steed.jpg)
 

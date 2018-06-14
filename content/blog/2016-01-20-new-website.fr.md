@@ -1,14 +1,17 @@
 ---
 title: Nouveau site web !
-date: 2016-01-20
-menu: blog
+date: 2016-01-20 00:00:00 +0000
 cover:
-    image: wallhaven-222927.jpg
-    author:
-    link:
+  image: wallhaven-222927.jpg
+  author: 
+  link: 
 links:
-    devto:
-    medium:
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 3
+
 ---
 J'aurai mis le temps, mais j'ai enfin mis à jour mon site internet. Bienvenue !
 

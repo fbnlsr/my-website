@@ -1,14 +1,17 @@
 ---
 title: Gitlab crashed, who's to blame?
-date: 2017-02-02
-menu: blog
+date: 2017-02-02 00:00:00 +0000
 cover:
-    image: gitlab.jpg
-    author:
-    link:
+  image: gitlab.jpg
+  author: 
+  link: 
 links:
-    devto:
-    medium:
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 36
+
 ---
 Last night, a "tired sysadmin" ran a directory wipe on the wrong server of code hosting platform Gitlab, deleting over 300 GB of live production data. Following that incident, the website was taken offline while they were trying to restore from a backup. Plot twist: "none [of their] backup/replication techniques [were] working reliably or set up in the first place." It took them a full day to fix the damages, leaving thousands of devs stranded, and losing close to 6 hours of data.
 

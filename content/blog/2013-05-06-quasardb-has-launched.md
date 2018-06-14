@@ -1,15 +1,18 @@
 ---
 title: Quasardb has launched
-draft: true
-date: 2013-05-06
+date: 2013-05-06 00:00:00 +0000
 cover:
-    image:
-    author:
-    link:
-menu: blog
+  image: 
+  author: 
+  link: 
 links:
-    devto:
-    medium:
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 24
+draft: true
+
 ---
 ![Quasardb Screenshot](/img/posts/quasardb.jpg)
 

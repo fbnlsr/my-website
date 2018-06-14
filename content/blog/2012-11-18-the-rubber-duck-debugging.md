@@ -1,15 +1,18 @@
 ---
 title: The Rubber Duck Debugging
-date: 2012-11-18
-draft: true
+date: 2012-11-18 00:00:00 +0000
 cover:
-    image:
-    author:
-    link:
-menu: blog
+  image: 
+  author: 
+  link: 
 links:
-    devto:
-    medium:
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 20
+draft: true
+
 ---
 Following the post by my good friend [Marco Monteiro](http://www.marcomonteiro.net/) about the [Yoda Condition](http://blog.marcomonteiro.net/post/35697947390/yoda-conditions/), I thought it'd be neat to share one of my favorite way of maintening code: The Rubber Duck Debugging. Or to be a bit more precise, my own approach on the concept. Let me explain.
 

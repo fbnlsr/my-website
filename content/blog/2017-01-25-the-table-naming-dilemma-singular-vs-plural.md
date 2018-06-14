@@ -1,14 +1,17 @@
 ---
-title: "The table naming dilemma: singular vs. plural"
-date: 2017-01-25
-menu: blog
+title: 'The table naming dilemma: singular vs. plural'
+date: 2017-01-25 00:00:00 +0000
 cover:
-    image: eli-francis-100644.jpg
-    author: Eli Francis
-    link: https://unsplash.com/@elifrancis
+  image: eli-francis-100644.jpg
+  author: Eli Francis
+  link: https://unsplash.com/@elifrancis
 links:
-    devto:
-    medium:
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 19
+
 ---
 The other day, while in a planning poker session, the question of the naming of a particular table arose. During that conversation, one of our developers suggested that the table shall have a singular name, while others questioned that idea and thought that every table names should be plural. This led me to ask this question: is there a better choice? *Should* table names be singular or plural?
 

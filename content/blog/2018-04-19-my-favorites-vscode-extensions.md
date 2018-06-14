@@ -1,14 +1,17 @@
 ---
 title: 10 essential extensions for VS Code
-date: 2018-04-19
+date: 2018-04-19 00:00:00 +0000
 cover:
-    image: pankaj-patel-516482.jpg
-    author: Panjak patel
-    link: "https://unsplash.com/photos/yEAOfWSdzgM"
-menu: blog
+  image: pankaj-patel-516482.jpg
+  author: Panjak patel
+  link: https://unsplash.com/photos/yEAOfWSdzgM
 links:
-    devto: "https://dev.to/fbnlsr/10-essential-extensions-for-vscode-174i"
-    medium: "https://medium.com/@fbnlsr/10-essential-extensions-for-vs-code-fdfa17f4f66c"
+  devto: https://dev.to/fbnlsr/10-essential-extensions-for-vscode-174i
+  medium: https://medium.com/@fbnlsr/10-essential-extensions-for-vs-code-fdfa17f4f66c
+menu:
+  blog:
+    weight: 37
+
 ---
 I've been using [Visual Studio Code](https://code.visualstudio.com/) as my main code editor for more than two years now. I used to work with Sublime Text, which was an amazing software (especially coming from Notepad++), but the guys at Microsoft are constantly doing an amazing job at making their editor the best out there, and their monthly update shows how dedicated they are to keep at improving it.
 

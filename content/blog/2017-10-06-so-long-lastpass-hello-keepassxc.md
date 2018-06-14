@@ -1,14 +1,17 @@
 ---
 title: So long LastPass, hello KeePassXC!
-date: 2017-10-06
-menu: blog
+date: 2017-10-06 00:00:00 +0000
 cover:
-    image: victoriano-izquierdo-109924.jpg
-    author: Victoriano Izquierdo
-    link: https://unsplash.com/@victoriano
+  image: victoriano-izquierdo-109924.jpg
+  author: Victoriano Izquierdo
+  link: https://unsplash.com/@victoriano
 links:
-    devto:
-    medium:
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 21
+
 ---
 I've been a fervent advocate of password managers for years. You can ask pretty much anyone in my family or amongst my friends, there was a time where I *had* to ask the question "By the way, what do you use to store your passwords?". This was usually followed by a 20 minutes speech about how unsecure their digital life was and a desperate attempt at convincing them that **must** use a password manager. That was, of course, I didn't faint learning that my friend or relative is using the same 7 letters password for absolutely **everything**, "oh and it's *hunter2*, I don't mind telling you, I have nothing to hide". Yes, that happened.
 

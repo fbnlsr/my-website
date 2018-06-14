@@ -1,17 +1,19 @@
 ---
 title: elementary OS, A Way Out Windows?
-draft: true
-date: 2014-07-21
+date: 2014-07-21 00:00:00 +0000
 cover:
-    image:
-    author:
-    link:
-menu: blog
+  image: 
+  author: 
+  link: 
 links:
-    devto:
-    medium:
----
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 17
+draft: true
 
+---
 ![Photo by kionee.deviantart.com](/img/posts/rain.jpg)
 
 For as long as I can remember, I've always wanted to get out of the Windows environment. Windows XP and 7 are outstanding operating systems, but I simply can't get used to Windows 8's user interface. There's also a major drawback when you're doing web development: pretty much everything is done on Unix/Linux systems. Not to mention MacOS X. It has grown so popular over the past few years that it's become cumbersome to try and set up a web development platform on Windows. Try and set up Git or Ruby/Jekyll on a Windows machine and you'll know what I mean. Of course, there are always alternatives ([Sourcetree](http://sourcetreeapp.com) for Git is an outstanding product, for example), but there's always something that feels a bit "off" when you're coding on Windows, at least for me. Lately, I've had troubles with Composer while trying to start working again with Laravel.

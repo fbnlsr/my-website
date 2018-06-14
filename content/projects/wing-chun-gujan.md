@@ -1,6 +1,6 @@
 ---
 weight: 4
-date: 2018-02-09
+date: 2018-02-09 00:00:00 +0000
 slug: wing-chun-gujan
 title: Wing Chun Gujan
 projectType: Corporate website
@@ -12,19 +12,22 @@ longDescription: |
 
   The whole project is hosted on <strong>Netlify</strong>, with an SSL certificate provided by <strong>Let's Encrypt</strong>, and deploys itself automatically from Github.
 techUsed:
-  - Hugo
-  - Webpack
-  - Netlify
+- Hugo
+- Webpack
+- Netlify
 client: Benjamin Gourven
-projectUrl: "https://wingchungujan.fr/"
+projectUrl: https://wingchungujan.fr/
 cover: wing-chun-gujan.jpg
 gallery:
-  - wing-chun-gujan-1.jpg
-  - wing-chun-gujan-2.jpg
-  - wing-chun-gujan-3.jpg
+- wing-chun-gujan-1.jpg
+- wing-chun-gujan-2.jpg
+- wing-chun-gujan-3.jpg
 galleryMobile:
-  - wing-chun-gujan-1-mobile.jpg
-  - wing-chun-gujan-2-mobile.jpg
-  - wing-chun-gujan-3-mobile.jpg
-menu: projects
+- wing-chun-gujan-1-mobile.jpg
+- wing-chun-gujan-2-mobile.jpg
+- wing-chun-gujan-3-mobile.jpg
+menu:
+  projects:
+    weight: 5
+
 ---

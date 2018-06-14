@@ -1,6 +1,6 @@
 ---
 weight: 3
-date: 2018-02-09
+date: 2018-02-09 00:00:00 +0000
 slug: agence-saint-germain
 title: Agence Saint Germain
 projectType: Corporate website
@@ -16,21 +16,24 @@ longDescription: |
 
   The navigation is minimalist to the point that it's almost invisible at first, as the client wished for a site that would show the artworks to their fullest.
 techUsed:
-  - Wordpress
-  - Masonry
-  - ACF
-  - LESS
-  - Gulp
+- Wordpress
+- Masonry
+- ACF
+- LESS
+- Gulp
 client: Ligne 13
-projectUrl: "http://www.asgparis.com"
+projectUrl: http://www.asgparis.com
 cover: asg.jpg
 gallery:
-  - saint-germain-1.jpg
-  - saint-germain-2.jpg
-  - saint-germain-3.jpg
+- saint-germain-1.jpg
+- saint-germain-2.jpg
+- saint-germain-3.jpg
 galleryMobile:
-  - saint-germain-1-mobile.jpg
-  - saint-germain-2-mobile.jpg
-  - saint-germain-3-mobile.jpg
-menu: projects
+- saint-germain-1-mobile.jpg
+- saint-germain-2-mobile.jpg
+- saint-germain-3-mobile.jpg
+menu:
+  projects:
+    weight: 7
+
 ---

@@ -1,15 +1,18 @@
 ---
 title: Simply Verify File Hashes With HashCheck
-draft: true
-date: 2014-07-21
+date: 2014-07-21 00:00:00 +0000
 cover:
-    image:
-    author:
-    link:
-menu: blog
+  image: 
+  author: 
+  link: 
 links:
-    devto:
-    medium:
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 22
+draft: true
+
 ---
 Whenever you download a file on the internet, it's a good habit to check its hash [checksum](http://en.wikipedia.org/wiki/Checksum) value, especially if that file is an executable. It allows you to verify the integrity of the data you've downloaded and check if it hasn't been altered.
 

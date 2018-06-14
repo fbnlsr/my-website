@@ -1,14 +1,17 @@
 ---
 title: Adieu LastPass, bonjour KeePassXC!
-date: 2017-10-06
-menu: blog
+date: 2017-10-06 00:00:00 +0000
 cover:
-    image: victoriano-izquierdo-109924.jpg
-    author: Victoriano Izquierdo
-    link: https://unsplash.com/@victoriano
+  image: victoriano-izquierdo-109924.jpg
+  author: Victoriano Izquierdo
+  link: https://unsplash.com/@victoriano
 links:
-    devto:
-    medium:
+  devto: 
+  medium: 
+menu:
+  blog:
+    weight: 15
+
 ---
 Depuis des années, je suis un fervent défenseur de l'utilisation de gestionnaires de mots de passe. Vous pouvez demander à pratiquement tous les membres de ma famille ou mes amis, il existait une époque où je *devais* poser la question : "Au fait, tu utilises quoi comme gestionnaire de mots de passe ?". C'était le plus souvent suivi par un monologue d'une vingtaine de minutes où je décrivais combien la protection de leur vie numérique était désastreuse et qu'ils **devaient** utiliser un gestionnaire. Bien sûr, c'était sans compter les moments où j'apprenais que mon ami ou parent utilisait le même mot de passe de 7 caractères de long pour **absolument tout** et que "c'est *hunter2*, c'est pas grave si tu le sais, je n'ai rien à cacher". Oui oui, c'est arrivé.
 
