@@ -1,15 +1,20 @@
 +++
 date = "2018-06-14T16:55:25+02:00"
-draft = true
+draft = false
+pagedesc = ""
 title = "This is a test from forestry"
+type = ""
 [cover]
-author = nil
-image = nil
-link = nil
+author = ""
+image = ""
+link = ""
 [links]
-devto = nil
-medium = nil
+devto = ""
+medium = ""
 [menu.blog]
 weight = 1
 
 +++
+Hello,
+
+This is a test from Forestry.
