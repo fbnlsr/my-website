@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 
 module.exports = {
     entry: ['./assets/js/main.js', './assets/scss/main.scss'],
@@ -27,6 +28,13 @@ module.exports = {
         ]
     },
     plugins: [
+        new GoogleFontsPlugin({
+            fonts: [
+                { family: "Montserrat", variants: [ "300", "400", "400italic", "700", "700italic" ] },
+                { family: "Open Sans", variants: [ "400", "400italic", "700", "700italic" ] },
+                { family: "Ubuntu Mono", variants: [ "400", "400italic" ] }
+            ]
+        }),
         new ExtractTextPlugin({
             filename: "css/main.css",
             allChunks: true,
