@@ -1,0 +1,84 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- name: weight
+  label: Weight
+  type: text
+  hidden: false
+  default: 
+- name: slug
+  label: Slug
+  type: text
+  hidden: false
+  default: 
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: 
+- name: projectType
+  label: Projecttype
+  type: text
+  hidden: false
+  default: 
+- name: work
+  label: Work
+  type: text
+  hidden: false
+  default: 
+- name: description
+  label: Description
+  type: textarea
+  hidden: false
+  default: 
+- name: longDescription
+  label: Longdescription
+  type: textarea
+  hidden: false
+  default: 
+- name: techUsed
+  label: Techused
+  type: list
+  hidden: false
+  default: 
+- name: client
+  label: Client
+  type: text
+  hidden: false
+  default: 
+- name: projectUrl
+  label: Projecturl
+  type: text
+  hidden: false
+  default: 
+- name: cover
+  label: Cover
+  type: file
+  hidden: false
+  default: 
+- name: gallery
+  label: Gallery
+  type: list
+  hidden: false
+  default: 
+- name: galleryMobile
+  label: Gallerymobile
+  type: list
+  hidden: false
+  default: 
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: 
+- name: menu
+  label: Menu
+  type: text
+  hidden: true
+  default: projects
