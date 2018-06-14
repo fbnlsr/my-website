@@ -2,11 +2,15 @@
 hide_body: true
 is_partial: false
 fields:
-- name: weight
+- type: number
+  name: weight
   label: Weight
-  type: text
-  hidden: false
-  default: 
+  description: Specifies how "heavy" a project is. Heavier projects appear at the
+    top of the page.
+  config:
+    min: '1'
+    step: '1'
+  default: '1'
 - name: slug
   label: Slug
   type: text
