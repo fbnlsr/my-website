@@ -1,17 +1,14 @@
 ---
-title: 'Push notifications: kill the noise'
-date: 2017-09-26 00:00:00 +0000
+title: "Push notifications: kill the noise"
+date: 2017-09-26
+menu: blog
 cover:
-  image: gian-prosdocimo-307419.jpg
-  author: Gian Prosdocimo
-  link: https://unsplash.com/@gianprosdocimo
+    image: gian-prosdocimo-307419.jpg
+    author: Gian Prosdocimo
+    link: https://unsplash.com/@gianprosdocimo
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 25
-
+    devto:
+    medium:
 ---
 Ever since last summer, the first thing I do whenever I install a new app on my phone is to go into its settings and completely turn off push notifications.
 

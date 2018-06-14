@@ -1,17 +1,14 @@
 ---
 title: Mon affreux rythme de sommeil
-date: 2017-02-07 00:00:00 +0000
+date: 2017-02-07
+menu: blog
 cover:
-  image: dominik-qn-1320.jpg
-  author: Dominic QN
-  link: https://unsplash.com/@dominik_qn
+    image: dominik-qn-1320.jpg
+    author: Dominic QN
+    link: https://unsplash.com/@dominik_qn
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 10
-
+    devto:
+    medium:
 ---
 Il y a quelques mois je me suis offert une [Pebble](https://www.pebble.com/). C'est un gadget très sympa qui agit comme une extension à mon téléphone, directement attaché à mon poignet. Grâce à elle je peux envoyer des messages pré-enregistrés en cliquant sur quelques boutons, mais je peux surtout recevoir des notifications de nouveaux messages, que ce soit des emails, des SMS ou même des messages Telegram. Ce qui peut être vite fatiguant quand mon ami Édouard me spamme de paroles du Wu-Tang. Mais cela reste un gadget vraiment formidable, et j'en suis très content.
 

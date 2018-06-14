@@ -1,17 +1,14 @@
 ---
 title: Gitlab a crashé, à qui la faute ?
-date: 2017-02-02 00:00:00 +0000
+date: 2017-02-02
+menu: blog
 cover:
-  image: gitlab.jpg
-  author: 
-  link: 
+    image: gitlab.jpg
+    author:
+    link:
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 14
-
+    devto:
+    medium:
 ---
 La nuit dernière, un "admin système fatigué" a supprimé un dossier sur le mauvais serveur de la plateforme d'hébergement de code Gitlab, effaçant plus de 300 GB de données. Suite à cet incident, le site internet a été coupé pendant la manoeuvre de restauration. La blague : "aucune [de leur] technique de sauvegarde / réplication ne fonctionnait correctement ou était active à la base." Il leur a fallu une journée entière pour réparer les dommages, laissant des milliers de devs échoués, et perdant 6 heures de données.
 

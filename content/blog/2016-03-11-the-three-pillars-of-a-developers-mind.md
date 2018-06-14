@@ -1,17 +1,14 @@
 ---
 title: The three pillars of a developer's mind
-date: 2016-03-11 00:00:00 +0000
+date: 2016-03-11
+menu: blog
 cover:
-  image: mike-kenneally-2236.jpg
-  author: Mike Kenneally
-  link: https://unsplash.com/@asthetik
+    image: mike-kenneally-2236.jpg
+    author: Mike Kenneally
+    link: https://unsplash.com/@asthetik
 links:
-  devto: 
-  medium: https://medium.com/@fbnlsr/the-three-pillars-of-a-developer-s-mind-ab4be1d93d99
-menu:
-  blog:
-    weight: 18
-
+    devto:
+    medium: https://medium.com/@fbnlsr/the-three-pillars-of-a-developer-s-mind-ab4be1d93d99
 ---
 If I had to imagine the worst way I could do my job, I would describe it as sitting behind a desk, spewing out lines after lines of code. Clock in at 9, clock out at 5, and wait for the next day to come. I guess that’s one way to do it, and thousands of devs out there manage to live like that. But that’s definitely not my vision. As a developer (and especially in a field as alive as web development), I believe you need to have certain “qualities” or pre-requisites in order to do this job. Or at least do it well.
 

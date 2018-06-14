@@ -1,17 +1,14 @@
 ---
-title: 'Notifications push : stop au bruit'
-date: 2017-09-26 00:00:00 +0000
+title: "Notifications push : stop au bruit"
+date: 2017-09-26
+menu: blog
 cover:
-  image: gian-prosdocimo-307419.jpg
-  author: Gian Prosdocimo
-  link: https://unsplash.com/@gianprosdocimo
+    image: gian-prosdocimo-307419.jpg
+    author: Gian Prosdocimo
+    link: https://unsplash.com/@gianprosdocimo
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 8
-
+    devto:
+    medium:
 ---
 Depuis l'été dernier, la première chose que je fais lorsque j'installe une nouvelle app sur mon smartphone est d'aller dans ses paramètres et de totalement couper les notifications.
 

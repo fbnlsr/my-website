@@ -1,17 +1,14 @@
 ---
 title: HTTPS toutes les choses !
-date: 2017-01-23 00:00:00 +0000
+date: 2017-01-23
+menu: blog
 cover:
-  image: all-the-things.jpg
-  author: 
-  link: 
+    image: all-the-things.jpg
+    author:
+    link:
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 13
-
+    devto:
+    medium:
 ---
 Depuis la sortie de Chrome 56 (qui devrait arriver dans quelques jours), Google va dénoncer les sites internet qui récoltent des mots de passe ou des numéros de carte de crédit comme non sécurisés s'ils sont servis via HTTP.
 

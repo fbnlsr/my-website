@@ -8,8 +8,8 @@ sections:
     default_front_matter_template: projects
   content/blog:
     default_front_matter_template: blog
-upload_dir: static/img/posts
-public_path: "/img/posts"
+upload_dir: static/uploads
+public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"

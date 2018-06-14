@@ -1,17 +1,14 @@
 ---
 title: HTTPS all the things!
-date: 2017-01-23 00:00:00 +0000
+date: 2017-01-23
+menu: blog
 cover:
-  image: all-the-things.jpg
-  author: 
-  link: 
+    image: all-the-things.jpg
+    author:
+    link:
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 35
-
+    devto:
+    medium:
 ---
 Starting with Chrome 56 (which should come out in a few days), Google will report websites that collect passwords or credit card numbers as non-secure if they are served through HTTP.
 

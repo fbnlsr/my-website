@@ -1,17 +1,14 @@
 ---
 title: Hey look, I have a blog!
-date: 2017-01-23 00:00:00 +0000
+date: 2017-01-23
+menu: blog
 cover:
-  image: yannick-pulver-180756.jpg
-  author: Yannick Pulver
-  link: https://unsplash.com/@yanu
+    image: yannick-pulver-180756.jpg
+    author: Yannick Pulver
+    link: https://unsplash.com/@yanu
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 34
-
+    devto:
+    medium:
 ---
 Behind this smart title is a reminder to myself that I should start posting more. Writing about the web and its technologies has been something I've always wanted to do but I've been so focused on work lately that I completely forgot about it. Or at least I completely forgot about taking the time to do it.
 

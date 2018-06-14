@@ -1,17 +1,14 @@
 ---
 title: Nouveau site pour CFA Le Vigean
-date: 2016-05-18 00:00:00 +0000
+date: 2016-05-18
+menu: blog
 cover:
-  image: cfa.jpg
-  author: 
-  link: 
+    image: cfa.jpg
+    author:
+    link:
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 6
-
+    devto:
+    medium:
 ---
 L'agence web et print [ComTogether](http://www.comtogether.fr/) m'a confié le développement du nouveau site internet pour le [CFA du Vigean](http://cfa-levigean.fr), un centre de formation pour étudiants dans divers domaines (dentisterie, menuiserie, ingénierie géomatique…).
 

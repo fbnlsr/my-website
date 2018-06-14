@@ -1,17 +1,14 @@
 ---
 title: New website for Healthy Warriors
-date: 2016-08-31 00:00:00 +0000
+date: 2016-08-31
+menu: blog
 cover:
-  image: healthy-warriors.jpg
-  author: 
-  link: 
+    image: healthy-warriors.jpg
+    author:
+    link:
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 27
-
+    devto:
+    medium:
 ---
 I had the opportunity to work once again with [Ligne 13](https://www.ligne13.com/), this time for Healthy Warriors!
 

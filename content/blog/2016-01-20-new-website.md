@@ -1,17 +1,14 @@
 ---
 title: New website!
-date: 2016-01-20 00:00:00 +0000
+date: 2016-01-20
+menu: blog
 cover:
-  image: wallhaven-222927.jpg
-  author: 
-  link: 
+    image: wallhaven-222927.jpg
+    author:
+    link:
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 26
-
+    devto:
+    medium:
 ---
 It’s been a long time coming, but I’ve finally updated this website. Welcome!
 

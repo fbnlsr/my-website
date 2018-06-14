@@ -1,17 +1,14 @@
 ---
 title: Regardez ça, j'ai un blog !
-date: 2017-01-23 00:00:00 +0000
+date: 2017-01-23
+menu: blog
 cover:
-  image: yannick-pulver-180756.jpg
-  author: Yannick Pulver
-  link: https://unsplash.com/@yanu
+    image: yannick-pulver-180756.jpg
+    author: Yannick Pulver
+    link: https://unsplash.com/@yanu
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 1
-
+    devto:
+    medium:
 ---
 Derrière ce titre blagueur se cache un rappel à moi-même que je devrais écrire plus souvent. Écrire à propos du web et ses technologies a toujours été quelque chose que je veux faire mais j'ai tellement été focalisé sur le travail dernièrement que j'ai totalement oublié de le faire. Où tout du moins j'ai totalement oublié de prendre le temps de le faire.
 

@@ -1,6 +1,6 @@
 ---
 weight: 2
-date: 2018-01-22 15:10:56 +0100
+date: 2018-01-22T15:10:56+01:00
 slug: healthy-warriors
 title: Healthy Warriors
 projectType: Site vitrine
@@ -14,23 +14,20 @@ longDescription: |
 
   L'utilisation d'un <strong>système d'infobulles</strong> par l'intermédiaire d'effets au passage de la souris alliée à la conception de <strong>types de contenu personnalisés</strong> nous ont permis de présenter ces diverses combinaisons.
 techUsed:
-- Wordpress
-- ACF
-- LESS
-- Gulp
+  - Wordpress
+  - ACF
+  - LESS
+  - Gulp
 client: Ligne 13
-projectUrl: http://www.healthy-warriors.com
+projectUrl: "http://www.healthy-warriors.com"
 cover: healthy-warriors.jpg
 gallery:
-- healthy-warriors-1.jpg
-- healthy-warriors-2.jpg
-- healthy-warriors-3.jpg
+  - healthy-warriors-1.jpg
+  - healthy-warriors-2.jpg
+  - healthy-warriors-3.jpg
 galleryMobile:
-- healthy-warriors-1-mobile.jpg
-- healthy-warriors-2-mobile.jpg
-- healthy-warriors-3-mobile.jpg
-menu:
-  projects:
-    weight: 1
-
+  - healthy-warriors-1-mobile.jpg
+  - healthy-warriors-2-mobile.jpg
+  - healthy-warriors-3-mobile.jpg
+menu: projects
 ---

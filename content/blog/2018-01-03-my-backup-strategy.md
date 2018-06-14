@@ -1,17 +1,14 @@
 ---
 title: My backup strategy
-date: 2018-01-03 00:00:00 +0000
+date: 2018-01-03
+menu: blog
 cover:
-  image: patryk-gradys-128898.jpg
-  author: Patryk Grądys
-  link: https://unsplash.com/@patrykgradyscom
+    image: patryk-gradys-128898.jpg
+    author: Patryk Grądys
+    link: https://unsplash.com/@patrykgradyscom
 links:
-  devto: https://dev.to/fbnlsr/my-backup-strategy-4gi7
-  medium: 
-menu:
-  blog:
-    weight: 32
-
+    devto: https://dev.to/fbnlsr/my-backup-strategy-4gi7
+    medium:
 ---
 The protection of digital assets is a multi-million dollar industry. Whether we're talking about military, financial or scientific data, each industry has to be prepared in the event of a loss, and plan for security. They often roll out extreme measures, going as far as having their own (and doubled) dedicated electrical power lines. But what about safeguarding your friend's latest BBQ party pictures? Or your little one's first steps video? Here's how I've learned my lesson from a tragic system failure and what my current setup looks like now.
 

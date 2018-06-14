@@ -1,59 +1,64 @@
-DefaultContentLanguage = "en"
-baseURL = "https://www.primative.net"
-disableHugoGeneratorInject = true
-enableMissingTranslationPlaceholders = true
-enableRobotsTXT = true
-googleAnalytics = "UA-28964878-1"
-pygmentStyle = "dracula"
-removePathAccents = true
-sectionPagesMenu = "main"
-title = "Primative – Web development"
-[blackfriday]
-angledQuotes = true
-extensions = ["hardLineBreak"]
-[[languages.en.menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-[[languages.en.menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 2
-[[languages.en.menu.main]]
-identifier = "projects"
-name = "Projects"
-url = "/projects/"
-weight = 3
-[[languages.en.menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/blog/"
-weight = 4
-[[languages.fr.menu.main]]
-name = "Accueil"
-url = "/fr/"
-weight = 1
-[[languages.fr.menu.main]]
-identifier = "about"
-name = "À propos"
-url = "/about/"
-weight = 2
-[[languages.fr.menu.main]]
-identifier = "projects"
-name = "Projets"
-url = "/projects/"
-weight = 3
-[[languages.fr.menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/blog/"
-weight = 4
-[params.staticman]
-branch = "master"
-endpoint = "https://api.staticman.net/v2/entry"
-repository = "primative.net"
-username = "fbnlsr"
-[permalinks]
-blog = "/:section/:slug/"
-projects = "/:section/:slug/"
+title: Primative – Web development
+DefaultContentLanguage: en
+enableRobotsTXT: true
+disableHugoGeneratorInject: true
+enableMissingTranslationPlaceholders: true
+pygmentStyle: dracula
+baseURL: "https://www.primative.net"
+sectionPagesMenu: main
+googleAnalytics: UA-28964878-1
+removePathAccents: true
+
+permalinks:
+  blog: /:section/:slug/
+  projects: /:section/:slug/
+
+blackfriday:
+  angledQuotes: true
+  extensions:
+    - hardLineBreak
+
+params:
+  staticman:
+    endpoint: "https://api.staticman.net/v2/entry"
+    username: fbnlsr
+    repository: "primative.net"
+    branch: master
+
+languages:
+  en:
+    menu:
+      main:
+        - name: Home
+          url: /
+          weight: 1
+        - name: About
+          url: /about/
+          identifier: about
+          weight: 2
+        - name: Projects
+          url: /projects/
+          identifier: projects
+          weight: 3
+        - name: Blog
+          url: /blog/
+          identifier: blog
+          weight: 4
+  fr:
+    menu:
+      main:
+        - name: Accueil
+          url: /fr/
+          weight: 1
+        - name: À propos
+          url: /about/
+          identifier: about
+          weight: 2
+        - name: Projets
+          url: /projects/
+          identifier: projects
+          weight: 3
+        - name: Blog
+          url: /blog/
+          identifier: blog
+          weight: 4

@@ -1,17 +1,14 @@
 ---
 title: Les trois piliers d'un dévelopeur
-date: 2016-03-11 00:00:00 +0000
+date: 2016-03-11
+menu: blog
 cover:
-  image: mike-kenneally-2236.jpg
-  author: Mike Kenneally
-  link: https://unsplash.com/@asthetik
+    image: mike-kenneally-2236.jpg
+    author: Mike Kenneally
+    link: https://unsplash.com/@asthetik
 links:
-  devto: 
-  medium: https://medium.com/@fbnlsr/the-three-pillars-of-a-developer-s-mind-ab4be1d93d99
-menu:
-  blog:
-    weight: 12
-
+    devto:
+    medium: https://medium.com/@fbnlsr/the-three-pillars-of-a-developer-s-mind-ab4be1d93d99
 ---
 Si je devais décrire la pire façon de faire mon travail, ce serait d'être assis derrière un bureau, à cracher des lignes de code. Pointer à 09:00, partir à 17:00, et attendre que le jour suivant arrive. J'imagine que c'est une certaine façon de faire, et des milliers de dévelopeurs se contentent de vivre comme ceci. Mais ce n'est clairement pas ma vision. En tant que dévelopeur (et en particulier dans un domaine aussi vivant que celui du développement web), j'aime à penser qu'il faut avoir certaines "qualités" ou pré-requis pour faire ce travail. Ou tout du moins le faire bien.
 

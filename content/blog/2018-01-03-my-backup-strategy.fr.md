@@ -1,17 +1,14 @@
 ---
 title: Ma stratégie de sauvegarde
-date: 2018-01-03 00:00:00 +0000
+date: 2018-01-03
+menu: blog
 cover:
-  image: patryk-gradys-128898.jpg
-  author: Patryk Grądys
-  link: https://unsplash.com/@patrykgradyscom
+    image: patryk-gradys-128898.jpg
+    author: Patryk Grądys
+    link: https://unsplash.com/@patrykgradyscom
 links:
-  devto: https://dev.to/fbnlsr/my-backup-strategy-4gi7
-  medium: 
-menu:
-  blog:
-    weight: 11
-
+    devto: https://dev.to/fbnlsr/my-backup-strategy-4gi7
+    medium:
 ---
 La protection des données numériques est une industrie pesant plusieurs millions de dollars. Qu'il s'agisse de données à portée militaire, scientifique ou financière, chacune de ces industries doit se préparer en cas de perte, et planifier leur sécurité. Elles déploient parfois des mesures extrêmes, allant jusqu'à avoir leur propre (et double) lignes électriques dédiées. Mais qu'en est-il des photos du dernier barbecue de votre ami ? Ou la vidéo des premiers pas de votre petit dernier ? Voici comment j'ai appris ma leçon suite à une défaillance tragique d'un système et ce à quoi mon équipement actuel ressemble.
 

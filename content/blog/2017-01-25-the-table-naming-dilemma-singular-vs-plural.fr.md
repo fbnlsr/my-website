@@ -1,17 +1,14 @@
 ---
-title: 'Nommer ses tables : singulier vs. pluriel'
-date: 2017-01-25 00:00:00 +0000
+title: "Nommer ses tables : singulier vs. pluriel"
+date: 2017-01-25
+menu: blog
 cover:
-  image: eli-francis-100644.jpg
-  author: Eli Francis
-  link: https://unsplash.com/@elifrancis
+    image: eli-francis-100644.jpg
+    author: Eli Francis
+    link: https://unsplash.com/@elifrancis
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 9
-
+    devto:
+    medium:
 ---
 L'autre jour, pendant un poker planning, la question du nommage d'une table a été posée. Pendant la conversation, un de nos dévelopeurs a suggéré que la table devait avoir un nom au singulier, pendant que d'autres pensaient que toutes les tables devaient être au pluriel. Cela m'a amené à poser la question : Y'a-t-il un choix meilleur qu'un autre ? Est-ce-que les tables doivent être au singulier ou au pluriel ?
 

@@ -1,17 +1,14 @@
 ---
 title: Nouveau site pour Agence Saint Germain
-date: 2016-07-07 00:00:00 +0000
+date: 2016-07-07
+menu: blog
 cover:
-  image: asg.jpg
-  author: 
-  link: 
+    image: asg.jpg
+    author:
+    link:
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 7
-
+    devto:
+    medium:
 ---
 J'ai développé le nouveau site de l'[Agence Saint Germain](http://www.asgparis.com/) en collaboration avec [Ligne 13](https://www.ligne13.com/). L'Agence Saint Germain est une agence de photographes, maquilleurs, stylistes et costumiers. Leur but est de promouvoir et vendre les services des artistes qui sont signés chez eux.
 

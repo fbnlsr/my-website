@@ -1,17 +1,14 @@
 ---
 title: New website for CFA Le Vigean
-date: 2016-05-18 00:00:00 +0000
+date: 2016-05-18
+menu: blog
 cover:
-  image: cfa.jpg
-  author: 
-  link: 
+    image: cfa.jpg
+    author:
+    link:
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 28
-
+    devto:
+    medium:
 ---
 Print and Web Agency [ComTogether](http://www.comtogether.fr/) has asked me to develop the new website for [CFA Le Vigean](http://cfa-levigean.fr), a formation center for students in various fields (dentistry, woodworking, geomatics engineering…).
 

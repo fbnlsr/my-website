@@ -1,17 +1,14 @@
 ---
 title: Nouveau site web pour 18-55 Productions !
-date: 2017-02-21 00:00:00 +0000
+date: 2017-02-21
+menu: blog
 cover:
-  image: 18-55.jpg
-  author: 
-  link: 
+    image: 18-55.jpg
+    author:
+    link:
 links:
-  devto: 
-  medium: 
-menu:
-  blog:
-    weight: 4
-
+    devto:
+    medium:
 ---
 La semaine dernière nous avons lancé le nouveau site web de **[18-55 Productions](http://18-55.fr)** !
 

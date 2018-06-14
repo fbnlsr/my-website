@@ -1,17 +1,14 @@
 ---
 title: Parlons un peu des emojis
-date: 2018-01-11 00:00:00 +0000
+date: 2018-01-11
 cover:
-  image: nong-vang-449097.jpg
-  author: Nong Vang
-  link: https://unsplash.com/@californong
+    image: nong-vang-449097.jpg
+    author: Nong Vang
+    link: https://unsplash.com/@californong
+menu: blog
 links:
-  devto: https://dev.to/fbnlsr/lets-talk-about-emojis-2788
-  medium: https://medium.com/@fbnlsr/lets-talk-about-emojis-d0a07c88b319
-menu:
-  blog:
-    weight: 2
-
+    devto: https://dev.to/fbnlsr/lets-talk-about-emojis-2788
+    medium: https://medium.com/@fbnlsr/lets-talk-about-emojis-d0a07c88b319
 ---
 Les emojis sont partout. De Twitter à Facebook Chat, ils sont devenus le [Mot de l'Année 2015](http://time.com/4114886/oxford-word-of-the-year-2015-emoji/) pour Oxford, et on a même pu les voir dans un [film épouvantable](https://www.rottentomatoes.com/m/the_emoji_movie). Mais qu'en est-il en dehors des SMS et de la messagerie instantanée ? Quid de l'utilisation des emojis dans les commentaires de code ou même les messages de commit ? Voyons voir comment utiliser au mieux ces petites images marrantes.
 
