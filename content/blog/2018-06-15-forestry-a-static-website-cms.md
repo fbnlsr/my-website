@@ -25,7 +25,7 @@ The need for a static CMS therefore makes sense for multiple reasons. First it a
 
 Today I’m trying out Forestry, a hosted service which makes use of the GitHub API in order to allow a static website to be remotely managed.
 
-![](/forestry-logo.jpg)
+![](/forestry-logo.jpg "Forestry logo")
 
 **Installation**
 
