@@ -9,7 +9,7 @@ author = "Kai Pilger"
 image = "/img/posts/kai-pilger-279041.jpg"
 link = "https://unsplash.com/photos/6eCBRY8x3WM"
 [links]
-devto = ""
+devto = "https://dev.to/fbnlsr/forestry---a-static-website-cms-59p7"
 medium = ""
 [menu.blog]
 weight = 1
