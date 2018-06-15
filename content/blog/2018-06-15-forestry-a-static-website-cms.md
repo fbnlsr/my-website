@@ -10,7 +10,7 @@ image = "/img/posts/kai-pilger-279041.jpg"
 link = "https://unsplash.com/photos/6eCBRY8x3WM"
 [links]
 devto = "https://dev.to/fbnlsr/forestry---a-static-website-cms-59p7"
-medium = ""
+medium = "https://medium.com/@fbnlsr/forestry-a-static-website-cms-81bebaacfae9"
 [menu.blog]
 weight = 1
 
