@@ -6,7 +6,7 @@ title = "Forestry - A static website CMS"
 type = ""
 [cover]
 author = "Kai Pilger"
-image = "/kai-pilger-279041.jpg"
+image = "/img/posts/kai-pilger-279041.jpg"
 link = "https://unsplash.com/photos/6eCBRY8x3WM"
 [links]
 devto = ""
@@ -25,7 +25,7 @@ The need for a static CMS therefore makes sense for multiple reasons. First it a
 
 Today I’m trying out Forestry, a hosted service which makes use of the GitHub API in order to allow a static website to be remotely managed.
 
-![Forestry logo](/forestry-logo.jpg "Forestry logo")
+![Forestry logo](/img/posts/forestry-logo.jpg "Forestry logo")
 
 ## Installation
 
