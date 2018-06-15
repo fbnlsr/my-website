@@ -3,7 +3,7 @@ title: Ma stratégie de sauvegarde
 date: 2018-01-03
 menu: blog
 cover:
-    image: patryk-gradys-128898.jpg
+    image: "/img/posts/patryk-gradys-128898.jpg"
     author: Patryk Grądys
     link: https://unsplash.com/@patrykgradyscom
 links:

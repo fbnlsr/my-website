@@ -3,7 +3,7 @@ title: The three pillars of a developer's mind
 date: 2016-03-11
 menu: blog
 cover:
-    image: mike-kenneally-2236.jpg
+    image: "/img/posts/mike-kenneally-2236.jpg"
     author: Mike Kenneally
     link: https://unsplash.com/@asthetik
 links:

@@ -3,7 +3,7 @@ title: New website for Healthy Warriors
 date: 2016-08-31
 menu: blog
 cover:
-    image: healthy-warriors.jpg
+    image: "/img/posts/healthy-warriors.jpg"
     author:
     link:
 links:

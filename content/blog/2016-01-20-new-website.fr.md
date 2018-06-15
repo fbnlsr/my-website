@@ -3,9 +3,9 @@ title: Nouveau site web !
 date: 2016-01-20
 menu: blog
 cover:
-    image: wallhaven-222927.jpg
-    author:
-    link:
+    image: "/img/posts/wallhaven-222927.jpg"
+    author: Snufkin
+    link: "https://alpha.wallhaven.cc/user/Snufkin"
 links:
     devto:
     medium:

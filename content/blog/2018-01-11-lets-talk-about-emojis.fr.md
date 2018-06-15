@@ -2,7 +2,7 @@
 title: Parlons un peu des emojis
 date: 2018-01-11
 cover:
-    image: nong-vang-449097.jpg
+    image: "/img/nong-vang-449097.jpg"
     author: Nong Vang
     link: https://unsplash.com/@californong
 menu: blog

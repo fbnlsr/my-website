@@ -2,7 +2,7 @@
 title: Let's talk about emojis
 date: 2018-01-11
 cover:
-    image: nong-vang-449097.jpg
+    image: "/img/posts/nong-vang-449097.jpg"
     author: Nong Vang
     link: https://unsplash.com/@californong
 menu: blog

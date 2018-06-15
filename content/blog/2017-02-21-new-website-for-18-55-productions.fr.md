@@ -3,7 +3,7 @@ title: Nouveau site web pour 18-55 Productions !
 date: 2017-02-21
 menu: blog
 cover:
-    image: 18-55.jpg
+    image: "/img/posts/18-55.jpg"
     author:
     link:
 links:

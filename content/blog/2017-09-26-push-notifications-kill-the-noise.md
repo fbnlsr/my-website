@@ -3,7 +3,7 @@ title: "Push notifications: kill the noise"
 date: 2017-09-26
 menu: blog
 cover:
-    image: gian-prosdocimo-307419.jpg
+    image: "/img/posts/gian-prosdocimo-307419.jpg"
     author: Gian Prosdocimo
     link: https://unsplash.com/@gianprosdocimo
 links:

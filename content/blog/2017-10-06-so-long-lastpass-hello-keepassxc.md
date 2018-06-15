@@ -3,7 +3,7 @@ title: So long LastPass, hello KeePassXC!
 date: 2017-10-06
 menu: blog
 cover:
-    image: victoriano-izquierdo-109924.jpg
+    image: "/img/posts/victoriano-izquierdo-109924.jpg"
     author: Victoriano Izquierdo
     link: https://unsplash.com/@victoriano
 links:

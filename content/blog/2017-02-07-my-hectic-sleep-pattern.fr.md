@@ -3,7 +3,7 @@ title: Mon affreux rythme de sommeil
 date: 2017-02-07
 menu: blog
 cover:
-    image: dominik-qn-1320.jpg
+    image: "/img/posts/dominik-qn-1320.jpg"
     author: Dominic QN
     link: https://unsplash.com/@dominik_qn
 links:

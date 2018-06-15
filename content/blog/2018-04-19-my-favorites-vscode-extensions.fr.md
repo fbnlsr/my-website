@@ -2,7 +2,7 @@
 title: 10 extensions indispensable pour VS Code
 date: 2018-04-19
 cover:
-    image: pankaj-patel-516482.jpg
+    image: "/img/posts/pankaj-patel-516482.jpg"
     author: Panjak patel
     link: "https://unsplash.com/photos/yEAOfWSdzgM"
 menu: blog

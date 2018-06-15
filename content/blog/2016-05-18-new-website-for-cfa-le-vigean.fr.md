@@ -3,7 +3,7 @@ title: Nouveau site pour CFA Le Vigean
 date: 2016-05-18
 menu: blog
 cover:
-    image: cfa.jpg
+    image: "/img/posts/cfa.jpg"
     author:
     link:
 links:
