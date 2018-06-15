@@ -58,7 +58,7 @@
     {{ end }}
     <meta property="og:url" content="{{ .Permalink }}">
     {{ if eq .Section "blog" }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}/img/posts/{{ .Params.cover.image }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.cover.image }}">
     {{ else }}
     <meta property="og:image" content="{{ .Site.BaseURL }}/img/primative-og.jpg">
     {{ end }}
