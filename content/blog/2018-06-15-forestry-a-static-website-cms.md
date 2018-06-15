@@ -19,7 +19,7 @@ Static websites are getting more and more popular. While some might denigrate th
 
 That being said, the update and deployment of a static website has to be made from a machine equipped with the suitable development environment. A terminal, and tools such as Git, Node, NPM, Ruby and others are often necessary. Indeed, the website has to be compiled beforehand or thanks to an automated process such as GitHub Pages or Netlify.
 
-**On the need for a static CMS**
+## On the need for a static CMS
 
 The need for a static CMS therefore makes sense for multiple reasons. First it allows to overcome the need for a development environment. In the case of a blog, the creation of articles becomes much more fluid, and being able to get away from this technical environment allows for a better workflow for the content creation process. Secondly, it allows non-technical users to manage their website and let them be more free in creating and managing editorial content.
 
