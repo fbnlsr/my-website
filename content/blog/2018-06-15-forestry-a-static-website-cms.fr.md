@@ -4,7 +4,7 @@ draft = false
 title = "Forestry - Un CMS statique"
 [cover]
 author = "Kai Pilger"
-image = "/kai-pilger-279041.jpg"
+image = "/img/posts/kai-pilger-279041.jpg"
 link = "https://unsplash.com/photos/6eCBRY8x3WM"
 [links]
 devto = ""
@@ -23,7 +23,7 @@ L’intérêt d’utiliser un CMS pour un site statique devient donc pertinent p
 
 Aujourd’hui je m’intéresse à Forestry, un service hébergé qui utilise l’API GitHub pour permettre à un site statique d’être géré à distance.
 
-![Logo de Forestry](/forestry-logo.jpg "Logo de Forestry")
+![Logo de Forestry](/img/posts/forestry-logo.jpg "Logo de Forestry")
 
 ## Installation
 
@@ -39,7 +39,7 @@ Il est même possible de venir greffer le CMS sur son propre site, et passer par
 
 Forestry fonctionne grâce à l’API de GitHub, Gitlab ou Bitbucket. C’est un CMS très pratique à utiliser avec une interface claire. À gauche, un panneau listant les types de contenu permet d’accéder aux différentes catégories du site, et à droite, un panneau type Wordpress donne accès aux champs à remplir ainsi qu’à l’éditeur de texte principal.
 
-![L'admin de Forestry](/forestry1.JPG "L'admin de Forestry")
+![L'admin de Forestry](/img/posts/forestry1.JPG "L'admin de Forestry")
 
 Dans mon cas, Forestry a fait un travail impeccable pour trouver mes articles de blog et mes projets, mais il a été un peu plus limité pour trouver le contenu des pages. Ainsi, pour une raison inconnue, le système a fait la différence entre la page d’accueil et la page “À propos”, et ces deux pages sont considérées comme deux sections différentes.
 
@@ -47,11 +47,11 @@ Dans mon cas, Forestry a fait un travail impeccable pour trouver mes articles de
 
 Il est cependant possible de renommer le fichier (généré automatiquement par le CMS) afin de pouvoir bénéficier de la gestion du multi-langue de Hugo. Ainsi, en ajoutant simplement l’extension `.fr` à un slug existant, j’ai pu laisser Hugo lier automatiquement deux articles et proposer la version traduite aux visiteurs.
 
-![Renommage d'un fichier](/forestry2.JPG "Renommage d'un fichier")
+![Renommage d'un fichier](/img/posts/forestry2.JPG "Renommage d'un fichier")
 
 Dans mon cas, un projet est configuré exclusivement grâce à l’utilisation du Front Matter. En modifiant une ou deux lignes du fichier de configuration, j’ai pu me débarrasser de l’éditeur de texte afin de me retrouver exclusivement avec les champs de configuration d’un projet. Pour les utilisateurs de Wordpress, cela revient à avoir une page composée à l’aide d’Advanced Custom Fields, mais générée grâce à un fichier YAML.
 
-![Édition d'un projet](/forestry3.JPG "Édition d'un projet")
+![Édition d'un projet](/img/posts/forestry3.JPG "Édition d'un projet")
 
 ## Avantages / Inconvénients du CMS
 
