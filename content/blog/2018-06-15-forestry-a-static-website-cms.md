@@ -6,7 +6,7 @@ title = "Forestry - A static website CMS"
 type = ""
 [cover]
 author = "Kai Pilger"
-image = "/img/posts/kai-pilger-279041.jpg"
+image = "/kai-pilger-279041.jpg"
 link = "https://unsplash.com/photos/6eCBRY8x3WM"
 [links]
 devto = ""

@@ -9,7 +9,7 @@ sections:
   content/blog:
     default_front_matter_template: blog
 upload_dir: static/img/posts
-public_path: "/img/posts"
+public_path: ''
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
