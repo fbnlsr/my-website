@@ -27,7 +27,7 @@ Aujourd’hui je m’intéresse à Forestry, un service hébergé qui utilise l�
 
 ## Installation
 
-L’installation du CMS est extrêmement simple : j’ai simplement eu à créer un compte sur le site de Forestry, de lier ce compte à mon compte GitHub et de choisir le dépôt du site en question. Il suffit ensuite de spécifier si le site est généré par Hugo (ce qui est mon cas) ou par Jekyll. Petite note au passage : j’ai dû préciser la version de hugo que j’utilise, et celle proposée par Forestry ne correspondra pas forcément à la votre. Cela ne m’a pas posé de problème car j’ai configuré Forestry pour qu’il ne gère pas la  génération de mon site, mais c’est un détail qui peut avoir son importance.
+L’installation du CMS est extrêmement simple : j’ai dû créer un compte sur le site de Forestry, de le lier à mon compte GitHub et de choisir le dépôt du site en question. Il suffit ensuite de spécifier si le site est généré par Hugo (ce qui est mon cas) ou par Jekyll. Petite note au passage : j’ai dû préciser la version de hugo que j’utilise, et celle proposée par Forestry ne correspondra pas forcément à la votre. Cela ne m’a pas posé de problème car j’ai configuré Forestry pour qu’il ne gère pas la  génération de mon site, mais c’est un détail qui peut avoir son importance.
 
 ## Configuration
 
