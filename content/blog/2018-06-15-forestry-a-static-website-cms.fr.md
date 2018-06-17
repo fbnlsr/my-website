@@ -43,7 +43,7 @@ Forestry fonctionne grâce à l’API de GitHub, Gitlab ou Bitbucket. C’est un
 
 Dans mon cas, Forestry a fait un travail impeccable pour trouver mes articles de blog et mes projets, mais il a été un peu plus limité pour trouver le contenu des pages. Ainsi, pour une raison inconnue, le système a fait la différence entre la page d’accueil et la page “À propos”, et ces deux pages sont considérées comme deux sections différentes.
 
-À noter que malgré l’utilisation de l’API GitHub, il n’est pas possible pour l’instant d’accéder à l’historique des contenus. Il est cependant possible de renommer le fichier (généré automatiquement par le CMS) afin de pouvoir bénéficier de la gestion du multi-langue de Hugo. Ainsi, en ajoutant simplement l’extension `.fr` à un slug existant, j’ai pu laisser Hugo lier automatiquement deux articles et proposer la version traduite aux visiteurs.
+À noter que malgré l’utilisation de l’API GitHub, il n’est pas possible pour l’instant d’accéder à l’historique des contenus. Il m'a cependant été possible de renommer le fichier (généré automatiquement par le CMS) afin de pouvoir bénéficier de la gestion du multi-langue de Hugo. Ainsi, en ajoutant simplement l’extension `.fr` à un slug existant, j’ai pu laisser Hugo lier automatiquement deux articles et proposer la version traduite aux visiteurs.
 
 ![Renommage d'un fichier](/img/posts/forestry2.JPG "Renommage d'un fichier")
 
@@ -53,9 +53,9 @@ Dans mon cas, un projet est configuré exclusivement grâce à l’utilisation d
 
 ## Avantages / Inconvénients du CMS
 
-Le premier inconvénient qui saute aux yeux dès l’utilisation du CMS est le côté “technique” qui reste très présent, et ce malgré l’utilisation d’une interface graphique. Il faut maîtriser le nommage de fichiers afin de permettre à Hugo de s’y retrouver, et il y a parfois certains aspects qui pourraient effrayer les utilisateurs.
+Le premier inconvénient, qui saute aux yeux dès la première utilisation du CMS, est le côté “technique” qui reste très présent et ce malgré l’utilisation d’une interface graphique. Il faut maîtriser le nommage de fichiers afin de permettre à Hugo de s’y retrouver, et il y a parfois certains aspects qui pourraient effrayer les utilisateurs.
 
-Il aurait été judicieux de permettre le nommage automatique des fichiers d’articles par l’utilisation d’un système de slug spécifié dans le fichier de configuration, et confier la bascule de la langue via un champ de sélection.
+Il aurait été judicieux de permettre le nommage automatique et silencieux des fichiers d’articles par l’utilisation d’un système de slug spécifié dans un fichier de configuration, et confier la bascule de la langue via un champ de sélection dans l'interface.
 
 L’ajout de comptes “utilisateurs” avec restriction de droits est réservé à l’offre payante “Business” qui est à $9 par mois et par utilisateur. Dans sa version gratuite, il est possible d’ajouter des comptes “invités” qui ont pratiquement tous les droits sur le site, ce qui peut être très problématique.
 
@@ -65,4 +65,4 @@ Pour l’aspect technique, il faut considérer le fait que Forestry utilise l’
 
 ## Conclusion
 
-Après avoir écrit ceci, on pourrait penser que je n'ai pas apprécié Forestry. Bien que le système ait quelques lacunes, l'équipe qui travaille dessus est constament en train de l'améliorer. Ceci étant dit, et lorsqu’on considère sa rapidité d’installation et sa souplesse d’utilisation, je dirais que Forestry est un choix solide comme CMS à un site statique. Cela permet ainsi de trouver une certaine souplesse à l’administration d’un site internet tout en continuant de bénéficier de tous les avantages de rapidité, sécurité et optimisation d’un générateur de site statique.
+Après avoir écrit ceci, on pourrait penser que je n'ai pas apprécié Forestry mais c'est tout le contaire. Le système possède quelques lacunes évidentes, certes, mais l'équipe qui travaille dessus est constament en train de l'améliorer. Ceci étant dit, et lorsqu’on considère sa rapidité d’installation et sa souplesse d’utilisation, je pense que Forestry est un choix solide comme système de gestion de contenu pour un site statique. Il permet ainsi de retrouver une certaine souplesse à l’administration d’un site internet tout en continuant de bénéficier de tous les avantages de rapidité, de sécurité et d'optimisations qu’offrent l'utilisation d'un générateur de sites web statiques.
