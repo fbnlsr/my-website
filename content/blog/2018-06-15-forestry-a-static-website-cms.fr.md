@@ -27,7 +27,7 @@ Aujourd’hui je m’intéresse à Forestry, un service hébergé qui utilise l�
 
 ## Installation
 
-L’installation du CMS est extrêmement simple : j’ai dû créer un compte sur le site de Forestry, de le lier à mon compte GitHub et de choisir le dépôt du site en question. Il suffit ensuite de spécifier si le site est généré par Hugo (ce qui est mon cas) ou par Jekyll. Petite note au passage : j’ai dû préciser la version de hugo que j’utilise, et celle proposée par Forestry ne correspondra pas forcément à la votre. Cela ne m’a pas posé de problème car j’ai configuré Forestry pour qu’il ne gère pas la  génération de mon site, mais c’est un détail qui peut avoir son importance.
+L’installation du CMS est extrêmement simple : j’ai dû créer un compte sur le site de Forestry, le lier à mon compte GitHub et choisir le dépôt du site en question. Il suffit ensuite de spécifier si le site est généré par Hugo (ce qui est mon cas) ou par Jekyll. Petite note au passage : j’ai dû préciser la version de hugo que j’utilise, et celle proposée par Forestry ne correspondra pas forcément à la votre. Cela ne m’a pas posé de problème car j’ai configuré Forestry pour qu’il ne gère pas la  génération de mon site, mais c’est un détail qui peut avoir son importance.
 
 ## Configuration
 
@@ -43,9 +43,7 @@ Forestry fonctionne grâce à l’API de GitHub, Gitlab ou Bitbucket. C’est un
 
 Dans mon cas, Forestry a fait un travail impeccable pour trouver mes articles de blog et mes projets, mais il a été un peu plus limité pour trouver le contenu des pages. Ainsi, pour une raison inconnue, le système a fait la différence entre la page d’accueil et la page “À propos”, et ces deux pages sont considérées comme deux sections différentes.
 
-À noter que malgré l’utilisation de l’API GitHub, il n’est pas possible pour l’instant d’accéder à l’historique des contenus.
-
-Il est cependant possible de renommer le fichier (généré automatiquement par le CMS) afin de pouvoir bénéficier de la gestion du multi-langue de Hugo. Ainsi, en ajoutant simplement l’extension `.fr` à un slug existant, j’ai pu laisser Hugo lier automatiquement deux articles et proposer la version traduite aux visiteurs.
+À noter que malgré l’utilisation de l’API GitHub, il n’est pas possible pour l’instant d’accéder à l’historique des contenus. Il est cependant possible de renommer le fichier (généré automatiquement par le CMS) afin de pouvoir bénéficier de la gestion du multi-langue de Hugo. Ainsi, en ajoutant simplement l’extension `.fr` à un slug existant, j’ai pu laisser Hugo lier automatiquement deux articles et proposer la version traduite aux visiteurs.
 
 ![Renommage d'un fichier](/img/posts/forestry2.JPG "Renommage d'un fichier")
 
