@@ -35,6 +35,20 @@
             {{ end }}
         </p>
     {{end}}
+
+    <p class="is-translation-link">
+        {{ $currentLang := .Site.Language.Lang }}
+        {{ if .IsTranslated }}
+            {{ range .Translations }}
+                {{ if eq $currentLang "fr"}}
+                    <a href="{{ .Permalink }}">This post is also available in english.</a>
+                {{ else }}
+                    <a href="{{ .Permalink }}">Ce billet est aussi disponible en français.</a>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </p>
+
     <article>
         {{ .Content }}
     </article>
