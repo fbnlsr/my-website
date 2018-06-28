@@ -6,57 +6,39 @@
 
     <h1>{{ i18n "thoughts" }}</h1>
 
-    <div class="blog-list">
+    <div class="blog-list is-clearfix">
+        {{ range $index, $element := where .Data.Pages "Section" .Section  }}
 
-        <p class="year">2018</p>
-        {{ range where .Data.Pages "Section" .Section  }}
-            {{ if eq (.Date.Format "2006") "2018" }}
-            <div class="blog-post">
-                <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-                <p class="date">
-                    {{ if eq .Lang "fr" }}
-                        {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) }}&nbsp;{{ .Date.Year }}
-                    {{ else }}
-                        {{ .Date.Format "January 2, 2006" }}
-                    {{ end }}
-                    {{ if isset .Params "category" }}&nbsp;—&nbsp;{{ delimit .Params.category ", " | humanize }}{{end}}
-                </p>
-            </div>
+            {{ if or (eq $index 0) (eq (modBool $index 3) true) }}
+                {{ $.Scratch.Set "bloc-width" "is-full" }}
+            {{ else }}
+                {{ $.Scratch.Set "bloc-width" "is-half" }}
             {{ end }}
-        {{ end }}
 
-        <p class="year">2017</p>
-        {{ range where .Data.Pages "Section" .Section  }}
-            {{ if eq (.Date.Format "2006") "2017" }}
-            <div class="blog-post">
-                <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-                <p class="date">
-                    {{ if eq .Lang "fr" }}
-                        {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) }}&nbsp;{{ .Date.Year }}
-                    {{ else }}
-                        {{ .Date.Format "January 2, 2006" }}
-                    {{ end }}
-                    {{ if isset .Params "category" }}&nbsp;—&nbsp;{{ delimit .Params.category ", " | humanize }}{{end}}
-                </p>
-            </div>
+            {{ $.Scratch.Set "comments" 0 }}
+            {{ range $index, $comments := (index $.Site.Data.comments .UniqueID ) }}
+                {{ $.Scratch.Add "comments" 1 }}
             {{ end }}
-        {{ end }}
 
-        <p class="year">2016</p>
-        {{ range where .Data.Pages "Section" .Section  }}
-            {{ if eq (.Date.Format "2006") "2016" }}
-            <div class="blog-post">
-                <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-                <p class="date">
-                    {{ if eq .Lang "fr" }}
-                        {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) }}&nbsp;{{ .Date.Year }}
-                    {{ else }}
-                        {{ .Date.Format "January 2, 2006" }}
-                    {{ end }}
-                    {{ if isset .Params "category" }}&nbsp;—&nbsp;{{ delimit .Params.category ", " | humanize }}{{end}}
-                </p>
-            </div>
-            {{ end }}
+                <div class="blog-bloc {{ ($.Scratch.Get "bloc-width") }}">
+                    <div class="blog-cover" style="background-image: url('{{ .Params.cover.image }}')">
+                        <a class="title" href="{{ .Permalink }}">
+                            {{ .Title }}
+                        </a>
+                    </div>
+                    <div class="blog-excerpt">
+                        {{ if eq .Lang "fr" }}
+                            <p class="date">{{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) | humanize }}&nbsp;{{ .Date.Year }}</p>
+                        {{ else }}
+                            <p class="date">{{ .Date.Format "January 2, 2006" }}</p>
+                        {{ end }}
+                        <p class="excerpt">{{ .Summary }}</p>
+                        <div class="bottom">
+                            <p class="comments"><i class="fas fa-comments"></i> {{ $.Scratch.Get "comments" }} </p>
+                            <p class="more"><a href="{{ .Permalink }}">{{ i18n "readmore" }}</a></p>
+                        </div>
+                    </div>
+                </div>
         {{ end }}
     </div>
 
