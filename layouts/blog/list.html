@@ -22,11 +22,10 @@
 
                 <div class="blog-bloc {{ ($.Scratch.Get "bloc-width") }}">
                     <div class="blog-cover" style="background-image: url('{{ .Params.cover.image }}')">
-                        <a class="title" href="{{ .Permalink }}">
-                            {{ .Title }}
-                        </a>
+                        <a href="{{ .Permalink }}"></a>
                     </div>
                     <div class="blog-excerpt">
+                        <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
                         {{ if eq .Lang "fr" }}
                             <p class="date">{{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) | humanize }}&nbsp;{{ .Date.Year }}</p>
                         {{ else }}

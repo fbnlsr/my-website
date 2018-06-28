@@ -55,9 +55,9 @@
 
     .blog-bloc {
         padding: 0;
-        box-shadow: 0 10px 10px -10px #333;
+        box-shadow: 0 10px 10px -10px #ccc;
         text-align: left;
-        border: 1px solid #e0e0e0;
+        border: 1px solid #ddd;
         border-radius: 5px;
         flex: auto;
         margin-left: 1rem;
@@ -90,14 +90,11 @@
 
             a {
                 position: absolute;
+                top: 0;
                 bottom: 0;
+                left: 0;
+                right: 0;
                 display: block;
-                color: $background;
-                font-family: "Montserrat", sans-serif;
-                font-weight: 400;
-                flex-grow: 1;
-                padding: 1rem;
-                text-shadow: 0 0 2px $text;
             }
         }
 
