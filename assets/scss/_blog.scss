@@ -16,6 +16,11 @@
 
 .blog-list {
     text-align: center;
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     .year {
         font-weight: 300;
@@ -41,6 +46,102 @@
             font-size: .8rem;
             margin-top: .2rem;
             margin-bottom: 2rem;
+        }
+    }
+
+    .is-row-container {
+        display: flex;
+    }
+
+    .blog-bloc {
+        padding: 0;
+        box-shadow: 0 10px 10px -10px #333;
+        text-align: left;
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        flex: auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        float: left;
+
+        &.is-full {
+            max-width: 100%;
+        }
+
+        &.is-half {
+            max-width: calc(50% - 2rem);
+
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+
+        .blog-cover {
+            height: 250px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                position: absolute;
+                bottom: 0;
+                display: block;
+                color: $background;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 400;
+                flex-grow: 1;
+                padding: 1rem;
+                text-shadow: 0 0 2px $text;
+            }
+        }
+
+        .blog-excerpt {
+            padding: 1rem 1.5rem;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            height: calc(100% - 250px);
+            display: flex;
+            flex-direction: column;
+
+            p:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            .date {
+                color: lighten($gray1, 10%);
+                text-transform: uppercase;
+                font-size: .8rem;
+            }
+
+            .excerpt {
+                flex-grow: 1;
+            }
+
+            .bottom {
+                display: flex;
+
+                .comments {
+                    color: lighten($gray1, 20%);
+                    align-self: flex-start;
+                    margin-bottom: 0;
+                }
+
+                .more {
+                    flex-grow: 1;
+                    align-self: flex-end;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .more {
+            text-align: right;
         }
     }
 }
