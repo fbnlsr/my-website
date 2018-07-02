@@ -50,7 +50,8 @@
     </p>
 
     <article>
-        {{ .Content }}
+        {{ $post := split .RawContent "<!--more-->" }}
+        {{ index $post 1 | markdownify | emojify }}
     </article>
 
     <img class="is-bullet-end-article" src="/img/bullet-big.png" alt="Bullet">

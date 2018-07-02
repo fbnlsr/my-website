@@ -15,6 +15,10 @@ medium = "https://medium.com/@fbnlsr/forestry-a-static-website-cms-81bebaacfae9"
 weight = 1
 
 +++
+Static websites are getting more and more popular, offering better speed, convenience and security. But what about a "real world" application, where a client wants to be able to edit their website's content? For that we need an admin UI. Here's my first hand opinion on Forestry, a CMS made for static websites.
+
+<!--more-->
+
 Static websites are getting more and more popular. While some might denigrate this “back to the roots” approach, these systems have numerous advantages. They’re often faster because they’re limited to serving simple web pages, with barely any workload on the serve. The logic is left to be handled by the client, mostly via the usage of APIs, and it’s much easier to put resources in cache and use a CDN during deployment. Besides, these are considered atomic as they allow instantaneous cache invalidation. The website deliverability is therefore 100% assured. Static websites are also often much more secure, as they don’t allow information to be directly sent to the server.
 
 That being said, the update and deployment of a static website has to be made from a machine equipped with the suitable development environment. A terminal, and tools such as Git, Node, NPM, Ruby and others are often necessary. Indeed, the website has to be compiled beforehand or thanks to an automated process such as GitHub Pages or Netlify.
