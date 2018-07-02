@@ -51,7 +51,11 @@
 
     <article>
         {{ $post := split .RawContent "<!--more-->" }}
+        {{ if index $post 1 }}
         {{ index $post 1 | markdownify | emojify }}
+        {{ else }}
+        {{ .Content }}
+        {{ end }}
     </article>
 
     <img class="is-bullet-end-article" src="/img/bullet-big.png" alt="Bullet">
