@@ -2,6 +2,7 @@ require("slick-carousel");
 require("./fontawesome.js");
 require("./fa-brands.js");
 require("./fa-solid.js");
+let LazyLoad = require("vanilla-lazyload");
 
 let hljs = require("highlight.js");
 let $ = require("jquery");
@@ -163,5 +164,10 @@ domReady(function() {
 
             return false;
         }
+    });
+
+    // Lazyload covers
+    var myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy"
     });
 });

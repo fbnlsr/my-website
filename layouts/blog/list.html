@@ -21,7 +21,7 @@
             {{ end }}
 
                 <div class="blog-bloc {{ ($.Scratch.Get "bloc-width") }}">
-                    <div class="blog-cover" style="background-image: url('{{ .Params.cover.image }}')">
+                    <div class="blog-cover lazy" data-src="{{ .Params.cover.image }}">
                         <a href="{{ .Permalink }}"></a>
                     </div>
                     <div class="blog-excerpt">
