@@ -13,7 +13,7 @@
       X-Frame-Options = "DENY"
       X-XSS-Protection = "1; mode=block"
       Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-      Cache-Control = "public, max-age=525949"
+      Cache-Control = "public, max-age=31536000"
       Link = [
       "</css/fonts.css>; rel=preload; as=stylesheet",
       "</css/main.css>; rel=preload; as=stylesheet"
