@@ -31,7 +31,7 @@
                         {{ else }}
                             <p class="date">{{ .Date.Format "January 2, 2006" }}</p>
                         {{ end }}
-                        <p class="excerpt">{{ .Summary }}</p>
+                        <div class="excerpt">{{ .Summary }}</div>
                         <div class="bottom">
                             <p class="comments"><i class="fas fa-comments"></i> {{ $.Scratch.Get "comments" }} </p>
                             <p class="more"><a href="{{ .Permalink }}">{{ i18n "readmore" }}</a></p>
