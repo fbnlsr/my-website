@@ -15,13 +15,6 @@
             .cover img {
                 opacity: 1;
             }
-
-            .is-project-btn {
-                a {
-                    background-color: $blue;
-                    color: $background;
-                }
-            }
         }
 
         .infos {
@@ -93,8 +86,9 @@
     .bullet {
         display: block;
         margin: auto;
-        margin: 3rem 8rem;
+        margin: 3rem 10rem;
         position: relative;
+        height: 1px;
 
         &:after {
             content: "";
@@ -103,7 +97,7 @@
             background-image: url('/img/bullet.png');
             position: absolute;
             left: calc(50% - 12px);
-            top: -6px;
+            top: -5px;
         }
 
         &:last-child {
