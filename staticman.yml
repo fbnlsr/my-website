@@ -1,5 +1,6 @@
 comments:
   allowedFields: ["name", "email", "comment"]
+  allowedOrigins: ["primative.net"]
   branch: "master"
   commitMessage: ":card_file_box: Add comment from Staticman"
   filename: "{@timestamp}"

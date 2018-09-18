@@ -142,6 +142,7 @@ domReady(function() {
     $('.is-comment-form').submit(function (e) {
         if (document.getElementById('website').value.length != 0) {
             e.preventDefault();
+            return false;
         } else {
             let form = this;
             $(this).find('.is-submit-btn').addClass('is-loading');
