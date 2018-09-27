@@ -10,6 +10,10 @@ links:
     devto:
     medium:
 ---
+*Ding !* Vous avez un message. *Ding !* Vous avez un message. *Ding !* Vous avez un message. Arrêtons un peu ce vacarme, et retrouvons la sérénité. Voici pourquoi j'ai supprimé pratiquement toutes les notifications sur mon téléphone.
+
+<!--more-->
+
 Depuis l'été dernier, la première chose que je fais lorsque j'installe une nouvelle app sur mon smartphone est d'aller dans ses paramètres et de totalement couper les notifications.
 
 Lorsqu'Apple a présenté les notifications push en 2009, c'était un miracle. Il n'était plus nécessaire de vérifier son téléphone pour voir si un nouvel e-mail était là ! Lorsque quelque chose d'important arrivait, un subtil *Ding !* ou une petite vibration nous alertait d'un tweet important ou d'un rendez-vous. C'était un excellent moyen pour l'utilisateur de rester connecté avec son monde numérique.

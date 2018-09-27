@@ -10,6 +10,10 @@ links:
     devto:
     medium:
 ---
+Dans ce billet je parle de mon problème de manque de sommeil, et ce que j'ai commencé à faire pour essayer de le vaincre.
+
+<!--more-->
+
 Il y a quelques mois je me suis offert une [Pebble](https://www.pebble.com/). C'est un gadget très sympa qui agit comme une extension à mon téléphone, directement attaché à mon poignet. Grâce à elle je peux envoyer des messages pré-enregistrés en cliquant sur quelques boutons, mais je peux surtout recevoir des notifications de nouveaux messages, que ce soit des emails, des SMS ou même des messages Telegram. Ce qui peut être vite fatiguant quand mon ami Édouard me spamme de paroles du Wu-Tang. Mais cela reste un gadget vraiment formidable, et j'en suis très content.
 
 Une autre fonctionnalité très cool est la possibilité de tracker mon rythme de sommeil. Grâce à son gyroscope intégré, elle peut détecter les mouvements de mon poignet et en déduire si je dors ou pas. Bon OK ce n'est pas fiable à 100%, mais cela donne une bonne indication générale sur l'état de mes habitudes de sommeil. Et elles sont désastreuses.

@@ -10,6 +10,10 @@ links:
     devto:
     medium:
 ---
+If you've got a Post-It note on your screen or under your keyboard with your Facebook password on it, this post is for you. Let's talk about keeping passwords safe, the easy way.
+
+<!--more-->
+
 I've been a fervent advocate of password managers for years. You can ask pretty much anyone in my family or amongst my friends, there was a time where I *had* to ask the question "By the way, what do you use to store your passwords?". This was usually followed by a 20 minutes speech about how unsecure their digital life was and a desperate attempt at convincing them that **must** use a password manager. That was, of course, I didn't faint learning that my friend or relative is using the same 7 letters password for absolutely **everything**, "oh and it's *hunter2*, I don't mind telling you, I have nothing to hide". Yes, that happened.
 
 For the past four years or so, my password manager of choice has been [LastPass](https://lastpass.com). I've been a happy Premium member ever since, and even though it's had a few hiccups (in [2015](https://blog.lastpass.com/2015/06/lastpass-security-notice.html/) and in [2017](https://www.theguardian.com/technology/2017/mar/30/lastpass-warns-users-to-exercise-caution-while-it-fixes-major-vulnerability)), they've been pretty transparent about the situation each time and I chose to keep trusting them. I used to log into my account using two-factor authentication: my Master Password and a [Yubikey](https://www.yubico.com/), and it's been working flawlessly for years. However, after a long consideration, I've recently chosen to say goodbye to LastPass and continue my journey with another solution. Here's why.

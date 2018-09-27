@@ -10,6 +10,10 @@ links:
     devto: "https://dev.to/fbnlsr/10-essential-extensions-for-vscode-174i"
     medium: "https://medium.com/@fbnlsr/10-essential-extensions-for-vs-code-fdfa17f4f66c"
 ---
+In the span of a few years, Visual Studio Code has imposed itself as the code editor of choice for a great majority of developers around the world. Here are 10 essential extensions (at least to me) that facilitate the workflow and make this already powerful editor even better.
+
+<!--more-->
+
 I've been using [Visual Studio Code](https://code.visualstudio.com/) as my main code editor for more than two years now. I used to work with Sublime Text, which was an amazing software (especially coming from Notepad++), but the guys at Microsoft are constantly doing an amazing job at making their editor the best out there, and their monthly update shows how dedicated they are to keep at improving it.
 
 So it's been my editor of choice, but a good editor would be nothing without good extensions. I've compiled a list of my 10 favorites (plus a few more) extensions I could not live without. They make my day to day work much easier and allow me to save so much time in the long run. Here they are (in no special order):

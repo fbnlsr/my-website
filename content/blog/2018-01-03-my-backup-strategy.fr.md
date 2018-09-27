@@ -10,6 +10,10 @@ links:
     devto: https://dev.to/fbnlsr/my-backup-strategy-4gi7
     medium:
 ---
+Dans ce billet je parle de ma stratégie de backup actuelle, et comment une catastrophe irreversible m'a appris à être très méfiant quant à la protection de mes souvenirs numériques.
+
+<!--more-->
+
 La protection des données numériques est une industrie pesant plusieurs millions de dollars. Qu'il s'agisse de données à portée militaire, scientifique ou financière, chacune de ces industries doit se préparer en cas de perte, et planifier leur sécurité. Elles déploient parfois des mesures extrêmes, allant jusqu'à avoir leur propre (et double) lignes électriques dédiées. Mais qu'en est-il des photos du dernier barbecue de votre ami ? Ou la vidéo des premiers pas de votre petit dernier ? Voici comment j'ai appris ma leçon suite à une défaillance tragique d'un système et ce à quoi mon équipement actuel ressemble.
 
 ## Une défaillance catastrophique

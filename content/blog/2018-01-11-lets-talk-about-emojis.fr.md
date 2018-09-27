@@ -10,6 +10,10 @@ links:
     devto: https://dev.to/fbnlsr/lets-talk-about-emojis-2788
     medium: https://medium.com/@fbnlsr/lets-talk-about-emojis-d0a07c88b319
 ---
+J'aime les emojis. Pardon, j'❤️ les emojis. Mais qu'en est-il des emojis... dans du code ? Voyons voir si c'est la meilleure ou la pire idée de tous les temps. Parcequ'il faut se rendre à l'évidence, parfois il y a des questions très importantes et il faut se demander si on peut déclarer 🤖 comme nom de variable.
+
+<!--more-->
+
 Les emojis sont partout. De Twitter à Facebook Chat, ils sont devenus le [Mot de l'Année 2015](http://time.com/4114886/oxford-word-of-the-year-2015-emoji/) pour Oxford, et on a même pu les voir dans un [film épouvantable](https://www.rottentomatoes.com/m/the_emoji_movie). Mais qu'en est-il en dehors des SMS et de la messagerie instantanée ? Quid de l'utilisation des emojis dans les commentaires de code ou même les messages de commit ? Voyons voir comment utiliser au mieux ces petites images marrantes.
 
 Contrairement à ce que peuvent penser les gens, les emojis existent depuis bien longtemps. Le premier emoji date de 1999, et a été créé par Shigetaka Kurita, un employé de la société japonaise de télécommunications NTT Docomo. Tout d'abord utilisé uniquement au Japon, il aura fallu attendre dix ans pour que certains d'entre eux soient ajoutés à l'espace de caractères Unicode. Ainsi, en octobre 2010, le Standard Unicode 6.0 sort officiellement, et avec lui 722 emojis. Ils ne vivent pas dans leur bloc dédié cependant et sont disséminés un peu partout dans les tables Unicode. Il a fallu des années pour que de multiples ingénieurs de Google et Apple arrivent à convaincre le Comité Technique de Unicode de les ajouter. Maintenant, les emojis font partie de la vie de tous les jours.

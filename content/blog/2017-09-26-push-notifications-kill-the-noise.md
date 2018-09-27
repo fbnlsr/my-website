@@ -10,6 +10,10 @@ links:
     devto:
     medium:
 ---
+*Ding!* You've got mail! *Ding!* You've got mail! *Ding!* You've got mail! Let's stop this nonsense and find happiness again. Here's why I've killed all notifications on my phone.
+
+<!--more-->
+
 Ever since last summer, the first thing I do whenever I install a new app on my phone is to go into its settings and completely turn off push notifications.
 
 When Apple came up with push notifications back in 2009, they were a godsent. No longer did we have the need to check our phone to see if a new email had arrived! Whenever something important happened, a subtle *Ding!* or a quick vibration alterted us of an incoming tweet or appointement. It was a great way for the user to stay in touch with their digital world.

@@ -13,6 +13,10 @@ medium = "https://medium.com/@fbnlsr/forestry-a-static-website-cms-81bebaacfae9"
 weight = 2
 
 +++
+Les sites internet statiques sont de plus en plus poulaires, offrants une plus grande vitesse d'affichage, une meilleure commodité d'utilisation et une sécurité plus solide. Mais qu'en est-il lors de l'utilisation d'un tel système dans "le monde réel", où un client veut quand même avoir la main sur le contenu de son site internet ? Pour cela nous avons besoin d'une UI. Voici mon premier avis sur Forestry, un CMS fait pour les sites statiques.
+
+<!--more-->
+
 L’utilisation de sites internet statiques se répand de plus en plus sur le web. Au delà d’un “retour aux sources” numérique, ces systèmes ont de multiples avantages. Ils sont en effet souvent plus rapides, car ils se limitent à servir des pages web simples, sans travail côté serveur. La logique est laissée à la charge du client, le plus souvent par le biais d’API, et il est beaucoup plus facile de mettre en cache et d’utiliser un CDN lors du déploiement. Ces derniers sont d’ailleurs atomiques, avec une invalidation de cache instantanée. La délivrabilité du site est ainsi assurée à 100%. Les sites statiques sont aussi souvent beaucoup plus sécurisés étant donné qu’ils ne permettent pas l’envoi direct d’informations au serveur.
 
 Néanmoins, la mise à jour et le déploiement d’un site statique se fait obligatoirement par le biais d’une machine qui bénéficie d’un environnement de développement idoine. Un terminal et des outils comme Git, Node, NPM, Ruby, et autres sont parfois nécessaires. Le site doit en effet être recompilé, soit en amont, soit par un système automatisé comme GitHub Pages ou Netlify.

@@ -10,6 +10,10 @@ links:
     devto:
     medium:
 ---
+Nouveau projet, pour Healthy Warriors ! 🎉
+
+<!--more-->
+
 J'ai eu l'occasion de travailler à nouveau avec [Ligne 13](https://www.ligne13.com/), cette fois-ci pour Healthy Warriors !
 
 Healthy Warriors est un centre de yoga et un café à Paris, regroupant plusieurs professeurs de yoga venants des quatre coins du monde. Il a été crée par Aria Crescendo et Gus Forristal, et met en avant des professeurs invités pour des séminaires tout au long de l'année.
