@@ -30,6 +30,11 @@
             </div>
             <input type="hidden" name="options[uid]" value="{{ .UniqueID }}">
             <input id="website" name="website" type="text" class="input" placeholder="Your website">
+            <div class="field">
+                <input type="hidden" name="options[reCaptcha][siteKey]" value="6Ldja3EUAAAAAO6vCy-tbS4ygqKU8KHj-ZE4Pfoc">
+                <input type="hidden" name="options[reCaptcha][secret]" value="iQNLF85DmfmOil+LyK4shT6T6Lt1ucSSKBjCxfQsZOMIdtG6wMldcZ3rXGBd89cwFFNf8pBxHGDeDhh9M8pnfO8F1AJuc1n1uKFlPGMgHobWKfTAxJ+UR2bYe+0Viw60Hmo6n8Ww/X9nOXNt12FK6CRNrjdAzF6cOi23dGKE378=">
+                <div class="g-recaptcha" data-sitekey="6Ldja3EUAAAAAO6vCy-tbS4ygqKU8KHj-ZE4Pfoc"></div>
+            </div>
             <div class="field is-grouped">
                 <div class="control">
                     <button type="submit" class="button is-link is-submit-btn">{{ i18n "submitBtn" }}</button>

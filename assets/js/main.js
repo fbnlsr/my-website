@@ -140,7 +140,8 @@ domReady(function() {
 
     // Comment submission handling
     $('.is-comment-form').submit(function (e) {
-        if (document.getElementById('website').value.length != 0) {
+        let v = grecaptcha.getResponse();
+        if (document.getElementById('website').value.length != 0 || v.length == 0) {
             e.preventDefault();
             return false;
         } else {
