@@ -158,6 +158,7 @@ domReady(function() {
                   $('.is-comment-form').find('input').val('');
                   $('.is-comment-form').find('textarea').val('');
                   $('.is-comment-form').find('.is-submit-btn').removeClass('is-loading');
+                  grecaptcha.reset();
               },
               error: function (err) {
                 console.log(err);
