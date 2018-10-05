@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 
 module.exports = {
@@ -41,6 +42,20 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.css$/,
+                use: [
+                {
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {
+                    // you can specify a publicPath here
+                    // by default it use publicPath in webpackOptions.output
+                    publicPath: 'public/css'
+                    }
+                },
+                "css-loader"
+                ]
             }
         ]
     },
@@ -57,5 +72,11 @@ module.exports = {
         //     allChunks: true,
         //     disable: process.env.NODE_ENV === "development"
         // })
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: "main.css",
+            // chunkFilename: "[id].css"
+          })
     ]
 };
