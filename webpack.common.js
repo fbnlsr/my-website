@@ -1,7 +1,5 @@
 const path = require('path');
-// const ExtractTextPlugin = require("extract-text-webpack-plugin");
 // const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: ['./assets/js/main.js', './assets/scss/main.scss'],
@@ -27,20 +25,14 @@ module.exports = {
                 // loader: ExtractTextPlugin.extract(['css-loader?url=false', 'sass-loader'])
                 use: [
                     {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
+                        options: {
+                            url: false
+                        }
                     },
                     {
                         loader: 'resolve-url-loader'
                     },
-                    // {
-                    //     loader: MiniCssExtractPlugin.loader,
-                    //     options: {
-                    //         // you can specify a publicPath here
-                    //         // by default it use publicPath in webpackOptions.output
-                    //         publicPath: 'public/css'
-                    //     }
-                    // },
-                    // "css-loader"
                     {
                         loader: 'sass-loader',
                         options: {
