@@ -2,7 +2,8 @@ require("slick-carousel");
 require("./fontawesome.js");
 require("./fa-brands.js");
 require("./fa-solid.js");
-let LazyLoad = require("vanilla-lazyload");
+// let LazyLoad = require("vanilla-lazyload");
+import LazyLoad from "vanilla-lazyload";
 
 let hljs = require("highlight.js");
 let $ = require("jquery");
