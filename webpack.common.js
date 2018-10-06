@@ -3,7 +3,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 
 module.exports = {
-    entry: ['./assets/js/main.js', './assets/scss/main.scss'],
+    performance: {
+        hints: false
+    },
+    entry: './assets/js/main.js',
     output: {
         filename: 'js/main.js',
         path: path.resolve(__dirname, 'static')

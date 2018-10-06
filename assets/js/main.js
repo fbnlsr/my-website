@@ -1,7 +1,6 @@
+require("../scss/main.scss");
+
 require("slick-carousel");
-require("./fontawesome.js");
-require("./fa-brands.js");
-require("./fa-solid.js");
 // let LazyLoad = require("vanilla-lazyload");
 import LazyLoad from "vanilla-lazyload";
 
