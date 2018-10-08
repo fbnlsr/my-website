@@ -1,10 +1,11 @@
-require("../scss/main.scss");
-
 require("slick-carousel");
-// let LazyLoad = require("vanilla-lazyload");
 import LazyLoad from "vanilla-lazyload";
+import hljs from "highlight.js/lib/highlight";
+import javascript from "highlight.js/lib/languages/javascript";
+import php from "highlight.js/lib/languages/php";
+import sql from "highlight.js/lib/languages/sql";
+import markdown from "highlight.js/lib/languages/markdown";
 
-let hljs = require("highlight.js");
 let $ = require("jquery");
 const galite = require('ga-lite');
 
@@ -61,6 +62,10 @@ var modalCloses = getAll('.modal-background, .delete');
 // DOM is ready and waiting
 domReady(function() {
     // Initializing HighlightJS
+    hljs.registerLanguage('javascript', javascript);
+    hljs.registerLanguage('php', php);
+    hljs.registerLanguage('sql', sql);
+    hljs.registerLanguage('markdown', markdown);
     hljs.initHighlightingOnLoad();
 
     // Slick carousel configuration
