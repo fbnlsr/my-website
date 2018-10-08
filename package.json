@@ -5,10 +5,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.dev.js && hugo",
-    "serve": "webpack --config webpack.dev.js && hugo serve --disableFastRender",
-    "watch": "parallelshell 'hugo serve --disableFastRender' 'webpack --watch --config webpack.dev.js'",
-    "prod": "webpack -p --config webpack.prod.js && hugo"
+    "copyfiles": "yes | cp ./node_modules/highlight.js/styles/github-gist.css ./assets/scss/_github-gist.scss",
+    "build": "npm run copyfiles && webpack --config webpack.dev.js && hugo",
+    "serve": "npm run copyfiles && webpack --config webpack.dev.js && hugo serve --disableFastRender",
+    "watch": "npm run copyfiles && parallelshell 'hugo serve --disableFastRender' 'webpack --watch --config webpack.dev.js'",
+    "prod": "npm run copyfiles && webpack -p --config webpack.prod.js && hugo"
   },
   "devDependencies": {
     "bulma": "^0.7.1",
