@@ -7,9 +7,12 @@ hugo.exe
 /static/css/main.css
 /static/css/main.css.map
 /static/js/main.js
+/static/js/main.min.js
 /static/js/main.js.map
+/static/js/main.min.js.map
 /static/font/*
 /static/fonts.css
+/resources/_gen
 
 ### macOS ###
 *.DS_Store
