@@ -1,7 +1,6 @@
 ---
 title: Les trois piliers d'un dévelopeur
 date: 2016-03-11
-menu: blog
 cover:
     image: "/img/posts/mike-kenneally-2236.jpg"
     author: Mike Kenneally

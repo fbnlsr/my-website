@@ -1,7 +1,8 @@
 ---
-title: New website for 18-55 Productions!
+title: 18-55 Productions
 date: 2017-02-21
-menu: blog
+excerpt: |
+    New project online, this time for 18-55 Productions, a French video production company.
 cover:
     image: "/img/posts/18-55.jpg"
     author:
@@ -10,10 +11,6 @@ links:
     devto:
     medium:
 ---
-New project online, this time for 18-55 Productions, a French video production company.
-
-<!--more-->
-
 Last week we launched the new website for **[18-55 Productions](http://18-55.fr)**!
 
 **18-55** is a video production company, based in Bordeaux. They work with various brands such as **DC Shoes**, **Orange**, or even **Electronic Arts** amongst many others. Their goal was to get a website that could put a focus on the content (their productions) and at the same time show that they also act as a platform for different type of professions revolving around their line of work. That's why they're surrounded by various artists, photographers, writers and videographers which allow them to quickly put up a team of talented people for the projects they're working on.

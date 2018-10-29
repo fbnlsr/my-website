@@ -1,7 +1,6 @@
 ---
 title: Gitlab crashed, who's to blame?
 date: 2017-02-02
-menu: blog
 cover:
     image: "/img/posts/gitlab.jpg"
     author:

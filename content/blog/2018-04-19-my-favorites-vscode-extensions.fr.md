@@ -1,19 +1,17 @@
 ---
 title: 10 extensions indispensable pour VS Code
 date: 2018-04-19
+excerpt: |
+    En très peu de temps, Visual Studio Code s'est imposé comme l'éditeur de code de prédilection pour une grande majorité de développeurs. Voici 10 extensions indispensables (pour moi) qui facilitent le workflow et rendent ce logiciel déjà puissant encore meilleur.
 cover:
     image: "/img/posts/pankaj-patel-516482.jpg"
     author: Panjak patel
     link: "https://unsplash.com/photos/yEAOfWSdzgM"
-menu: blog
+
 links:
     devto: "https://dev.to/fbnlsr/10-essential-extensions-for-vscode-174i"
     medium: "https://medium.com/@fbnlsr/10-essential-extensions-for-vs-code-fdfa17f4f66c"
 ---
-En très peu de temps, Visual Studio Code s'est imposé comme l'éditeur de code de prédilection pour une grande majorité de développeurs. Voici 10 extensions indispensables (pour moi) qui facilitent le workflow et rendent ce logiciel déjà puissant encore meilleur.
-
-<!--more-->
-
 J'utilise [Visual Studio Code](https://code.visualstudio.com/) comme principal éditeur de code depuis plus de deux ans maintenant. J'avais pour habitude de travailler sous Sublime Text, qui est formidable (surtout venant de Notepad++). Mais il faut reconnaître que Microsoft fourni un travail énorme pour faire de son éditeur le meilleur qui soit, et les mises à jour mensuelles montrent à quel point ils sont dédiés à la tâche.
 
 C'est donc mon éditeur de choix, mais un bon éditeur ne serait rien sans de bonnes extensions. J'ai compilé une liste des 10 extensions (et un peu plus) sans lesquelles je ne pourrais pas vivre. Elles me facilitent le travail et me permettent de gagner tellement de temps sur le long terme. Les voici (sans ordre spécial) :

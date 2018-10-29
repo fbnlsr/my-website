@@ -1,7 +1,6 @@
 ---
 title: HTTPS toutes les choses !
 date: 2017-01-23
-menu: blog
 cover:
     image: "/img/posts/all-the-things.jpg"
     author:

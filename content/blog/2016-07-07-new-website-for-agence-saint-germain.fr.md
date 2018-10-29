@@ -1,7 +1,6 @@
 ---
-title: Nouveau site pour Agence Saint Germain
+title: Agence Saint Germain
 date: 2016-07-07
-menu: blog
 cover:
     image: "/img/posts/asg.jpg"
     author:

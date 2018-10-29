@@ -1,7 +1,6 @@
 ---
 title: Regardez ça, j'ai un blog !
 date: 2017-01-23
-menu: blog
 cover:
     image: "/img/posts/yannick-pulver-180756.jpg"
     author: Yannick Pulver

@@ -1,7 +1,6 @@
 ---
 title: New website!
 date: 2016-01-20
-menu: blog
 cover:
     image: "/img/posts/wallhaven-222927.jpg"
     author: Snufkin

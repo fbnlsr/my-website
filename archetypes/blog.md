@@ -1,7 +1,7 @@
 ---
 title:
 date: {{ .Date }}
-menu: blog
+excerpt:
 draft: true
 cover:
     image:

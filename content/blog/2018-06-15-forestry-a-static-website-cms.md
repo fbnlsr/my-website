@@ -1,20 +1,18 @@
-+++
-date = "2018-06-15T19:38:36+02:00"
-draft = false
-pagedesc = ""
-title = "Forestry - A static website CMS"
-type = ""
-[cover]
-author = "Kai Pilger"
-image = "/img/posts/kai-pilger-279041.jpg"
-link = "https://unsplash.com/photos/6eCBRY8x3WM"
-[links]
-devto = "https://dev.to/fbnlsr/forestry---a-static-website-cms-59p7"
-medium = "https://medium.com/@fbnlsr/forestry-a-static-website-cms-81bebaacfae9"
-[menu.blog]
-weight = 1
+---
+date: 2018-06-15
+draft: false
+title: Forestry - A static website CMS
+excerpt: |
+    J'ai développé le nouveau site internet de NySB, une agence de communication graphique.
+cover:
+    author: Kai Pilger
+    image: "/img/posts/kai-pilger-279041.jpg"
+    link: "https://unsplash.com/photos/6eCBRY8x3WM"
+links:
+    devto: "https://dev.to/fbnlsr/forestry---a-static-website-cms-59p7"
+    medium: "https://medium.com/@fbnlsr/forestry-a-static-website-cms-81bebaacfae9"
 
-+++
+---
 Static websites are getting more and more popular, offering better speed, convenience and security. But what about a "real world" application, where a client wants to be able to edit their website's content? For that we need an admin UI. Here's my first hand opinion on Forestry, a CMS made for static websites.
 
 <!--more-->

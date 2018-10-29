@@ -1,7 +1,8 @@
 ---
-title: Nouveau projet pour SBBT Architecture
+title: SBBT Architecture
 date: 2018-09-27
-menu: blog
+excerpt: |
+    J'ai développé le nouveau site internet de [SBBT Architecture](https://sbbt-architecture.com/), un cabinet d'architectes parisien, en collaboration avec NySB Paris.
 cover:
     image: "/img/posts/sbbt.jpg"
     author:
@@ -10,10 +11,6 @@ links:
     devto:
     medium:
 ---
-J'ai développé le nouveau site internet de [SBBT Architecture](https://sbbt-architecture.com/), un cabinet d'architectes parisien, en collaboration avec NySB Paris.
-
-<!--more-->
-
 Pour cette deuxième collaboration avec [NySB](https://nysb.paris), nous avons travaillé sur le site internet de [SBBT Architecture](https://sbbt-architecture.com/). La plateforme choisie est Wordpress, le client désirant un système d'administration complet lui permettant de modifier tous les éléments de son site.
 
 J'ai dû construire un carrousel sur-mesure faisant l'utilisation d'images en plein écran. Le tout est géré par Advanced Custom Fields, laissant au client la possibilité de modifier tous les aspects des diapositives : de l'image de fond au texte principal, de la couleur à la direction du dégradé, et ainsi de suite.

@@ -1,7 +1,8 @@
 ---
-title: New project for SBBT Architecture
+title: SBBT Architecture
 date: 2018-09-27
-menu: blog
+excerpt: |
+    I've developped the new website for [SBBT Architecture](https://sbbt-architecture.com/), an architectural firm, in collaboration with NySB Paris.
 cover:
     image: "/img/posts/sbbt.jpg"
     author:
@@ -10,10 +11,6 @@ links:
     devto:
     medium:
 ---
-I've developped the new website for [SBBT Architecture](https://sbbt-architecture.com/), an architectural firm, in collaboration with NySB Paris.
-
-<!--more-->
-
 For this second collaboration with [NySB](https://nysb.paris), we worked on the website of [SBBT Architecture](https://sbbt-architecture.com/). Wordpress was the platform of choice, as the client needed a full-fledged admin system so that they could be able to edit pretty much all aspects of the site.
 
 I had to custom-build a slideshow with full-screen images for the home page. The whole thing is managed thanks to Advanced Custom Fields, so that the client can change every aspect of the slides: the background image, the main text, the gradient color and direction, and so on.

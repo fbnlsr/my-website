@@ -1,7 +1,6 @@
 ---
 title: "The table naming dilemma: singular vs. plural"
 date: 2017-01-25
-menu: blog
 cover:
     image: "/img/posts/eli-francis-100644.jpg"
     author: Eli Francis

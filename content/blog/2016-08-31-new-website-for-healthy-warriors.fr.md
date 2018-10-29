@@ -1,7 +1,6 @@
 ---
-title: Nouveau site pour Healthy Warriors
+title: Healthy Warriors
 date: 2016-08-31
-menu: blog
 cover:
     image: "/img/posts/healthy-warriors.jpg"
     author:

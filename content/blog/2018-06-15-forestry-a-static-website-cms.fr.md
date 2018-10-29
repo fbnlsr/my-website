@@ -1,18 +1,18 @@
-+++
-date = "2018-06-15T22:28:31+02:00"
-draft = false
-title = "Forestry - Un CMS statique"
-[cover]
-author = "Kai Pilger"
-image = "/img/posts/kai-pilger-279041.jpg"
-link = "https://unsplash.com/photos/6eCBRY8x3WM"
-[links]
-devto = "https://dev.to/fbnlsr/forestry---a-static-website-cms-59p7"
-medium = "https://medium.com/@fbnlsr/forestry-a-static-website-cms-81bebaacfae9"
-[menu.blog]
-weight = 2
+---
+date: 2018-06-15
+draft: false
+title: Forestry - Un CMS statique
+excerpt: |
+    J'ai développé le nouveau site internet de NySB, une agence de communication graphique.
+cover:
+    author: "Kai Pilger"
+    image: "/img/posts/kai-pilger-279041.jpg"
+    link: "https://unsplash.com/photos/6eCBRY8x3WM"
+links:
+    devto: "https://dev.to/fbnlsr/forestry---a-static-website-cms-59p7"
+    medium: "https://medium.com/@fbnlsr/forestry-a-static-website-cms-81bebaacfae9"
 
-+++
+---
 Les sites internet statiques sont de plus en plus poulaires, offrants une plus grande vitesse d'affichage, une meilleure commodité d'utilisation et une sécurité plus solide. Mais qu'en est-il lors de l'utilisation d'un tel système dans "le monde réel", où un client veut quand même avoir la main sur le contenu de son site internet ? Pour cela nous avons besoin d'une UI. Voici mon premier avis sur Forestry, un CMS fait pour les sites statiques.
 
 <!--more-->

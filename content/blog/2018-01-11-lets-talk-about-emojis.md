@@ -1,19 +1,17 @@
 ---
 title: Let's talk about emojis
 date: 2018-01-11
+excerpt: |
+    I love emojis. No, I ❤️ emojis. But what about emojis... inside code? Let's find out if this is the greatest or worst idea of all time. Because you know, sometimes there are really important questions and you've got to ask yourself if you can declare 🤖 as a variable.
 cover:
     image: "/img/posts/nong-vang-449097.jpg"
     author: Nong Vang
     link: https://unsplash.com/@californong
-menu: blog
+
 links:
     devto: https://dev.to/fbnlsr/lets-talk-about-emojis-2788
     medium: https://medium.com/@fbnlsr/lets-talk-about-emojis-d0a07c88b319
 ---
-I love emojis. No, I ❤️ emojis. But what about emojis... inside code? Let's find out if this is the greatest or worst idea of all time. Because you know, sometimes there are really important questions and you've got to ask yourself if you can declare 🤖 as a variable.
-
-<!--more-->
-
 Emojis are everywhere. From Twitter to Facebook Chat, they've grown to become Oxford's 2015 [Word of the Year](http://time.com/4114886/oxford-word-of-the-year-2015-emoji/) and even featured in a [horrendous movie](https://www.rottentomatoes.com/m/the_emoji_movie). But what about outside SMS and instant messaging? What about using emojis inside code comments or even git commit messages? Let's find out how we can make the best use of these funny little pictures.
 
 Contrary to what people may think, emojis have been around for quite some time. The first emoji dates back to 1999, and was created by Shigetaka Kurita, a Japanese telecommunication planner for NTT Docomo. At first used solely in Japan, it took those little pictures ten years for some of them to be added to the Unicode character space. Thus, in October 2010 the Unicode Standard 6.0 got released, and with it 722 emojis. They do not live in their own dedicated blocks though and are spread around the Unicode tables. It took years for multiple engineers working at Google and Apple to convince the Unicode Technical Committee to add them. Now emojis are a part of everybody's life.

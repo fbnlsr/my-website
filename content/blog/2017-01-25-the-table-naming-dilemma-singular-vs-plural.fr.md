@@ -1,7 +1,6 @@
 ---
 title: "Nommer ses tables : singulier vs. pluriel"
 date: 2017-01-25
-menu: blog
 cover:
     image: "/img/posts/eli-francis-100644.jpg"
     author: Eli Francis

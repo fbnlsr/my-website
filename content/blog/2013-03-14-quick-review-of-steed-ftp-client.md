@@ -6,7 +6,7 @@ cover:
     image:
     author:
     link:
-menu: blog
+
 links:
     devto:
     medium:

@@ -1,7 +1,8 @@
 ---
 title: Adieu LastPass, bonjour KeePassXC!
 date: 2017-10-06
-menu: blog
+excerpt: |
+    Si vous avez un Post-It avec votre mot de passe Facebook écrit dessus collé sur votre écran ou caché sous votre clavier, ce billet est pour vous. Parlons un peu de comment sauvegarder ses mots de passe en toute sécurité, et simplement.
 cover:
     image: "/img/posts/victoriano-izquierdo-109924.jpg"
     author: Victoriano Izquierdo
@@ -10,10 +11,6 @@ links:
     devto:
     medium:
 ---
-Si vous avez un Post-It avec votre mot de passe Facebook écrit dessus collé sur votre écran ou caché sous votre clavier, ce billet est pour vous. Parlons un peu de comment sauvegarder ses mots de passe en toute sécurité, et simplement.
-
-<!--more-->
-
 Depuis des années, je suis un fervent défenseur de l'utilisation de gestionnaires de mots de passe. Vous pouvez demander à pratiquement tous les membres de ma famille ou mes amis, il existait une époque où je *devais* poser la question : "Au fait, tu utilises quoi comme gestionnaire de mots de passe ?". C'était le plus souvent suivi par un monologue d'une vingtaine de minutes où je décrivais combien la protection de leur vie numérique était désastreuse et qu'ils **devaient** utiliser un gestionnaire. Bien sûr, c'était sans compter les moments où j'apprenais que mon ami ou parent utilisait le même mot de passe de 7 caractères de long pour **absolument tout** et que "c'est *hunter2*, c'est pas grave si tu le sais, je n'ai rien à cacher". Oui oui, c'est arrivé.
 
 Durant les quatre dernières années environ, mon gestionnaire de choix était [LastPass](https://lastpass.com). J'étais un membre Premium comblé pendant tout ce temps, et même s'il leur est arrivé quelques tracas (comme en [2015](https://blog.lastpass.com/2015/06/lastpass-security-notice.html/) ou en [2017](https://www.theguardian.com/technology/2017/mar/30/lastpass-warns-users-to-exercise-caution-while-it-fixes-major-vulnerability)), ils ont toujours été transparents sur la situation à chaque fois et j'ai continué à leur faire confiance. J'avais pour habitude d'utiliser une authentification double facteur : mon mot de passe et une [Yubikey](https://www.yubico.com/), et tout a fonctionné parfaitement pendant des années. Cependant, après une très longue considération, j'ai récemment pris la décision de dire au revoir à LastPass et continuer le voyage avec une autre solution. Voici pourquoi.

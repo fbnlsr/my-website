@@ -1,7 +1,8 @@
 ---
 title: My hectic sleep pattern
 date: 2017-02-07
-menu: blog
+excerpt: |
+    In this post I talk about my struggle with sleep deprivation, and what I'm doing to fight it.
 cover:
     image: "/img/posts/dominik-qn-1320.jpg"
     author: Dominic QN
@@ -10,10 +11,6 @@ links:
     devto:
     medium:
 ---
-In this post I talk about my struggle with sleep deprivation, and what I'm doing to fight it.
-
-<!--more-->
-
 A couple of months ago I bought myself a [Pebble](https://www.pebble.com/). It's a nifty little device which acts as an extension to my phone, directly strapped to my wrist. Thanks to it I can quickly send pre-recorded messages with the press of a few buttons, but most importantly get notifications on new messages, them being emails, SMS or even Telegram messages. Which can get a bit invasive especially when my friend Edouard spams me with Wu-Tang Clan lyrics. All in all, it's really an amazing gadget and I'm really happy with it.
 
 Another cool feature is its ability to track sleeping patterns. Thanks to its built-in gyroscope, it can detect wrist movements and deduce if I'm sleeping or not. Granted, it's not 100% bullet-proof, but it does a good job at giving a broad idea of how good (or bad) my sleeping habits are. And boy they are terrible.

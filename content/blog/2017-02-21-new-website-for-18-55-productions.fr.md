@@ -1,7 +1,8 @@
 ---
-title: Nouveau site web pour 18-55 Productions !
+title: 18-55 Productions
 date: 2017-02-21
-menu: blog
+excerpt: |
+    Un nouveau projet en ligne, pour 18-55 Productions, une société de production audiovisuelle.
 cover:
     image: "/img/posts/18-55.jpg"
     author:
@@ -10,10 +11,6 @@ links:
     devto:
     medium:
 ---
-Un nouveau projet en ligne, pour 18-55 Productions, une société de production audiovisuelle.
-
-<!--more-->
-
 La semaine dernière nous avons lancé le nouveau site web de **[18-55 Productions](http://18-55.fr)** !
 
 **18-55** est une société de production audiovisuelle basée à Bordeaux. Ils travaillent avec plusieurs marques comme **DC Shoes**, **Orange** ou encore **Electronic Arts** parmi tant d'autres. Leur but était d'avoir un site qui puisse mettre en avant son contenu (leurs productions) et en même temps servir de plateforme pour les différentes professions qui tournent autour de leur domaine. C'est la raison pour laquelle ils s'entourent de divers artistes, photographes, rédacteurs et réalisateurs ce qui leur permet de mettre rapidement une équipe de divers talents sur pied pour répondre au mieux aux projets sur lesquels ils interviennent.
