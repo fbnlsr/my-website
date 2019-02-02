@@ -12,7 +12,7 @@ title: À propos
 
 <div class="is-about-tools">
     <div class="columns">
-        <div class="column">
+        <div class="column is-hidden-mobile">
             <ul>
                 <li><strong>HTML5 / CSS3</strong></li>
                 <li><strong>Javascript (jQuery / ES6)</strong></li>
@@ -25,7 +25,7 @@ title: À propos
                 <li>Prettier</li>
             </ul>
         </div>
-        <div class="column">
+        <div class="column is-hidden-mobile">
             <ul>
                 <li><strong>Laravel</strong></li>
                 <li><strong>Symfony 3</strong></li>
