@@ -9,7 +9,7 @@
     <div class="">
         <h2>{{ i18n "addComment" }}</h2>
 
-        <form id="commentForm" class="is-comment-form" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}/comments">
+        <form id="commentForm" class="is-comment-form" method="post" action="{{ .Site.Params.staticman.endpoint }}/{{ .Site.Params.staticman.username }}/{{ .Site.Params.staticman.repository }}/{{ .Site.Params.staticman.branch }}">
             <div class="field">
                 <label class="label">{{ i18n "commentFormName" }}</label>
                 <div class="control">
