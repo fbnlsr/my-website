@@ -20,7 +20,7 @@ blackfriday:
 
 params:
   staticman:
-    endpoint: "https://api.staticman.net/v3/entry/github"
+    endpoint: "https://staticman3.herokuapp.com/v2/entry/"
     username: fbnlsr
     repository: "primative.net"
     branch: master
