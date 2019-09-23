@@ -19,7 +19,7 @@ comments:
   path: "data/comments/{options.uid}"
   reCaptcha:
     enabled: true
-    secret: iQNLF85DmfmOil+LyK4shT6T6Lt1ucSSKBjCxfQsZOMIdtG6wMldcZ3rXGBd89cwFFNf8pBxHGDeDhh9M8pnfO8F1AJuc1n1uKFlPGMgHobWKfTAxJ+UR2bYe+0Viw60Hmo6n8Ww/X9nOXNt12FK6CRNrjdAzF6cOi23dGKE378=
+    secret: AH2J9ewUwJ/x2lN/c23ItsCXGvk6bER3KR8R0VMUkQUyiGsQ2YHnh45ecLD65ReyDPxt5vhNhH4vz4vO7ZHsA7Nxe6J5frcBy0yJuvti/1spJAN5UlsybcWAyQT2SziIrqvRTNefpNHU+QP9+xCMaWa5E1w5Db4CvIZk1ncoE6N1X5b5cWvZlOf7cphHmSZcWAkpgnN2UWP/5RaKHsBqaA8k5x3sxy1LBaksAu1gGhAY1M9lXfdJFMq8SxE4xOfc3q8iaZJkJOB0Th4ZFgO5kfUwkHTxsWWpM787T8o4qqyBBk5Xdq/nzwSZlFCCS+UH/COAl7CklywPJSX2reC4TQ==
     siteKey: 6Ldja3EUAAAAAO6vCy-tbS4ygqKU8KHj-ZE4Pfoc
   requiredFields:
     - name
