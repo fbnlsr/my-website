@@ -167,6 +167,9 @@ domReady(function() {
               },
               error: function (err) {
                 console.log(err);
+              },
+              complete: function() {
+                $(this).find('.is-submit-btn').removeClass('is-loading');
               }
             });
 
