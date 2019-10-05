@@ -5,7 +5,7 @@ title: Fabien Lasserre, développeur web à Bordeaux, France.
 
 ![Hey c'est moi !](/img/me230.jpg)
 
-Je m’appelle Fabien,
+Je m’appelle Fabien.
 
 Je suis Développeur Full Stack, basé à Bordeaux.
 

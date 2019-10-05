@@ -501,13 +501,14 @@
 
             .title {
                 line-height: initial;
-                font-size: 2.5rem;
+                font-size: 1.8rem;
                 color: $text;
                 text-shadow: none;
-                padding: 0 1rem;
+                padding: 1rem;
                 font-weight: bold;
                 position: relative;
                 height: initial;
+                max-width: 100%;
             }
 
             .date {

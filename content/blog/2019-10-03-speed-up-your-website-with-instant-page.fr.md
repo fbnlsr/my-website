@@ -1,5 +1,5 @@
 ---
-title: Rendez votre site web plus rapide en 1 minute avec Instant Page
+title: "Rendez votre site web plus rapide en 1 minute avec Instant.page"
 date: 2018-10-03
 excerpt: |
     Parfois la vie est simple. On charge un script, et notre site est plus rapide. Mais quelle est cette sorcelerie ?
