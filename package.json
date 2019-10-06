@@ -8,15 +8,15 @@
     "copyfiles": "yes | cp ./node_modules/highlight.js/styles/github-gist.css ./assets/scss/_github-gist.scss",
     "build": "npm run copyfiles && webpack --config webpack.dev.js && hugo",
     "serve": "npm run copyfiles && webpack --config webpack.dev.js && hugo serve --disableFastRender",
-    "watch": "npm run copyfiles && parallelshell 'hugo serve --disableFastRender' 'webpack --watch --config webpack.dev.js'",
+    "watch": "npm run copyfiles && concurrently 'hugo serve --disableFastRender' 'webpack --watch --config webpack.dev.js'",
     "prod": "npm run copyfiles && webpack -p --config webpack.prod.js && hugo"
   },
   "devDependencies": {
     "bulma": "^0.7.5",
+    "concurrently": "^4.1.2",
     "ga-lite": "^2.0.5",
     "highlight.js": "^9.15.10",
     "jquery": ">=3.4.0",
-    "parallelshell": "^3.0.2",
     "slick-carousel": "^1.8.1",
     "vanilla-lazyload": "^10.20.1",
     "webpack": "^4.40.2",
