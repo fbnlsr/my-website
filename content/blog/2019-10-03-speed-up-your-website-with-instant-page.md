@@ -1,6 +1,6 @@
 ---
 title: Speed up your website in 1 minute with Instant.page
-date: 2018-10-03
+date: 2019-10-03
 excerpt: |
     Sometime life is that simple. Load a script, and make your website faster? What is this sorcery?
 cover:
