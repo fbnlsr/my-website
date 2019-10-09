@@ -84,3 +84,6 @@ other = "Visit the website"
 
 [readmore]
 other = "Read more..."
+
+[lastPost]
+other = "Latest post from the blog:"

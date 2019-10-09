@@ -197,3 +197,35 @@
         }
     }
 }
+
+#heyListen {
+    width: 350px;
+    position: absolute;
+    bottom: -300px;
+    right: 20px;
+    font-size: .85rem;
+    z-index: 99;
+    transition:  bottom 0.8s cubic-bezier(.53,-0.13,.51,1.18);
+
+    &.is-active {
+        bottom: 30px;
+    }
+
+    .card-image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 120px;
+        position: relative;
+
+        .delete {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}

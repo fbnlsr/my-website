@@ -181,4 +181,21 @@ domReady(function() {
     var myLazyLoad = new LazyLoad({
         elements_selector: ".lazy"
     });
+
+    // Making blog post notification appear after some time
+    let heyListen = document.getElementById('heyListen');
+    if (heyListen) {
+        window.setTimeout(() => {
+            heyListen.classList.add('is-active');
+            window.setTimeout(() => {
+                heyListen.classList.remove('is-active');
+            }, 30000);
+        }, 10000);
+
+        // Making notification disapear on click
+        let closeListen = document.getElementById('closeListen');
+        closeListen.addEventListener('click', () => {
+            heyListen.classList.remove('is-active');
+        });
+    }
 });

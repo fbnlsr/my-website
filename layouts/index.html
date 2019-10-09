@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 {{ partial "nav-home.html" . }}
 
-<div class="home-columns columns">
+<div class="home-columns">
 
     <div class="column is-half is-home-left-column">
         <div class="logo">
@@ -34,5 +34,19 @@
     </div>
 
 </div>
+
+{{ range first 1 (where .Site.RegularPages "Section" "blog") }}
+    <div id="heyListen" class="card">
+        <div class="card-image" style="background-image: url('{{ .Params.cover.image }}')">
+            <button class="delete" id="closeListen"></button>
+        </div>
+        <div class="card-content">
+            <div class="content">
+                <p><strong>{{ i18n "lastPost" }}</strong></p>
+                <p><a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a></p>
+            </div>
+        </div>
+    </div>
+{{ end }}
 
 {{ partial "footer.html" . }}
