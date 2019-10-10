@@ -8,6 +8,9 @@ baseURL: "https://www.primative.net"
 sectionPagesMenu: main
 googleAnalytics: UA-28964878-1
 removePathAccents: true
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
 
 permalinks:
   blog: /:section/:slug/
