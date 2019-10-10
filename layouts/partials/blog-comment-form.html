@@ -28,7 +28,7 @@
                     <textarea name="fields[comment]" class="textarea" placeholder="{{ i18n "commentFormCommentPlaceholder" }}" required></textarea>
                 </div>
             </div>
-            <input type="hidden" name="options[uid]" value="{{ .UniqueID }}">
+            <input type="hidden" name="options[uid]" value="{{ .File.UniqueID }}">
             <input id="website" name="website" type="text" class="input" placeholder="Your website">
             <div class="field">
                 <input type="hidden" name="options[reCaptcha][siteKey]" value="6Ldja3EUAAAAAO6vCy-tbS4ygqKU8KHj-ZE4Pfoc">

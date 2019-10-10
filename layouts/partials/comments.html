@@ -1,6 +1,6 @@
 {{ $comments := readDir "data/comments" }}
 {{ $.Scratch.Add "hasComments" 0 }}
-{{ $entryId := .UniqueID }}
+{{ $entryId := .File.UniqueID }}
 {{ $siteUrl := .Site.BaseURL }}
 {{ range $comments }}
     {{ if eq .Name $entryId }}

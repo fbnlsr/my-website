@@ -16,7 +16,7 @@
             {{ end }}
 
             {{ $.Scratch.Set "comments" 0 }}
-            {{ range $index, $comments := (index $.Site.Data.comments .UniqueID ) }}
+            {{ range $index, $comments := (index $.Site.Data.comments .File.UniqueID ) }}
                 {{ $.Scratch.Add "comments" 1 }}
             {{ end }}
 
