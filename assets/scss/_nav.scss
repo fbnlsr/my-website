@@ -1,6 +1,7 @@
 .nav-home {
     margin: 0;
     padding: 0;
+    position: absolute;
 }
 
 .navbar {
@@ -57,6 +58,18 @@
             height: 3px;
             left: calc(50% - 15px);
             width: 30px;
+        }
+
+        &.is-navbar-home {
+            span {
+                background-color: $background;
+            }
+        }
+
+        &.is-active {
+            span {
+                background-color: $text;
+            }
         }
 
         &:hover {

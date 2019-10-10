@@ -34,10 +34,6 @@ body {
     flex-direction: column;
 }
 
-.site {
-    flex: 1;
-}
-
 h1 {
     text-align: center;
     font-weight: bold;
@@ -82,4 +78,10 @@ button,
 button:focus,
 button:active {
     outline: 0;
+}
+
+.column.is-half,
+.column.is-half-tablet {
+    width: initial;
+    flex: 1;
 }
