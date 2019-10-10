@@ -8,8 +8,8 @@ cover:
     author: "Marc-Olivier Jodoin"
     link: "https://unsplash.com/photos/NqOInJ-ttqM"
 links:
-    devto:
-    medium:
+    devto: "https://dev.to/fbnlsr/speed-up-your-website-in-1-minute-with-instant-page-49f1"
+    medium: "https://medium.com/@fbnlsr/speed-up-your-website-in-1-minute-with-instant-page-b12c8d91db81"
 ---
 Derrière ce titre putaclic se cache un vrai petit outil très pratique. Je suis tombé dessus en surfant Hacker News il y a très longtemps, et à vrai dire il est actif sur ce site [depuis février](https://github.com/fbnlsr/primative.net/commit/d862953f35a2ae0992ed11bd8c294bf8d7658a91) mais je n'ai jamais pris le temps d'en parler. **Instant.page** est donc une petite librairie Javascript qui utilise un *"préchargement juste à temps"* sur les liens d'une page – c'est-à-dire que le script précharge une ancre juste avant qu'un utilisateur ne clique sur un lien hypertexte.
 
