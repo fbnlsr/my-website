@@ -15,8 +15,10 @@
         <div class="lang-choser is-hidden-touch">
         {{ if .IsTranslated }}
             {{ $currentLang := .Site.Language.Lang }}
-            {{ range .AllTranslations }}
-                <a class="lang {{ if eq .Lang $currentLang }}is-active{{end}}" href="{{ .Permalink }}">{{ .Lang }}</a>
+            {{ if eq $currentLang "en" }}
+                <a class="lang" href="/fr">FR</a>
+            {{ else }}
+                <a class="lang" href="/">EN</a>
             {{ end }}
         {{ end }}
         </div>

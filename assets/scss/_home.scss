@@ -80,9 +80,10 @@
 
     .lang-choser {
         color: $background;
-        font-size: .8rem;
+        font-size: .9rem;
         text-transform: uppercase;
         text-align: right;
+        letter-spacing: 1px;
 
         a, a:visited {
             color: inherit;

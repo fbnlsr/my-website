@@ -1,5 +1,5 @@
 </main>
-{{ if not (eq (relURL .URL) ("/" | safeHTML)) }}
+{{ if and (not (eq (relURL .URL) ("/" | safeHTML))) (not (eq (relURL .URL) ("/fr/" | safeHTML))) }}
 <footer class="site-footer footer">
     <div class="columns">
         <div class="column is-one-fifth">
