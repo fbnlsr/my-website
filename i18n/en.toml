@@ -19,53 +19,17 @@ other = "Used for this project:"
 [projectClient]
 other = "Client:"
 
+[email]
+other  = "Email"
+
+[phone]
+other = "Phone"
+
 [contactTel]
 other = "+33&nbsp;(0)6&nbsp;03&nbsp;35&nbsp;19&nbsp;63"
 
 [siteDescription]
 other = "I'm a Freelance Full Stack Web Developer based in Bordeaux, France. I do frontend and backend work, on large and modern frameworks such as Laravel, Symfony, VueJS and Wordpress."
-
-[comments]
-other = "Comments:"
-
-[noCommentsYet]
-other = "There are no comments yet."
-
-[addComment]
-other = "Add Comment:"
-
-[commentFormName]
-other = "Your name:"
-
-[commentFormNamePlaceholder]
-other = "Your name"
-
-[commentFormEmail]
-other = "Your email:"
-
-[commentFormEmailPlaceholder]
-other = "Your email address (to get your Gravatar, not displayed publicly)"
-
-[commentFormComment]
-other = "Comment:"
-
-[commentFormCommentPlaceholder]
-other = "Your comment (markdown accepted)..."
-
-[submitBtn]
-other = "Submit"
-
-[cancelBtn]
-other = "Cancel"
-
-[thankYou]
-other = "Thank you!"
-
-[commentSent]
-other = "Your comment was successfully sent. It'll appear on the website once it's approved."
-
-[commentCTA]
-other = "If you've liked this article, consider sharing it on Twitter!"
 
 [viewProject]
 other = "View project"

@@ -143,40 +143,6 @@ domReady(function() {
         });
     });
 
-    // Comment submission handling
-    $('.is-comment-form').submit(function (e) {
-        let v = grecaptcha.getResponse();
-        if (document.getElementById('website').value.length != 0 || v.length == 0) {
-            e.preventDefault();
-            return false;
-        } else {
-            let form = this;
-            $(this).find('.is-submit-btn').addClass('is-loading');
-
-            $.ajax({
-              type: $(this).attr('method'),
-              url: $(this).attr('action'),
-              data: $(this).serialize(),
-              contentType: 'application/x-www-form-urlencoded',
-              success: function (data) {
-                  $('.modal').addClass('is-active');
-                  $('.is-comment-form').find('input').val('');
-                  $('.is-comment-form').find('textarea').val('');
-                  $('.is-comment-form').find('.is-submit-btn').removeClass('is-loading');
-                  grecaptcha.reset();
-              },
-              error: function (err) {
-                console.log(err);
-              },
-              complete: function() {
-                $(this).find('.is-submit-btn').removeClass('is-loading');
-              }
-            });
-
-            return false;
-        }
-    });
-
     // Lazyload covers
     var myLazyLoad = new LazyLoad({
         elements_selector: ".lazy"

@@ -1,4 +1,5 @@
 .site-footer {
+    margin-top: 2rem;
     background-color: $footerbg;
     border-top: 1px solid $gray1;
     padding: 1rem 3rem;
@@ -72,27 +73,6 @@
                 text-align: center;
                 font-size: 1.15rem;
                 margin-bottom: 2rem;
-            }
-        }
-    }
-}
-
-.is-comment-modal {
-    .modal-card-body {
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-
-        p {
-            margin-bottom: 1rem;
-        }
-
-        .is-twitter-share {
-            display: block;
-            margin: auto;
-            margin-top: 1rem;
-
-            a {
-                display: inline-block;
             }
         }
     }

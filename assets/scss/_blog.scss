@@ -129,12 +129,6 @@
             .bottom {
                 display: flex;
 
-                .comments {
-                    color: lighten($gray1, 20%);
-                    align-self: flex-start;
-                    margin-bottom: 0;
-                }
-
                 .more {
                     flex-grow: 1;
                     align-self: flex-end;
@@ -543,53 +537,7 @@
     }
 }
 
-.is-blog-comment-form {
-    max-width: 800px;
-    margin: auto;
-    margin-bottom: 2rem;
-    padding: 0 1rem;
-
-    h2 {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-    }
-}
-
 #website {
     position: absolute;
     left: -999999999px;
-}
-
-.is-comment {
-    box-shadow: none;
-    border: 1px solid rgba($gray1, .4);
-    margin: 0 1rem;
-
-    &.is-author {
-        border-left: 4px solid $blue;
-    }
-
-    .media {
-        padding: 0;
-    }
-    .is-comment-avatar,
-    .is-comment-avatar img {
-        display: block;
-        border-radius: 50%;
-    }
-    small {
-        font-size: .75rem;
-        color: $gray1;
-        float: right;
-    }
-    .content {
-        p {
-            margin-bottom: 1rem;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
 }

@@ -15,11 +15,6 @@
                 {{ $.Scratch.Set "bloc-width" "is-half" }}
             {{ end }}
 
-            {{ $.Scratch.Set "comments" 0 }}
-            {{ range $index, $comments := (index $.Site.Data.comments .File.UniqueID ) }}
-                {{ $.Scratch.Add "comments" 1 }}
-            {{ end }}
-
                 <div class="blog-bloc {{ ($.Scratch.Get "bloc-width") }}">
                     <div class="blog-cover lazy" data-src="{{ .Params.cover.image }}">
                         <a href="{{ .Permalink }}"></a>
@@ -39,7 +34,6 @@
                             {{ end }}
                         </div>
                         <div class="bottom">
-                            <p class="comments"><i class="fas fa-comments"></i> {{ $.Scratch.Get "comments" }} </p>
                             <p class="more"><a href="{{ .Permalink }}">{{ i18n "readmore" }}</a></p>
                         </div>
                     </div>

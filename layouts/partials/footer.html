@@ -1,17 +1,16 @@
 </main>
-{{ if and (not (eq (relURL .URL) ("/" | safeHTML))) (not (eq (relURL .URL) ("/fr/" | safeHTML))) }}
+{{ if and (not (eq (.RelPermalink) ("/"))) (not (eq (.RelPermalink) ("/fr/"))) }}
 <footer class="site-footer footer">
     <div class="columns">
         <div class="column is-one-fifth">
             <div class="columns">
                 <div class="contact column">
-                    <p><strong>Contact</strong></p>
-                    <p><a href="tel:+33603351963">{{ i18n "contactTel" | safeHTML }}</a></p>
+                    <p><strong>{{ i18n "email" }}</strong></p>
+                    <p><a href="mailto:hello@primative.net">hello@primative.net</a></p>
                 </div>
-
-                <div class="siret column">
-                    <p><strong>SIRET</strong></p>
-                    <p>75068729500014</p>
+                <div class="contact column">
+                    <p><strong>{{ i18n "phone" }}</strong></p>
+                    <p><a href="tel:+33603351963">{{ i18n "contactTel" | safeHTML }}</a></p>
                 </div>
             </div>
         </div>
@@ -34,24 +33,7 @@
     </div>
 </footer>
 {{ end }}
-<div class="modal is-comment-modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-        <header class="modal-card-head">
-            <p class="modal-card-title">{{ i18n "thankYou" }}</p>
-            <button class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-            <p>{{ i18n "commentSent" }}</p>
-            <p>{{ i18n "commentCTA" }}</p>
-            <div class="btn is-twitter-share">
-                <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via=fbnlsr">{{ i18n "twitter-share-modal" | safeHTML }}</a>
-            </div>
-        </section>
-    </div>
-  </div>
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="/js/main.min.js" defer></script>
 
 <script src="//instant.page/2.0.0" type="module" integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
