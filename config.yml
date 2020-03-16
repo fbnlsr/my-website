@@ -4,7 +4,7 @@ enableRobotsTXT: true
 disableHugoGeneratorInject: true
 enableMissingTranslationPlaceholders: true
 pygmentStyle: dracula
-baseURL: "https://www.primative.net"
+baseURL: 'https://www.primative.net'
 sectionPagesMenu: main
 googleAnalytics: UA-28964878-1
 removePathAccents: true
@@ -20,6 +20,11 @@ blackfriday:
   angledQuotes: true
   extensions:
     - hardLineBreak
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 languages:
   en:
