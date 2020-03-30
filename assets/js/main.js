@@ -58,6 +58,7 @@ window.addEventListener('scroll', function (e) {
 // Modal control
 let modals = getAll('.modal');
 var modalCloses = getAll('.modal-background, .delete');
+let colorChanger = getAll('.is-color-changer');
 
 // DOM is ready and waiting
 domReady(function() {
@@ -140,6 +141,18 @@ domReady(function() {
     modalCloses.forEach(function (el) {
         el.addEventListener('click', function () {
             closeModals();
+        });
+    });
+
+    // Blog article color changer
+    colorChanger.forEach(function (el) {
+        el.addEventListener('click', function (event) {
+            let changer = event.target;
+            let color = changer.dataset.color;
+            let blogPostContainer = document.getElementById('blogPostContainer');
+            blogPostContainer.classList.remove('is-dark');
+            blogPostContainer.classList.remove('is-sand');
+            blogPostContainer.classList.add(color);
         });
     });
 

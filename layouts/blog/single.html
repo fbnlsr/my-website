@@ -4,7 +4,7 @@
 
 {{ partial "go-to-top.html"}}
 
-<div class="blog-post">
+<div class="blog-post" id="blogPostContainer">
     <div class="title-container {{ if not .Params.cover.image }} no-cover{{end}}">
         {{ if .Params.cover.image }}
             <div class="background-cover" id="blog-post-cover" style="background-image: url('{{ .Params.cover.image }}');">
@@ -48,6 +48,12 @@
             {{ end }}
         {{ end }}
     </p>
+
+    <div class="is-color-changer-container">
+        <span class="is-color-changer is-white"></span>
+        <span class="is-color-changer is-dark" data-color="is-dark"></span>
+        <span class="is-color-changer is-sand" data-color="is-sand"></span>
+    </div>
 
     <article>
         {{ .Content }}
