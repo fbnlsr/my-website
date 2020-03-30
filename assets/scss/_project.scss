@@ -1,176 +1,188 @@
 .project {
-    h1 {
-        font-weight: 300;
-        line-height: 100px;
-        margin-bottom: 2rem;
+  h1 {
+    font-weight: 300;
+    line-height: 100px;
+    margin-bottom: 2rem;
+  }
+
+  .is-showcase {
+    position: relative;
+    max-width: 960px;
+    margin: auto;
+
+    .is-laptop {
+      max-width: 960px;
+      margin: auto;
+      height: 513px;
+      display: block;
+      position: relative;
+      background-image: url('/img/laptop.png');
+      background-position: top center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      .is-laptop-content {
+        color: $background;
+        max-width: 628px;
+        margin: auto;
+        top: 35px;
+        overflow: hidden;
+      }
+
+      @media only screen and (max-width: 965px) {
+        max-width: 600px;
+        height: 325px;
+
+        .is-laptop-content {
+          max-width: 395px;
+          top: 21px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
     }
 
-    .is-showcase {
+    .is-mobile {
+      display: block;
+      position: absolute;
+      width: 200px;
+      height: 350px;
+      right: 20px;
+      bottom: 50px;
+      background-image: url('/img/mobile.png');
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .is-mobile-content {
+        width: 140px;
+        height: 248px;
+        top: 40px;
+        left: 30px;
+      }
+
+      @media only screen and (max-width: 965px) {
+        width: 100px;
+        height: 200px;
+        right: 170px;
+        bottom: 50px;
+
+        .is-mobile-content {
+          width: 79px;
+          height: 100px;
+          top: 23px;
+          left: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
         position: relative;
-        max-width: 960px;
+        top: initial;
+        left: initial;
+        right: initial;
+        bottom: initial;
         margin: auto;
+        width: 200px;
+        height: 350px;
 
-        .is-laptop {
-            max-width: 960px;
-            margin: auto;
-            height: 513px;
-            display: block;
-            position: relative;
-            background-image: url('/img/laptop.png');
-            background-position: top center;
-            background-size: contain;
-            background-repeat: no-repeat;
-
-            .is-laptop-content {
-                color: $background;
-                max-width: 628px;
-                margin: auto;
-                top: 35px;
-                overflow: hidden;
-            }
-
-            @media only screen and (max-width: 965px) {
-                max-width: 600px;
-                height: 325px;
-
-                .is-laptop-content {
-                    max-width: 395px;
-                    top: 21px;
-                }
-            }
-
-            @media only screen and (max-width: 600px) {
-                display: none;
-            }
+        .is-mobile-content {
+          width: 140px;
+          height: 248px;
+          top: 40px;
+          left: 30px;
         }
-
-        .is-mobile {
-            display: block;
-            position: absolute;
-            width: 200px;
-            height: 350px;
-            right: 20px;
-            bottom: 50px;
-            background-image: url('/img/mobile.png');
-            background-position: top center;
-            background-size: cover;
-            background-repeat: no-repeat;
-
-            .is-mobile-content {
-                width: 140px;
-                height: 248px;
-                top: 40px;
-                left: 30px;
-            }
-
-            @media only screen and (max-width: 965px) {
-                width: 100px;
-                height: 200px;
-                right: 170px;
-                bottom: 50px;
-
-                .is-mobile-content {
-                    width: 79px;
-                    height: 100px;
-                    top: 23px;
-                    left: 10px;
-                }
-            }
-
-            @media only screen and (max-width: 600px) {
-                position: relative;
-                top: initial;
-                left: initial;
-                right: initial;
-                bottom: initial;
-                margin: auto;
-                width: 200px;
-                height: 350px;
-
-                    .is-mobile-content {
-                        width: 140px;
-                        height: 248px;
-                        top: 40px;
-                        left: 30px;
-                    }
-            }
-        }
-
-        .slideshow-markers {
-            display: inline;
-            text-align: center;
-
-            .slick-dots {
-                &:hover {
-                    cursor: pointer;
-                }
-
-                li {
-                    display: inline-block;
-                    width: 12px;
-                    height: 12px;
-                    background-color: $gray1;
-                    border-radius: 50%;
-                    margin-right: .8rem;
-                    margin-bottom: 2rem;
-
-                    button {
-                        display: none;
-                    }
-
-                    &.slick-active {
-                        background-color: $blue;
-                    }
-
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
-            }
-
-            @media only screen and (max-width: 600px) {
-                display: none;
-            }
-        }
+      }
     }
 
-    .is-description-block {
-        max-width: 960px;
-        margin: auto;
-        line-height: 1.8;
-        margin-bottom: 2rem;
+    .slideshow-markers {
+      display: inline;
+      text-align: center;
 
-        .is-long-description {
-            margin-bottom: 1rem;
-
-            p {
-                margin-bottom: 1rem;
-            }
-
-            &:last-child {
-                margin-bottom: 0;
-            }
+      .slick-dots {
+        &:hover {
+          cursor: pointer;
         }
 
-        .is-client {
-            margin-bottom: 1rem;
-        }
+        li {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          background-color: $gray1;
+          border-radius: 50%;
+          margin-right: 0.8rem;
+          margin-bottom: 2rem;
 
-        .is-project-used {
-            display: block;
-            border-left: 4px solid $blue;
-            padding-left: 1rem;
-            padding-bottom: 1rem;
+          button {
+            display: none;
+          }
 
-            p {
-                margin-bottom: 1rem;
-            }
+          &.slick-active {
+            background-color: $blue;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
         }
+      }
+
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+
+  .is-description-block {
+    max-width: 960px;
+    margin: auto;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+
+    .is-long-description {
+      margin-bottom: 1rem;
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
-    .is-project-url-btn {
-        display: block;
-        margin: auto;
-        margin-bottom: 4rem;
+    .is-client {
+      margin-bottom: 1rem;
     }
+
+    .is-project-used {
+      display: block;
+      border-left: 4px solid $blue;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+
+        li::before {
+          content: '\2022';
+          color: #1976d2;
+          font-weight: bold;
+          display: inline-block;
+          width: 0.75em;
+        }
+      }
+    }
+  }
+
+  .is-project-url-btn {
+    display: block;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
 }
