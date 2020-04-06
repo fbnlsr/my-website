@@ -1,10 +1,8 @@
 [context.production.environment]
-  HUGO_VERSION = "0.67.1"
-  NPM_VERSION = "6.10.1"
+  HUGO_VERSION = "0.68.1"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.67.1"
-  NPM_VERSION = "6.10.1"
+  HUGO_VERSION = "0.68.1"
 
 [[headers]]
   for = "/*"
