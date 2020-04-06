@@ -3,21 +3,20 @@ weight: 4
 date: 2018-02-09
 slug: wing-chun-gujan
 title: Wing Chun Gujan
-projectType: Site vitrine
 work: Hugo - Design, développement front et back.
 description: |
-  Benjamin Gourven est instructeur de self-défense à Gujan, une petite ville du Sud-Ouest. Il souhaitait un site internet simple, qui lui permette de présenter son activité et de mettre en avant quelques photos de ses séminaires.
+  **Benjamin Gourven** est instructeur de self-défense à Gujan, une petite ville du Sud-Ouest. Il souhaitait un site internet simple, qui lui permette de présenter son activité et de mettre en avant quelques photos de ses séminaires.
 
 longDescription: |
-  Ne désirant pas avoir une interface d'administration compliquée, nous nous sommes donc accordés pour utiliser <strong>Hugo</strong> comme générateur de site statique.
+  Ne désirant pas avoir une interface d'administration compliquée, nous nous sommes donc accordés pour utiliser **Hugo** comme générateur de site statique.
 
-  Le projet est hébergé sur <strong>Netlify</strong>, avec un certificat SSL fourni par <strong>Let's Encrypt</strong>, et se déploie automatiquement depuis Github.
+  Le projet est hébergé sur **Netlify**, avec un certificat SSL fourni par **Let's Encrypt**, et se déploie automatiquement depuis Github.
 techUsed:
   - Hugo
   - Webpack
   - Netlify
 client: Benjamin Gourven
-projectUrl: "https://wingchungujan.fr/"
+projectUrl: 'https://wingchungujan.fr/'
 cover: wing-chun-gujan.jpg
 gallery:
   - wing-chun-gujan-1.jpg

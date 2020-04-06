@@ -3,10 +3,9 @@ weight: 5
 date: 2018-09-01
 slug: nysb
 title: NySB
-projectType: Corporate website
-work: Wordpress - Front and backend development.
+work: Wordpress - Développement front et back.
 description: |
-  NySB est une agence web et de design graphique parisienne. Ils travaillent avec un large panel de client, avec un sens très poussé de l'identité visuelle et de la typographie.
+  **NySB** est une agence web et de design graphique parisienne. Ils travaillent avec un large panel de client, avec un sens très poussé de l'identité visuelle et de la typographie.
 
   Pour ma première collaboration avec l'agence, j'ai dû travailler sur un projet qui leur tenait extrêmement à coeur : leur propre site internet.
 longDescription: |
@@ -18,7 +17,7 @@ techUsed:
   - Babel (ES6)
   - Webpack
 client: NySB
-projectUrl: "https://nysb.paris/"
+projectUrl: 'https://nysb.paris/'
 cover: nysb.jpg
 gallery:
   - nysb-1.jpg

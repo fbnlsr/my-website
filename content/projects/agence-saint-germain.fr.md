@@ -3,10 +3,9 @@ weight: 3
 date: 2018-02-09
 slug: agence-saint-germain
 title: Agence Saint Germain
-projectType: Corporate website
-work: Wordpress - Front and backend development.
+work: Wordpress - Développement front et back.
 description: |
-  L'Agence Saint Germain est une société de gestion de photographes professionnels, de cinéastes et de maquilleurs.
+  **L'Agence Saint Germain** est une société de gestion de photographes professionnels, de cinéastes et de maquilleurs.
 
   Leur objectif premier était d'offrir à leur entreprise une plateforme qui permette de mettre en avant le travail des différents talents qu'ils représentent.
 longDescription: |
@@ -22,7 +21,7 @@ techUsed:
   - LESS
   - Gulp
 client: Ligne 13
-projectUrl: "http://www.asgparis.com"
+projectUrl: 'http://www.asgparis.com'
 cover: asg.jpg
 gallery:
   - saint-germain-1.jpg

@@ -1,9 +1,8 @@
 ---
 weight:
-date: {{ .Date }}
+date: { { .Date } }
 slug:
 title:
-projectType:
 work:
 description:
 longDescription:
