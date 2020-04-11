@@ -7,7 +7,7 @@
 <div class="blog-post" id="blogPostContainer">
     <div class="title-container {{ if not .Params.cover.image }} no-cover{{end}}">
         {{ if .Params.cover.image }}
-            <div class="background-cover" id="blog-post-cover">
+            <div class="background-cover" id="blog-post-cover" style="background-image: url('{{ .Params.cover.image }}');">
                 <div class="background-shroud">
         {{ end }}
         <p class="title">
