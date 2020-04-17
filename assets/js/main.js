@@ -209,7 +209,6 @@ domReady(function() {
 
     langSwitcher.forEach(function (el) {
         el.addEventListener('click', function(event) {
-            event.preventDefault();
             let langSwitch = event.target;
             switchLang(langSwitch.dataset.lang);
         })

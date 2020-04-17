@@ -78,7 +78,7 @@ title: À propos
 </div>
 </div>
 
-## Prenons contact !
+## Contactez-moi !
 
 <div class="is-get-in-touch" id="contact">
 <p>Si vous voulez en savoir plus, vous pouvez voir quelques un de <a href="/fr/projects">mes projets</a>, ou lire <a href="/fr/blog">mon blog</a>.</p>
