@@ -40,6 +40,29 @@ let displayTopArrow = (topArrow, scrollPos) => {
     }
 }
 
+let setCookie = (cname, cvalue, exdays) => {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+let getCookie = (cname) => {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+}
+
 window.addEventListener('scroll', function (e) {
     last_known_scroll_position = window.scrollY;
 
@@ -144,6 +167,13 @@ domReady(function() {
         });
     });
 
+    // Checking if a color is set for blog articles
+    let blogColor = getCookie('blogColor');
+    let blogPostContainer = document.getElementById('blogPostContainer');
+    if (blogColor && blogPostContainer) {
+        blogPostContainer.classList.add(blogColor);
+    }
+
     // Blog article color changer
     colorChanger.forEach(function (el) {
         el.addEventListener('click', function (event) {
@@ -152,7 +182,12 @@ domReady(function() {
             let blogPostContainer = document.getElementById('blogPostContainer');
             blogPostContainer.classList.remove('is-dark');
             blogPostContainer.classList.remove('is-sand');
-            blogPostContainer.classList.add(color);
+            setCookie('blogColor', '', -1);
+
+            if (color && color != 'undefined') {
+                setCookie('blogColor', color, 365);
+                blogPostContainer.classList.add(color);
+            }
         });
     });
 
