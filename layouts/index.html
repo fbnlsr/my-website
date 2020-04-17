@@ -16,9 +16,9 @@
         {{ if .IsTranslated }}
             {{ $currentLang := .Site.Language.Lang }}
             {{ if eq $currentLang "en" }}
-                <a class="lang" href="/fr">FR</a>
+                <a class="lang is-lang-switcher" href="#!" data-lang="fr">FR</a>
             {{ else }}
-                <a class="lang" href="/">EN</a>
+                <a class="lang is-lang-switcher" href="#!" data-lang="en">EN</a>
             {{ end }}
         {{ end }}
         </div>

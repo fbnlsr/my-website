@@ -63,6 +63,17 @@ let getCookie = (cname) => {
     return "";
 }
 
+let switchLang = (lang) => {
+    setCookie('lang', lang, 365);
+    if (window.location.pathname === '/' && lang === 'fr') {
+        window.location.href = '/fr/';
+    }
+
+    if (window.location.pathname === '/fr/' && lang === 'en') {
+        window.location.href = '/';
+    }
+}
+
 window.addEventListener('scroll', function (e) {
     last_known_scroll_position = window.scrollY;
 
@@ -81,10 +92,18 @@ window.addEventListener('scroll', function (e) {
 // Modal control
 let modals = getAll('.modal');
 var modalCloses = getAll('.modal-background, .delete');
+
 let colorChanger = getAll('.is-color-changer');
+let langSwitcher = getAll('.is-lang-switcher');
 
 // DOM is ready and waiting
 domReady(function() {
+    // Automatically switch language on home
+    let lang = getCookie('lang');
+    if (lang) {
+        switchLang(lang);
+    }
+
     // Initializing HighlightJS
     hljs.registerLanguage('javascript', javascript);
     hljs.registerLanguage('php', php);
@@ -176,7 +195,8 @@ domReady(function() {
 
     // Blog article color changer
     colorChanger.forEach(function (el) {
-        el.addEventListener('click', function (event) {
+        el.addEventListener('click', function(event) {
+            event.preventDefault();
             let changer = event.target;
             let color = changer.dataset.color;
             let blogPostContainer = document.getElementById('blogPostContainer');
@@ -190,6 +210,14 @@ domReady(function() {
             }
         });
     });
+
+    langSwitcher.forEach(function (el) {
+        el.addEventListener('click', function(event) {
+            event.preventDefault();
+            let langSwitch = event.target;
+            switchLang(langSwitch.dataset.lang);
+        })
+    })
 
     // Lazyload covers
     var myLazyLoad = new LazyLoad({
