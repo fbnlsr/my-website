@@ -235,4 +235,39 @@ domReady(function() {
             heyListen.classList.remove('is-active');
         });
     }
+
+    // Copy link on code blocks
+    // Thank you Danny Guo! <3
+    // https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/
+    document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+        var button = document.createElement('button');
+        button.className = 'copy-code-button';
+        button.type = 'button';
+        button.innerText = 'Copy';
+
+        var pre = codeBlock.parentNode;
+        if (pre.parentNode.classList.contains('highlight')) {
+            var highlight = pre.parentNode;
+            highlight.parentNode.insertBefore(button, highlight);
+        } else {
+            pre.parentNode.insertBefore(button, pre);
+        }
+
+        button.addEventListener('click', function () {
+            navigator.clipboard.writeText(codeBlock.innerText).then(function () {
+                /* Chrome doesn't seem to blur automatically,
+                   leaving the button in a focused state. */
+                button.blur();
+
+                button.innerText = 'Copied!';
+
+                setTimeout(function () {
+                    button.innerText = 'Copy';
+                }, 2000);
+            }, function (error) {
+                button.innerText = 'Error';
+            });
+        });
+    });
+
 });
