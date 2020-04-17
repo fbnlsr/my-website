@@ -6,7 +6,6 @@ enableMissingTranslationPlaceholders: true
 pygmentStyle: dracula
 baseURL: 'https://www.primative.net'
 sectionPagesMenu: main
-googleAnalytics: UA-28964878-1
 removePathAccents: true
 disableKinds:
   - taxonomy

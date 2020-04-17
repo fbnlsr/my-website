@@ -14,7 +14,6 @@
   "devDependencies": {
     "bulma": "^0.8.0",
     "concurrently": "^5.1.0",
-    "ga-lite": "^2.0.5",
     "highlight.js": "^9.18.1",
     "jquery": ">=3.4.0",
     "slick-carousel": "^1.8.1",
