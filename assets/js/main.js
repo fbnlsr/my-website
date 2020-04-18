@@ -211,7 +211,7 @@ domReady(function() {
         el.addEventListener('click', function(event) {
             let langSwitch = event.target;
             switchLang(langSwitch.dataset.lang);
-        })
+        });
     })
 
     // Lazyload covers

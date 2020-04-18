@@ -18,10 +18,9 @@
         <div class="column column-right has-text-right is-hidden-mobile">
             <div class="content">
                 {{ if not .IsHome }}
-                    {{ $currentLang := .Site.Language.Lang }}
                     {{ if .IsTranslated }}
                         {{ range .Translations }}
-                            <a class="lang is-lang-switcher {{ if eq .Lang $currentLang }}is-active{{end}}" href="{{ .Permalink }}" data-lang="{{ .Lang }}"><img src="/img/flag-{{ .Lang }}.svg" alt="{{ .Lang }}"></a>
+                            <a class="lang is-lang-switcher" href="{{ .Permalink }}" data-lang="{{ .Lang }}"><img src="/img/flag-{{ .Lang }}.svg" alt="{{ .Lang }}"></a>
                         {{ end }}
                     {{ end }}
                 {{ end }}

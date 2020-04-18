@@ -37,6 +37,18 @@
         }
     }
 
+    .is-lang-switcher {
+        img {
+            display: block;
+            margin: auto;
+            height: 30px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
     .navbar-burger {
         position: fixed;
         top: 0;
