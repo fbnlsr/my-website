@@ -1,0 +1,11 @@
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+
+[*.{js,scss, json, yml, toml}]
+indent_size = 2
+
+[*.html]
+indent_style = 4
