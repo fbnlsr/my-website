@@ -1,134 +1,134 @@
 .projects {
-    max-width: 800px;
-    margin: auto;
-    margin-bottom: 4rem;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 4rem;
 
-    .sample {
-        text-align: center;
-        margin-bottom: 3rem;
+  .sample {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .project {
+    @include clearfix;
+
+    &:hover {
+      .cover img {
+        opacity: 1;
+      }
     }
 
-    .project {
-        @include clearfix;
+    .infos {
+      width: 490px;
+      float: left;
 
-        &:hover {
-            .cover img {
-                opacity: 1;
-            }
-        }
-
-        .infos {
-            width: 490px;
-            float: left;
-
-            .title {
-                position: relative;
-                left: 0;
-                padding-left: 1rem;
-                border-left: 4px solid $blue;
-                margin-bottom: .5rem;
-                transition: color .2s ease-out, background-color .2s ease-out;
-            }
-
-            .work {
-                font-weight: bold;
-                color: $gray1;
-                margin-bottom: 1rem;
-            }
-
-            .description {
-                p {
-                    margin-bottom: 1rem;
-                }
-            }
-
-            .description,
-            .client,
-            .link {
-                margin-bottom: 1rem;
-            }
-
-            .is-project-btn {
-                text-align: left;
-                margin-bottom: 0;
-            }
-        }
-
-        .cover {
-            float: right;
-            position: relative;
-            display: block;
-            border-radius: 5px;
-            background-color: rgba($gray1, .6);
-
-            img {
-                display: block;
-                position: relative;
-                width: 300px;
-                height: 190px;
-                border-radius: 5px;
-                opacity: .8;
-                transition: all .2s ease-out;
-                opacity: 1;
-                transition: opacity .3s;
-                border: 1px solid rgba($gray1, .6);
-
-                &[data-src] {
-                    opacity: 0;
-                }
-            }
-        }
-    }
-
-    .bullet {
-        display: block;
-        margin: auto;
-        margin: 3rem 10rem;
+      .title {
         position: relative;
-        height: 1px;
+        left: 0;
+        padding-left: 1rem;
+        border-left: 4px solid $blue;
+        margin-bottom: 0.5rem;
+        transition: color 0.2s ease-out, background-color 0.2s ease-out;
+      }
 
-        &:after {
-            content: "";
-            height: 12px;
-            width: 12px;
-            background-image: url('/img/bullet.png');
-            position: absolute;
-            left: calc(50% - 12px);
-            top: -5px;
+      .work {
+        font-weight: bold;
+        color: $gray1;
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        p {
+          margin-bottom: 1rem;
         }
+      }
 
-        &:last-child {
-            display: none;
-            margin: 0;
+      .description,
+      .client,
+      .link {
+        margin-bottom: 1rem;
+      }
 
-            &:after {
-                content: "";
-                background-image: none;
-            }
-        }
+      .is-project-btn {
+        text-align: left;
+        margin-bottom: 0;
+      }
     }
 
-    @media only screen and (max-width: 900px) {
-        .project {
-            margin-bottom: 4rem;
-            padding: 0 1rem;
+    .cover {
+      float: right;
+      position: relative;
+      display: block;
+      border-radius: 5px;
+      background-color: rgba($gray1, 0.6);
 
-            .cover {
-                display: none;
-            }
+      img {
+        display: block;
+        position: relative;
+        width: 300px;
+        height: 190px;
+        border-radius: 5px;
+        opacity: 0.8;
+        transition: all 0.2s ease-out;
+        opacity: 1;
+        transition: opacity 0.3s;
+        border: 1px solid rgba($gray1, 0.6);
 
-            .infos {
-                width: initial;
-                max-width: 490px;
-                float: initial;
-                margin: auto;
-
-                .is-project-btn {
-                    display: block;
-                    margin: auto;
-                    text-align: center;
-                }
-            }
+        &[data-src] {
+          opacity: 0;
         }
+      }
     }
+  }
+
+  .bullet {
+    display: block;
+    margin: auto;
+    margin: 3rem 10rem;
+    position: relative;
+    height: 1px;
+
+    &:after {
+      content: '';
+      height: 12px;
+      width: 12px;
+      background-image: url('/img/bullet.png');
+      position: absolute;
+      left: calc(50% - 12px);
+      top: -5px;
+    }
+
+    &:last-child {
+      display: none;
+      margin: 0;
+
+      &:after {
+        content: '';
+        background-image: none;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .project {
+      margin-bottom: 4rem;
+      padding: 0 1rem;
+
+      .cover {
+        display: none;
+      }
+
+      .infos {
+        width: initial;
+        max-width: 490px;
+        float: initial;
+        margin: auto;
+
+        .is-project-btn {
+          display: block;
+          margin: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

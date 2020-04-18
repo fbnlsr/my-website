@@ -1,160 +1,162 @@
 .about {
-    h2 {
-        text-align: center;
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .is-about-text {
+    padding: 1.5rem;
+    color: $background;
+    margin-bottom: 4rem;
+
+    p {
+      font-size: 1.15rem;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 1rem;
+      line-height: 1.25;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    clear: both;
+    padding: 0 1rem;
+  }
+
+  .is-about-tools {
+    max-width: 800px;
+    margin: auto;
+    clear: both;
+    margin-bottom: 4rem;
+
+    ul {
+      li {
+        list-style-image: url('/img/bullet.png');
+        margin-left: 100px;
+      }
+    }
+
+    .is-mobile-block {
+      max-width: 350px;
+      margin: auto;
+
+      li {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  .is-savoir-faire-header {
+    padding: 0 10rem;
+    text-align: center;
+    font-size: 3rem;
+    color: $blue;
+    margin-bottom: 0rem;
+  }
+
+  .is-savoir-faire-blocks {
+    color: $background;
+    margin: 0;
+    padding: 0 10rem;
+    margin-bottom: 4rem;
+
+    .is-savoir-faire-block {
+      background-color: $blue;
+      position: relative;
+      overflow: hidden;
+      margin: 0 1rem;
+      padding: 1rem;
+      overflow: visible;
+      border-radius: 4px;
+      line-height: 1.5;
+      box-shadow: 0 10px 10px -10px $text;
+
+      h4 {
+        position: relative;
+        font-weight: 300;
+        color: $background;
         font-size: 2rem;
-        font-weight: bold;
+        text-align: center;
         margin-bottom: 1rem;
+      }
+
+      strong {
+        color: inherit;
+      }
+
+      .fa-cogs,
+      .fa-puzzle-piece,
+      .fa-code {
+        font-size: 4rem;
+        position: absolute;
+        // left: calc(50% - 10rem);
+        top: 1rem;
+        left: -1rem;
+        color: lighten($blue, 10%);
+        z-index: 1;
+      }
+    }
+  }
+
+  .is-get-in-touch {
+    text-align: center;
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.15;
+      padding: 0 1rem;
     }
 
-    .is-about-text {
-        padding: 1.5rem;
-        color: $background;
-        margin-bottom: 4rem;
-
-        p {
-            font-size: 1.15rem;
-            max-width: 800px;
-            margin: auto;
-            margin-bottom: 1rem;
-            line-height: 1.25;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
+    a,
+    a:hover,
+    a:visited {
+      text-decoration: none;
+      color: $blue;
     }
 
-    h3 {
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.25rem;
-        margin-bottom: 2rem;
-        clear: both;
-        padding: 0 1rem;
+    .is-email,
+    .is-phone {
+      font-weight: 300;
+      font-size: 2.5rem;
+      color: $blue;
+      margin: 2rem;
     }
+  }
+  img {
+    display: block;
+    margin: 4rem auto;
+  }
 
-    .is-about-tools {
-        max-width: 800px;
-        margin: auto;
-        clear: both;
-        margin-bottom: 4rem;
-
-        ul {
-            li {
-                list-style-image: url('/img/bullet.png');
-                margin-left: 100px;
-            }
-        }
-
-        .is-mobile-block {
-            max-width: 350px;
-            margin: auto;
-
-            li {
-                margin-left: 40px;
-            }
-        }
-    }
-
-    .is-savoir-faire-header {
-        padding: 0 10rem;
-        text-align: center;
-        font-size: 3rem;
-        color: $blue;
-        margin-bottom: 0rem;
-    }
-
+  @media only screen and (max-width: 1200px) {
     .is-savoir-faire-blocks {
-        color: $background;
+      padding: 0;
+
+      .is-savoir-faire-block {
         margin: 0;
-        padding: 0 10rem;
-        margin-bottom: 4rem;
-
-        .is-savoir-faire-block {
-            background-color: $blue;
-            position: relative;
-            overflow: hidden;
-            margin: 0 1rem;
-            padding: 1rem;
-            overflow: visible;
-            border-radius: 4px;
-            line-height: 1.5;
-            box-shadow: 0 10px 10px -10px $text;
-
-            h4 {
-                position: relative;
-                font-weight: 300;
-                color: $background;
-                font-size: 2rem;
-                text-align: center;
-                margin-bottom: 1rem;
-            }
-
-            strong {
-                color: inherit;
-            }
-
-            .fa-cogs,
-            .fa-puzzle-piece,
-            .fa-code {
-                font-size: 4rem;
-                position: absolute;
-                // left: calc(50% - 10rem);
-                top: 1rem;
-                left: -1rem;
-                color: lighten($blue, 10%);
-                z-index: 1;
-            }
-        }
+        border-radius: 0;
+        box-shadow: none;
+      }
     }
 
     .is-get-in-touch {
-        text-align: center;
-
-        p {
-            margin-bottom: 1rem;
-            line-height: 1.15;
-            padding: 0 1rem;
-        }
-
-        a, a:hover, a:visited {
-            text-decoration: none;
-            color: $blue;
-        }
-
-        .is-email,
-        .is-phone {
-            font-weight: 300;
-            font-size: 2.5rem;
-            color: $blue;
-            margin: 2rem;
-        }
+      .is-email,
+      .is-phone {
+        font-size: 1.5rem;
+      }
     }
+
     img {
-        display: block;
-        margin: 4rem auto;
+      display: none;
     }
-
-    @media only screen and (max-width: 1200px) {
-        .is-savoir-faire-blocks {
-            padding: 0;
-
-            .is-savoir-faire-block {
-                margin: 0;
-                border-radius: 0;
-                box-shadow: none;
-            }
-        }
-
-        .is-get-in-touch {
-            .is-email,
-            .is-phone {
-                font-size: 1.5rem;
-            }
-        }
-
-        img {
-            display: none;
-        }
-    }
+  }
 }
