@@ -98,6 +98,15 @@ domReady(function() {
     let lang = getCookie('lang');
     if (lang) {
         switchLang(lang);
+    } else {
+        // No cookie? Are we on home page? Let's detect the navigator language and redirect accordingly!
+        let navLang = navigator.language.slice(0, 2);
+        let currentPath = window.location.pathname;
+        if (currentPath === '/' && navLang === 'fr') {
+            switchLang('fr');
+        } else if (currentPath === '/fr/' && navLang === 'en') {
+            switchLang('en');
+        }
     }
 
     // Initializing HighlightJS
