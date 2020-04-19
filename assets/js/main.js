@@ -1,12 +1,10 @@
-require('slick-carousel');
 import LazyLoad from 'vanilla-lazyload';
 import hljs from 'highlight.js/lib/highlight';
 import javascript from 'highlight.js/lib/languages/javascript';
 import php from 'highlight.js/lib/languages/php';
 import sql from 'highlight.js/lib/languages/sql';
 import markdown from 'highlight.js/lib/languages/markdown';
-
-let $ = require('jquery');
+import Glide from '@glidejs/glide';
 
 let last_known_scroll_position = 0;
 let ticking = false;
@@ -72,6 +70,14 @@ let switchLang = (lang) => {
   }
 };
 
+// Carousel navigation
+let setActiveDot = (num) => {
+  getAll('.glide-dot').forEach((el) => {
+    el.classList.remove('is-active');
+  });
+  document.getElementById('dot-' + `${num}`).classList.add('is-active');
+};
+
 window.addEventListener('scroll', function (e) {
   last_known_scroll_position = window.scrollY;
 
@@ -118,43 +124,74 @@ domReady(function () {
   hljs.registerLanguage('markdown', markdown);
   hljs.initHighlightingOnLoad();
 
-  // Slick carousel configuration
-  let slickCarousel = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    cssEase: 'ease-in-out',
-    asNavFor: '.slick-nav, .is-laptop-content, .is-mobile-content',
-    draggable: true,
-    mobileFirst: true,
-    variableWidth: false,
-    adaptativeHeight: false,
-    lazyload: 'ondemand',
-    centerMode: true,
-    centerPadding: 0,
-  };
+  // Project carousels
+  let glide = getAll('.glide');
 
-  let slickNav = {
-    autoplay: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    appendDots: '.slideshow-markers',
-    asNavFor: '.is-laptop-content, .is-mobile-content',
-    focusOnSelect: true,
-  };
+  if (glide.length > 0) {
+    let glideDesktopContainer = getAll('.is-laptop-content');
+    let glideMobileContainer = getAll('.is-mobile-content');
 
-  // Initializing Slick Carousel
-  $('.is-laptop-content').slick(slickCarousel);
-  $('.is-mobile-content').slick(slickCarousel);
-  $('.slick-nav').slick(slickNav);
+    if (glideDesktopContainer.length > 0) {
+      var glideDesktop = new Glide('.is-laptop-content', {
+        type: 'slider',
+        rewind: false,
+        gap: 0,
+        focusAt: 'center',
+        autoplay: 3000,
+      }).mount();
+    }
 
-  // Refreshing on resize
-  $(window).on('resize orientationchange', function () {
-    $('.is-laptop-content').slick('resize');
-    $('.is-mobile-content').slick('resize');
-  });
+    if (glideMobileContainer.length > 0) {
+      var glideMobile = new Glide('.is-mobile-content', {
+        type: 'slider',
+        rewind: false,
+        gap: 0,
+        focusAt: 'center',
+      }).mount();
+    }
+
+    // Syncing desktop carousel with mobile one
+    if (glideMobile) {
+      glideMobile.on('run', () => {
+        if (glideDesktopContainer.length > 0) {
+          let i = glideMobile.index;
+          glideDesktop.go('=' + `${i}`);
+          setActiveDot(i);
+        }
+      });
+    }
+
+    // Syncing mobile carousel with desktop one
+    if (glideDesktop) {
+      glideDesktop.on('run', () => {
+        if (glideMobileContainer.length > 0) {
+          let i = glideDesktop.index;
+          glideMobile.go('=' + `${i}`);
+          setActiveDot(i);
+        }
+      });
+    }
+
+    // Change slides when clicking dots
+    getAll('.glide-dot').forEach((el) => {
+      el.addEventListener('click', (event) => {
+        let targetSlide = event.target.dataset.slideId;
+        let glideDesktopContainer = getAll('.is-laptop-content');
+        let glideMobileContainer = getAll('.is-mobile-content');
+        setActiveDot(targetSlide);
+
+        // Moving slide on laptop if it exists
+        if (glideDesktopContainer.length > 0) {
+          glideDesktop.go('=' + `${targetSlide}`);
+        }
+
+        // Moving slide on iphone if it exists
+        if (glideMobileContainer.length > 0) {
+          glideMobile.go('=' + `${targetSlide}`);
+        }
+      });
+    });
+  }
 
   // Lazyload images
   [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {

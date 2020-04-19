@@ -10,27 +10,37 @@
     <div class="is-showcase">
         {{ if .Params.gallery }}
         <div class="is-laptop">
-            <div class="is-laptop-content is-slick as-nav">
-                {{ range .Params.gallery }}
-                    <div><img src="/img/projects/{{ . }}" alt="Project image"></div>
-                {{ end }}
+            <div class="is-laptop-content glide">
+                <div data-glide-el="track" class="glide__track">
+                    <ul class="glide__slides">
+                        {{ range .Params.gallery }}
+                            <li class="glide__slide"><img src="/img/projects/{{ . }}" alt="Project image"></li>
+                        {{ end }}
+                    </ul>
+                </div>
             </div>
         </div>
         {{ end }}
         {{ if .Params.galleryMobile }}
-            <div class="is-mobile">
-                <div class="is-mobile-content is-slick as-nav">
-                    {{ range .Params.galleryMobile }}
-                        <div><img src="/img/projects/{{ . }}" alt="Project image"></div>
-                    {{ end }}
+        <div class="is-mobile">
+            <div class="is-mobile-content glide">
+                <div data-glide-el="track" class="glide__track">
+                    <ul class="glide__slides">
+                        {{ range .Params.galleryMobile }}
+                            <li class="glide__slide"><img src="/img/projects/{{ . }}" alt="Project image"></li>
+                        {{ end }}
+                    </ul>
                 </div>
             </div>
+        </div>
         {{ end }}
         {{ if .Params.gallery }}
-        <div class="slideshow-markers slick-nav">
-            {{ range .Params.gallery }}
-                <div></div>
+        <div class="slideshow-markers">
+            <ul class="glide-dots">
+            {{ range $index, $element := .Params.gallery }}
+                <li class="glide-dot {{ if eq $index 0 }}is-active{{ end }}" id="dot-{{ $index }}" data-slide-id="{{ $index }}"></li>
             {{ end }}
+            </ul>
         </div>
         {{ end }}
     </div>

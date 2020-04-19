@@ -100,7 +100,7 @@
       display: inline;
       text-align: center;
 
-      .slick-dots {
+      .glide-dots {
         &:hover {
           cursor: pointer;
         }
@@ -118,7 +118,7 @@
             display: none;
           }
 
-          &.slick-active {
+          &.is-active {
             background-color: $blue;
           }
 
