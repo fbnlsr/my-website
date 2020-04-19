@@ -6,7 +6,14 @@
   }
 }
 
-@import 'node_modules/bulma/bulma';
+@import 'node_modules/bulma/sass/utilities/_all';
+@import 'node_modules/bulma/sass/base/_all';
+@import 'node_modules/bulma/sass/grid/columns';
+@import 'node_modules/bulma/sass/components/menu';
+@import 'node_modules/bulma/sass/components/navbar';
+@import 'node_modules/bulma/sass/components/card';
+@import 'node_modules/bulma/sass/elements/content';
+@import 'node_modules/bulma/sass/elements/title';
 @import 'github-gist';
 @import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
 @import 'node_modules/@glidejs/glide/src/assets/sass/glide.theme';
