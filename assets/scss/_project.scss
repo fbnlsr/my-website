@@ -50,7 +50,7 @@
       width: 200px;
       height: 350px;
       right: 20px;
-      bottom: 50px;
+      bottom: 0px;
       background-image: url('/img/mobile.png');
       background-position: top center;
       background-size: cover;
@@ -101,18 +101,22 @@
       text-align: center;
 
       .glide-dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 2rem;
+
         &:hover {
           cursor: pointer;
         }
 
         li {
-          display: inline-block;
           width: 12px;
           height: 12px;
           background-color: $gray1;
           border-radius: 50%;
-          margin-right: 0.8rem;
-          margin-bottom: 2rem;
+          margin: 0 5px;
 
           button {
             display: none;
