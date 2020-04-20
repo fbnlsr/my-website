@@ -138,7 +138,7 @@ domReady(function () {
         gap: 0,
         focusAt: 'center',
         autoplay: 3000,
-      }).mount();
+      });
     }
 
     if (glideMobileContainer.length > 0) {
@@ -147,7 +147,7 @@ domReady(function () {
         rewind: false,
         gap: 0,
         focusAt: 'center',
-      }).mount();
+      });
     }
 
     // Syncing desktop carousel with mobile one
@@ -191,6 +191,12 @@ domReady(function () {
         }
       });
     });
+
+    // Mounting sliders
+    window.onload = () => {
+      glideDesktop.mount();
+      glideMobile.mount();
+    };
   }
 
   // Lazyload images
