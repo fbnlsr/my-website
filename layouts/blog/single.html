@@ -20,7 +20,11 @@
                 Published on {{ .Date.Format "January 2, 2006" }}
             {{ end }}
         </p>
-        <p class="chevron bounce is-hidden-mobile"><i class="fas fa-chevron-down"></i></p>
+        <p class="chevron bounce is-hidden-mobile">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+            </svg>
+        </p>
 
         {{ if .Params.cover.image }}</div></div>{{ end }}
     </div>
