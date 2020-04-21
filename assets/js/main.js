@@ -10,32 +10,6 @@ let last_known_scroll_position = 0;
 let ticking = false;
 let topArrow = document.getElementById('topArrow');
 
-let getAll = (selector) => {
-  return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
-};
-
-let closeModals = () => {
-  modals.forEach(function (el) {
-    el.classList.remove('is-active');
-  });
-};
-
-let domReady = (callback) => {
-  document.readyState === 'interactive' || document.readyState === 'complete'
-    ? callback()
-    : document.addEventListener('DOMContentLoaded', callback);
-};
-
-let displayTopArrow = (topArrow, scrollPos) => {
-  if (scrollPos > 100) {
-    topArrow.style.opacity = 1;
-    topArrow.style.bottom = '80px';
-  } else {
-    topArrow.style.opacity = 0;
-    topArrow.style.bottom = '60px';
-  }
-};
-
 let setCookie = (cname, cvalue, exdays) => {
   var d = new Date();
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
@@ -67,6 +41,47 @@ let switchLang = (lang) => {
 
   if (window.location.pathname === '/fr/' && lang === 'en') {
     window.location.href = '/';
+  }
+};
+
+// Automatically switch language on home
+let lang = getCookie('lang');
+if (lang) {
+  switchLang(lang);
+} else {
+  // No cookie? Are we on home page? Let's detect the navigator language and redirect accordingly!
+  let navLang = navigator.language.slice(0, 2);
+  let currentPath = window.location.pathname;
+  if (currentPath === '/' && navLang === 'fr') {
+    switchLang('fr');
+  } else if (currentPath === '/fr/' && navLang === 'en') {
+    switchLang('en');
+  }
+}
+
+let getAll = (selector) => {
+  return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+};
+
+let closeModals = () => {
+  modals.forEach(function (el) {
+    el.classList.remove('is-active');
+  });
+};
+
+let domReady = (callback) => {
+  document.readyState === 'interactive' || document.readyState === 'complete'
+    ? callback()
+    : document.addEventListener('DOMContentLoaded', callback);
+};
+
+let displayTopArrow = (topArrow, scrollPos) => {
+  if (scrollPos > 100) {
+    topArrow.style.opacity = 1;
+    topArrow.style.bottom = '80px';
+  } else {
+    topArrow.style.opacity = 0;
+    topArrow.style.bottom = '60px';
   }
 };
 
@@ -102,20 +117,8 @@ let langSwitcher = getAll('.is-lang-switcher');
 
 // DOM is ready and waiting
 domReady(function () {
-  // Automatically switch language on home
-  let lang = getCookie('lang');
-  if (lang) {
-    switchLang(lang);
-  } else {
-    // No cookie? Are we on home page? Let's detect the navigator language and redirect accordingly!
-    let navLang = navigator.language.slice(0, 2);
-    let currentPath = window.location.pathname;
-    if (currentPath === '/' && navLang === 'fr') {
-      switchLang('fr');
-    } else if (currentPath === '/fr/' && navLang === 'en') {
-      switchLang('en');
-    }
-  }
+  // Displaying page
+  document.getElementById('body').style.visibility = 'visible';
 
   // Initializing HighlightJS
   hljs.registerLanguage('javascript', javascript);
