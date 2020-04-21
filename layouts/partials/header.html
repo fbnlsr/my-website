@@ -11,7 +11,7 @@
     <title>{{ i18n "site-title" }}</title>
     {{ end }}
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:400,700|Ubuntu+Mono:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:400,700|Ubuntu+Mono:400,700&display=swap" rel="stylesheet">
 
     {{ $options := (dict "targetPath" "/css/main.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
     {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options }}
