@@ -64,7 +64,7 @@ let getAll = (selector) => {
 };
 
 let closeModals = () => {
-  modals.forEach(function (el) {
+  modals.forEach((el) => {
     el.classList.remove('is-active');
   });
 };
@@ -93,11 +93,11 @@ let setActiveDot = (num) => {
   document.getElementById('dot-' + `${num}`).classList.add('is-active');
 };
 
-window.addEventListener('scroll', function (e) {
+window.addEventListener('scroll', (e) => {
   last_known_scroll_position = window.scrollY;
 
   if (!ticking) {
-    window.requestAnimationFrame(function () {
+    window.requestAnimationFrame(() => {
       // Go to top arrow
       if (topArrow) {
         displayTopArrow(topArrow, last_known_scroll_position);
@@ -116,9 +116,9 @@ let colorChanger = getAll('.is-color-changer');
 let langSwitcher = getAll('.is-lang-switcher');
 
 // DOM is ready and waiting
-domReady(function () {
+domReady(() => {
   // Displaying page
-  document.getElementById('body').style.visibility = 'visible';
+  document.body.style.visibility = 'visible';
 
   // Initializing HighlightJS
   hljs.registerLanguage('javascript', javascript);
@@ -197,15 +197,19 @@ domReady(function () {
 
     // Mounting sliders
     window.onload = () => {
-      glideDesktop.mount();
-      glideMobile.mount();
+      if (glideDesktop) {
+        glideDesktop.mount();
+      }
+      if (glideMobile) {
+        glideMobile.mount();
+      }
     };
   }
 
   // Lazyload images
-  [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+  [].forEach.call(document.querySelectorAll('img[data-src]'), (img) => {
     img.setAttribute('src', img.getAttribute('data-src'));
-    img.onload = function () {
+    img.onload = () => {
       img.removeAttribute('data-src');
     };
   });
@@ -219,8 +223,8 @@ domReady(function () {
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
     // Add a click event on each of them
-    $navbarBurgers.forEach(function ($el) {
-      $el.addEventListener('click', function () {
+    $navbarBurgers.forEach(($el) => {
+      $el.addEventListener('click', () => {
         // Get the target from the "data-target" attribute
         var target = $el.dataset.target;
         var $target = document.getElementById(target);
@@ -233,8 +237,8 @@ domReady(function () {
   }
 
   // Close button on modal
-  modalCloses.forEach(function (el) {
-    el.addEventListener('click', function () {
+  modalCloses.forEach((el) => {
+    el.addEventListener('click', () => {
       closeModals();
     });
   });
@@ -247,8 +251,8 @@ domReady(function () {
   }
 
   // Blog article color changer
-  colorChanger.forEach(function (el) {
-    el.addEventListener('click', function (event) {
+  colorChanger.forEach((el) => {
+    el.addEventListener('click', (event) => {
       event.preventDefault();
       let changer = event.target;
       let color = changer.dataset.color;
@@ -264,8 +268,8 @@ domReady(function () {
     });
   });
 
-  langSwitcher.forEach(function (el) {
-    el.addEventListener('click', function (event) {
+  langSwitcher.forEach((el) => {
+    el.addEventListener('click', (event) => {
       let langSwitch = event.target;
       switchLang(langSwitch.dataset.lang);
     });
@@ -296,7 +300,7 @@ domReady(function () {
   // Copy link on code blocks
   // Thank you Danny Guo! <3
   // https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/
-  document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+  document.querySelectorAll('pre > code').forEach((codeBlock) => {
     var button = document.createElement('button');
     button.className = 'copy-code-button';
     button.type = 'button';
@@ -310,20 +314,20 @@ domReady(function () {
       pre.parentNode.insertBefore(button, pre);
     }
 
-    button.addEventListener('click', function () {
+    button.addEventListener('click', () => {
       navigator.clipboard.writeText(codeBlock.innerText).then(
-        function () {
+        () => {
           /* Chrome doesn't seem to blur automatically,
                    leaving the button in a focused state. */
           button.blur();
 
           button.innerText = 'Copied!';
 
-          setTimeout(function () {
+          setTimeout(() => {
             button.innerText = 'Copy';
           }, 2000);
         },
-        function (error) {
+        (error) => {
           button.innerText = 'Error';
         }
       );
