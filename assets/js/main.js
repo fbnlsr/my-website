@@ -4,6 +4,7 @@ import javascript from 'highlight.js/lib/languages/javascript';
 import php from 'highlight.js/lib/languages/php';
 import sql from 'highlight.js/lib/languages/sql';
 import markdown from 'highlight.js/lib/languages/markdown';
+import html from 'highlight.js/lib/languages/htmlbars';
 import Glide from '@glidejs/glide';
 
 let last_known_scroll_position = 0;
@@ -125,6 +126,7 @@ domReady(() => {
   hljs.registerLanguage('php', php);
   hljs.registerLanguage('sql', sql);
   hljs.registerLanguage('markdown', markdown);
+  hljs.registerLanguage('html', html);
   hljs.initHighlightingOnLoad();
 
   // Project carousels
