@@ -13,8 +13,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:400,700|Ubuntu+Mono:400,700&display=swap" rel="stylesheet">
 
-    {{ $options := (dict "targetPath" "/css/main.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options }}
+    {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" media="screen">
 
     <link rel="icon" type="image/png" href="/favicon-256x256.png" sizes="256x256" />
