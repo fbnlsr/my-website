@@ -3,7 +3,7 @@ date: 2018-06-15
 draft: false
 title: Forestry - A static website CMS
 excerpt: |
-    J'ai développé le nouveau site internet de NySB, une agence de communication graphique.
+    Let's look at Forestry, a CMS for static website.
 cover:
     author: Kai Pilger
     image: "/img/posts/kai-pilger-279041.jpg"
