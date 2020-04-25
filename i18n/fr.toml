@@ -35,7 +35,7 @@ other = "Je suis un Développeur Web Full Stack, basé à Bordeaux. Je travaille
 other = "Voir le projet"
 
 [notFoundTitle]
-other = "404 - Page non trouvée"
+other = "404 - Page Non Trouvée"
 
 [notFoundContent]
 other = "Il semble que la page que vous avez demandé n'existe plus ou a été supprimée."

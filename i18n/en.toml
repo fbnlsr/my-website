@@ -35,7 +35,7 @@ other = "I'm a Freelance Full Stack Web Developer based in Bordeaux, France. I d
 other = "View project"
 
 [notFoundTitle]
-other = "404 - Page not found"
+other = "404 - Page Not Found"
 
 [notFoundContent]
 other = "It looks like the page you're looking either does not exist or has been removed."

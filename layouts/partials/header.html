@@ -92,4 +92,8 @@
 </head>
 <body style="visibility: hidden;">
     <script>0</script><!-- Dummy JavaScript to avoid FOUC in Firefox. -->
+    {{if or (or .IsHome .IsPage) .IsNode}}
     <main class="site" id="top">
+    {{else}}
+    <main class="site not-found-container" id="top">
+    {{end}}

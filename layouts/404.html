@@ -1,14 +1,16 @@
 {{ partial "header.html" }}
 
-{{ partial "nav.html" }}
-
-<h1>{{ i18n "notFoundTitle" }}</h1>
+{{ partial "nav.html" . }}
 
 <div class="not-found">
+
+    <h1>{{ i18n "notFoundTitle" }}</h1>
 
     <p>{{ i18n "notFoundContent" | safeHTML }}</p>
 
     <p>{{ i18n "notFoundPlus" | safeHTML }}</p>
+
+    <p class="not-found-copyright">Photo by <a href="https://unsplash.com/photos/UDleHDOhBZ8" target="_blank">Daniel Jensen</a>.</p>
 
 </div>
 
