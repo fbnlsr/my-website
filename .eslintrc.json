@@ -1,0 +1,8 @@
+{
+  "extends": ["eslint:recommended", "airbnb-base", "prettier"],
+  "globals": {
+    "document": "readonly",
+    "window": "readonly",
+    "navigator": "readonly"
+  }
+}

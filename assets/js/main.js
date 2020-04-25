@@ -7,34 +7,35 @@ import markdown from 'highlight.js/lib/languages/markdown';
 import html from 'highlight.js/lib/languages/htmlbars';
 import Glide from '@glidejs/glide';
 
-let last_known_scroll_position = 0;
+let lastKnownScrollPosition = 0;
 let ticking = false;
-let topArrow = document.getElementById('topArrow');
+const topArrow = document.getElementById('topArrow');
 
-let setCookie = (cname, cvalue, exdays) => {
-  var d = new Date();
+const setCookie = (cname, cvalue, exdays) => {
+  const d = new Date();
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-  var expires = 'expires=' + d.toUTCString();
-  document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+  const expires = `expires=${d.toUTCString()}`;
+  document.cookie = `${cname}=${cvalue};${expires};path=/`;
 };
 
-let getCookie = (cname) => {
-  var name = cname + '=';
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for (var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
+const getCookie = (cname) => {
+  const name = `${cname}=`;
+  const decodedCookie = decodeURIComponent(document.cookie);
+  const ca = decodedCookie.split(';');
+
+  for (let i = 0; i < ca.length; i += 1) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') {
       c = c.substring(1);
     }
-    if (c.indexOf(name) == 0) {
+    if (c.indexOf(name) === 0) {
       return c.substring(name.length, c.length);
     }
   }
   return '';
 };
 
-let switchLang = (lang) => {
+const switchLang = (lang) => {
   setCookie('lang', lang, 365);
   if (window.location.pathname === '/' && lang === 'fr') {
     window.location.href = '/fr/';
@@ -46,13 +47,13 @@ let switchLang = (lang) => {
 };
 
 // Automatically switch language on home
-let lang = getCookie('lang');
+const lang = getCookie('lang');
 if (lang) {
   switchLang(lang);
 } else {
   // No cookie? Are we on home page? Let's detect the navigator language and redirect accordingly!
-  let navLang = navigator.language.slice(0, 2);
-  let currentPath = window.location.pathname;
+  const navLang = navigator.language.slice(0, 2);
+  const currentPath = window.location.pathname;
   if (currentPath === '/' && navLang === 'fr') {
     switchLang('fr');
   } else if (currentPath === '/fr/' && navLang === 'en') {
@@ -60,48 +61,55 @@ if (lang) {
   }
 }
 
-let getAll = (selector) => {
+const getAll = (selector) => {
   return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
 };
 
-let closeModals = () => {
+const closeModals = () => {
+  const modals = getAll('.modal');
   modals.forEach((el) => {
     el.classList.remove('is-active');
   });
 };
 
-let domReady = (callback) => {
-  document.readyState === 'interactive' || document.readyState === 'complete'
-    ? callback()
-    : document.addEventListener('DOMContentLoaded', callback);
+const domReady = (callback) => {
+  if (
+    document.readyState === 'interactive' ||
+    document.readyState === 'complete'
+  ) {
+    callback();
+  } else {
+    document.addEventListener('DOMContentLoaded', callback);
+  }
 };
 
-let displayTopArrow = (topArrow, scrollPos) => {
+const displayTopArrow = (el, scrollPos) => {
+  const arrow = el;
   if (scrollPos > 100) {
-    topArrow.style.opacity = 1;
-    topArrow.style.bottom = '80px';
+    arrow.style.opacity = 1;
+    arrow.style.bottom = '80px';
   } else {
-    topArrow.style.opacity = 0;
-    topArrow.style.bottom = '60px';
+    arrow.style.opacity = 0;
+    arrow.style.bottom = '60px';
   }
 };
 
 // Carousel navigation
-let setActiveDot = (num) => {
+const setActiveDot = (num) => {
   getAll('.glide-dot').forEach((el) => {
     el.classList.remove('is-active');
   });
-  document.getElementById('dot-' + `${num}`).classList.add('is-active');
+  document.getElementById(`dot-${num}`).classList.add('is-active');
 };
 
-window.addEventListener('scroll', (e) => {
-  last_known_scroll_position = window.scrollY;
+window.addEventListener('scroll', () => {
+  lastKnownScrollPosition = window.scrollY;
 
   if (!ticking) {
     window.requestAnimationFrame(() => {
       // Go to top arrow
       if (topArrow) {
-        displayTopArrow(topArrow, last_known_scroll_position);
+        displayTopArrow(topArrow, lastKnownScrollPosition);
       }
       ticking = false;
     });
@@ -109,12 +117,9 @@ window.addEventListener('scroll', (e) => {
   }
 });
 
-// Modal control
-let modals = getAll('.modal');
-var modalCloses = getAll('.modal-background, .delete');
-
-let colorChanger = getAll('.is-color-changer');
-let langSwitcher = getAll('.is-lang-switcher');
+const modalCloses = getAll('.modal-background, .delete');
+const colorChanger = getAll('.is-color-changer');
+const langSwitcher = getAll('.is-lang-switcher');
 
 // DOM is ready and waiting
 domReady(() => {
@@ -130,14 +135,16 @@ domReady(() => {
   hljs.initHighlightingOnLoad();
 
   // Project carousels
-  let glide = getAll('.glide');
+  const glide = getAll('.glide');
 
   if (glide.length > 0) {
-    let glideDesktopContainer = getAll('.is-laptop-content');
-    let glideMobileContainer = getAll('.is-mobile-content');
+    const glideDesktopContainer = getAll('.is-laptop-content');
+    const glideMobileContainer = getAll('.is-mobile-content');
+    let glideDesktop = null;
+    let glideMobile = null;
 
     if (glideDesktopContainer.length > 0) {
-      var glideDesktop = new Glide('.is-laptop-content', {
+      glideDesktop = new Glide('.is-laptop-content', {
         type: 'slider',
         rewind: false,
         gap: 0,
@@ -147,7 +154,7 @@ domReady(() => {
     }
 
     if (glideMobileContainer.length > 0) {
-      var glideMobile = new Glide('.is-mobile-content', {
+      glideMobile = new Glide('.is-mobile-content', {
         type: 'slider',
         rewind: false,
         gap: 0,
@@ -159,8 +166,8 @@ domReady(() => {
     if (glideMobile) {
       glideMobile.on('run', () => {
         if (glideDesktopContainer.length > 0) {
-          let i = glideMobile.index;
-          glideDesktop.go('=' + `${i}`);
+          const i = glideMobile.index;
+          glideDesktop.go(`=${i}`);
           setActiveDot(i);
         }
       });
@@ -170,8 +177,8 @@ domReady(() => {
     if (glideDesktop) {
       glideDesktop.on('run', () => {
         if (glideMobileContainer.length > 0) {
-          let i = glideDesktop.index;
-          glideMobile.go('=' + `${i}`);
+          const i = glideDesktop.index;
+          glideMobile.go(`=${i}`);
           setActiveDot(i);
         }
       });
@@ -180,19 +187,17 @@ domReady(() => {
     // Change slides when clicking dots
     getAll('.glide-dot').forEach((el) => {
       el.addEventListener('click', (event) => {
-        let targetSlide = event.target.dataset.slideId;
-        let glideDesktopContainer = getAll('.is-laptop-content');
-        let glideMobileContainer = getAll('.is-mobile-content');
+        const targetSlide = event.target.dataset.slideId;
         setActiveDot(targetSlide);
 
         // Moving slide on laptop if it exists
         if (glideDesktopContainer.length > 0) {
-          glideDesktop.go('=' + `${targetSlide}`);
+          glideDesktop.go(`=${targetSlide}`);
         }
 
         // Moving slide on iphone if it exists
         if (glideMobileContainer.length > 0) {
-          glideMobile.go('=' + `${targetSlide}`);
+          glideMobile.go(`=${targetSlide}`);
         }
       });
     });
@@ -210,16 +215,17 @@ domReady(() => {
 
   // Lazyload images
   [].forEach.call(document.querySelectorAll('img[data-src]'), (img) => {
-    img.setAttribute('src', img.getAttribute('data-src'));
-    img.onload = () => {
-      img.removeAttribute('data-src');
+    const el = img;
+    el.setAttribute('src', el.getAttribute('data-src'));
+    el.onload = () => {
+      el.removeAttribute('data-src');
     };
   });
 
   // Get all "navbar-burger" elements
-  var $navbarBurgers = Array.prototype.slice.call(
+  const $navbarBurgers = Array.prototype.slice.call(
     document.querySelectorAll('.navbar-burger'),
-    0
+    0,
   );
 
   // Check if there are any navbar burgers
@@ -228,8 +234,8 @@ domReady(() => {
     $navbarBurgers.forEach(($el) => {
       $el.addEventListener('click', () => {
         // Get the target from the "data-target" attribute
-        var target = $el.dataset.target;
-        var $target = document.getElementById(target);
+        const { target } = $el.dataset;
+        const $target = document.getElementById(target);
 
         // Toggle the class on both the "navbar-burger" and the "navbar-menu"
         $el.classList.toggle('is-active');
@@ -239,51 +245,57 @@ domReady(() => {
   }
 
   // Close button on modal
-  modalCloses.forEach((el) => {
-    el.addEventListener('click', () => {
-      closeModals();
+  if (modalCloses && modalCloses.length > 0) {
+    modalCloses.forEach((el) => {
+      el.addEventListener('click', () => {
+        closeModals();
+      });
     });
-  });
+  }
 
   // Checking if a color is set for blog articles
-  let blogColor = getCookie('blogColor');
-  let blogPostContainer = document.getElementById('blogPostContainer');
+  const blogColor = getCookie('blogColor');
+  const blogPostContainer = document.getElementById('blogPostContainer');
   if (blogColor && blogPostContainer) {
     blogPostContainer.classList.add(blogColor);
   }
 
   // Blog article color changer
-  colorChanger.forEach((el) => {
-    el.addEventListener('click', (event) => {
-      event.preventDefault();
-      let changer = event.target;
-      let color = changer.dataset.color;
-      let blogPostContainer = document.getElementById('blogPostContainer');
-      blogPostContainer.classList.remove('is-dark');
-      blogPostContainer.classList.remove('is-sand');
-      setCookie('blogColor', '', -1);
+  if (colorChanger && colorChanger.length > 0) {
+    colorChanger.forEach((el) => {
+      el.addEventListener('click', (event) => {
+        event.preventDefault();
+        const changer = event.target;
+        const { color } = changer.dataset;
+        blogPostContainer.classList.remove('is-dark');
+        blogPostContainer.classList.remove('is-sand');
+        setCookie('blogColor', '', -1);
 
-      if (color && color != 'undefined') {
-        setCookie('blogColor', color, 365);
-        blogPostContainer.classList.add(color);
-      }
+        if (color && color !== 'undefined') {
+          setCookie('blogColor', color, 365);
+          blogPostContainer.classList.add(color);
+        }
+      });
     });
-  });
+  }
 
-  langSwitcher.forEach((el) => {
-    el.addEventListener('click', (event) => {
-      let langSwitch = event.target;
-      switchLang(langSwitch.dataset.lang);
+  if (langSwitcher && langSwitcher.length > 0) {
+    langSwitcher.forEach((el) => {
+      el.addEventListener('click', (event) => {
+        const langSwitch = event.target;
+        switchLang(langSwitch.dataset.lang);
+      });
     });
-  });
+  }
 
   // Lazyload covers
-  var myLazyLoad = new LazyLoad({
+  const myLazyLoad = new LazyLoad({
     elements_selector: '.lazy',
   });
+  myLazyLoad.update();
 
   // Making blog post notification appear after some time
-  let heyListen = document.getElementById('heyListen');
+  const heyListen = document.getElementById('heyListen');
   if (heyListen) {
     window.setTimeout(() => {
       heyListen.classList.add('is-active');
@@ -293,7 +305,7 @@ domReady(() => {
     }, 10000);
 
     // Making notification disapear on click
-    let closeListen = document.getElementById('closeListen');
+    const closeListen = document.getElementById('closeListen');
     closeListen.addEventListener('click', () => {
       heyListen.classList.remove('is-active');
     });
@@ -303,14 +315,14 @@ domReady(() => {
   // Thank you Danny Guo! <3
   // https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/
   document.querySelectorAll('pre > code').forEach((codeBlock) => {
-    var button = document.createElement('button');
+    const button = document.createElement('button');
     button.className = 'copy-code-button';
     button.type = 'button';
     button.innerText = 'Copy';
 
-    var pre = codeBlock.parentNode;
+    const pre = codeBlock.parentNode;
     if (pre.parentNode.classList.contains('highlight')) {
-      var highlight = pre.parentNode;
+      const highlight = pre.parentNode;
       highlight.parentNode.insertBefore(button, highlight);
     } else {
       pre.parentNode.insertBefore(button, pre);
@@ -329,9 +341,9 @@ domReady(() => {
             button.innerText = 'Copy';
           }, 2000);
         },
-        (error) => {
+        () => {
           button.innerText = 'Error';
-        }
+        },
       );
     });
   });

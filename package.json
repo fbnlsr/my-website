@@ -12,13 +12,19 @@
     "prod": "npm run copyfiles && webpack -p --config webpack.prod.js && hugo --minify"
   },
   "devDependencies": {
-    "@glidejs/glide": "^3.4.1",
     "bulma": "^0.8.0",
     "concurrently": "^5.1.0",
-    "highlight.js": "^9.18.1",
-    "vanilla-lazyload": "^13.0.0",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "highlight.js": "^9.18.1",
+    "vanilla-lazyload": "^13.0.0"
   }
 }
