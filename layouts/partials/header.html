@@ -34,14 +34,21 @@
     {{ if eq .Section "blog" }}
         {{ if isset .Params "pagedesc" }}
         <meta name="description" content="{{ .Params.pagedesc }}">
+        {{ else if isset .Params "excerpt" }}
+        <meta name="description" content="{{ .Params.excerpt }}">
         {{ else }}
         <meta name="description" content="{{ .Summary | truncate 250 }}">
         {{ end }}
     {{ else if eq .Section "projects" }}
-        <meta name="description" content="{{ .Params.description }}">
+        {{ if isset .Params "excerpt" }}
+            <meta name="description" content="{{ .Params.description }}">
+        {{ else }}
+            <meta name="description" content="{{ i18n "siteDescription" }}">
+        {{ end }}
     {{ else }}
     <meta name="description" content="{{ i18n "siteDescription" }}">
     {{ end }}
+    <meta name="author" content="Fabien Lasserre">
 
     <!-- Open Graph -->
     <meta property="fb:app_id" content="796615263784091">
@@ -60,7 +67,11 @@
     {{ end }}
 
     {{ if eq .Section "blog" }}
-        <meta property="og:description" content="{{ .Summary }}">
+        {{ if isset .Params "excerpt" }}
+            <meta property="og:description" content="{{ .Params.excerpt }}">
+        {{ else }}
+            <meta property="og:description" content="{{ .Summary }}">
+        {{ end }}
     {{ else if eq .Section "projects" }}
         <meta property="og:description" content="{{ .Params.description }}">
     {{ else }}
