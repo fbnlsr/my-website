@@ -28,6 +28,14 @@ This will do the same as `npm run build`, and run Hugo's built-in web server.
 npm run watch
 ```
 
+## Prod
+
+```bash
+npm run prod
+```
+
+Used by Netlify. It does the same thing as the `build` task and minifies assets.
+
 This will do the same as `npm run serve` and monitor changes for any `.scss` or `.js` file, thus rebuilding the site on any change.
 
 ## Commit emojis
@@ -42,3 +50,4 @@ This will do the same as `npm run serve` and monitor changes for any `.scss` or 
 | `:memo:`     |  📝   | Documentation related       |
 | `:iphone:`   |  📱   | Responsive design work      |
 | `:lipstick:` |  💄   | Updating UI and style files |
+| `:mag:`      |  🔍   | Improve SEO                 |

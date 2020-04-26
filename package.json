@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "copyfiles": "yes | cp ./node_modules/highlight.js/styles/github-gist.css ./assets/scss/_github-gist.scss",
-    "build": "npm run copyfiles && webpack --config webpack.dev.js && hugo --minify",
-    "serve": "npm run copyfiles && webpack --config webpack.dev.js && hugo serve --minify --disableFastRender",
-    "watch": "npm run copyfiles && concurrently 'hugo serve --minify --disableFastRender' 'webpack --watch --config webpack.dev.js'",
+    "build": "npm run copyfiles && webpack --config webpack.dev.js && hugo",
+    "serve": "npm run copyfiles && webpack --config webpack.dev.js && hugo serve --disableFastRender",
+    "watch": "npm run copyfiles && concurrently 'hugo serve --disableFastRender' 'webpack --watch --config webpack.dev.js'",
     "prod": "npm run copyfiles && webpack -p --config webpack.prod.js && hugo --minify"
   },
   "devDependencies": {},
