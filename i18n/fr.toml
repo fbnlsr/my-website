@@ -51,3 +51,6 @@ other = "Lire la suite..."
 
 [lastPost]
 other = "Dernier article sur le blog :"
+
+[photo404]
+other = "Photo par"
