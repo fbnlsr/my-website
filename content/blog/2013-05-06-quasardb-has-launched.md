@@ -1,9 +1,10 @@
 ---
 title: Quasardb has launched
-draft: true
 date: 2013-05-06
+excerpt: |
+    The new website for Quasardb is out! Yay! 🎉
 cover:
-    image:
+    image: "/img/posts/quasardb.jpg"
     author:
     link:
 
@@ -11,8 +12,6 @@ links:
     devto:
     medium:
 ---
-![Quasardb Screenshot](/img/posts/quasardb.jpg)
-
 It's not every day that I can talk about my work. Most of the code I'm writing is protected by NDAs, so I rarely have the opportunity to show off what I do.
 
 Today, we successfully launched the new website for [quasardb](http://www.quasardb.net/). Quasardb is an associative database system created by [Bureau 14](http://www.bureau14.fr), which is self-aware, ultra-scallable, and designed from the ground up to operate on huge data volumes at unprecedent speed. The design of the site was done by the folks at [Glamrock Agency](http://www.glamrock-agency.com). I was in charge of taking care of the original integration that was done in XHTML, straighten it a bit by converting it to HTML5, and integrating it back into the Jekyll framework. We've also worked concurrently to optimize the site and the server to the fullest, and it has now a PageSpeed score of 99 out of 100.

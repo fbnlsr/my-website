@@ -1,6 +1,7 @@
 ---
 title: HTTPS all the things!
 date: 2017-01-23
+excerpt: "Regular HTTP will soon be a thing of the past. Be prepared!"
 cover:
     image: "/img/posts/all-the-things.jpg"
     author:

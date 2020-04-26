@@ -1,6 +1,7 @@
 ---
 title: HTTPS toutes les choses !
 date: 2017-01-23
+excerpt: "Le HTTP va bientôt devenir obsolète. Préparons-nous !"
 cover:
     image: "/img/posts/all-the-things.jpg"
     author:

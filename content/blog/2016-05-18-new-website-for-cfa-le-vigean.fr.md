@@ -1,6 +1,7 @@
 ---
 title: CFA Le Vigean
 date: 2016-05-18
+excerpt: "Nouveau projet en ligne, cette fois pour le CFA Le Vigean, un centre de formation pour artisans."
 cover:
     image: "/img/posts/cfa.jpg"
     author:

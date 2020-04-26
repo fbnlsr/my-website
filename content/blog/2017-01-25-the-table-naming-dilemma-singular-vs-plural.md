@@ -1,6 +1,8 @@
 ---
 title: "The table naming dilemma: singular vs. plural"
 date: 2017-01-25
+excerpt: |
+    Have you ever spent too much time reflecting on how you should name your tables? In this post I try to find a solution to this problem.
 cover:
     image: "/img/posts/eli-francis-100644.jpg"
     author: Eli Francis

@@ -1,6 +1,7 @@
 ---
 title: CFA Le Vigean
 date: 2016-05-18
+excerpt: "New project online! This time for CFA Le Vigean, a training center for multiple hand crafts."
 cover:
     image: "/img/posts/cfa.jpg"
     author:

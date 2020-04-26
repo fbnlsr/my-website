@@ -1,12 +1,12 @@
 ---
 title: Quick Review of Steed FTP Client
-draft: true
 date: 2013-01-14
+excerpt: |
+    Let's take a look at Steed, a new FTP client for Windows that's aiming at being an alternative to the good old FileZilla.
 cover:
-    image:
+    image: "/img/posts/steed.jpg"
     author:
     link:
-
 links:
     devto:
     medium:
@@ -18,8 +18,6 @@ As a web developer, much time is spent using an FTP client. And I'm sure you'll 
 I've been using [FileZilla](http://filezilla-project.org/) for as long as I can remember, and despite the fact that it's not very user friendly, it gets the job done. One *major* drawback though, is the fact it stores its bookmarks' passwords in plain text. It has been [filed as a critical bug](http://trac.filezilla-project.org/ticket/5394) in FileZilla's Trac, then rejected on the fact that passwords stored in plain text are not a security failure, but a design choice. This problem can be fixed with ease, using an encrypted [TrueCrypt container](http://www.truecrypt.org/) storing the XML file for instance.. I personally use this method and store it in my [Wuala](http://www.wuala.com/) folder, which also adds sync between my different machines. Still, this is not a good design decision coming from FileZilla's devs and time has come for a replacement.
 
 After considering the obvious alternatives, and especially [WinSCP](http://winscp.net/eng/index.php) (which stores passwords in AES256 [when using a Master Password](http://winscp.net/eng/docs/security_credentials#storing_password)), I stumbled upon [Steed](http://www.frenchfrysoftware).com/steed/, a relatively new FTP client from the french folks at [French Fry](http://www.frenchfrysoftware.com/).
-
-<!--more-->
 
 After a quick install, an immediate sense of purity and clean design comes to mind. One might even say Apple-esque design, which is a good thing. Steed immediately asked me if I wanted to import my FileZilla bookmarks, and I was ready to go in minutes. Well, not quite, as there was a problem importing my folder settings. I like to link a remote folder with a local one on my computer, and Steed seemed to have some troubles importing some settings regarding folders which are located on a local NAS server. But let's not stop at that.
 

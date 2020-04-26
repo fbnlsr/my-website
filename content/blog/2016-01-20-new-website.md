@@ -1,6 +1,7 @@
 ---
 title: New website!
 date: 2016-01-20
+excerpt: "Hello and welcome! 👋"
 cover:
     image: "/img/posts/wallhaven-222927.jpg"
     author: Snufkin

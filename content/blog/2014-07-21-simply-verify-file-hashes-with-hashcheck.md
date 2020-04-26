@@ -1,12 +1,12 @@
 ---
 title: Simply Verify File Hashes With HashCheck
-draft: true
 date: 2014-07-21
+excerpt: |
+    HashCheck is a simple tool that helps you to simply and quickly verify the integrity of a file.
 cover:
-    image:
-    author:
-    link:
-
+    image: "/img/posts/aaron-burden-xG8IQMqMITM-unsplash.jpg"
+    author: "Aaron Burden"
+    link: "https://unsplash.com/photos/xG8IQMqMITM"
 links:
     devto:
     medium:

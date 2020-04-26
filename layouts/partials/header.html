@@ -6,7 +6,7 @@
     <link rel="canonical" href="{{ .Permalink }}">
     <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
     {{ if .Section }}
-    <title>Fabien Lasserre | {{ .Title | humanize | truncate 39 }}</title>
+    <title>Fabien Lasserre | {{ .Title | humanize }}</title>
     {{ else }}
     <title>{{ i18n "site-title" }}</title>
     {{ end }}

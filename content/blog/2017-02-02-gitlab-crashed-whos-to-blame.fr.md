@@ -1,6 +1,8 @@
 ---
 title: Gitlab a crashé, à qui la faute ?
 date: 2017-02-02
+excerpt: |
+    Quelque part, un administrateur système sue à grosse gouttes après avoir détruit une grosse partie des données de production de GitLab. Mais est-il vraiment responsable ?
 cover:
     image: "/img/posts/gitlab.jpg"
     author:

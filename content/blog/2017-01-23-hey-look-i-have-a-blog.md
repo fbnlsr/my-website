@@ -1,6 +1,7 @@
 ---
 title: Hey look, I have a blog!
 date: 2017-01-23
+excerpt: "Welcome back, old friend."
 cover:
     image: "/img/posts/yannick-pulver-180756.jpg"
     author: Yannick Pulver

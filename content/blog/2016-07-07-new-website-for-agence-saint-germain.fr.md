@@ -1,6 +1,7 @@
 ---
 title: Agence Saint Germain
 date: 2016-07-07
+excerpt: "Nouveau projet pour l'Agence Saint Germain, une agence de photographes, maquilleurs et costumiers."
 cover:
     image: "/img/posts/asg.jpg"
     author:

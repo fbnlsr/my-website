@@ -1,6 +1,8 @@
 ---
 title: "Nommer ses tables : singulier vs. pluriel"
 date: 2017-01-25
+excerpt: |
+    Avez-vous déjà passé beaucoup trop de temps à réfléchir comment nommer vos tables ? Dans ce billet j'essaie de trouver la solution à ce problème épineux.
 cover:
     image: "/img/posts/eli-francis-100644.jpg"
     author: Eli Francis

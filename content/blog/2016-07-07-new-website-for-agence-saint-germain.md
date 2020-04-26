@@ -1,6 +1,7 @@
 ---
 title: Agence Saint Germain
 date: 2016-07-07
+excerpt: "New project for Agence Saint Germain, an agency for photographers, make-up artists and set designers."
 cover:
     image: "/img/posts/asg.jpg"
     author:

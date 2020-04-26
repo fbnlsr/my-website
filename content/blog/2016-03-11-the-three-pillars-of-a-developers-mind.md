@@ -1,6 +1,7 @@
 ---
 title: The three pillars of a developer's mind
 date: 2016-03-11
+excerpt: "In this post I reflect on the three things I consider primordial for a developer."
 cover:
     image: "/img/posts/mike-kenneally-2236.jpg"
     author: Mike Kenneally

@@ -1,21 +1,19 @@
 ---
 title: The Rubber Duck Debugging
 date: 2012-11-18
-draft: true
+excerpt: |
+    We've all been there. Head in the hands, aimlessly looking at the screen, you're stuck in front of an unsolvable bug. Luckily, a simple technique might help you. And it involves a rubber duck.
 cover:
-    image:
+    image: "/img/posts/rubber-duck.jpg"
     author:
     link:
-
 links:
     devto:
     medium:
 ---
 Following the post by my good friend [Marco Monteiro](http://www.marcomonteiro.net/) about the [Yoda Condition](http://blog.marcomonteiro.net/post/35697947390/yoda-conditions/), I thought it'd be neat to share one of my favorite way of maintening code: The Rubber Duck Debugging. Or to be a bit more precise, my own approach on the concept. Let me explain.
 
-![Ducky](/img/posts/big-de-dee-bubil.jpg)
-
-Also called "Rubber Ducking", or even "Confessional Debugging", the Rubber Duck Debugging is a method of, well, debugging code. It consists of forcing yourself to explain, line-by-line, your code to... a rubber duck. The goal here is to be able to coin errors or bugs by yourself, speaking to an inanimate object. In describing what the code is supposed to do and observing what it actually does, any inconsistent behavior should rise by itself.
+Also called "**Rubber Ducking**", or even "**Confessional Debugging**", the Rubber Duck Debugging is a method of, well, debugging code. It consists of forcing yourself to explain, line-by-line, your code to... a rubber duck. The goal here is to be able to coin errors or bugs by yourself, speaking to an inanimate object. In describing what the code is supposed to do and observing what it actually does, any inconsistent behavior should rise by itself.
 
 Now, I don't keep a rubber ducky on my desk at all time (I have a little alien toy with four eyes) and to be honest I don't do Rubber Ducking, ever. But what I particularly like about this approach is the fact that good written code should be self-explainatory. In a way, one should produce code so clear even a rubber duck could understand it. Another way of putting it is this quote I've always loved:
 

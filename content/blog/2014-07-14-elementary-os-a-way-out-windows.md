@@ -1,18 +1,17 @@
 ---
-title: elementary OS, A Way Out Windows?
-draft: true
+title: elementary OS, a real alternative to Windows?
 date: 2014-07-21
+excerpt: |
+    Let's look at a Linux distribution that's slowly becoming better with each release. Could it be the thing I've been waiting for to finally get rid of Windows as my main OS?
 cover:
-    image:
-    author:
-    link:
+    image: "/img/posts/gabriele-diwald-Kwi60PbAM9I-unsplash.jpg"
+    author: Gabriele Diwald
+    link: "https://unsplash.com/photos/Kwi60PbAM9I"
 
 links:
     devto:
     medium:
 ---
-
-![Photo by kionee.deviantart.com](/img/posts/rain.jpg)
 
 For as long as I can remember, I've always wanted to get out of the Windows environment. Windows XP and 7 are outstanding operating systems, but I simply can't get used to Windows 8's user interface. There's also a major drawback when you're doing web development: pretty much everything is done on Unix/Linux systems. Not to mention MacOS X. It has grown so popular over the past few years that it's become cumbersome to try and set up a web development platform on Windows. Try and set up Git or Ruby/Jekyll on a Windows machine and you'll know what I mean. Of course, there are always alternatives ([Sourcetree](http://sourcetreeapp.com) for Git is an outstanding product, for example), but there's always something that feels a bit "off" when you're coding on Windows, at least for me. Lately, I've had troubles with Composer while trying to start working again with Laravel.
 
@@ -48,12 +47,10 @@ Then again, I usually get notified of software updates about the applications I'
 
 Of course, Luna is not perfect. The first thing you might want to look into is the possibility to add a minimize button on your windows' titles. By default, the only buttons available are Close and Maximize, which are located to the left and right of the windows' title. In order to minimize a window, you need to click its icon on the dock. It makes the layout of windows cleaner, but it's simply not practical.
 
-{:.centered}
 ![luna-buttons](/img/posts/luna-buttons.jpg)
 
 To remedy this problem, simply install [Dconf-tools](https://apps.ubuntu.com/cat/applications/precise/dconf-tools/) using Software Center, and find the following key:
 
-{:.centered}
 **org → pantheon → desktop → gala → appearance**
 
 Change the value <code>close:maximize</code> to <code>:minimize,maximize,close</code>. This will put all the necessary commands on the far right of the windows' title bar, and Windows user will certainly feel a bit more at home. You'll find a step by step guide over at [Unixmen](http://www.unixmen.com/enable-minimize-move-windows-buttons-elementary-os-luna/) that'll show you how to do this.
@@ -63,6 +60,3 @@ Change the value <code>close:maximize</code> to <code>:minimize,maximize,close</
 All in all, I couldn't be happier with that distribution so far. I'll probably give it a solid month of testing, especially with Gimp, before making the final decision. And I'll probably keep a copy of Windows somewhere, because besides work, I'm also a gamer, and even though some huge progress has been made in that field, I'll probably still need it to feed my gaming habits :)
 
 I can totally see elementary OS as my daily driver. For the past week, it hasn't showed the slightest flaw, and I've been productive pretty fast using this new OS. If you wish to give it a try, simply go to [http://elementaryos.org/](http://elementaryos.org/), download the ISO, and cram it inside a [VMWare Player](https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/6_0) virtual machine. I bet you'll be hooked.
-
-{:.credits}
-*Photos: [kionee](http://kionee.deviantart.com/), Wikipedia, [UbuntuHandbook](http://ubuntuhandbook.org/).*

@@ -1,6 +1,8 @@
 ---
 title: Gitlab crashed, who's to blame?
 date: 2017-02-02
+excerpt: |
+    Somewhere, a sysadmin is sweating bullets after he crashed the entire live production data of GitLab. But is he really responsible for this?
 cover:
     image: "/img/posts/gitlab.jpg"
     author:
