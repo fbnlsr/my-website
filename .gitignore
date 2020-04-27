@@ -12,6 +12,7 @@ hugo.exe
 /static/js/main.min.js.map
 /static/font/*
 /static/fonts.css
+/resources/_gen/images
 
 ### macOS ###
 *.DS_Store
