@@ -73,14 +73,14 @@
     float: left;
 
     &.is-full {
-      max-width: 100%;
+      width: 100%;
     }
 
     &.is-half {
-      max-width: calc(50% - 2rem);
+      width: calc(50% - 2rem);
 
       @media screen and (max-width: 768px) {
-        max-width: 100%;
+        width: 100%;
       }
     }
 
