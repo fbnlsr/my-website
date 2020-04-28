@@ -1,44 +1,50 @@
-{{ partial "header.html" . }}
+{{ partial "header.html" . -}}
 
-{{ partial "nav.html" . }}
+{{ partial "nav.html" . -}}
 
-{{ partial "go-to-top.html"}}
+{{ partial "go-to-top.html" . -}}
 
     <h1>{{ i18n "notes" }}</h1>
 
     <div class="blog-list is-clearfix">
-        {{ range $index, $element := where .Data.Pages "Section" .Section  }}
+        {{ range $index, $element := where .Data.Pages "Section" .Section  -}}
 
-            {{ if or (eq $index 0) (eq (modBool $index 3) true) }}
-                {{ $.Scratch.Set "bloc-width" "is-full" }}
-            {{ else }}
-                {{ $.Scratch.Set "bloc-width" "is-half" }}
-            {{ end }}
+            {{ if or (eq $index 0) (eq (modBool $index 3) true) -}}
+                {{ $.Scratch.Set "bloc-width" "is-full" -}}
+            {{ else -}}
+                {{ $.Scratch.Set "bloc-width" "is-half" -}}
+            {{ end -}}
+
+            {{ $cover := $element.Resources.GetMatch "cover.jpg" -}}
+            {{ if $cover -}}
+                {{ $coverResized := $cover.Resize "926x q90" -}}
+                {{ .Scratch.Set "coverUrl" $coverResized.RelPermalink -}}
+            {{ end -}}
 
                 <div class="blog-bloc {{ ($.Scratch.Get "bloc-width") }}">
-                    <div class="blog-cover lazy" data-src="{{ .Params.cover.image }}">
+                    <div class="blog-cover lazy" data-src="{{ .Scratch.Get "coverUrl" }}">
                         <a href="{{ .Permalink }}"></a>
                     </div>
                     <div class="blog-excerpt">
                         <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-                        {{ if eq .Lang "fr" }}
+                        {{ if eq .Lang "fr" -}}
                             <p class="date">{{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) | humanize }}&nbsp;{{ .Date.Year }}</p>
-                        {{ else }}
+                        {{ else -}}
                             <p class="date">{{ .Date.Format "January 2, 2006" }}</p>
-                        {{ end }}
+                        {{ end -}}
                         <div class="excerpt">
-                            {{ if .Params.excerpt }}
-                                {{ .Params.excerpt | markdownify | emojify }}
-                            {{ else }}
-                                {{ .Summary }}
-                            {{ end }}
+                            {{ if .Params.excerpt -}}
+                                {{ .Params.excerpt | markdownify | emojify -}}
+                            {{ else -}}
+                                {{ .Summary -}}
+                            {{ end -}}
                         </div>
                         <div class="bottom">
                             <p class="more"><a href="{{ .Permalink }}">{{ i18n "readmore" }}</a></p>
                         </div>
                     </div>
                 </div>
-        {{ end }}
+        {{ end -}}
     </div>
 
-{{ partial "footer.html" . }}
+{{- partial "footer.html" . -}}

@@ -10,8 +10,6 @@ hugo.exe
 /static/js/main.min.js
 /static/js/main.js.map
 /static/js/main.min.js.map
-/static/font/*
-/static/fonts.css
 /resources/_gen/images
 
 ### macOS ###

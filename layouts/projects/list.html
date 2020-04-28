@@ -1,8 +1,8 @@
-{{ partial "header.html" . }}
+{{ partial "header.html" . -}}
 
-{{ partial "nav.html" . }}
+{{ partial "nav.html" . -}}
 
-{{ partial "go-to-top.html"}}
+{{ partial "go-to-top.html" . -}}
 
 <div class="projects">
 
@@ -10,10 +10,10 @@
 
     <div class="sample">{{ .Content }}</div>
 
-    {{ range (where .Data.Pages "Section" .Section).ByWeight.Reverse  }}
-        {{ partial "project-block.html" . }}
-    {{ end }}
+    {{ range (where .Data.Pages "Section" .Section).ByWeight.Reverse  -}}
+        {{ partial "project-block.html" . -}}
+    {{ end -}}
 
 </div>
 
-{{ partial "footer.html" . }}
+{{ partial "footer.html" . -}}

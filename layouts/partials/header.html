@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="canonical" href="{{ .Permalink }}">
     <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
-    {{ if .Section }}
+    {{ if .Section -}}
     <title>Fabien Lasserre | {{ .Title | humanize }}</title>
-    {{ else }}
+    {{ else -}}
     <title>{{ i18n "site-title" }}</title>
-    {{ end }}
+    {{ end -}}
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:400,700|Ubuntu+Mono:400,700&display=swap" rel="stylesheet">
 
-    {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options | fingerprint }}
+    {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) -}}
+    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options | fingerprint -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}" media="screen">
 
     <link rel="icon" type="image/png" href="/favicon-256x256.png" sizes="256x256" />
@@ -31,32 +31,32 @@
 
     <!-- SEO stuff -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    {{ if eq .Section "blog" }}
-        {{ if isset .Params "pagedesc" }}
+    {{ if eq .Section "blog" -}}
+        {{ if isset .Params "pagedesc" -}}
         <meta name="description" content="{{ .Params.pagedesc }}">
-        {{ else if isset .Params "excerpt" }}
+        {{ else if isset .Params "excerpt" -}}
         <meta name="description" content="{{ .Params.excerpt }}">
-        {{ else }}
+        {{ else -}}
         <meta name="description" content="{{ .Summary | truncate 250 }}">
-        {{ end }}
-    {{ else if eq .Section "projects" }}
-        {{ if isset .Params "excerpt" }}
+        {{ end -}}
+    {{ else if eq .Section "projects" -}}
+        {{ if isset .Params "excerpt" -}}
             <meta name="description" content="{{ .Params.description }}">
-        {{ else }}
+        {{ else -}}
             <meta name="description" content="{{ i18n "siteDescription" }}">
-        {{ end }}
-    {{ else }}
+        {{ end -}}
+    {{ else -}}
     <meta name="description" content="{{ i18n "siteDescription" }}">
-    {{ end }}
+    {{ end -}}
     <meta name="author" content="Fabien Lasserre">
 
     <!-- Open Graph -->
     <meta property="fb:app_id" content="796615263784091">
     <meta property="og:title" content="{{ .Title }}">
-    {{ if or (eq .Section "blog") (eq .Section "projects") }}
+    {{ if or (eq .Section "blog") (eq .Section "projects") -}}
     <meta property="og:type" content="article">
     <meta property="article:author" content="Fabien Lasserre">
-    {{ else }}
+    {{ else -}}
     <meta property="og:type" content="business.business">
     <meta property="business:contact_data:street_address" content="13 Rue des Fleurs, Appt A205">
     <meta property="business:contact_data:locality" content="Eysines">
@@ -64,25 +64,25 @@
     <meta property="business:contact_data:country_name" content="France">
     <meta property="business:contact_data:email" content="hello@primative.net">
     <meta property="business:contact_data:phone_number" content="+33603351963">
-    {{ end }}
+    {{ end -}}
 
-    {{ if eq .Section "blog" }}
-        {{ if isset .Params "excerpt" }}
+    {{ if eq .Section "blog" -}}
+        {{ if isset .Params "excerpt" -}}
             <meta property="og:description" content="{{ .Params.excerpt }}">
-        {{ else }}
+        {{ else -}}
             <meta property="og:description" content="{{ .Summary }}">
-        {{ end }}
-    {{ else if eq .Section "projects" }}
+        {{ end -}}
+    {{ else if eq .Section "projects" -}}
         <meta property="og:description" content="{{ .Params.description }}">
-    {{ else }}
+    {{ else -}}
     <meta property="og:description" content="{{ i18n "siteDescription" }}">
-    {{ end }}
+    {{ end -}}
     <meta property="og:url" content="{{ .Permalink }}">
-    {{ if eq .Section "blog" }}
+    {{ if eq .Section "blog" -}}
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.cover.image }}">
-    {{ else }}
+    {{ else -}}
     <meta property="og:image" content="{{ .Site.BaseURL }}/img/primative-og.jpg">
-    {{ end }}
+    {{ end -}}
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
@@ -92,8 +92,8 @@
 </head>
 <body style="visibility: hidden;">
     <script>0</script><!-- Dummy JavaScript to avoid FOUC in Firefox. -->
-    {{if or (or .IsHome .IsPage) .IsNode}}
+    {{ if or (or .IsHome .IsPage) .IsNode -}}
     <main class="site" id="top">
-    {{else}}
+    {{ else -}}
     <main class="site not-found-container" id="top">
-    {{end}}
+    {{ end -}}

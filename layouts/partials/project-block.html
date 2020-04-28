@@ -1,26 +1,26 @@
 <div class="project">
     <div class="infos">
         <p class="title">{{ .Title }}</p>
-        {{ if .Params.type }}
+        {{ if .Params.type -}}
             <p class="type">
-                {{ .Params.type }}
-                {{ if .Params.client }}&nbsp;–&nbsp;{{ .Params.client }}{{ end }}
+                {{ .Params.type -}}
+                {{ if .Params.client }}&nbsp;–&nbsp;{{ .Params.client }}{{ end -}}
             </p>
-        {{ end }}
-        {{ if .Params.work }}
+        {{ end -}}
+        {{ if .Params.work -}}
             <p class="work">{{ .Params.work }}</p>
-        {{ end }}
-        {{ if .Params.description }}
-            <div class="description">{{ .Params.description | markdownify }}</div>
-        {{ end }}
+        {{ end -}}
+        <div class="description">{{ .Summary }}</div>
         <div class="btn is-project-btn">
             <a href="{{ .Permalink }}" class="btn is-project-btn">{{ i18n "viewProject" }}</a>
         </div>
     </div>
     <div class="cover is-hidden-mobile">
-        {{ if .Params.cover }}
-        <a href="{{ .Permalink }}"><img data-src="/img/projects/{{ .Params.cover }}" alt="Cover image" width="300" height="190"></a>
-        {{ end }}
+        {{ $cover := .Resources.GetMatch "cover.jpg" -}}
+        {{ if $cover -}}
+            {{ $image := $cover.Resize "300x q90" -}}
+            <a href="{{ .Permalink }}"><img data-src="{{ $image.RelPermalink }}" alt="Cover image" width="300" height="190"></a>
+        {{ end -}}
     </div>
 </div>
 <hr class="bullet is-hidden-mobile">

@@ -1,5 +1,6 @@
-{{ partial "header.html" . }}
-{{ partial "nav-home.html" . }}
+{{ partial "header.html" . -}}
+
+{{ partial "nav-home.html" . -}}
 
 <div class="home-columns">
 
@@ -13,18 +14,18 @@
     <div class="column has-background-blue is-home-right-column">
 
         <div class="lang-choser is-hidden-touch">
-        {{ if .IsTranslated }}
-            {{ $currentLang := .Site.Language.Lang }}
-            {{ if eq $currentLang "en" }}
+        {{ if .IsTranslated -}}
+            {{ $currentLang := .Site.Language.Lang -}}
+            {{ if eq $currentLang "en" -}}
                 <img class="lang is-lang-switcher" src="/img/flag-fr.svg" alt="FR" data-lang="fr">
-            {{ else }}
+            {{ else -}}
                 <img class="lang is-lang-switcher" src="/img/flag-en.svg" alt="US" data-lang="en">
-            {{ end }}
-        {{ end }}
+            {{ end -}}
+        {{ end -}}
         </div>
 
         <div class="content">
-            {{.Content}}
+            {{ .Content }}
         </div>
         <div class="social">
             <ul>
@@ -62,9 +63,14 @@
 
 </div>
 
-{{ range first 1 (where .Site.RegularPages "Section" "blog") }}
+{{ range first 1 (where .Site.RegularPages "Section" "blog") -}}
+    {{ $cover := .Page.Resources.GetMatch "cover.jpg" -}}
+    {{ if $cover -}}
+        {{ $image := $cover.Resize "350x q90" -}}
+        {{ .Scratch.Set "coverUrl" $image.RelPermalink -}}
+    {{ end -}}
     <div id="heyListen" class="card">
-        <div class="card-image" style="background-image: url('{{ .Params.cover.image }}')">
+        <div class="card-image" style="background-image: url('{{ .Scratch.Get "coverUrl" }}');">
             <a class="delete" id="closeListen">
                 <svg viewBox="0 0 24 24">
                     <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
@@ -78,6 +84,6 @@
             </div>
         </div>
     </div>
-{{ end }}
+{{ end -}}
 
-{{ partial "footer.html" . }}
+{{ partial "footer.html" . -}}

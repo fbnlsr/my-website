@@ -9,6 +9,12 @@
         "printWidth": 120,
         "proseWrap": "always"
       }
+    },
+    {
+      "files": ["*.yml", "*.yaml"],
+      "options": {
+        "singleQuote": false
+      }
     }
   ]
 }

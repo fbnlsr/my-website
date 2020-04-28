@@ -8,10 +8,7 @@ other = "Fabien Lasserre - Développeur Web Full Stack"
 other = "Cet article a aussi été publié sur :"
 
 [twitter-share]
-other = "<i class=\"fab fa-twitter\"></i> Vous avez aimé cet article ? Partagez-le sur Twitter !"
-
-[twitter-share-modal]
-other = "<i class=\"fab fa-twitter\"></i> Partagez-le sur Twitter !"
+other = "Vous avez aimé cet article ? Partagez-le sur Twitter !"
 
 [thisProjectUsed]
 other = "Utilisé pour ce projet :"

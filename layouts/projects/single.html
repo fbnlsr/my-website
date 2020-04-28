@@ -1,88 +1,90 @@
-{{ partial "header.html" . }}
+{{ partial "header.html" . -}}
 
-{{ partial "nav.html" . }}
+{{ partial "nav.html" . -}}
 
-{{ partial "go-to-top.html"}}
+{{ partial "go-to-top.html" . -}}
 
 <div class="project">
     <h1>{{ .Title }}</h1>
 
     <div class="is-showcase">
-        {{ if .Params.gallery }}
+        {{ $desktopImages := .Resources.Match "desktop*.jpg" -}}
+        {{ if $desktopImages -}}
         <div class="is-laptop">
             <div class="is-laptop-content glide">
                 <div data-glide-el="track" class="glide__track">
                     <ul class="glide__slides">
-                        {{ range .Params.gallery }}
-                            <li class="glide__slide"><img src="/img/projects/{{ . }}" alt="Project image"></li>
-                        {{ end }}
+                        {{ range $index, $element := $desktopImages -}}
+                            {{ $image := $element.Fill "628x393 q90" -}}
+                            <li class="glide__slide"><img src="{{ $image.RelPermalink }}" alt="Project image"></li>
+                        {{ end -}}
                     </ul>
                 </div>
             </div>
         </div>
-        {{ end }}
-        {{ if .Params.galleryMobile }}
+        {{ end -}}
+        {{ $mobileImages := .Resources.Match "mobile*.jpg" -}}
+        {{ if $mobileImages -}}
         <div class="is-mobile">
             <div class="is-mobile-content glide">
                 <div data-glide-el="track" class="glide__track">
                     <ul class="glide__slides">
-                        {{ range .Params.galleryMobile }}
-                            <li class="glide__slide"><img src="/img/projects/{{ . }}" alt="Project image"></li>
-                        {{ end }}
+                        {{ range $index, $element := $mobileImages -}}
+                            {{ $image := $element.Fill "139x247 q90" -}}
+                            <li class="glide__slide"><img src="{{ $image.RelPermalink }}" alt="Project image"></li>
+                        {{ end -}}
                     </ul>
                 </div>
             </div>
         </div>
-        {{ end }}
-        {{ if .Params.gallery }}
+        {{ end -}}
+        {{ if and ($desktopImages) (gt (len $desktopImages) 1) -}}
         <div class="slideshow-markers">
             <ul class="glide-dots">
-            {{ range $index, $element := .Params.gallery }}
+            {{ range $index, $element := $desktopImages -}}
                 <li class="glide-dot {{ if eq $index 0 }}is-active{{ end }}" id="dot-{{ $index }}" data-slide-id="{{ $index }}"></li>
-            {{ end }}
+            {{ end -}}
             </ul>
         </div>
-        {{ end }}
+        {{ end -}}
     </div>
 
     <div class="is-description-block columns">
         <div class="column">
             <div class="is-long-description">
-                <p>{{ .Params.description | markdownify }}</p>
-
-                <p>{{ .Params.longDescription | markdownify }}</p>
+                {{ .Content }}
             </div>
             <div class="is-client">
                 <p><strong>{{ i18n "projectClient" }}</strong> {{ .Params.client }}</p>
             </div>
             <div class="is-project-back-link">
-                {{ if eq .Site.Language.Lang "fr" }}
+                {{ if eq .Site.Language.Lang "fr" -}}
                 <p><a href="/fr/projects">Retour aux projets</a></p>
-                {{ else }}
+                {{ else -}}
                 <p><a href="/projects">Back to projects</a></p>
-                {{ end }}
+                {{ end -}}
             </div>
         </div>
-        {{ if .Params.techUsed }}
+        {{ if .Params.techUsed -}}
         <div class="column is-one-quarter">
             <span class="is-project-used">
                 <p><strong>{{ i18n "thisProjectUsed" }}</strong></p>
                 <ul>
-                    {{ range .Params.techUsed }}
+                    {{ range .Params.techUsed -}}
                         <li>{{ . }}</li>
-                    {{ end }}
+                    {{ end -}}
                 </ul>
             </span>
         </div>
-        {{ end }}
+        {{ end -}}
     </div>
 
-    {{ if .Params.projectUrl }}
+    {{ if .Params.projectUrl -}}
         <div class="btn is-project-url-btn">
             <a href="{{ .Params.projectUrl }}" target="_blank">{{ i18n "visitWebsite" }}</a>
         </div>
-    {{ end }}
+    {{ end -}}
 
 </div>
 
-{{ partial "footer.html" }}
+{{ partial "footer.html" . -}}

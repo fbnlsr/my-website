@@ -1,14 +1,14 @@
-{{ partial "header.html" . }}
+{{ partial "header.html" . -}}
 
-{{ partial "nav.html" . }}
+{{ partial "nav.html" . -}}
 
-{{ partial "go-to-top.html"}}
+{{ partial "go-to-top.html" . -}}
 
 <div class="about">
 
     <h1>{{ .Title }}</h1>
 
-    {{ .Content }}
+    {{ .Content -}}
 </div>
 
-{{ partial "footer.html" . }}
+{{ partial "footer.html" . -}}

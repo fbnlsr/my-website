@@ -9,6 +9,7 @@
     position: relative;
     max-width: 960px;
     margin: auto;
+    margin-bottom: 2rem;
 
     .is-laptop {
       max-width: 960px;
@@ -105,7 +106,6 @@
         flex-direction: row;
         justify-content: center;
         margin: auto;
-        margin-bottom: 2rem;
 
         &:hover {
           cursor: pointer;

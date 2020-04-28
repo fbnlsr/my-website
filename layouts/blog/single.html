@@ -1,24 +1,31 @@
-{{ partial "header.html" . }}
+{{ partial "header.html" . -}}
 
-{{ partial "nav.html" . }}
+{{ partial "nav.html" . -}}
 
-{{ partial "go-to-top.html"}}
+{{ partial "go-to-top.html" . -}}
+
+{{ $coverImg := .Page.Resources.GetMatch "cover.jpg" -}}
+{{ $cover := "" -}}
+{{ if $coverImg -}}
+  {{ $resizedCover := $coverImg.Resize "2000x q90" -}}
+  {{ $cover = $resizedCover.RelPermalink -}}
+{{ end -}}
 
 <div class="blog-post" id="blogPostContainer">
-    <div class="title-container {{ if not .Params.cover.image }} no-cover{{end}}">
-        {{ if .Params.cover.image }}
-            <div class="background-cover" id="blog-post-cover" style="background-image: url('{{ .Params.cover.image }}');">
+    <div class="title-container {{ if eq $cover "" }} no-cover{{end}}">
+        {{ if ne $cover "" -}}
+            <div class="background-cover" id="blog-post-cover" style="background-image: url('{{ $cover }}');">
                 <div class="background-shroud">
-        {{ end }}
+        {{ end -}}
         <p class="title">
             {{ .Title }}
         </p>
         <p class="date">
-            {{ if eq .Lang "fr" }}
+            {{ if eq .Lang "fr" -}}
                 Publié le {{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) | humanize }}&nbsp;{{ .Date.Year }}
-            {{ else }}
+            {{ else -}}
                 Published on {{ .Date.Format "January 2, 2006" }}
-            {{ end }}
+            {{ end -}}
         </p>
         <p class="chevron bounce is-hidden-mobile">
             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -26,31 +33,31 @@
             </svg>
         </p>
 
-        {{ if .Params.cover.image }}</div></div>{{ end }}
+        {{ if ne $cover "" }}</div></div>{{ end -}}
     </div>
-    {{ if .Params.cover.author }}
+    {{ if .Params.cover.author -}}
         <p class="is-cover-author is-hidden-mobile">
-            {{ if .Params.cover.link }}
-                <a href="{{ .Params.cover.link }}">
-            {{ end }}
-            {{ .Params.cover.author }}
-            {{ if .Params.cover.link }}
+            {{ if .Params.cover.link -}}
+                Photo by <a href="{{ .Params.cover.link }}">
+            {{ end -}}
+            {{ .Params.cover.author -}}
+            {{ if .Params.cover.link -}}
                 </a>
-            {{ end }}
+            {{ end -}}
         </p>
-    {{end}}
+    {{ end -}}
 
     <p class="is-translation-link">
-        {{ $currentLang := .Site.Language.Lang }}
-        {{ if .IsTranslated }}
-            {{ range .Translations }}
-                {{ if eq $currentLang "fr"}}
+        {{ $currentLang := .Site.Language.Lang -}}
+        {{ if .IsTranslated -}}
+            {{ range .Translations -}}
+                {{ if eq $currentLang "fr" -}}
                     <a class="is-lang-switcher" data-lang="en" href="{{ .Permalink }}">This post is also available in english.</a>
-                {{ else }}
+                {{ else -}}
                     <a class="is-lang-switcher" data-lang="fr" href="{{ .Permalink }}">Ce billet est aussi disponible en français.</a>
-                {{ end }}
-            {{ end }}
-        {{ end }}
+                {{ end -}}
+            {{ end -}}
+        {{ end -}}
     </p>
 
     <div class="is-color-changer-container">
@@ -69,28 +76,28 @@
         <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via=fbnlsr">{{ i18n "twitter-share" | safeHTML }}</a>
     </div>
 
-    {{ if or .Params.links.devto .Params.links.medium }}
+    {{ if or .Params.links.devto .Params.links.medium -}}
     <div class="links">
         <p>{{ i18n "posted-to" }}</p>
         <ul>
-            {{ if .Params.links.devto }}
+            {{ if .Params.links.devto -}}
             <li>
                 <a class="devto" href="{{ .Params.links.devto }}">
                     <img src="/img/devto.jpg" alt="Dev.to">
                 </a>
             </li>
-            {{ end }}
-            {{ if .Params.links.medium }}
+            {{ end -}}
+            {{ if .Params.links.medium -}}
             <li>
                 <a class="medium" href="{{ .Params.links.medium }}">
                     <img src="/img/medium.svg" alt="Medium">
                 </a>
             </li>
-            {{ end }}
+            {{ end -}}
         </ul>
     </div>
-    {{ end }}
+    {{ end -}}
 
 </div>
 
-{{ partial "footer.html" . }}
+{{ partial "footer.html" . -}}

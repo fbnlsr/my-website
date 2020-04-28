@@ -8,10 +8,7 @@ other = "Fabien Lasserre - Full Stack Web Developer"
 other = "This article has also been posted to:"
 
 [twitter-share]
-other = "<i class=\"fab fa-twitter\"></i> Did you like this article? Share it on Twitter!"
-
-[twitter-share-modal]
-other = "<i class=\"fab fa-twitter\"></i> Share it on Twitter!"
+other = "Did you like this article? Share it on Twitter!"
 
 [thisProjectUsed]
 other = "Used for this project:"

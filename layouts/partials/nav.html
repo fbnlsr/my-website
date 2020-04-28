@@ -1,4 +1,4 @@
-{{ $currentPage := . }}
+{{ $currentPage := . -}}
 <nav class="navbar" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="button navbar-burger" data-target="navMenu">
@@ -11,27 +11,27 @@
         <div class="navbar-start">
             {{ range .Site.Menus.main -}}
                 <a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            {{- end }}
+            {{ end -}}
         </div>
 
         <div class="navbar-end">
-            {{ if eq .Lang "fr" }}
+            {{ if eq .Lang "fr" -}}
                 <a href="/fr/">
-            {{ else }}
+            {{ else -}}
                 <a href="/">
-            {{ end }}
+            {{ end -}}
                 <img class="logo-header" width="50" height="35" src="/img/logo.svg" alt="Primative logo"></a>
         </div>
     </div>
     <div class="navbar-menu is-hidden-desktop" id="navMenu">
         {{ range .Site.Menus.main -}}
             <span><a class="navbar-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a></span>
-        {{ end }}
+        {{ end -}}
         <hr>
-        {{ if .IsTranslated }}
-            {{ range .Translations }}
+        {{ if .IsTranslated -}}
+            {{ range .Translations -}}
                 <a class="lang is-lang-switcher" href="{{ .Permalink }}" data-lang="{{ .Lang }}"><img src="/img/flag-{{ .Lang }}.svg" alt="{{ .Lang }}"></a>
-            {{ end }}
-        {{ end }}
+            {{ end -}}
+        {{ end -}}
     </div>
 </nav>

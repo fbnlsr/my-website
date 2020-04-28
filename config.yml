@@ -1,19 +1,19 @@
-title: Primative – Web development
-DefaultContentLanguage: en
+title: "Primative – Web development"
+DefaultContentLanguage: "en"
 enableRobotsTXT: true
 disableHugoGeneratorInject: true
 enableMissingTranslationPlaceholders: true
-pygmentStyle: dracula
-baseURL: 'https://www.primative.net'
-sectionPagesMenu: main
+pygmentStyle: "dracula"
+baseURL: "https://www.primative.net"
+sectionPagesMenu: "main"
 removePathAccents: true
 disableKinds:
   - taxonomy
   - taxonomyTerm
 
 permalinks:
-  blog: /:section/:slug/
-  projects: /:section/:slug/
+  blog: "/:section/:slug/"
+  projects: "/:section/:slug/"
 
 blackfriday:
   angledQuotes: true
@@ -29,36 +29,36 @@ languages:
   en:
     menu:
       main:
-        - name: Home
-          url: /
+        - name: "Home"
+          url: "/"
           weight: 1
-        - name: About
-          url: /about/
-          identifier: about
+        - name: "About"
+          url: "/about/"
+          identifier: "about"
           weight: 2
-        - name: Projects
-          url: /projects/
-          identifier: projects
+        - name: "Projects"
+          url: "/projects/"
+          identifier: "projects"
           weight: 3
-        - name: Blog
-          url: /blog/
-          identifier: blog
+        - name: "Blog"
+          url: "/blog/"
+          identifier: "blog"
           weight: 4
   fr:
     menu:
       main:
-        - name: Accueil
-          url: /fr/
+        - name: "Accueil"
+          url: "/fr/"
           weight: 1
-        - name: À propos
-          url: /about/
-          identifier: about
+        - name: "À propos"
+          url: "/about/"
+          identifier: "about"
           weight: 2
-        - name: Projets
-          url: /projects/
-          identifier: projects
+        - name: "Projets"
+          url: "/projects/"
+          identifier: "projects"
           weight: 3
-        - name: Blog
-          url: /blog/
-          identifier: blog
+        - name: "Blog"
+          url: "/blog/"
+          identifier: "blog"
           weight: 4

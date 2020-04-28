@@ -3,7 +3,7 @@ title: Fabien Lasserre - Full stack web developer from Bordeaux, France
 ---
 # Hi!
 
-![Hey it's me!](/img/me230.jpg)
+![Hey it's me!](/img/me.jpg)
 
 My name is Fabien.
 
