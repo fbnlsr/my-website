@@ -52,9 +52,9 @@
         {{ if .IsTranslated -}}
             {{ range .Translations -}}
                 {{ if eq $currentLang "fr" -}}
-                    <a class="is-lang-switcher" data-lang="en" href="{{ .Permalink }}">This post is also available in english.</a>
+                    <a class="is-lang-switcher" data-lang="en" href="{{ .RelPermalink }}">This post is also available in english.</a>
                 {{ else -}}
-                    <a class="is-lang-switcher" data-lang="fr" href="{{ .Permalink }}">Ce billet est aussi disponible en français.</a>
+                    <a class="is-lang-switcher" data-lang="fr" href="{{ .RelPermalink }}">Ce billet est aussi disponible en français.</a>
                 {{ end -}}
             {{ end -}}
         {{ end -}}
@@ -73,7 +73,7 @@
     <img class="is-bullet-end-article" src="/img/bullet-big.png" alt="Bullet">
 
     <div class="btn is-twitter-share">
-        <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via=fbnlsr">{{ i18n "twitter-share" | safeHTML }}</a>
+        <a href="https://twitter.com/share?url={{ .RelPermalink }}&text={{ .Title }}&via=fbnlsr">{{ i18n "twitter-share" | safeHTML }}</a>
     </div>
 
     {{ if or .Params.links.devto .Params.links.medium -}}

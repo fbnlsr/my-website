@@ -23,10 +23,10 @@
 
                 <div class="blog-bloc {{ ($.Scratch.Get "bloc-width") }}">
                     <div class="blog-cover lazy" data-src="{{ .Scratch.Get "coverUrl" }}">
-                        <a href="{{ .Permalink }}"></a>
+                        <a href="{{ .RelPermalink }}"></a>
                     </div>
                     <div class="blog-excerpt">
-                        <p class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+                        <p class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
                         {{ if eq .Lang "fr" -}}
                             <p class="date">{{ .Date.Day }}&nbsp;{{ index $.Site.Data.mois (printf "%d" .Date.Month) | humanize }}&nbsp;{{ .Date.Year }}</p>
                         {{ else -}}
@@ -40,7 +40,7 @@
                             {{ end -}}
                         </div>
                         <div class="bottom">
-                            <p class="more"><a href="{{ .Permalink }}">{{ i18n "readmore" }}</a></p>
+                            <p class="more"><a href="{{ .RelPermalink }}">{{ i18n "readmore" }}</a></p>
                         </div>
                     </div>
                 </div>

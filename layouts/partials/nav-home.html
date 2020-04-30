@@ -22,7 +22,7 @@
             <hr>
             {{ if .IsTranslated -}}
                 {{ range .Translations -}}
-                    <a class="lang is-lang-switcher" href="{{ .Permalink }}" data-lang="{{ .Lang }}"><img src="/img/flag-{{ .Lang }}.svg" alt="{{ .Lang }}"></a>
+                    <a class="lang is-lang-switcher" href="{{ .RelPermalink }}" data-lang="{{ .Lang }}"><img src="/img/flag-{{ .Lang }}.svg" alt="{{ .Lang }}"></a>
                 {{ end -}}
             {{ end -}}
         </div>
