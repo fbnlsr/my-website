@@ -43,6 +43,15 @@
     animation-delay: 0s, 1.5s;
   }
 
+  @media only screen and (min-width: 2000px) {
+    font-size: 5rem;
+
+    .logo {
+      width: 350px;
+      height: 300px;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -151,6 +160,24 @@
           margin-right: 0;
         }
       }
+    }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    font-size: 20px;
+
+    h1 {
+      font-size: 3.333vw;
+    }
+
+    img {
+      width: 350px;
+      height: 350px;
+      margin: 2.778vw auto;
+    }
+
+    p {
+      max-width: 40vw;
     }
   }
 

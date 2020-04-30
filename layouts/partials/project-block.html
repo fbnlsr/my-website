@@ -1,6 +1,8 @@
 <div class="project">
+    <div class="title">{{ .Title }}</div>
+    <div class="content">
+
     <div class="infos">
-        <p class="title">{{ .Title }}</p>
         {{ if .Params.type -}}
             <p class="type">
                 {{ .Params.type -}}
@@ -22,5 +24,6 @@
             <a href="{{ .Permalink }}"><img data-src="{{ $image.RelPermalink }}" alt="Cover image" width="300" height="190"></a>
         {{ end -}}
     </div>
+</div>
 </div>
 <hr class="bullet is-hidden-mobile">

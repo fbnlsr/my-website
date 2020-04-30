@@ -66,8 +66,8 @@
 
   .is-savoir-faire-blocks {
     color: $background;
-    margin: 0;
-    padding: 0 10rem;
+    max-width: 1600px;
+    margin: auto;
     margin-bottom: 4rem;
 
     .is-savoir-faire-block {
