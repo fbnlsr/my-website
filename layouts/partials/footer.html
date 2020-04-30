@@ -47,11 +47,11 @@
 
 {{ $js := resources.Get "/js/main.min.js" -}}
 {{ $secureJS := $js | fingerprint -}}
-<script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
+<script type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" defer></script>
 
 {{ $ipScript := resources.Get "/js/instantpage-3.0.0.js" -}}
 {{ $secureIpScript := $ipScript | fingerprint -}}
-<script src="{{ $secureIpScript.RelPermalink }}" integrity="{{ $secureIpScript.Data.Integrity }}" type="module" defer></script>
+<script src="{{ $secureIpScript.Permalink }}" integrity="{{ $secureIpScript.Data.Integrity }}" type="module" defer></script>
 <noscript><style>body { visibility: visible; }</style></noscript>
 </body>
 </html>
