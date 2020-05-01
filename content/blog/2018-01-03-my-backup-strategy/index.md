@@ -46,7 +46,7 @@ I also considered Online's [C14](https://www.online.net/en/c14), as they're real
 
 So this is what my current setup looks like now:
 
-![My current setup](backup-strategy.jpg "My current setup")
+{{< blogimg "backup-strategy.jpg" "My current setup" >}}
 
 Each file is physically stored on up to 6 different location, with various levels of failsafe measures.
 

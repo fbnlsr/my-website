@@ -488,20 +488,18 @@
       margin-bottom: 1rem;
     }
 
-    figure {
+    .is-blog-img {
       img {
         margin-bottom: 1rem;
       }
 
-      figcaption {
-        h4 {
-          text-align: center;
-          font-weight: normal;
-          font-size: 0.8rem;
-          color: $gray1;
-          position: relative;
-          top: -0.8rem;
-        }
+      .is-blog-img-title {
+        text-align: center;
+        font-weight: normal;
+        font-size: 0.8rem;
+        color: $gray1;
+        position: relative;
+        top: -0.8rem;
       }
     }
 

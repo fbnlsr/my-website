@@ -1,0 +1,17 @@
+{{- $src := "" -}}
+{{- $alt := "" -}}
+{{- $title := "" -}}
+{{- if .Get "src" -}}
+    {{- $src = (.Get "src") -}}
+{{- else -}}
+    {{- $src = (.Get 0) -}}
+{{- end -}}
+{{- if .Get "alt" -}}
+    {{- $alt = (.Get "alt") -}}
+{{- else -}}
+    {{- $alt = .Get 1 -}}
+{{- end -}}
+<div class="is-blog-img">
+    <img src="{{ $src }}" alt="{{ $alt }}">
+    <p class="is-blog-img-title">{{ $alt }}</p>
+</div>
