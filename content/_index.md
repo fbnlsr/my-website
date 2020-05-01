@@ -3,7 +3,11 @@ title: Fabien Lasserre - Full stack web developer from Bordeaux, France
 ---
 # Hi!
 
-![Hey it's me!](/img/me.jpg)
+<picture>
+  <source srcset="img/me.webp" type="image/webp">
+  <source srcset="img/me.jpg" type="image/jpeg">
+  <img src="img/me.jpg" alt="Hey it's me!">
+</picture>
 
 My name is Fabien.
 
