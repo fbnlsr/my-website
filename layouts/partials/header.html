@@ -11,7 +11,7 @@
     <title>{{ i18n "site-title" }}</title>
     {{ end -}}
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:400,700|Ubuntu+Mono:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7COpen+Sans:400,700%7CUbuntu+Mono:400,700&display=swap" rel="stylesheet">
 
     {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) -}}
     {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options | fingerprint -}}
@@ -89,9 +89,17 @@
     <meta name="twitter:site" content="@fbnlsr">
     <meta name="twitter:creator" content="@fbnlsr">
 
+    <style>
+        .no-js {
+            visibility: visible;
+        }
+    </style>
+
 </head>
-<body style="visibility: hidden;">
-    <script>0</script><!-- Dummy JavaScript to avoid FOUC in Firefox. -->
+<body style="visibility: hidden;" class="no-js">
+    <script>
+        document.querySelector('body').classList.remove('no-js');
+    </script>
     {{ if or (or .IsHome .IsPage) .IsNode -}}
     <main class="site" id="top">
     {{ else -}}
