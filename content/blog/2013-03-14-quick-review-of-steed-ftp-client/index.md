@@ -3,7 +3,7 @@ title: "Quick Review of Steed FTP Client"
 date: 2013-01-14
 excerpt: "Let's take a look at Steed, a new FTP client for Windows that's aiming at being an alternative to the good old FileZilla."
 ---
-![Steed](/img/posts/steed.jpg)
+![Steed](steed.jpg)
 
 As a web developer, much time is spent using an FTP client. And I'm sure you'll agree with me, not so much has been done in the past 15 years in this field. Wether used to backup, upload, or update a website, this piece of code has been used for decades to exchange files between computers. Such a simple protocol shouldn't be reserved to power users, and even some of the nerdiest of us like to use beautiful softwares. Today we're looking at [Steed](http://www.frenchfrysoftware.com/steed/), which got out of Beta in late 2012. Let's see if we can do better than your daddy's client and use 2013's standards with a protocol that's about to celebrate its 40th birthday.
 
@@ -13,11 +13,11 @@ After considering the obvious alternatives, and especially [WinSCP](http://winsc
 
 After a quick install, an immediate sense of purity and clean design comes to mind. One might even say Apple-esque design, which is a good thing. Steed immediately asked me if I wanted to import my FileZilla bookmarks, and I was ready to go in minutes. Well, not quite, as there was a problem importing my folder settings. I like to link a remote folder with a local one on my computer, and Steed seemed to have some troubles importing some settings regarding folders which are located on a local NAS server. But let's not stop at that.
 
-![Main Window](/img/posts/steed-main-window.jpg)
+{{< blogimg "steed-main-window.jpg" "Steed main window" >}}
 
 The main window of Steed shows a Quick Connect section on top, and bookmarks at the bottom of the window. Bookmarks are stored in folders, and are displayed using big squares (around 200px big) showing the type of connection they are using. This is not your typical FTP client, with a list of names spurting out of a dropdown menu, and kudos to French Fry for trying something new. This design however could be improved, as you can't apparently choose a custom picture to replace these big squares, and you can't list your bookmarks in a different, more "traditional" fashion. All in all, it makes this section cluttered and impractical, especially if you have dozens of bookmarks. Apart from that, the UI is as clean as it can get. And it shows in the next screen.
 
-![Connected to an S3 bucket](/img/posts/steed-connected.png)
+{{< blogimg "steed-connected.png" "Connected to a S3 bucket" >}}
 
 Once connected, you're presented with this view. On the left side, your local machine. On the right side, your distant server. Things couldn't be simplier. Steed is here to transfer files from one location to another, and it gets the job done. Now don't start looking for options like FXP transfers, or even scripting, you'll need something else for that. Steed can handle multiple connections to various servers using tabs, just like Google Chrome or Mozilla Firefox. Unfortunately, these tabs don't seem to regroup in the taskbar, and I was shown multiple icons as if multiple instances of Steed were running. Another thing that could be improved with this simplistic UI is the fact that you have to open a new tab in order to access the Quick Connect / Bookmarks page again. It seems to be a design choice, but having a direct access to bookmarks (for instance thanks to an icon next to the Wrench icon) could save some clicks and add a feature while keeping in line with the minimalistic approach.
 
@@ -25,7 +25,7 @@ One other thing I absolutely love is the fact Steed handles not only FTP and SFT
 
 OK so we're connected, now let's use this puppy.
 
-![Transfering some files](/img/posts/steed-upload-s3.png)
+{{< blogimg "steed-upload-s3.png" "Transfering some files" >}}
 
 When uploading a file, a nifty progress bar appears at the bottom of the window. Steed is supposed to be seamlessly integrated with Windows 7, so you should see the progress bar inside the shortcut icon of the application, but unfortunately I wasn't able to get a correct result for the tests I did (both using FTP or S3), and the icon showed some bugs regarding the progress bar. A quick click on a button located at the bottom of the main window opens a panel showing the details of the current transfers. Once again, the informations are displayed beautifully, and you can pause/resume/remove files in the queue.
 
@@ -35,7 +35,7 @@ So it's all good and everything, but unfortunately for the dudes at French Fry, 
 
 First of all, Steed seems to be quite the ressource hog.
 
-![Steed memory usage vs. Filezilla](/img/posts/steed-memory.png)
+{{< blogimg "steed-memory.png" "Steed memory usage vs. Filezilla" >}}
 
 On my Asus Ultrabook, after one hour of "stand-by" use (the application was just connected to an FTP server, and ran in the background), Steed gradually took nearly 140 MB of RAM, while FileZilla was stuck at a mere 8 MB.
 

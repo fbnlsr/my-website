@@ -17,7 +17,7 @@ So it's been my editor of choice, but a good editor would be nothing without goo
 
 VS Code provides a tiny preview box for colors in CSS files. Color Info allows you to get a much better view of the color your mouse hovers, complete with CMYK or alpha values. It can even act as a color picker, which is really convenient.
 
-![Color Info](color-infos.png)
+{{< blogimg "color-infos.png" "Color Info" >}}
 
 **[:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)**
 
@@ -27,7 +27,7 @@ You know [I love emojis](/blog/lets-talk-about-emojis/). This extension allows y
 
 As its name states, this simple extension shows the `git blame` of the current selected line in the status bar.
 
-![Git Blame](git-blame.gif)
+{{< blogimg "git-blame.gif" "Git Blame" >}}
 
 **[Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)**
 
@@ -41,7 +41,7 @@ If you're like me and work on multiple (sometimes virtual) machines, this extens
 
 As the name states, it highlights TODOs, FIXMEs and any keyword you specify. Just write `TODO:` somewhere and not only will it highlight it, but it'll also list all the ones you've already written anywhere in your project.
 
-![Todo Highlight](todo-highlight.png)
+{{< blogimg "todo-highlight.png" "Todo Highlight" >}}
 
 **[Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)**
 
@@ -59,7 +59,7 @@ Strangely enough, VS Code does not support [EditorConfig](http://editorconfig.or
 
 Now this one I use it constantly! Bookmarks is an extension that puts little blue bookmarks in your file gutter. It's extremely handy when you need to switch between positions inside a file, or if you need a quick reminder anywhere in your project. I've set up mine with `shift + cmd + =` (toggle bookmark) and `shift + cmd + -` (next bookmark) and thanks to this I can jump around files without having to leave my keyboard. The extension also adds a small panel right below your file browser which lists all active bookmarks in the current project. A must-have.
 
-![Bookmarks](bookmarks.png)
+{{< blogimg "bookmarks.png" "Bookmarks" >}}
 
 ## Honorable mentions
 
@@ -71,7 +71,7 @@ This extension is pretty straightforward. Just type in the beginning of a file/d
 
 Most of the time I inject my dependencies in my Javascript files thanks to Webpack. But whenever I need to mockup something quickly, this extension has my back. Using the command palette, you'll be able to insert URLs or script/style tags of all the libraries cdnjs handles. Quite handy.
 
-![cdnjs](cdnjs.gif)
+{{< blogimg "cdnjs.gif" "cdnjs" >}}
 
 **Got one to share?**
 

@@ -17,7 +17,7 @@ Midi approchant rapidement, c'était l'heure pour les *quickies*, ces petits tal
 
 Dernier quickie, **Richard Fagot** nous a présenté son "[*distributeur automatique d'argent de poche pour les enfants*](https://www.youtube.com/watch?v=z72VgzUirL4)". Derrière une idée basique (comment distribuer de l'argent de poche à ses enfants ?) repose plus de deux mois de travail plein, de la R&D, de la conception, un peu de chimie, de la mécanique, de l'impression 3D, du code, des cartes à puces, etc... Le sujet était totalement passionnant, et le produit final (Richard avait la machine avec lui) est très bien réalisé. Le but était d'apprendre à ses enfants la valeur de l'argent, mais je suis persuadé que Richard a lui-même appris énormément de choses en se retroussant les manches et en imaginant un tel objet. Bravo !
 
-![Les speakers et l'équipe du DevFest](devfest2.jpg "Les speakers et l'équipe du DevFest")
+{{< blogimg "devfest2.jpg" "Les speakers et l'équipe du DevFest" >}}
 
 Retour aux choses "sérieuses" après la pause repas, **Sylvain Wallez** nous fait une démo de [WebAudio et Tone.js](https://www.youtube.com/watch?v=LShM4QzMOxY). C'était rigolo même si j'avoue n'avoir vu aucune application pratique pour moi. Chapeau à Sylvain cependant, faire une démo avec de l'audio pendant 40 minutes sans aucun plantage, c'est fort !
 

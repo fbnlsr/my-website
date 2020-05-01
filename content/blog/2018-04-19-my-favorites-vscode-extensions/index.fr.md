@@ -17,7 +17,7 @@ C'est donc mon éditeur de choix, mais un bon éditeur ne serait rien sans de bo
 
 VS Code fournit une petite boîte de pré-visualisation pour les couleurs dans les fichiers CSS. Color Info permet d'avoir une bien meilleure vue de la couleur sur laquelle votre souris s'arrête, avec plein d'infos pratiques comme les valeurs CMJN ou Alpha. Elle peut même être utilisée comme color picker, ce qui est tout aussi pratique.
 
-![Color Info](color-infos.png)
+{{< blogimg "color-infos.png" "Color Info" >}}
 
 **[:emojisense:](https://marketplace.visualstudio.com/items?itemName=bierner.emojisense)**
 
@@ -27,7 +27,7 @@ Vous savez que [j'adore les emojis](/fr/blog/parlons-un-peu-des-emojis/). Cette 
 
 Comme son nom l'indique, cette extension simple montre le résultat du `git blame` de la ligne active dans la barre de statut.
 
-![Git Blame](git-blame.gif)
+{{< blogimg "git-blame.gif" "Git Blame" >}}
 
 **[Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)**
 
@@ -41,7 +41,7 @@ Si comme moi vous travaillez sur plusieurs machines (parfois virtuelles), cette 
 
 Comme son nom l'indique, elle surligne les TODOs, FIXMEs et autres mot-clés que vous configurez. Écrivez juste `TODO:` quelque part et non seulement il sera surligné, mais l'extension va aussi lister tous les mot-clés déjà écrits n'importe où dans votre projet.
 
-![Todo Highlight](todo-highlight.png)
+{{< blogimg "todo-highlight.png" "Todo Highlight" >}}
 
 **[Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)**
 
@@ -59,7 +59,7 @@ Un correcteur orthographique multi-langue, offline et "léger". Spell Right util
 
 En voici une que j'utilise constamment ! Bookmarks est une extension qui ajoute de petits marque-pages dans la gouttière de votre éditeur. C'est très pratique lorsqu'on veut basculer rapidement de position au sein d'un même fichier, ou si l'on doit se faire un petit rappel n'importe où dans un projet. J'ai configuré le mien avec les raccourcis `shift + cmd + =` (ajouter/supprimer un marque-page) et `shift + cmd + -` (marque-page suivant) et grâce à cela je peux sauter dans mes fichiers sans quitter le confort de mon clavier. Cette extension ajoute aussi un petit panneau sous l'explorateurs de fichier de VS Code qui liste tous les marque-pages actifs du projet actuel. À avoir absolument.
 
-![Bookmarks](bookmarks.png)
+{{< blogimg "bookmarks.png" "Bookmarks" >}}
 
 ## Mentions spéciales
 
@@ -71,7 +71,7 @@ Cette extension est plutôt basique. Tapez simplement le début du nom d'un fich
 
 La plupart du temps je gère mes injections de dépendance Javascript avec Webpack. Mais lorsque j'ai besoin de faire un mockup rapide, cette extension me fait gagner un temps fou. En utilisant la palette de commandes, vous pouvez insérer l'URL ou les balises script/style de toutes les librairies hébergées chez cdnjs. Très pratique.
 
-![cdnjs](cdnjs.gif)
+{{< blogimg "cdnjs.gif" "cdnjs" >}}
 
 **Vous avez une suggestion ?**
 
