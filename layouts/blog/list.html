@@ -8,23 +8,26 @@
 
     <div class="blog-list is-clearfix">
         {{ range $index, $element := where .Data.Pages "Section" .Section  -}}
-
+            {{ $blocWidth := "" -}}
             {{ if or (eq $index 0) (eq (modBool $index 3) true) -}}
-                {{ $.Scratch.Set "bloc-width" "is-full" -}}
+                {{ $blocWidth = "is-full" -}}
             {{ else -}}
-                {{ $.Scratch.Set "bloc-width" "is-half" -}}
+                {{ $blocWidth = "is-half" -}}
             {{ end -}}
 
             {{ $cover := $element.Resources.GetMatch "cover.jpg" -}}
+            {{ $coverUrl := "" }}
             {{ if $cover -}}
                 {{ $coverResized := $cover.Resize "926x q90" -}}
-                {{ .Scratch.Set "coverUrl" $coverResized.RelPermalink -}}
+                {{ $coverUrl = $coverResized.RelPermalink -}}
             {{ end -}}
 
-                <div class="blog-bloc {{ ($.Scratch.Get "bloc-width") }}">
-                    <div class="blog-cover lazy" data-src="{{ .Scratch.Get "coverUrl" }}">
+                <div class="blog-bloc {{ $blocWidth }}">
+                    {{ if ne $coverUrl "" -}}
+                    <div class="blog-cover lazy" data-src="{{ $coverUrl }}">
                         <a href="{{ .RelPermalink }}"></a>
                     </div>
+                    {{ end -}}
                     <div class="blog-excerpt">
                         <p class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
                         {{ if eq .Lang "fr" -}}

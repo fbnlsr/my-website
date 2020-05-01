@@ -35,7 +35,7 @@
 
         {{ if ne $cover "" }}</div></div>{{ end -}}
     </div>
-    {{ if .Params.cover.author -}}
+    {{ if and (ne $cover "") (.Params.cover.author) -}}
         <p class="is-cover-author is-hidden-mobile">
             {{ if .Params.cover.link -}}
                 Photo by <a href="{{ .Params.cover.link }}">
