@@ -68,3 +68,31 @@ Il ne faut pas oublier que tout le monde ne peut pas ou ne veut pas exécuter du
 ```
 
 Et voilà, tout est prêt ! Maintenant notre site devrait s'afficher correctement, sans aucun FOUC ! 🎉
+
+**Mise à jour - 1er mai 2020**
+
+On m'a averti que mon code cassait le validateur W3C. C'est parce qu'officiellement, la balise `<style>` ne peut pas être un enfant de `<noscript>`.
+
+Pour remédier à cela, ce que nous pouvons faire est de supprimer cette balise `<noscript>`, et  ajouter une classe `no-js` à l'élément `body`. Ensuite, nous ajoutons simplement cette règle CSS dans le `<head>` du document :
+
+```html
+<head>
+  <style>
+    .no-js {
+      visibility: visible;
+    }
+  </style>
+```
+
+Et enfin nous basculons à nouveau le tout juste après la balise `<body>` grâce à ce JavaScript :
+
+```html
+<body style="visibility: hidden;" class="no-js">
+    <script>
+        document.querySelector('body').classList.remove('no-js');
+    </script>
+```
+
+Cela va non seulement rendre les choses compatibles avec le W3C, mais puisque nous avons ajouté un petit bout de JavaScript dans le `body` de notre document, le code JS fantôme que nous avons créé tout à l'heure devient obsolète ! Donc maintenant, tout le monde est content, et nous pouvons enfin siroter un verre d'eau bien fraîche sous le soleil.
+
+![Seal of approval](sealofapproval.jpg)

@@ -68,3 +68,31 @@ Don't forget that not everybody can or want to execute JavaScript. In that case,
 ```
 
 And we're all set! Now our site should be displayed correctly, without any FOUC. Yay! 🎉
+
+**Update - May 1, 2020**
+
+It has been reported that my code breaks W3C's code validator. That's because officially, the `<style>` tag cannot be a child of `<noscript>`.
+
+To fix this problem, what we can do is remove this `<noscript>` tag, and add a `no-js` class on the `body` element. Then, we simply add this CSS rule in the `<head>` of the document:
+
+```html
+<head>
+  <style>
+    .no-js {
+      visibility: visible;
+    }
+  </style>
+```
+
+And finally revert this once again right after the `<body>` tag thanks to JavaScript:
+
+```html
+<body style="visibility: hidden;" class="no-js">
+    <script>
+        document.querySelector('body').classList.remove('no-js');
+    </script>
+```
+
+This will not only make this W3C compliant, but since we've added a bit of JavaScript in the body of our document, the dummy JS code we added earlier becomes obsolete! So now, everybody's happy, and we can finally grab a fresh glass of water and enjoy the sun.
+
+![Seal of approval](sealofapproval.jpg)
