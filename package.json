@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "copyfiles": "yes | cp ./node_modules/highlight.js/styles/github-gist.css ./assets/scss/_github-gist.scss",
+    "copyfiles": "yes | cp ./node_modules/highlight.js/styles/dracula.css ./assets/scss/_dracula.scss",
     "build": "npm run copyfiles && webpack --config webpack.dev.js && hugo",
     "serve": "npm run copyfiles && webpack --config webpack.dev.js && hugo serve --disableFastRender",
     "watch": "npm run copyfiles && concurrently 'hugo serve --disableFastRender' 'webpack --watch --config webpack.dev.js'",

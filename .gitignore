@@ -115,6 +115,7 @@ typings/
 
 # End of https://www.gitignore.io/api/node,hugo,sass,macos,visualstudiocode
 static/js/main.js.map
+assets/scss/_dracula.scss
 assets/scss/_github-gist.scss
 assets/js/main.min.js
 assets/js/main.min.js.map

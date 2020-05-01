@@ -436,12 +436,12 @@
       max-width: 850px;
       margin: auto;
       margin-bottom: 1rem;
-      font-family: 'Ubuntu Mono', monospace;
-      font-size: 1.25rem;
-      background-color: $background;
-      border-top: 1px solid darken($background, 5%);
-      border-bottom: 1px solid darken($background, 5%);
-      border-right: 1px solid darken($background, 5%);
+      font-family: monospace;
+      font-size: 1rem;
+      // background-color: $background;
+      // border-top: 1px solid darken($background, 5%);
+      // border-bottom: 1px solid darken($background, 5%);
+      // border-right: 1px solid darken($background, 5%);
       padding: 0;
 
       code {
@@ -572,19 +572,7 @@
       color: inherit;
     }
 
-    code {
-      background-color: #444;
-
-      color: #f0f0f0;
-    }
-
     article {
-      pre {
-        border-top: 1px solid #666;
-        border-bottom: 1px solid #666;
-        border-right: 1px solid #666;
-      }
-
       blockquote {
         background-color: #444;
         color: #f0f0f0;
