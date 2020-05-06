@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="canonical" href="{{ .RelPermalink }}">
+    <link rel="canonical" href="{{ .Site.BaseURL }}">
     <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
     {{ if .Section -}}
     <title>Fabien Lasserre | {{ .Title | humanize }}</title>
@@ -77,11 +77,28 @@
     {{ else -}}
     <meta property="og:description" content="{{ i18n "siteDescription" }}">
     {{ end -}}
-    <meta property="og:url" content="{{ .Site.BaseURL }}">
+
     {{ if eq .Section "blog" -}}
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.cover.image }}">
+    {{ $cover := .Resources.GetMatch "cover.jpg" -}}
+    {{ $coverUrl := "" }}
+    {{ if $cover -}}
+        {{ $coverResized := $cover.Resize "1200x q90" -}}
+        {{ $coverUrl = $coverResized.Permalink -}}
+    {{ end -}}
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ $coverUrl }}">
+    {{ else if eq .Section "projects" -}}
+    {{ $projectCover := .Resources.GetMatch "desktop1.jpg" -}}
+    {{ $projectCoverUrl := "" -}}
+    {{ if $projectCover -}}
+        {{ $projectCoverResized := $projectCover.Resize "1200x q90" -}}
+        {{ $projectCoverUrl = $projectCoverResized.Permalink -}}
+    {{ end -}}
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ $projectCoverUrl }}">
     {{ else -}}
-    <meta property="og:image" content="{{ .Site.BaseURL }}/img/primative-og.jpg">
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}img/primative-og.jpg">
     {{ end -}}
 
     <!-- Twitter Cards -->

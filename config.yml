@@ -4,7 +4,7 @@ enableRobotsTXT: true
 disableHugoGeneratorInject: true
 enableMissingTranslationPlaceholders: true
 pygmentStyle: "dracula"
-baseURL: "https://www.primative.net"
+baseURL: "https://www.primative.net/"
 sectionPagesMenu: "main"
 removePathAccents: true
 disableKinds:
@@ -12,8 +12,8 @@ disableKinds:
   - taxonomyTerm
 
 permalinks:
-  blog: "/:section/:slug/"
-  projects: "/:section/:slug/"
+  blog: ":section/:slug/"
+  projects: ":section/:slug/"
 
 blackfriday:
   angledQuotes: true
