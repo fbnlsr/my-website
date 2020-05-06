@@ -12,8 +12,8 @@ disableKinds:
   - taxonomyTerm
 
 permalinks:
-  blog: "/:section/:slug/"
-  projects: "/:section/:slug/"
+  blog: ":section/:slug/"
+  projects: ":section/:slug/"
 
 blackfriday:
   angledQuotes: true
