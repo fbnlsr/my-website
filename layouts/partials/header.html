@@ -77,7 +77,7 @@
     {{ else -}}
     <meta property="og:description" content="{{ i18n "siteDescription" }}">
     {{ end -}}
-    <meta property="og:url" content="{{ .Site.baseURL }}">
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
     {{ if eq .Section "blog" -}}
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.cover.image }}">
     {{ else -}}
