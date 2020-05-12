@@ -4,11 +4,11 @@
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.68.1"
 
-[[headers]]
-  for = "/*"
-    [headers.values]
-      X-Content-Type-Options = "nosniff"
-      X-Frame-Options = "DENY"
-      X-XSS-Protection = "1; mode=block"
-      Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-      Cache-Control = "public, max-age=31536000"
+# [[headers]]
+#   for = "/*"
+#     [headers.values]
+#       X-Content-Type-Options = "nosniff"
+#       X-Frame-Options = "DENY"
+#       X-XSS-Protection = "1; mode=block"
+#       Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+#       Cache-Control = "public, max-age=31536000"
