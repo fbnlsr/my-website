@@ -42,7 +42,7 @@ let domReady = (cb) => {
 domReady(() => {
   // Display body when DOM is loaded
   document.body.style.visibility = 'visible';
-}
+});
 ```
 
 Et voilà ! Notre FOUC est parti. Avec cette astuce simple, notre utilisateur a une meilleure expérience et n'a pas de contenu bizarre qui flashe à l'écran avant de pouvoir naviguer sur notre site.
@@ -96,3 +96,5 @@ Et enfin nous basculons à nouveau le tout juste après la balise `<body>` grâc
 Cela va non seulement rendre les choses compatibles avec le W3C, mais puisque nous avons ajouté un petit bout de JavaScript dans le `body` de notre document, le code JS fantôme que nous avons créé tout à l'heure devient obsolète ! Donc maintenant, tout le monde est content, et nous pouvons enfin siroter un verre d'eau bien fraîche sous le soleil.
 
 ![Seal of approval](sealofapproval.jpg)
+
+**Mise à jour 06/05/2021 :** Merci à [Moritz Profitlich](https://profitlich.ch/) pour avoir corrigé une petite coquille dans le code source de cet article ! 😄

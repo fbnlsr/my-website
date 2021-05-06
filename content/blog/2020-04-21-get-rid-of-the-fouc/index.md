@@ -42,7 +42,7 @@ let domReady = (cb) => {
 domReady(() => {
   // Display body when DOM is loaded
   document.body.style.visibility = 'visible';
-}
+});
 ```
 
 And there you go! Our FOUC is gone. With this simple trick, our users get a better experience and don't have a weird mess blinking on their screen before being able to browse our site.
@@ -96,3 +96,5 @@ And finally revert this once again right after the `<body>` tag thanks to JavaSc
 This will not only make this W3C compliant, but since we've added a bit of JavaScript in the body of our document, the dummy JS code we added earlier becomes obsolete! So now, everybody's happy, and we can finally grab a fresh glass of water and enjoy the sun.
 
 ![Seal of approval](sealofapproval.jpg)
+
+**Update 05/06/2021:** Thanks to [Moritz Profitlich](https://profitlich.ch/) for correcting a small typo in the source code of this article! 😄
