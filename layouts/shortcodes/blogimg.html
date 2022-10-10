@@ -8,6 +8,6 @@
     {{- $alt = .Get 1 -}}
 {{- end -}}
 <div class="is-blog-img">
-    <img src="{{ $src }}" alt="{{ $alt }}">
+    <img src="{{ $src.RelPermalink }}" alt="{{ $alt }}">
     <p class="is-blog-img-title">{{ $alt }}</p>
 </div>
