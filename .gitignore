@@ -11,6 +11,7 @@ hugo.exe
 /static/js/main.js.map
 /static/js/main.min.js.map
 /resources/_gen/images
+.hugo_build.lock
 
 ### macOS ###
 *.DS_Store

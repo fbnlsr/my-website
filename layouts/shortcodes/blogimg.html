@@ -1,11 +1,7 @@
 {{- $src := "" -}}
 {{- $alt := "" -}}
 {{- $title := "" -}}
-{{- if .Get "src" -}}
-    {{- $src = (.Get "src") -}}
-{{- else -}}
-    {{- $src = (.Get 0) -}}
-{{- end -}}
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
 {{- if .Get "alt" -}}
     {{- $alt = (.Get "alt") -}}
 {{- else -}}
