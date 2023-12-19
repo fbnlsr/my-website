@@ -1,16 +1,5 @@
 
-# Created by https://www.gitignore.io/api/node,hugo,sass,macos,visualstudiocode
-
-### Hugo ###
-hugo.exe
-/public/
-/static/css/main.css
-/static/css/main.css.map
-/static/js/main.js
-/static/js/main.min.js
-/static/js/main.js.map
-/static/js/main.min.js.map
-/resources/_gen/images
+# Created by https://www.gitignore.io/api/node,sass,macos,visualstudiocode
 
 ### macOS ###
 *.DS_Store
@@ -113,9 +102,7 @@ typings/
 .history
 
 
-# End of https://www.gitignore.io/api/node,hugo,sass,macos,visualstudiocode
-static/js/main.js.map
-assets/scss/_dracula.scss
-assets/scss/_github-gist.scss
-assets/js/main.min.js
-assets/js/main.min.js.map
+# End of https://www.gitignore.io/api/node,sass,macos,visualstudiocode
+dist
+src/css
+layouts

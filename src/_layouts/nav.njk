@@ -1,0 +1,33 @@
+<nav class="navbar" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            {%- if category == "404" -%}
+                {%- set locale = "fr" -%}
+            {%- endif -%}
+            {%- for item in site.headerLinks -%}
+                <a class="navbar-item {% if page.url == "/" + locale + "/" + item.url[locale] + "/" or item.translationKey == category -%}is-active{%- endif -%}" href="/{{ locale }}/{{ item.url[locale] }}">{{ i18n[locale][item.translationKey] }}</a>
+            {%- endfor -%}
+        </div>
+
+        <div class="navbar-end">
+            {%- if locale == "fr" -%}
+                <a href="/fr/">
+                {%- else -%}
+                    <a href="/">
+                    {%- endif -%}
+                    <img class="logo-header" width="50" height="35" src="/img/logo.svg" alt="Primative logo"></a>
+            </div>
+            <div class="navbar-menu is-hidden-desktop" id="navMenu">
+                {%- for item in site.headerLinks -%}
+                    <a class="navbar-item {% if page.url == "{{ locale }}/{{ item.url[locale] }}" %}is-active{% endif %}" href="/{{ locale }}/{{ item.url[locale] }}">{{ i18n[locale][item.translationKey] }}</a>
+                {%- endfor -%}
+            </div>
+        </div>
+    </nav>

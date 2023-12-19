@@ -1,0 +1,49 @@
+---
+layout: base.njk
+---
+<div class="projects">
+
+  <h1>{{ title }}</h1>
+
+  <div class="sample">{{ content | safe }}</div>
+
+  {% for project in collections["projects_" + locale] | reverse %}
+    <div class="project">
+      <div class="title">{{ project.data.title }}</div>
+      <div class="content">
+
+        <div class="infos">
+          {% if project.data.type %}
+            <p class="type">
+              {{ project.data.type }}
+
+              {% if project.data.client %}&nbsp;–&nbsp;{{ project.data.client }}
+              {% endif %}
+            </p>
+          {% endif %}
+          {% if project.data.work %}
+            <p class="work">{{ project.data.work }}</p>
+          {% endif %}
+          <div class="description">
+            {%- if project.data.description -%}{{ project.data.description | markdownify | safe }}
+            {%- endif -%}
+          </div>
+          <div class="btn is-project-btn">
+            <a href="{{ project.url }}" class="btn is-project-btn">{{ i18n[locale]["viewProject"] }}</a>
+          </div>
+        </div>
+        <div class="cover">
+          {% if project.data.projectImgDir %}
+            <a href="{{ project.url }}"><img
+                data-src="{{ project.data.projectImgDir }}/cover.jpg"
+                alt="Cover image"
+                width="300"
+                height="190"></a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <hr class="bullet is-hidden-mobile">
+  {% endfor %}
+
+</div>

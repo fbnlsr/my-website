@@ -5,24 +5,23 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "copyfiles": "yes | cp ./node_modules/highlight.js/styles/dracula.css ./assets/scss/_dracula.scss",
-    "build": "npm run copyfiles && webpack --config webpack.dev.js && hugo",
-    "serve": "npm run copyfiles && webpack --config webpack.dev.js && hugo serve --disableFastRender",
-    "watch": "npm run copyfiles && concurrently 'hugo serve --disableFastRender' 'webpack --watch --config webpack.dev.js'",
-    "prod": "npm run copyfiles && webpack -p --config webpack.prod.js && hugo --minify"
+    "copyfiles": "yes | cp ./node_modules/highlight.js/styles/dracula.css ./src/_assets/scss/_dracula.scss",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "rm -rf dist && npm run copyfiles && npm run watch:eleventy",
+    "build": "rm -rf dist && npm run copyfiles && npm run build:eleventy"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-vite": "^4.0.0",
+    "esbuild": "^0.19.9",
+    "markdown-it": "^14.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.69.5"
+  },
   "dependencies": {
-    "bulma": "^0.8.0",
-    "concurrently": "^5.1.0",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "webpack-merge": "^4.2.2",
     "@glidejs/glide": "^3.4.1",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.20.2",
+    "bulma": "^0.8.0",
     "highlight.js": "^9.18.1",
     "vanilla-lazyload": "^13.0.0"
   }

@@ -1,0 +1,6 @@
+{
+  "tags": "posts_fr",
+  "layout": "blogpost.njk",
+  "permalink": "/fr/blog/{{ title | slugify }}/",
+  "category": "blog"
+}

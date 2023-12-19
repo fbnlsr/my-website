@@ -1,0 +1,101 @@
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@import '../../../node_modules/bulma/sass/utilities/_all';
+@import '../../../node_modules/bulma/sass/base/_all';
+@import '../../../node_modules/bulma/sass/grid/columns';
+@import '../../../node_modules/bulma/sass/components/menu';
+@import '../../../node_modules/bulma/sass/components/navbar';
+@import '../../../node_modules/bulma/sass/components/card';
+@import '../../../node_modules/bulma/sass/elements/content';
+@import '../../../node_modules/bulma/sass/elements/title';
+@import 'dracula';
+@import '../../../node_modules/@glidejs/glide/src/assets/sass/glide.core';
+@import '../../../node_modules/@glidejs/glide/src/assets/sass/glide.theme';
+@import 'variables';
+@import 'nav';
+@import 'home';
+@import 'about';
+@import 'projects';
+@import 'project';
+@import 'blog';
+@import '404';
+@import 'footer';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow: initial;
+}
+
+body {
+  background-color: $background;
+  color: $text;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+hr {
+  background-color: $blue;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+  color: $blue;
+  outline: 0;
+
+  a {
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid $blue;
+    padding: 0.5rem 0.75rem;
+    color: $blue;
+    transition: color 0.2s ease-out, background-color 0.2s ease-out;
+
+    &:hover,
+    &:active,
+    &:visited {
+      color: inherit;
+    }
+
+    &:hover {
+      background-color: $blue;
+      color: $background;
+    }
+  }
+}
+
+button,
+button:focus,
+button:active {
+  outline: 0;
+}
+
+.column.is-half,
+.column.is-half-tablet {
+  width: initial;
+  flex: 1;
+}
+
+.site {
+  flex-grow: 1;
+}
