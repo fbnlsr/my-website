@@ -1,13 +1,5 @@
 import LazyLoad from 'vanilla-lazyload';
-import hljs from 'highlight.js/lib/highlight';
-import javascript from 'highlight.js/lib/languages/javascript.js';
-import php from 'highlight.js/lib/languages/php';
-import sql from 'highlight.js/lib/languages/sql';
-import markdown from 'highlight.js/lib/languages/markdown';
-import html from 'highlight.js/lib/languages/htmlbars';
 import Glide from '@glidejs/glide';
-
-console.log('ok');
 
 let lastKnownScrollPosition = 0;
 let ticking = false;
@@ -127,14 +119,6 @@ const langSwitcher = getAll('.is-lang-switcher');
 domReady(() => {
   // Displaying page
   document.body.style.visibility = 'visible';
-
-  // Initializing HighlightJS
-  hljs.registerLanguage('javascript', javascript);
-  hljs.registerLanguage('php', php);
-  hljs.registerLanguage('sql', sql);
-  hljs.registerLanguage('markdown', markdown);
-  hljs.registerLanguage('html', html);
-  hljs.initHighlightingOnLoad();
 
   // Project carousels
   const glide = getAll('.glide');
@@ -312,41 +296,4 @@ domReady(() => {
       heyListen.classList.remove('is-active');
     });
   }
-
-  // Copy link on code blocks
-  // Thank you Danny Guo! <3
-  // https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/
-  document.querySelectorAll('pre > code').forEach((codeBlock) => {
-    const button = document.createElement('button');
-    button.className = 'copy-code-button';
-    button.type = 'button';
-    button.innerText = 'Copy';
-
-    const pre = codeBlock.parentNode;
-    if (pre.parentNode.classList.contains('highlight')) {
-      const highlight = pre.parentNode;
-      highlight.parentNode.insertBefore(button, highlight);
-    } else {
-      pre.parentNode.insertBefore(button, pre);
-    }
-
-    button.addEventListener('click', () => {
-      navigator.clipboard.writeText(codeBlock.innerText).then(
-        () => {
-          /* Chrome doesn't seem to blur automatically,
-                   leaving the button in a focused state. */
-          button.blur();
-
-          button.innerText = 'Copied!';
-
-          setTimeout(() => {
-            button.innerText = 'Copy';
-          }, 2000);
-        },
-        () => {
-          button.innerText = 'Error';
-        }
-      );
-    });
-  });
 });
