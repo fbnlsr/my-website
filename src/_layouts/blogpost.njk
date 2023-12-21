@@ -11,7 +11,7 @@ layout: "base.njk"
                 <p class="date">
                     {{ i18n[locale]['publishedOn']}}
                     {% humandate date,
-                    locale %}
+                    locale %} - {{ content | readingTime }}.
                 </p>
                 <p class="chevron bounce is-hidden-mobile">
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">

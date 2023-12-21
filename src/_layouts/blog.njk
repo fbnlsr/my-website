@@ -22,7 +22,7 @@ layout: "base.njk"
                 </p>
                 <p class="date">
                     {% humandate post.data.date,
-                    locale %}
+                    locale %} - {{ post.content | readingTime }}.
                 </p>
                 <div class="excerpt">
                     {%- if post.data.excerpt -%}

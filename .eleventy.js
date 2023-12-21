@@ -1,4 +1,5 @@
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const readingTime = require('eleventy-plugin-reading-time');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/img/');
@@ -9,6 +10,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/_assets/js');
 
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(readingTime);
 
   // Markdown filter for applying to the "description" inside projects front matter
   const markdownIt = require('markdown-it');
