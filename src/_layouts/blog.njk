@@ -26,7 +26,7 @@ layout: "base.njk"
                 </p>
                 <div class="excerpt">
                     {%- if post.data.excerpt -%}
-                        {{ post.data.excerpt | markdownify | safe }}
+                        {{ post.data.excerpt | markdownify | emojify | safe }}
                     {%- endif -%}
                 </div>
                 <div class="bottom">

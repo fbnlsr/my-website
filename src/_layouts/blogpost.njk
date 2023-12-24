@@ -57,7 +57,7 @@ layout: "base.njk"
     </div>
 
     <article>
-        {{ content | safe }}
+        {{ content | emojify | safe }}
     </article>
 
     <img class="is-bullet-end-article" src="/img/bullet-big.png" alt="Bullet">
