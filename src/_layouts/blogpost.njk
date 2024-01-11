@@ -2,35 +2,45 @@
 layout: "base.njk"
 ---
 <div class="blog-post" id="blogPostContainer">
-    <div class="title-container ">
-        <div class="background-cover" id="blog-post-cover" style="background-image: url('/img/blog/{{ date | blogdate}}/cover.jpg');">
-            <div class="background-shroud">
-                <p class="title">
-                    {{ title }}
+    {%- if hasCover -%}
+        <div class="title-container ">
+            <div class="background-cover" id="blog-post-cover" style="background-image: url('/img/blog/{{ date | blogdate}}/cover.jpg');">
+                <div class="background-shroud">
+                    <p class="title">
+                        {%- if draft == true -%}[DRAFT] {% endif -%}{{ title }}
+                    </p>
+                    <p class="date">
+                        {{ i18n[locale]['publishedOn']}}
+                        {% humandate date,
+                        locale %} - {{ content | readingTime }}.
                 </p>
-                <p class="date">
-                    {{ i18n[locale]['publishedOn']}}
-                    {% humandate date,
-                    locale %} - {{ content | readingTime }}.
-                </p>
-                <p class="chevron bounce is-hidden-mobile">
-                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
-                    </svg>
-                </p>
+                    <p class="chevron bounce is-hidden-mobile">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                        </svg>
+                    </p>
 
+                </div>
             </div>
         </div>
-    </div>
-    {%- if cover.author -%}
-        <p class="is-cover-author is-hidden-mobile">
-            {%- if cover.link -%}
-                Photo by <a href="{{ cover.link }}">
-                {%- endif -%}
-                {{ cover.author -}}
+        {%- if cover.author -%}
+            <p class="is-cover-author is-hidden-mobile">
                 {%- if cover.link -%}
-                </a>
-            {%- endif -%}
+                Photo by <a href="{{ cover.link }}">
+                    {%- endif -%}
+                    {{ cover.author -}}
+                    {%- if cover.link -%}
+                    </a>
+                {%- endif -%}
+            </p>
+        {%- endif -%}
+    {%- else -%}
+        <h1 class="title-no-cover">
+            {%- if draft == true -%}[DRAFT] {% endif -%}{{ title }}</h1>
+        <p class="date date-no-cover">
+            {{ i18n[locale]['publishedOn']}}
+            {% humandate date,
+            locale %} - {{ content | readingTime }}.
         </p>
     {%- endif -%}
 

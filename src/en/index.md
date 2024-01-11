@@ -1,6 +1,5 @@
 ---
 layout: "home.njk"
-title: "Fabien Lasserre - Full stack web developer from Bordeaux, France"
 translationKey: "home"
 ---
 # Hi!

@@ -5,6 +5,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href={{ page.url | url | absoluteUrl(site.url) }}>
+
     <title>
       {{ title | escape }}
       {% if title %}
@@ -13,6 +15,16 @@
         {{ i18n[locale]['sitename'] }}
       {% endif %}
     </title>
+
+    <link rel="apple-touch-icon" sizes="256x256" href="/img/favicon-256x256.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+
+    <meta property="og:title" content="{{ title | escape }}">
+    <meta property="og:site_name" content="{{ i18n[locale]['sitename'] }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="{{ site.url + page.url }}"/>
+
     <link rel="stylesheet" href="{{ "/css/main.css" | url }}">
     <link href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css" rel="stylesheet">
   </head>

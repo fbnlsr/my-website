@@ -1,6 +1,5 @@
 ---
 layout: home.njk
-title: Fabien Lasserre, développeur web à Bordeaux, France.
 translationKey: home
 ---
 # Bonjour !
