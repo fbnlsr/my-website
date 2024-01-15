@@ -4,7 +4,7 @@ date: 2018-06-15
 translationKey: "blogForestry"
 excerpt: "Let's look at Forestry, a CMS for static website."
 cover:
-    author: Kai Pilger
+    author: "Kai Pilger"
     link: "https://unsplash.com/@kaip"
 links:
     devto: "https://dev.to/fbnlsr/forestry---a-static-website-cms-59p7"

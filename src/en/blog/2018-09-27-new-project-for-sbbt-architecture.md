@@ -1,5 +1,5 @@
 ---
-title: SBBT Architecture
+title: "SBBT Architecture"
 date: 2018-09-27
 translationKey: "blogSbbt"
 excerpt: "I've developped the new website for [SBBT Architecture](https://sbbt-architecture.com/), an architectural firm, in collaboration with NySB Paris."

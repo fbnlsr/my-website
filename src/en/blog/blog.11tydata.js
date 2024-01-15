@@ -20,9 +20,6 @@ module.exports = function () {
           return true;
         }
       },
-      permalink: function (data) {
-        return data.permalink ?? '/en/blog/{{ title | slugify }}/';
-      },
       hasCover: function (data) {
         if (data.page.date) {
           const year = data.page.date.getFullYear().toString();
@@ -41,6 +38,7 @@ module.exports = function () {
     },
     layout: 'blogpost.njk',
     tags: 'posts_en',
-    category: 'blog'
+    category: 'blog',
+    permalink: '/en/blog/{{ title | slugify }}/'
   };
 };

@@ -4,6 +4,8 @@ const fs = require('fs');
 const isDevEnv = process.env.ELEVENTY_ENV === 'development';
 const todaysDate = new Date();
 
+console.log('---FILE CALLED---');
+
 function showDraft(data) {
   const isDraft = 'draft' in data && data.draft !== false;
   const isFutureDate = data.page.date > todaysDate;
@@ -20,9 +22,6 @@ module.exports = function () {
           return true;
         }
       },
-      permalink: (data) => {
-        return data.permalink ?? '/fr/blog/{{ title | slugify }}/';
-      },
       hasCover: function (data) {
         if (data.page.date) {
           const year = data.page.date.getFullYear().toString();
@@ -33,8 +32,6 @@ module.exports = function () {
 
           const path = `./src/img/blog/${year}-${month}-${day}/cover.jpg`;
 
-          console.log(path, fs.existsSync(path));
-
           return fs.existsSync(path);
         } else {
           return false;
@@ -43,6 +40,7 @@ module.exports = function () {
     },
     layout: 'blogpost.njk',
     tags: 'posts_fr',
-    category: 'blog'
+    category: 'blog',
+    permalink: '/fr/blog/{{ title | slugify }}/'
   };
 };
