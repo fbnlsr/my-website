@@ -4,8 +4,6 @@ const fs = require('fs');
 const isDevEnv = process.env.ELEVENTY_ENV === 'development';
 const todaysDate = new Date();
 
-console.log('---FILE CALLED---');
-
 function showDraft(data) {
   const isDraft = 'draft' in data && data.draft !== false;
   const isFutureDate = data.page.date > todaysDate;
