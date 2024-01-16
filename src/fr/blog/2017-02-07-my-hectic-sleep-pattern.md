@@ -11,7 +11,7 @@ Il y a quelques mois je me suis offert une [Pebble](https://www.pebble.com/). C'
 
 Une autre fonctionnalité très cool est la possibilité de tracker mon rythme de sommeil. Grâce à son gyroscope intégré, elle peut détecter les mouvements de mon poignet et en déduire si je dors ou pas. Bon OK ce n'est pas fiable à 100%, mais cela donne une bonne indication générale sur l'état de mes habitudes de sommeil. Et elles sont désastreuses.
 
-![My sleep pattern for the past week](sleeping-patterns.png)
+{% blogimg date | blogdate, "sleeping-patterns.png", "Mon rythme de sommeil la semaine passée" %}
 
 D'après ma Pebble, je dors 7 heures et 3 minutes par nuit sur une moyenne de 30 jours, avec une durée de sommeil profond d'environ 1h 48m. Ce n'est pas *si* terrible, mais quand on voir que sur une même semaine je peux dormir 3h 55m un jour et 9h 18m un autre, il y a clairement quelque chose qui ne tourne pas rond dans mes horaires de sommeil.
 
@@ -23,7 +23,7 @@ Un humain normalement constitué a besoin de dormir [entre 7 et 8 heures](https:
 
 Oui, mais c'est sans compter la capacité sans limite que le cerveau humain a pour glander.
 
-![Coffee is good](chuck-and-beans.jpg)
+{% blogimg date | blogdate, "chuck-and-beans.jpg", "Vive le café" %}
 
 Dormir plus a été un but pour moi en 2017. J'ai déjà pris des mesures pour y arriver, notamment en enlevant ma tablette tactile de la table de nuit et en la remplaçant par [un bon bouquin](https://www.amazon.com/dp/1421586207/). Mais j'ai quand même besoin d'une bonne tape sur la main et il faut que j'arrête de passer mes soirées à me documenter ou me promener dans les rues de [Tamriel](https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim) ou de [Dust2](https://en.wikipedia.org/wiki/Counter-Strike:_Global_Offensive).
 
