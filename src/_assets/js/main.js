@@ -29,32 +29,6 @@ const getCookie = (cname) => {
   return '';
 };
 
-// const switchLang = (lang) => {
-//   setCookie('lang', lang, 365);
-//   if (window.location.pathname === '/' && lang === 'fr') {
-//     window.location.href = '/fr/';
-//   }
-
-//   if (window.location.pathname === '/fr/' && lang === 'en') {
-//     window.location.href = '/';
-//   }
-// };
-
-// Automatically switch language on home
-// const lang = getCookie('lang');
-// if (lang) {
-//   switchLang(lang);
-// } else {
-//   // No cookie? Are we on home page? Let's detect the navigator language and redirect accordingly!
-//   const navLang = navigator.language.slice(0, 2);
-//   const currentPath = window.location.pathname;
-//   if (currentPath === '/' && navLang === 'fr') {
-//     switchLang('fr');
-//   } else if (currentPath === '/fr/' && navLang === 'en') {
-//     switchLang('en');
-//   }
-// }
-
 const getAll = (selector) => {
   return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
 };

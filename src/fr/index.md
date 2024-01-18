@@ -1,6 +1,7 @@
 ---
-layout: home.njk
-translationKey: home
+layout: "home.njk"
+last_post_collection: "posts_fr"
+translationKey: "home"
 ---
 # Bonjour !
 

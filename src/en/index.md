@@ -1,6 +1,7 @@
 ---
 layout: "home.njk"
 translationKey: "home"
+last_post_collection: "posts_en"
 ---
 # Hi!
 

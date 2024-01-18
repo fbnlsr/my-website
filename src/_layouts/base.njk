@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href={{ page.url | url | absoluteUrl(site.url) }}>
 
+    <link href="/{{ locale }}/blog/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.title }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7COpen+Sans:400,700%7CUbuntu+Mono:400,700&display=swap" rel="stylesheet">
+
     <title>
       {{ title | escape }}
       {% if title %}
