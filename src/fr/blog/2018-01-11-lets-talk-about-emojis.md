@@ -18,13 +18,13 @@ Il existe même des bizarreries et autres faits marrants autour de ces petites i
 
 Les emojis sont aussi représentés différemment entre les plateformes, et peuvent donc être *interprétés* différemment. Prenez par exemple l'emoji `astonished face`. Le premier est l'interprétation d'Apple, le second celui de Samsung.
 
-![emoji1](emoji1.png)
+![emoji1](/img/blog/2018-01-11/emoji1.png)
 
 Celle d'Apple semble plus "sage" que celle de Samsung, vous ne trouvez pas ?
 
 Parfois, c'est le contraire. Dans cet exemple, l'interprétation de Samsung pour la `pouting face` semble moins "énervée" que celle de Twitter.
 
-![emoji2](emoji2.png)
+![emoji2](/img/blog/2018-01-11/emoji2.png)
 
 Mais assez d'histoire, parlons de code.
 

@@ -26,11 +26,11 @@ Luckily, Gimp is starting to become a real alternative to Photoshop now. A few m
 
 ### elementary OS
 
-![elementaryos](elementary.png)
+![elementaryos](/img/blog/2014-07-14/elementary.png)
 
 All this writing to talk about this linux distribution I've discovered a few days ago, called [elementary OS](http://elementaryos.org/). At its core lies Ubuntu, or to be more precise, the Long Term Support version of Ubuntu. The current version of elementary OS is called Luna, and is base off Ubuntu 12.04. The next version, codenamed Freya, should be available in the upcoming months and will be based off Ubuntu 14.04. Since Ubuntu lies at its core, it's compatible with its repositories and packages. The great difference is the constant desire to bring a beautiful and consistent user interface. At first glance, you can see some elements are heavily based on OSX design, especially with that dock at the bottom of the screen, and that simple bar at the top. And don't call it a global menu, because it's not, and they want you to know that. All the options of an application are available thanks to a simple "gear" menu, right inside the app, and the UI makes use of simple modal windows like OSX does. It features several apps that are custom tailored to fit the design and philosophy behind that distribution, like Geary Mail, a custom Calendar (which you unfortunately can't link to your Google Account), or Shotwell (a photos library). All in all, it feels complete, robust, and slick.
 
-![elementary OS Luna](luna.png)
+![elementary OS Luna](/img/blog/2014-07-14/luna.png)
 
 I'm currently writing this article on elementary OS, and the general feeling of the distribution is absolutely wonderful. Even inside a virtual machine, the thing flies. Granted, I'm using it on a Core i5 processor with 16 GB of RAM, but I'll be honest, I've spent the past five days booting inside windows just to launch that virtual machine. In the span of a few minutes, I was able to install and configure all my productivity apps: Sublime Text, a LAMP server, Git, DBeaver, Chromium, Skype, Spotify... Everything works smoothly and without hiccups.
 
@@ -42,7 +42,7 @@ Then again, I usually get notified of software updates about the applications I'
 
 Of course, Luna is not perfect. The first thing you might want to look into is the possibility to add a minimize button on your windows' titles. By default, the only buttons available are Close and Maximize, which are located to the left and right of the windows' title. In order to minimize a window, you need to click its icon on the dock. It makes the layout of windows cleaner, but it's simply not practical.
 
-![luna-buttons](luna-buttons.jpg)
+![luna-buttons](/img/blog/2014-07-14/luna-buttons.jpg)
 
 To remedy this problem, simply install [Dconf-tools](https://apps.ubuntu.com/cat/applications/precise/dconf-tools/) using Software Center, and find the following key:
 

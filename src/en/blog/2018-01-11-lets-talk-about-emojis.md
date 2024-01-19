@@ -18,13 +18,13 @@ There are even some quirks and fun little facts about these tiny pictures. For e
 
 Emojis are also represented differently across platforms, and can be interpreted slighly differently. Take for instance the `astonished face` emoji. The first one is Apple's interpretation, the second one is Samsung's.
 
-![emoji1](emoji1.png)
+![emoji1](/img/blog/2018-01-11/emoji1.png)
 
 Apple's take on this feeling feels a bit more tamed than Samsung's, don't you think?
 
 Other times, it can be the contrary. In this example, Samsung's interpretation of the `pouting face` feels less "angry" than Twitter's.
 
-![emoji2](emoji2.png)
+![emoji2](/img/blog/2018-01-11/emoji2.png)
 
 But enough with the history, let's get down to coding.
 

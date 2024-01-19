@@ -10,10 +10,6 @@ links:
     devto: "https://dev.to/fbnlsr/forestry---a-static-website-cms-59p7"
     medium: "https://medium.com/@fbnlsr/forestry-a-static-website-cms-81bebaacfae9"
 ---
-Les sites internet statiques sont de plus en plus poulaires, offrants une plus grande vitesse d'affichage, une meilleure commodité d'utilisation et une sécurité plus solide. Mais qu'en est-il lors de l'utilisation d'un tel système dans "le monde réel", où un client veut quand même avoir la main sur le contenu de son site internet ? Pour cela nous avons besoin d'une UI. Voici mon premier avis sur Forestry, un CMS fait pour les sites statiques.
-
-<!--more-->
-
 L’utilisation de sites internet statiques se répand de plus en plus sur le web. Au delà d’un “retour aux sources” numérique, ces systèmes ont de multiples avantages. Ils sont en effet souvent plus rapides, car ils se limitent à servir des pages web simples, sans travail côté serveur. La logique est laissée à la charge du client, le plus souvent par le biais d’API, et il est beaucoup plus facile de mettre en cache et d’utiliser un CDN lors du déploiement. Ces derniers sont d’ailleurs atomiques, avec une invalidation de cache instantanée. La délivrabilité du site est ainsi assurée à 100%. Les sites statiques sont aussi souvent beaucoup plus sécurisés étant donné qu’ils ne permettent pas l’envoi direct d’informations au serveur.
 
 Néanmoins, la mise à jour et le déploiement d’un site statique se fait obligatoirement par le biais d’une machine qui bénéficie d’un environnement de développement idoine. Un terminal et des outils comme Git, Node, NPM, Ruby, et autres sont parfois nécessaires. Le site doit en effet être recompilé, soit en amont, soit par un système automatisé comme GitHub Pages ou Netlify.
@@ -24,7 +20,7 @@ L’intérêt d’utiliser un CMS pour un site statique devient donc pertinent p
 
 Aujourd’hui je m’intéresse à Forestry, un service hébergé qui utilise l’API GitHub pour permettre à un site statique d’être géré à distance.
 
-![Logo de Forestry](forestry-logo.jpg "Logo de Forestry")
+![Logo de Forestry](/img/blog/2018-06-15/forestry-logo.jpg "Logo de Forestry")
 
 ## Installation
 
@@ -40,17 +36,17 @@ Il est même possible de venir greffer le CMS sur son propre site, et passer par
 
 Forestry fonctionne grâce à l’API de GitHub, Gitlab ou Bitbucket. C’est un CMS très pratique à utiliser avec une interface claire. À gauche, un panneau listant les types de contenu permet d’accéder aux différentes catégories du site, et à droite, un panneau type Wordpress donne accès aux champs à remplir ainsi qu’à l’éditeur de texte principal.
 
-![L'admin de Forestry](forestry1.jpg "L'admin de Forestry")
+![L'admin de Forestry](/img/blog/2018-06-15/forestry1.jpg "L'admin de Forestry")
 
 Dans mon cas, Forestry a fait un travail impeccable pour trouver mes articles de blog et mes projets, mais il a été un peu plus limité pour trouver le contenu des pages. Ainsi, pour une raison inconnue, le système a fait la différence entre la page d’accueil et la page “À propos”, et ces deux pages sont considérées comme deux sections différentes.
 
 À noter que malgré l’utilisation de l’API GitHub, il n’est pas possible pour l’instant d’accéder à l’historique des contenus. Il m'a cependant été possible de renommer le fichier (généré automatiquement par le CMS) afin de pouvoir bénéficier de la gestion du multi-langue de Hugo. Ainsi, en ajoutant simplement l’extension `.fr` à un slug existant, j’ai pu laisser Hugo lier automatiquement deux articles et proposer la version traduite aux visiteurs.
 
-![Renommage d'un fichier](forestry2.jpg "Renommage d'un fichier")
+![Renommage d'un fichier](/img/blog/2018-06-15/forestry2.jpg "Renommage d'un fichier")
 
 Dans mon cas, un projet est configuré exclusivement grâce à l’utilisation du Front Matter. En modifiant une ou deux lignes du fichier de configuration, j’ai pu me débarrasser de l’éditeur de texte afin de me retrouver exclusivement avec les champs de configuration d’un projet. Pour les utilisateurs de Wordpress, cela revient à avoir une page composée à l’aide d’Advanced Custom Fields, mais générée grâce à un fichier YAML.
 
-![Édition d'un projet](forestry3.jpg "Édition d'un projet")
+![Édition d'un projet](/img/blog/2018-06-15/forestry3.jpg "Édition d'un projet")
 
 ## Avantages / Inconvénients du CMS
 
