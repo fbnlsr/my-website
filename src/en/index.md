@@ -5,7 +5,7 @@ last_post_collection: "posts_en"
 ---
 # Hi!
 
-![Hey it's me!](/img/me.jpg)
+![Hey it's me!](/img/me-350x350.jpg)
 
 My name is Fabien.
 

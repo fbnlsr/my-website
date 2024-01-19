@@ -110,6 +110,10 @@
     a:visited {
       text-decoration: none;
       color: $blue;
+
+      &.underline {
+        text-decoration: underline;
+      }
     }
 
     .is-email,

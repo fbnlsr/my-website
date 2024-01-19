@@ -96,4 +96,4 @@ And finally revert this once again right after the `<body>` tag thanks to JavaSc
 
 This will not only make this W3C compliant, but since we've added a bit of JavaScript in the body of our document, the dummy JS code we added earlier becomes obsolete! So now, everybody's happy, and we can finally grab a fresh glass of water and enjoy the sun.
 
-![Seal of approval](sealofapproval.jpg)
+![Seal of approval](/img/blog/2020-04-21/sealofapproval.jpg)

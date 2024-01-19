@@ -5,7 +5,7 @@ translationKey: "home"
 ---
 # Bonjour !
 
-![Hey c'est moi !](/img/me.jpg)
+![Hey c'est moi !](/img/me-350x350.jpg)
 
 Je m’appelle Fabien.
 

@@ -4,7 +4,7 @@ layout: "base.njk"
 <div class="blog-post" id="blogPostContainer">
     {%- if hasCover -%}
         <div class="title-container ">
-            <div class="background-cover" id="blog-post-cover" style="background-image: url('/img/blog/{{ date | blogdate}}/cover.jpg');">
+            <div class="background-cover" id="blog-post-cover" style="background-image: url('/img/blog/{{ date | blogdate }}/cover.jpg');">
                 <div class="background-shroud">
                     <p class="title">
                         {%- if draft == true -%}[DRAFT] {% endif -%}{{ title }}
@@ -82,14 +82,14 @@ layout: "base.njk"
             <ul>
                 {%- if links.devto -%}
                     <li>
-                        <a class="devto" href="{{ links.devto }}">
+                        <a class="devto" href="{{ links.devto }}" aria-label="DevTo">
                             <img src="/img/devto.jpg" alt="Dev.to">
                         </a>
                     </li>
                 {%- endif -%}
                 {%- if links.medium -%}
                     <li>
-                        <a class="medium" href="{{ links.medium }}">
+                        <a class="medium" href="{{ links.medium }}" aria-label="Medium">
                             <img src="/img/medium.svg" alt="Medium">
                         </a>
                     </li>

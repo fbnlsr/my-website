@@ -82,7 +82,7 @@ title: "About"
 ## Let's get in touch!
 
 <div class="is-get-in-touch" id="contact">
-<p>If you want to know more, you can check some of <a href="/projects">my projects</a>, or read <a href="/blog">my blog</a>.</p>
+<p>If you want to know more, you can check some of <a class="underline" href="/projects">my projects</a>, or read <a class="underline" href="/blog">my blog</a>.</p>
 <p>You can also send me an email at:</p>
 <p class="is-email"><a href="mailto:hello@primative.net">hello@primative.net</a></p>
 <p>Or give me a call:</p>

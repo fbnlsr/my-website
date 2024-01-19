@@ -280,7 +280,6 @@
       text-align: center;
       color: $background;
       font-weight: 300;
-      // font-size: 5rem;
       font-size: 4vw;
       text-shadow: 2px 2px 2px $black;
       position: absolute;
@@ -348,6 +347,10 @@
     max-width: 800px;
     margin: auto;
     margin-top: 2rem;
+
+    a {
+      text-decoration: underline;
+    }
 
     p,
     h1,

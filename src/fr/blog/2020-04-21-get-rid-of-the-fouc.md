@@ -96,4 +96,4 @@ Et enfin nous basculons à nouveau le tout juste après la balise `<body>` grâc
 
 Cela va non seulement rendre les choses compatibles avec le W3C, mais puisque nous avons ajouté un petit bout de JavaScript dans le `body` de notre document, le code JS fantôme que nous avons créé tout à l'heure devient obsolète ! Donc maintenant, tout le monde est content, et nous pouvons enfin siroter un verre d'eau bien fraîche sous le soleil.
 
-![Seal of approval](sealofapproval.jpg)
+![Seal of approval](/img/blog/2020-04-21/sealofapproval.jpg)
