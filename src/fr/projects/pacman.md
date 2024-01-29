@@ -2,7 +2,8 @@
 date: 2023-01-09
 slug: "pacman"
 title: "PACMAN"
-work: "Symfony / VueJS - Développement front et back."
+tech: "Symfony / VueJS"
+work: "Développement front et back."
 techUsed:
   - Symfony
   - VueJS

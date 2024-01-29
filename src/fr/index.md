@@ -2,17 +2,14 @@
 layout: "home.njk"
 last_post_collection: "posts_fr"
 translationKey: "home"
+aboutMe: |
+  Développeur freelance depuis 2012, j’aime travailler avec des outils et technologies modernes.
+  Que ce soit seul ou en équipe, je vous accompagne dans votre projet d’application ou de site web, en respectant des normes qui vous assurent un code solide, évolutif et maintenable.
 ---
-# Bonjour !
+![Hey c'est moi !](/img/me-250x250.jpg)
 
-![Hey c'est moi !](/img/me-350x350.jpg)
+# 👋 Bonjour !
 
-Je m’appelle Fabien.
+Je m’appelle Fabien et je suis dévelopeur web full stack, basé à Bordeaux.
 
-Je suis Développeur Full Stack, basé à Bordeaux.
-
-Depuis 2012, je propose à mes clients des solutions innovantes pour leur site web. Je travaille principalement avec des outils et des frameworks modernes, tels que Wordpress, Laravel, Symfony, VueJS...
-
-Découvrez un peu plus [ce que je fais](/fr/a-propos/), ou regardez quelques un de [mes projets](/fr/projets/).
-
-Je suis disponible pour des missions en freelance, n’hésitez pas à [me contacter](/fr/a-propos/#contact) !
+**Je suis actuellement disponible pour des missions en freelance, n’hésitez pas à [me contacter](/fr/#contact) !**

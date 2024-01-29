@@ -30,7 +30,7 @@ This will do the same as `npm run build`, and run 11ty's built-in web server.
 | `:bug:`      |  🐛   | Fix bug                     |
 | `:sparkles:` |  ✨   | New feature                 |
 | `:art:`      |  🎨   | Clean code                  |
-| `:pencil2:`  |  ✏️   | Add text / write blog post  |
+| `:pencil2:`  |  ✏️    | Add text / write blog post  |
 | `:memo:`     |  📝   | Documentation related       |
 | `:iphone:`   |  📱   | Responsive design work      |
 | `:lipstick:` |  💄   | Updating UI and style files |

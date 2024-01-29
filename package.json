@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
-    "bulma": "^0.9.0",
     "highlight.js": "^9.18.1",
     "vanilla-lazyload": "^13.0.0"
   }
