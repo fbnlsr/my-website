@@ -2,7 +2,8 @@
 date: 2023-01-05
 slug: "nysb"
 title: "NySB"
-work: "Wordpress - Développement front et back."
+tech: "WordPress"
+work: "Développement front et back."
 techUsed:
   - Wordpress
   - Bulma

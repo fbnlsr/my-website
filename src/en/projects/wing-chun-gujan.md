@@ -2,7 +2,8 @@
 date: 2023-01-04
 slug: "wing-chun-gujan"
 title: "Wing Chun Gujan"
-work: "Hugo - Design, front and backend development."
+tech: "Hugo"
+work: "Design, front and backend development."
 techUsed:
   - Hugo
   - Webpack

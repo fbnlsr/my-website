@@ -2,7 +2,8 @@
 date: 2023-01-08
 slug: "notadoo"
 title: "Notadoo"
-work: "Symfony / VueJS - Front and backend development."
+tech: "Symfony / VueJS"
+work: "Front and backend development."
 techUsed:
   - Symfony
   - VueJS

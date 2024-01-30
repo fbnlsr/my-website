@@ -1,57 +1,107 @@
-.nav-home {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-}
-
 .navbar {
-  height: 70px;
-  padding-left: 1rem;
-  background-color: transparent;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  position: relative;
 
-  @media only screen and (max-width: 768px) {
-    height: initial;
+  .navbar-menu {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    border-bottom: 1px solid $blue;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+  }
+
+  .navbar-bottom {
+    max-width: 800px;
+    margin: auto;
+    text-align: right;
+    font-size: 16px;
+    color: $gray2;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 
   .logo-header {
-    display: block;
+    display: inline-block;
     width: 50px;
     height: 35px;
-    position: relative;
-    top: 20px;
-    right: 3rem;
+    margin-right: 2rem;
+    position: absolute;
+    left: 0;
   }
 
   .navbar-item {
     color: inherit;
     margin-right: 2rem;
-    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
 
     &:hover {
       background-color: transparent;
-      color: inherit;
+      color: $blue;
     }
 
     &.is-active {
-      border-bottom: 3px solid $blue;
+      font-weight: 700;
+      color: $blue;
+      border-bottom: 4px solid $blue;
     }
   }
 
-  .is-lang-switcher {
-    img {
-      display: block;
-      margin: auto;
-      height: 30px;
+  .nav-mobile {
+    position: fixed;
+    top: -100vh;
+    height: 100vh;
+    width: 100%;
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 40px;
+    align-items: center;
+    transition: all 0.2s ease-out;
+    overflow: hidden;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    box-sizing: border-box;
+    z-index: 9002;
+
+    .navbar-item {
+      margin-right: 0;
+      height: initial;
     }
 
-    &:hover {
-      cursor: pointer;
+    .navbar-item-lang {
+      font-size: 30px;
+      color: $gray2;
+    }
+
+    &.is-active {
+      top: 0;
     }
   }
 
   .navbar-burger {
     position: fixed;
     top: 0;
+    width: 32px;
+    height: 26px;
     right: 1rem;
     background-color: transparent;
     z-index: 2000;
@@ -59,6 +109,18 @@
     padding: 0;
     border: none;
     outline: none;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 9003;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
 
     &:focus,
     &:active {
@@ -67,20 +129,39 @@
     }
 
     span {
-      height: 3px;
-      left: calc(50% - 15px);
-      width: 30px;
-    }
+      display: block;
+      height: 4px;
+      width: 100%;
+      background-color: $text;
+      transition: all 0.2s ease-out;
+      position: relative;
+      transform: rotate(0deg);
+      border-radius: 2px;
 
-    &.is-navbar-home {
-      span {
-        background-color: $background;
+      &:first-child {
+        transform-origin: 0% 0%;
+      }
+
+      &:last-child {
+        transform-origin: 0% 100%;
       }
     }
 
     &.is-active {
       span {
         background-color: $text;
+
+        &:first-child {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          width: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
       }
     }
 
@@ -139,6 +220,11 @@
   }
 
   @media only screen and (max-width: 768px) {
-    padding-left: initial;
+    margin-top: 0;
+
+    .navbar-menu,
+    .navbar-bottom {
+      display: none;
+    }
   }
 }

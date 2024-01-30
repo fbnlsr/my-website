@@ -2,7 +2,8 @@
 date: 2023-01-02
 slug: "healthy-warriors"
 title: "Healthy Warriors"
-work: "Wordpress - Développement front et back."
+tech: "WordPress"
+work: "Développement front et back."
 techUsed:
   - Wordpress
   - ACF

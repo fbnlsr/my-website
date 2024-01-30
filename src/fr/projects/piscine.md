@@ -2,7 +2,7 @@
 date: 2023-01-07
 slug: "piscine"
 title: "La Piscine"
-work: "Formation / Éducation."
+tech: "Formation / Éducation"
 techUsed:
   - jQuery
   - Reveal.js

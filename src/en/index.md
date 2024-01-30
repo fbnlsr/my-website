@@ -1,18 +1,15 @@
 ---
 layout: "home.njk"
-translationKey: "home"
 last_post_collection: "posts_en"
+translationKey: "home"
+aboutMe: |
+  Freelance developer since 2012, I enjoy working with modern tools and technologies.
+  Whether alone or as part of a team, I can accompany you in your web app or site project, adhering to standards that ensure solid, scalable and maintainable code.
 ---
-# Hi!
+![Hey it's me!](/img/me-250x250.jpg)
 
-![Hey it's me!](/img/me-350x350.jpg)
+# 👋 Hi!
 
-My name is Fabien.
+My name is Fabien and I’m a full stack web developer based in Bordeaux, France.
 
-I’m a Full Stack Web Developer  based in Bordeaux, France.
-
-Since 2012, I’ve been helping many clients achieve innovative things on the web. I mainly work with modern tools and frameworks such as Wordpress, Laravel, Symfony, VueJS....
-
-Read more [about me](/about/), or check a few of [my projects](/projects/).
-
-I’m available for freelancing, feel free to [contact me](/about/#contact)!
+**I'm currently available for freelance missions, feel free to [contact me](/en/#contact)!**

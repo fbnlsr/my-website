@@ -21,8 +21,11 @@ layout: base.njk
               {% endif %}
             </p>
           {% endif %}
-          {% if project.data.work %}
-            <p class="work">{{ project.data.work }}</p>
+          {% if project.data.tech %}
+            <p class="work">{{ project.data.tech }}
+              {% if project.data.work %} - {{ project.data.work }}
+              {% endif %}
+            </p>
           {% endif %}
           <div class="description">
             {%- if project.data.description -%}{{ project.data.description | markdownify | safe }}

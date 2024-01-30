@@ -2,7 +2,8 @@
 date: 2023-01-03
 slug: "agence-saint-germain"
 title: "Agence Saint Germain"
-work: "Wordpress - Front and backend development."
+tech: "WordPress"
+work: "Front and backend development."
 techUsed:
   - Wordpress
   - Masonry

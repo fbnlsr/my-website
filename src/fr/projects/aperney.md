@@ -2,7 +2,8 @@
 date: 2023-01-06
 slug: "aperney-expertise"
 title: "Cabinet A. Perney"
-work: "Kirby - Développement front et back."
+tech: "Kirby"
+work: "Développement front et back."
 techUsed:
   - Kirby
   - Bootstrap
