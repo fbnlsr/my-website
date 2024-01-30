@@ -98,6 +98,7 @@
   }
 
   .navbar-burger {
+    display: none;
     position: fixed;
     top: 0;
     width: 32px;
@@ -110,7 +111,6 @@
     border: none;
     outline: none;
     top: 20px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     z-index: 9003;
@@ -225,6 +225,10 @@
     .navbar-menu,
     .navbar-bottom {
       display: none;
+    }
+
+    .navbar-burger {
+      display: flex;
     }
   }
 }

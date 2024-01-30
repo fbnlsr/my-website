@@ -2,93 +2,47 @@
 layout: "about.njk"
 translationKey: "about"
 permalink: "/fr/a-propos/"
-title: "À propos"
+title: "Savoir faire"
+aboutBox1Title: "Développement sur mesure"
+aboutBox1Text: "Grâce aux frameworks Open Source **Symfony** et **VueJS**, je permets à mes clients la mise en place de solutions **performantes, maîtrisées et modernes**."
+aboutSection1Title: "Bénéficiez d’une API rapide et performante."
+aboutSection1Text: |
+  En combinant **Symfony** en backend et **VueJS** en frontend, je crée des applications dynamiques qui communiquent efficacement. Que ce soit pour des interfaces web, des applications mobiles ou l'intégration avec d'autres APIs tierces, cette approche offre une flexibilité optimale.
+
+  Ainsi, le déploiement d’une application type SPA et la mise en place de composants réutilisables devient rapide et simple. Vous bénéficiez ainsi d'une **expérience utilisateur fluide** et d'une **gestion de projet** plus efficace.
+aboutSection2Title: Des techniques modernes et éprouvées.
+aboutSection2Text: |
+  J'optimise la robustesse du code source en intégrant des pratiques telles que la mise en place de **tests unitaires** et l'utilisation de **TypeScript**. Cette approche assure un déploiement sans souci, minimisant les effets de bords et les régressions. Ainsi, votre projet bénéficie d'une **base solide**, favorisant la **tranquillité d'esprit** lors des mises en production.
+aboutSection3Title: Profitez d’un code source maîtrisé et accessible.
+aboutSection3Text: |
+  S’assurer que le code livré soit maintenable et savoir **gérer la dette technique** sont des problématiques cruciales. C’est la raison pour laquelle j’opte pour des systèmes **Open Source** qui offrent la pérennité nécessaire, soutenue par une base solide de contributions communautaires, grâce à des mises à jour **fréquentes et vérifiées**. Ainsi, le déploiement de votre code applicatif s'accompagne d'une assurance de durabilité.
+aboutBox2Title: Développement WordPress / JAMStack
+aboutBox2Text: |
+  Pour bénéficier d’une **administration simple** et connue de tous, ou pour des projets nécessitants un **maximum de vitesse** d’exécution, j’utilise **WordPress** et la **JAMStack**.
+aboutSection4Title: WordPress, le couteau suisse du web.
+aboutSection4Text: |
+  Que ce soit pour un **site vitrine** de présentation, la diffusion d’actualités via **un blog**, ou un système de **réservation en ligne**, la réputation de WordPress n’est plus à faire. Grâce à son **interface d’administration simple**, vous serez à même de prendre en main votre site internet en toute autonomie.
+aboutSection5Title: Une solution adaptée au besoin.
+aboutSection5Text: |
+  Quelque soit la problématique posée, je réalise un **thème sur mesure** qui répond au plus près au besoin exprimé. La mise à jour du site s’en retrouve facilitée, et cela permet de suivre au mieux les nouvelles versions du core WordPress et des plugins utilisés.
+aboutSection6Title: Les sites statiques, le retour aux sources.
+aboutSection6Text: |
+  Parce qu’ils sont inégalés en terme de **rapidité** et de **sécurité**, j’utilise des **générateurs de sites statiques** pour proposer des solutions qui permettent de déployer des sites rapidement, tout en bénéficiant d’une souplesse de mise à jour et de maintenabilité. Grâce à **Gridsome** ou **Eleventy**, il est possible de mettre en ligne de manière fluide et à faible coût un site internet rapide, flexible et extrêmement léger.
+aboutBox3Title: Méthodologie
+aboutBox3Text: |
+  J’utilise mon expérience de **travail en équipe** et mon goût pour les **méthodes de productivité** efficaces pour déployer un code robuste, souple à prendre en main, et maintenable.
+method1Title: Code
+method1Text: |
+  Je travaille avec approche **RWD / Mobile First** pour le frontend. J’assure la solidité de mon code backend grâce aux **tests unitaires**.
+method2Title: Workflow
+method2Text: |
+  Grâce à mon **expérience SCRUM**, je peux travailler seul ou en équipe. Je peux aussi mettre en place un flux de travail en **Intégration Continue** qui aide à prévenir des régressions.
+method3Title: Bonnes pratiques
+method3Text: |
+  J’utilise des **normes de codage** et des outils comme **Prettier** ou **PHPCS** afin de livrer du code répondant aux standards et avec un haut taux de **maintenabilité**.
 ---
-<div class="has-background-blue is-about-text">
-<p>Développeur autodidacte, j’ai commencé à coder il y a plus de dix ans. C'est rapidement devenu une passion et je suis freelance depuis 2012.</p>
-<p>Je travaille avec des CMS open source, HTML, CSS, Javascript, PHP et MySQL. Mes clients sont des agences web et des entreprises de toutes tailles.</p>
-<p>J'aime les nouveaux projets, relever les défis et résoudre toute sorte de problèmes.</p>
-<p>Oh, et Espaces&nbsp;&gt;&nbsp;Tabs.</p>
-</div>
+Je travaille principalement avec des outils et des frameworks modernes comme **Symfony, VueJS, WordPress, Gridsome, Eleventy**...
 
-### Outils & frameworks que j’aime utiliser
+Je suis un développeur web autodidacte avec plus de **15 ans d’expérience**, et je suis freelance depuis 2012.
 
-<div class="is-about-tools">
-    <div class="columns">
-        <div class="column is-hidden-mobile">
-            <ul>
-                <li><strong>HTML5 / CSS3</strong></li>
-                <li><strong>Javascript (jQuery / ES6)</strong></li>
-                <li><strong>PHP</strong></li>
-                <li><strong>VueJS</strong></li>
-                <li>Vagrant (Homestead)</li>
-                <li>Git</li>
-                <li>Jekyll / Hugo</li>
-                <li>Less / Sass</li>
-                <li>Prettier</li>
-            </ul>
-        </div>
-        <div class="column is-hidden-mobile">
-            <ul>
-                <li><strong>Laravel</strong></li>
-                <li><strong>Symfony 3</strong></li>
-                <li><strong>Wordpress</strong></li>
-                <li><strong>Webpack</strong></li>
-                <li>Bootstrap / Bulma</li>
-                <li>Gulp</li>
-                <li>NPM / Yarn</li>
-                <li>Jade (Pug)</li>
-                <li>iTerm2 / zsh</li>
-            </ul>
-        </div>
-        <div class="column is-mobile-block is-hidden-desktop is-hidden-tablet">
-            <ul>
-                <li><strong>HTML5 / CSS3</strong></li>
-                <li><strong>Javascript (jQuery / ES6)</strong></li>
-                <li><strong>PHP</strong></li>
-                <li><strong>VueJS</strong></li>
-                <li><strong>Laravel</strong></li>
-                <li><strong>Symfony 3</strong></li>
-                <li><strong>Wordpress</strong></li>
-                <li><strong>Webpack</strong></li>
-                <li>Vagrant (Homestead)</li>
-                <li>Git</li>
-                <li>Jekyll / Hugo</li>
-                <li>Less / Sass</li>
-                <li>Prettier</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-## Savoir faire
-
-<div class="is-savoir-faire-blocks columns">
-
-<div class="is-savoir-faire-block column">
-<h4>Code</h4>
-<p>Je fais de l'<strong>intégration Frontend</strong>, dans une <strong>stratégie RWD / Mobile First</strong>. Je conçois aussi des applications web complètes grâce à mon expérience en <strong>POO Backend</strong> et <strong>conception de BDD</strong>. Je travaille principalement avec des frameworks solides, comme <strong>Symfony</strong> et <strong>Laravel</strong>. Si le projet le demande, je met en place une stratégie de <strong>Tests Unitaires</strong>.</p>
-</div>
-
-<div class="is-savoir-faire-block column">
-<h4>Workflow</h4>
-<p>Grâce à de nombreuses expériences dans des environnements <strong>Agile / Scrum</strong>, je suis autant capable de travailler seul qu'en équipe. Je peux aussi mettre en place un <strong>flux de travail rationnel</strong> grâce à des <strong>scripts automatisés</strong>. Cela permet la mise en place d'une <strong>Intégration Continue</strong> et prévient les régressions.</p>
-</div>
-
-<div class="is-savoir-faire-block column">
-<h4>Méthode</h4>
-<p>J'aime les normes. J'essaie toujours de trouver et d'appliquer les meilleures pratiques de travail. Mon code respecte les <strong>normes de codage</strong> et est <strong>conforme au PSR-2</strong>. J'aime aussi les flux de travail qui s'adaptent aux projets, et j'utilise les méthodes <strong>Git / GitHub Flow</strong>. J'utilise souvent des formateurs de code, comme <strong>Prettier</strong>, <strong>ESLint</strong> ou <strong>PHP Code Sniffer</strong>.</p>
-</div>
-</div>
-
-## Contactez-moi !
-
-<div class="is-get-in-touch" id="contact">
-<p>Si vous voulez en savoir plus, vous pouvez voir quelques un de <a class="underline" href="/fr/projets/">mes projets</a>, ou lire <a class="underline" href="/fr/blog/">mon blog</a>.</p>
-<p>Vous pouvez aussi m'envoyer un email à&nbsp;:</p>
-<p class="is-email"><a href="mailto:hello@primative.net">hello@primative.net</a></p>
-<p>Ou me contacter directement&nbsp;:</p>
-<p class="is-phone"><a href="tel:+33603351963">06 03 35 19 63</a></p>
-</div>
-
-![Big bullet](/img/bullet-big.png)
+Je travaille avec des CMS Open Source, HTML, CSS, TypeScript, PHP et MySQL. Mes clients sont des agences web ou des entreprises de toute taille.
