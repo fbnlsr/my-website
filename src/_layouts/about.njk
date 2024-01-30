@@ -93,39 +93,34 @@ layout: base.njk
   </div>
 
   <!-- Method -->
-  <div class="blue-container no-pic">
+  <div class="blue-container">
     <div class="blue-content">
       <h2>{{ aboutBox3Title }}</h2>
       {{ aboutBox3Text | markdownify | safe }}
+      <div class="tools">
+        <img src="/img/light-bulb.png" alt="Zing!"/>
+      </div>
     </div>
   </div>
 
   <div class="methods-container">
     <div id="method2" class="method">
-      <div class="content">
-        <h3>{{ method2Title }}</h3>
-        {{ method2Text | markdownify | safe}}
-      </div>
+      <img id="picto1" class="picto" src="/img/planning.png" alt="Planning"/>
+      <h3>{{ method2Title }}</h3>
+      {{ method2Text | markdownify | safe}}
     </div>
-
-    <img id="arrow1" src="/img/arrow.png" alt="Arrow"/>
 
     <div id="method1" class="method">
-      <div class="content">
-        <h3>{{ method1Title }}</h3>
-        {{ method1Text | markdownify | safe}}
-      </div>
+      <img id="picto2" class="picto" src="/img/code.png" alt="Code"/>
+      <h3>{{ method1Title }}</h3>
+      {{ method1Text | markdownify | safe}}
     </div>
-
-    <img id="arrow2" src="/img/arrow.png" alt="Arrow"/>
 
     <div id="method3" class="method">
-      <div class="content">
-        <h3>{{ method3Title }}</h3>
-        {{ method3Text | markdownify | safe}}
-      </div>
+      <img id="picto3" class="picto" src="/img/time.png" alt="Time"/>
+      <h3>{{ method3Title }}</h3>
+      {{ method3Text | markdownify | safe}}
     </div>
 
-    <img id="arrow3" src="/img/arrow2.png" alt="Arrow"/>
   </div>
 </div>

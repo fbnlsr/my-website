@@ -18,10 +18,11 @@
   .project {
     @include clearfix;
     padding: 2rem;
-    border: 1px solid rgba($gray1, 0.2);
+    border: 1px solid rgba($gray1, 0.3);
     background-color: white;
     border-radius: 5px;
     margin: 4rem;
+    box-shadow: 0 10px 10px -10px $gray1;
 
     &:hover {
       .cover img {

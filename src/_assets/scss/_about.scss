@@ -7,7 +7,7 @@
   }
 
   .content {
-    max-width: 900px;
+    max-width: 1000px;
     padding-left: 20px;
     padding-right: 20px;
     margin: auto;
@@ -33,11 +33,11 @@
     }
 
     .blue-content {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       text-align: center;
       font-family: $nunito;
-      font-size: 20px;
+      font-size: 22px;
       line-height: 1.8;
 
       h2 {
@@ -57,10 +57,10 @@
       .tools {
         max-width: 300px;
         margin: auto;
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: -100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 
         img {
           width: 120px;
@@ -136,108 +136,70 @@
   }
 
   .methods-container {
-    max-width: 1050px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
-
-    #arrow1 {
-      position: absolute;
-      top: 320px;
-      left: 300px;
-    }
-
-    #arrow2 {
-      position: absolute;
-      top: 320px;
-      right: 290px;
-      transform: rotate(90deg);
-    }
-
-    #arrow3 {
-      position: absolute;
-      bottom: 150px;
-      left: calc(50% - 123px);
-    }
 
     .method {
       width: 350px;
-      height: 350px;
-      border-radius: 50%;
-      border: 4px solid $blue;
+      border-radius: 5px;
+      border: 1px solid $blue;
       text-align: center;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      text-align: center;
       font-family: $nunito;
       font-size: 18px;
       line-height: 1.4;
       background-color: white;
       box-shadow: 0 0 5px $gray1;
+      position: relative;
+      padding: 40px 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
 
-      &#method2,
-      &#method3 {
-        margin-top: 400px;
+      .picto {
+        margin: auto;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 40px);
+
+        &#picto1 {
+          width: 75px;
+        }
+
+        &#picto2 {
+          width: 80px;
+        }
+
+        &#picto3 {
+          width: 77px;
+        }
       }
 
-      .content {
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      h3 {
+        font-family: $montserrat;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
 
-        h3 {
-          font-family: $montserrat;
-          font-size: 36px;
-          font-weight: 700;
-          margin-bottom: 1rem;
-          line-height: 1.2;
-        }
-
-        p {
-          line-height: 1.3;
-        }
+      p {
+        line-height: 1.3;
       }
     }
 
     @media screen and (max-width: 1050px) {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       align-items: center;
 
-      #arrow3 {
-        display: none;
-      }
-
-      #arrow1,
-      #arrow2 {
-        position: relative;
-        top: initial;
-        bottom: initial;
-        left: initial;
-        right: initial;
-      }
-
-      #arrow1 {
-        transform: rotate(135deg);
-      }
-
-      #arrow2 {
-        transform: rotate(135deg);
-      }
-
       .method {
-        &#method2 {
-          margin-top: 0;
-          margin-bottom: 30px;
-        }
-
-        &#method1,
-        &#method3 {
-          margin-top: 30px;
-          margin-bottom: 30px;
-        }
+        margin-top: 40px;
       }
     }
 
@@ -257,11 +219,30 @@
         border: none;
         background-color: transparent;
         padding-top: 10px;
-        padding-bottom: 10px;
+        margin-bottom: 0;
+        margin-top: 20px;
 
-        .content {
-          height: initial;
-          width: initial;
+        &:after {
+          content: '';
+          width: 50%;
+          margin: auto;
+          height: 1px;
+          background-color: $gray1;
+          position: relative;
+          top: 40px;
+        }
+
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+
+        .picto {
+          position: relative;
+          top: initial;
+          left: initial;
+          margin-bottom: 20px;
         }
       }
     }

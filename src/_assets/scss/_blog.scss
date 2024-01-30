@@ -44,7 +44,6 @@
       a:active,
       a:hover {
         text-decoration: none;
-        color: inherit;
         color: $blue;
       }
     }
@@ -358,20 +357,23 @@
     text-align: center;
     margin-top: 1rem;
     font-size: 0.9rem;
-    font-style: italic;
+
+    a {
+      color: $blue;
+    }
   }
 
   article {
     font-family: $nunito;
     font-size: 1.25rem;
     padding: 0 1rem;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     margin-top: 2rem;
 
     a {
       text-decoration: underline;
-      color: inherit;
+      color: $blue;
     }
 
     p,
@@ -513,6 +515,7 @@
       display: block;
       margin: auto;
       margin-bottom: 1rem;
+      border-radius: 5px;
     }
 
     .is-blog-img {

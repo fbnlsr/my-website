@@ -14,7 +14,7 @@ projectImgDir: "/img/projects/piscine"
 desktopScreenshots:
   - desktop1.jpg
 description: |
-  **La Piscine** is a French training center offering intensive training for aspiring developers, designers and database administrators. Since 2018, I've been teaching JavaScript and jQuery there.
+  **La Piscine** is a French training center offering intensive training for aspiring developers, designers and database administrators. Between 2018 and 2020, I tought JavaScript and jQuery there.
 ---
 
 Sharing knowledge is an amazing experience. Beyond JavaScript, I teach my students **basic programming notions**, from variables to the **notion of objects**, including JSON and AJAX.

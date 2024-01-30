@@ -21,7 +21,7 @@ mobileScreenshots:
   - mobile2.jpg
   - mobile3.jpg
 description: |
-  **Cabinet A. Perney** is a real estate expertise firm based in Bordeaux.
+  **Cabinet A. Perney** is a real estate expertise firm based in Bordeaux, France.
 
   Since the scope of this project called for peculiar measures, a whole team was put together to answer the client's problematics.
 ---

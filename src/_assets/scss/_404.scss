@@ -19,7 +19,11 @@
   flex-direction: column;
   flex-grow: 1;
   justify-content: flex-start;
-  padding: 5rem 4rem;
+  padding: 2rem;
+
+  a {
+    color: $blue;
+  }
 
   p {
     margin-bottom: 1rem;

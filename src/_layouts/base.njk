@@ -81,9 +81,11 @@
 
     </main>
 
-    <div class="footer-logo">
-      <img src="/img/logo.svg" alt="Logo"/>
-    </div>
+    {% if translationKey !== "404" %}
+      <div class="footer-logo">
+        <img src="/img/logo.svg" alt="Logo"/>
+      </div>
+    {% endif %}
 
     <footer class="site-footer footer">
       <div class="left-side">

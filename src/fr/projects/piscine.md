@@ -14,7 +14,7 @@ projectImgDir: "/img/projects/piscine"
 desktopScreenshots:
   - desktop1.jpg
 description: |
-  **La Piscine** est un centre de formation intensive qui permet à ses élèves de devenir développeur web, administrateur réseau ou encore designer. Depuis 2018, j'y enseigne le JavaScript et jQuery.
+  **La Piscine** est un centre de formation intensive qui permet à ses élèves de devenir développeur web, administrateur réseau ou encore designer. Entre 2018 et 2020, j'y ai enseigné le JavaScript et jQuery.
 ---
 
 C'est une expérience formidable que de pouvoir transmettre son savoir. Au delà du JavaScript, j'inculque à mes élèves des **notions de base de programmation informatique**, de la variable à la **notion d'objet**, en passant par JSON et AJAX.
