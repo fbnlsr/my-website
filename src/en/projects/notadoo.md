@@ -2,11 +2,11 @@
 date: 2023-01-08
 slug: "notadoo"
 title: "Notadoo"
-tech: "Symfony / VueJS"
+tech: "Symfony / Vue.js"
 work: "Front and backend development."
 techUsed:
   - Symfony
-  - VueJS
+  - Vue.js
   - Axios
   - wkhtmltopdf
   - Lodash
@@ -29,7 +29,7 @@ description: |
   **Notadoo** is a platform for notaries and their clients that help them digitize their workflow.
 ---
 
-This was a huge project which kept me busy for a good part of 2019. The platform is built around a **Symfony-based API**. On top of that lies a front-end built using **VueJS** which is then fed by the API.
+This was a huge project which kept me busy for a good part of 2019. The platform is built around a **Symfony-based API**. On top of that lies a front-end built using **Vue.js** which is then fed by the API.
 
 The platform offers the users the possibility to create and manage projects. The projects make use of multi-step forms that are saved in real-time, and the users are able to send documents (PDFs, DOCs, etc...) to the API, which in turn stores them on a disk. Users also have the ability to automatically generate and save PDFs related to their forms, thanks to the use of **Snappy** and **wkhtmltopdf**.
 

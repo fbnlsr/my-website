@@ -46,10 +46,10 @@
   ],
   "en": {
     "metaTitle": "Fabien Lasserre - Full Stack Web Developer",
-    "metaDescription": "I'm a Freelance Full Stack Web Developer based in Bordeaux, France. I do frontend and backend work, on large and modern frameworks such as Symfony, VueJS and Wordpress."
+    "metaDescription": "I'm a Freelance Full Stack Web Developer based in Bordeaux, France. I do frontend and backend work, on large and modern frameworks such as Symfony, Vue.js and Wordpress."
   },
   "fr": {
     "metaTitle": "Fabien Lasserre - Développeur Web Full Stack",
-    "metaDescription": "Je suis un Développeur Web Full Stack, basé à Bordeaux. Je travaille le frontend comme le backend, avec principalement des frameworks modernes comme Symfony, VueJS ou encore Wordpress."
+    "metaDescription": "Je suis un Développeur Web Full Stack, basé à Bordeaux. Je travaille le frontend comme le backend, avec principalement des frameworks modernes comme Symfony, Vue.js ou encore Wordpress."
   }
 }

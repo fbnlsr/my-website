@@ -2,11 +2,11 @@
 date: 2023-01-09
 slug: "pacman"
 title: "PACMAN"
-tech: "Symfony / VueJS"
+tech: "Symfony / Vue.js"
 work: "Développement front et back."
 techUsed:
   - Symfony
-  - VueJS
+  - Vue.js
   - Axios
   - Lodash
   - Moment.js
@@ -30,4 +30,4 @@ Cette plateforme était en production depuis plus d'un an au démarrage du proje
 
 Le but premier de cet outil est le **contrôle qualité** des intervenants associés à Enedis. Pour cela les utilisateurs peuvent entrer les données concernant leurs dossiers, et le système calcule les temps d'intervention modulés par un système de rapport d'erreurs fait sur mesure et ajoute une alerte visuelle en cas de dépassement. Par la suite, les équipes encadrantes sont en mesure de **générer des statistiques de performance** en fonction d'une plage de temps donnée.
 
-D'un point de vue technique, la plateforme repose sur une **API basée sur Symfony**. Le front est assuré par une **interface en VueJS** alimentée par l'API. La page de statistiques est construite grâce à **ApexCharts**, qui grâce à son rendu vectoriel permet une impression des résultats de performance sans artefacts visuels.
+D'un point de vue technique, la plateforme repose sur une **API basée sur Symfony**. Le front est assuré par une **interface en Vue.js** alimentée par l'API. La page de statistiques est construite grâce à **ApexCharts**, qui grâce à son rendu vectoriel permet une impression des résultats de performance sans artefacts visuels.

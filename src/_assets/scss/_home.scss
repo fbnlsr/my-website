@@ -12,6 +12,10 @@
     font-family: $nunito;
     font-size: 24px;
 
+    p {
+      margin-bottom: 1rem;
+    }
+
     a {
       color: inherit;
     }
@@ -387,6 +391,14 @@
 
   .card-content {
     padding: 0.5rem 1rem;
+
+    p {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
 
     a {
       text-decoration: none;

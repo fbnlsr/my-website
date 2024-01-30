@@ -4,10 +4,10 @@ translationKey: "about"
 permalink: "/fr/a-propos/"
 title: "Savoir faire"
 aboutBox1Title: "Développement sur mesure"
-aboutBox1Text: "Grâce aux frameworks Open Source **Symfony** et **VueJS**, je permets à mes clients la mise en place de solutions **performantes, maîtrisées et modernes**."
+aboutBox1Text: "Grâce aux frameworks Open Source **Symfony** et **Vue.js**, je permets à mes clients la mise en place de solutions **performantes, maîtrisées et modernes**."
 aboutSection1Title: "Bénéficiez d’une API rapide et performante."
 aboutSection1Text: |
-  En combinant **Symfony** en backend et **VueJS** en frontend, je crée des applications dynamiques qui communiquent efficacement. Que ce soit pour des interfaces web, des applications mobiles ou l'intégration avec d'autres APIs tierces, cette approche offre une flexibilité optimale.
+  En combinant **Symfony** en backend et **Vue.js** en frontend, je crée des applications dynamiques qui communiquent efficacement. Que ce soit pour des interfaces web, des applications mobiles ou l'intégration avec d'autres APIs tierces, cette approche offre une flexibilité optimale.
 
   Ainsi, le déploiement d’une application type SPA et la mise en place de composants réutilisables devient rapide et simple. Vous bénéficiez ainsi d'une **expérience utilisateur fluide** et d'une **gestion de projet** plus efficace.
 aboutSection2Title: Des techniques modernes et éprouvées.
@@ -41,7 +41,7 @@ method3Title: Bonnes pratiques
 method3Text: |
   J’utilise des **normes de codage** et des outils comme **Prettier** ou **PHPCS** afin de livrer du code répondant aux standards et avec un haut taux de **maintenabilité**.
 ---
-Je travaille principalement avec des outils et des frameworks modernes comme **Symfony, VueJS, WordPress, Gridsome, Eleventy**...
+Je travaille principalement avec des outils et des frameworks modernes comme **Symfony, Vue.js, WordPress, Gridsome, Eleventy**...
 
 Je suis un développeur web autodidacte avec plus de **15 ans d’expérience**, et je suis freelance depuis 2012.
 
