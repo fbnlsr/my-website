@@ -6,7 +6,7 @@ layout: "base.njk"
 
     <div class="is-showcase">
         {%- if desktopScreenshots -%}
-            <div class="is-laptop">
+            <div class="is-laptop {% if mobileScreenshots == null %}laptop-only{% endif %}">
                 <div class="is-laptop-content glide">
                     <div data-glide-el="track" class="glide__track">
                         <ul class="glide__slides">
@@ -81,11 +81,4 @@ layout: "base.njk"
             </div>
         {%- endif -%}
     </div>
-
-    {%- if projectUrl -%}
-        <div class="btn is-project-url-btn">
-            <a href="{{ projectUrl }}" target="_blank">{{ i18n[locale]['visitWebsite'] }}</a>
-        </div>
-    {%- endif -%}
-
 </div>

@@ -88,6 +88,10 @@ layout: base.njk
           <input type="email" name="email" id="contactEmail"/>
         </div>
         <div class="form-item">
+          <label for="contactPhone">{{ i18n[locale]['contactFormPhone'] }}</label>
+          <input type="text" name="phone" id="contactPhone"/>
+        </div>
+        <div class="form-item">
           <label for="contactMessage">{{ i18n[locale]['contactFormMessage'] }}</label>
           <textarea rows="8" name="message" id="contactMessage"></textarea>
         </div>

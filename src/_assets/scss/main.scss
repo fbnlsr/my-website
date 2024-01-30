@@ -53,6 +53,11 @@ hr {
   background-color: $blue;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 .btn {
   display: inline-block;
   text-align: center;

@@ -133,10 +133,20 @@
 
       .title {
         font-size: 1.5rem;
+        font-family: $montserrat;
+        font-weight: 700;
+        color: $blue;
+
+        a,
+        a:visited,
+        a:active {
+          text-decoration: none;
+          color: inherit;
+        }
       }
 
       .date {
-        color: lighten($gray1, 10%);
+        color: $gray1;
         text-transform: uppercase;
         font-size: 0.8rem;
       }
@@ -144,6 +154,8 @@
       .excerpt {
         flex-grow: 1;
         margin-bottom: 1rem;
+        font-family: $nunito;
+        font-size: 18px;
       }
 
       .bottom {
@@ -153,6 +165,14 @@
           flex-grow: 1;
           align-self: flex-end;
           margin-bottom: 0;
+          color: $blue;
+          font-family: $nunito;
+
+          a,
+          a:visited,
+          a:active {
+            color: inherit;
+          }
         }
       }
     }
@@ -215,7 +235,7 @@
       }
 
       &.is-dark {
-        background-color: #161616;
+        background-color: #1b1b1b;
       }
 
       &.is-sand {
@@ -233,7 +253,7 @@
   }
 
   .title-container {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 140px);
 
     .background-cover {
       background-position: center center;
@@ -250,7 +270,7 @@
           transparent,
           transparent
         );
-        height: calc(100vh - 70px);
+        height: calc(100vh - 140px);
         position: relative;
         transition: all 0.4s ease-in-out;
       }
@@ -342,7 +362,7 @@
   }
 
   article {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $nunito;
     font-size: 1.25rem;
     padding: 0 1rem;
     max-width: 800px;
@@ -351,6 +371,7 @@
 
     a {
       text-decoration: underline;
+      color: inherit;
     }
 
     p,
@@ -529,6 +550,10 @@
     display: block;
     padding: 1rem;
     margin-bottom: 3rem;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   .links {
@@ -563,7 +588,7 @@
   }
 
   &.is-dark {
-    background-color: #161616;
+    background-color: #1b1b1b;
     color: #f0f0f0;
 
     .is-color-changer {

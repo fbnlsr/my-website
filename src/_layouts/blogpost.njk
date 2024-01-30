@@ -73,7 +73,7 @@ layout: "base.njk"
     <img class="is-bullet-end-article" src="/img/bullet-big.png" alt="Bullet">
 
     <div class="btn is-twitter-share">
-        <a href="https://twitter.com/share?url={{ page.url }}&text={{ title }}&via=fbnlsr">{{ i18n[locale]['twitterShare'] | safe }}</a>
+        <a href="https://twitter.com/share?url={{ site.url + page.url }}&text={{ title }}&via=fbnlsr">{{ i18n[locale]['twitterShare'] | safe }}</a>
     </div>
 
     {%- if links.devto or links.medium -%}

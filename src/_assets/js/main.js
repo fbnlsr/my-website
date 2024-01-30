@@ -136,10 +136,11 @@ domReady(() => {
     // Syncing mobile carousel with desktop one
     if (glideDesktop) {
       glideDesktop.on('run', () => {
+        const i = glideDesktop.index;
+        setActiveDot(i);
+
         if (glideMobileContainer.length > 0) {
-          const i = glideDesktop.index;
           glideMobile.go(`=${i}`);
-          setActiveDot(i);
         }
       });
     }

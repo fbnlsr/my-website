@@ -43,6 +43,16 @@
       @media only screen and (max-width: 600px) {
         display: none;
       }
+
+      &.laptop-only {
+        @media only screen and (max-width: 600px) {
+          display: block;
+          height: initial;
+          background-image: none;
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+      }
     }
 
     .is-mobile {
@@ -117,6 +127,7 @@
           background-color: $gray1;
           border-radius: 50%;
           margin: 0 5px;
+          list-style: none;
 
           button {
             display: none;
@@ -133,7 +144,8 @@
       }
 
       @media only screen and (max-width: 600px) {
-        display: none;
+        position: relative;
+        top: 30px;
       }
     }
   }
@@ -144,11 +156,37 @@
     line-height: 1.8;
     margin-bottom: 2rem;
 
+    @media screen and (min-width: 769px) {
+      &.columns:not(.is-desktop) {
+        display: flex;
+      }
+    }
+
+    .column {
+      display: block;
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 0.75rem;
+
+      &.is-one-quarter {
+        flex: none;
+        width: 25%;
+      }
+    }
+
     .is-long-description {
+      font-family: $nunito;
+      font-size: 18px;
       margin-bottom: 1rem;
 
       p {
         margin-bottom: 1rem;
+
+        a {
+          color: inherit;
+          text-decoration: underline;
+        }
       }
 
       &:last-child {
@@ -160,11 +198,33 @@
       margin-bottom: 1rem;
     }
 
+    .is-project-back-link {
+      a {
+        background-color: white;
+        color: $blue;
+        display: inline-block;
+        text-decoration: none;
+        padding: 8px 30px;
+        border: 1px solid $blue;
+        border-radius: 5px;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          background-color: $blue;
+          color: white;
+        }
+      }
+    }
+
     .is-project-used {
       display: block;
       border-left: 4px solid $blue;
       padding-left: 1rem;
       padding-bottom: 1rem;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
 
       p {
         margin-bottom: 1rem;
@@ -172,6 +232,7 @@
 
       ul {
         list-style: none;
+        font-family: $nunito;
 
         li::before {
           content: '\2022';

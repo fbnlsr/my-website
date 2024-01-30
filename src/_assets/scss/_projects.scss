@@ -6,9 +6,12 @@
   .sample {
     text-align: center;
     margin: 0 4rem 3rem 4rem;
+    font-family: $nunito;
+    font-size: 20px;
 
     a {
       text-decoration: underline;
+      color: inherit;
     }
   }
 
@@ -33,6 +36,9 @@
       border-left: 4px solid $blue;
       margin-bottom: 1rem;
       transition: color 0.2s ease-out, background-color 0.2s ease-out;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: $montserrat;
     }
 
     .content {
@@ -50,11 +56,16 @@
         font-weight: bold;
         color: $gray1;
         margin-bottom: 1rem;
+        font-family: $nunito;
+        font-size: 18px;
       }
 
       .description {
         p {
           margin-bottom: 1rem;
+          line-height: 1.4;
+          font-family: $nunito;
+          font-size: 18px;
         }
       }
 
@@ -67,6 +78,7 @@
       .is-project-btn {
         text-align: left;
         margin-bottom: 0;
+        text-decoration: none;
       }
     }
 
