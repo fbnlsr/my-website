@@ -10,6 +10,6 @@ aboutMe: |
 
 # 👋 Bonjour !
 
-Je m’appelle Fabien et je suis dévelopeur web full stack, basé à Bordeaux.
+Je m’appelle Fabien et je suis développeur web full stack, basé à Bordeaux.
 
 <a class="cta cta-big cta-home" href="/fr/#contact">Me contacter</a>
