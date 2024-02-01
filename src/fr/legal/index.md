@@ -4,6 +4,8 @@ permalink: '/fr/mentions-legales/'
 ---
 # Mentions légales
 
+<div class="white-container">
+
 ## Identification
 
 ### Propriété
@@ -24,6 +26,10 @@ Tél : 06 03 35 19 63
 
 E-mail : hello@primative.net
 
+</div>
+
+<div class="white-container">
+
 ## Hébergement
 
 Directeur de la publication : Fabien Lasserre.
@@ -33,6 +39,10 @@ Le site internet est hébergé par la société [Netlify](https://www.netlify.co
 Netlify, Inc.
 512 2nd Street, Suite 200
 San Francisco, CA 94107
+
+</div>
+
+<div class="white-container">
 
 ## Données personnelles
 
@@ -48,12 +58,22 @@ Pour exercer ces droits ou pour toute question sur le traitement de vos données
 
 Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés » ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.
 
+</div>
+
+<div class="white-container">
+
 ## Cookies
 
 Ce site internet utilise un seul et unique cookie permettant de sauvegarder la couleur de fond des articles rédigés dans la partie Blog. Le site respecte votre vie privée : aucune mesure d'audience ou de fréquentation n'est effectuée par l'intermédiaire de cookies.
+
+</div>
+
+<div class="white-container">
 
 ## Propriété intellectuelle
 
 Le design, le logo et le contenu rédactionnel de ce site internet est l'entière propriété de Fabien Lasserre.
 
 Les illustrations et pictogrammes de la page « À propos » sont fournis par https://www.freepik.com
+
+</div>

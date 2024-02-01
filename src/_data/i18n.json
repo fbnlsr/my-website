@@ -32,7 +32,8 @@
     "publishedOn": "Publié le",
     "postAlsoAvailable": "This post is also available in English.",
     "aboutCTA1": "J'ai besoin d'un développement sur mesure",
-    "aboutCTA2": "J'ai besoin d'un site vitrine"
+    "aboutCTA2": "J'ai besoin d'un site vitrine",
+    "misc": "Divers"
   },
   "en": {
     "sitename": "Fabien Lasserre – Full stack web developer",
@@ -67,6 +68,7 @@
     "publishedOn": "Published on",
     "postAlsoAvailable": "Ce post est aussi disponible en Français.",
     "aboutCTA1": "I need a tailor-made development",
-    "aboutCTA2": "I need a corporate website"
+    "aboutCTA2": "I need a corporate website",
+    "misc": "Misc"
   }
 }

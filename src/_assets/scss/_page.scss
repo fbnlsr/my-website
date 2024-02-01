@@ -6,6 +6,14 @@
   font-family: $nunito;
   font-size: 18px;
 
+  .white-container {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   h2 {
     font-family: $montserrat;
     font-size: 24px;
