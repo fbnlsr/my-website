@@ -49,3 +49,5 @@
 /fr/projects/healthy-warriors/                              /fr/projet/healthy-warriors/
 /fr/projects/18-55-productions/                             /fr/projet/18-55-productions/
 /fr/blog/rendez-votre-site-web-plus-rapide-en-1-minute-avec-instant.page/   /fr/blog/rendez-votre-site-web-plus-rapide-en-1-minute-avec-instant-page/
+/fr/*   /fr/404.html 404
+/en/*   /en/404.html 404

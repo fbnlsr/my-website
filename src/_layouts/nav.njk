@@ -1,6 +1,3 @@
-{%- if category == "404" -%}
-    {%- set locale = "fr" -%}
-{%- endif -%}
 <nav class="navbar" aria-label="main navigation">
     <div class="navbar-menu">
         <a href="/{{ locale }}/" class="logo-header"><img width="50" height="35" src="/img/logo.svg" alt="Primative logo"/></a>
@@ -10,9 +7,9 @@
     </div>
     <div class="navbar-bottom">
         {% if locale == "fr" %}
-            <a href="/en">English</a>
+            <a href="/en/">English</a>
         {% else %}
-            <a href="/fr">Français</a>
+            <a href="/fr/">Français</a>
         {% endif %}
     </div>
 
@@ -22,9 +19,9 @@
             <a class="navbar-item {% if (page.url == "/" + locale + "/" and item.translationKey == "home") or page.url == "/" + locale + "/" + item.url[locale] + "/" or item.translationKey == category -%}is-active{%- endif -%}" href="/{{ locale }}/{{ item.url[locale] }}">{{ i18n[locale][item.translationKey] }}</a>
         {%- endfor -%}
         {% if locale == "fr" %}
-            <a class="navbar-item navbar-item-lang" href="/en">English</a>
+            <a class="navbar-item navbar-item-lang" href="/en/">English</a>
         {% else %}
-            <a class="navbar-item navbar-item-lang" href="/fr">Français</a>
+            <a class="navbar-item navbar-item-lang" href="/fr/">Français</a>
         {% endif %}
     </div>
 
