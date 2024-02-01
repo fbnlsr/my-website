@@ -1,0 +1,12 @@
+---
+layout: "base.njk"
+---
+<div class="contact-page-container">
+    {{ content | safe }}
+
+    {% include './contactform.njk' %}
+
+    <div class="contact-end-text">
+        {{ contactEndText | markdownify | safe }}
+    </div>
+</div>

@@ -265,7 +265,7 @@ domReady(() => {
       }, 30000);
     }, 10000);
 
-    // Making notification disapear on click
+    // Making notification disappear on click
     const closeListen = document.getElementById('closeListen');
     closeListen.addEventListener('click', () => {
       heyListen.classList.remove('is-active');

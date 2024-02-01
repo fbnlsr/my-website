@@ -32,6 +32,14 @@
         "fr": "blog"
       },
       "external": false
+    },
+    {
+      "translationKey": "contact",
+      "url": {
+        "en": "contact",
+        "fr": "contact"
+      },
+      "external": false
     }
   ],
   "languages": [

@@ -1,0 +1,32 @@
+<div class="contact-text">
+    <p class="text-center">
+        <strong>{{ i18n[locale]['contactLine1'] }}</strong>
+    </p>
+    <p class="text-center">
+        {{ i18n[locale]['contactLine2'] }}
+    </p>
+</div>
+
+<div class="contact-container white-container">
+    <form name="contact" method="post" netlify>
+        <div class="form-item">
+            <label for="contactName">{{ i18n[locale]['contactFormName'] }}</label>
+            <input type="text" name="name" id="contactName" required/>
+        </div>
+        <div class="form-item">
+            <label for="contactEmail">{{ i18n[locale]['contactFormEmail'] }}</label>
+            <input type="email" name="email" id="contactEmail" required/>
+        </div>
+        <div class="form-item">
+            <label for="contactPhone">{{ i18n[locale]['contactFormPhone'] }}</label>
+            <input type="text" name="phone" id="contactPhone" required/>
+        </div>
+        <div class="form-item">
+            <label for="contactMessage">{{ i18n[locale]['contactFormMessage'] }}</label>
+            <textarea rows="8" name="message" id="contactMessage" required></textarea>
+        </div>
+        <div class="form-item">
+            <input type="submit" value="{{ i18n[locale]['contactFormSend'] }}"/>
+        </div>
+    </form>
+</div>

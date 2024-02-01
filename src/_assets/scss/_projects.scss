@@ -112,34 +112,6 @@
     }
   }
 
-  .bullet {
-    display: none;
-    margin: auto;
-    margin: 3rem 10rem;
-    position: relative;
-    height: 1px;
-
-    &:after {
-      content: '';
-      height: 12px;
-      width: 12px;
-      background-image: url('/img/bullet.png');
-      position: absolute;
-      left: calc(50% - 12px);
-      top: -5px;
-    }
-
-    &:last-child {
-      display: none;
-      margin: 0;
-
-      &:after {
-        content: '';
-        background-image: none;
-      }
-    }
-  }
-
   @media only screen and (max-width: 900px) {
     .project {
       margin-bottom: 4rem;

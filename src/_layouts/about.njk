@@ -50,13 +50,17 @@ layout: base.njk
     </div>
   </div>
 
+  <div class="about-cta">
+    <a class="cta" href="/{{ locale }}/contact">{{ i18n[locale]['aboutCTA1'] }}</a>
+  </div>
+
   <!-- WordPress / JAMStack -->
   <div class="blue-container">
     <div class="blue-content">
       <h2>{{ aboutBox2Title }}</h2>
       {{ aboutBox2Text | markdownify | safe }}
       <div class="tools">
-        <img src="/img/wordpress2.svg" alt="Wordpress"/>
+        <img src="/img/wordpress.svg" alt="Wordpress"/>
         <img src="/img/jamstack.svg" alt="JAMStack"/>
       </div>
     </div>
@@ -90,6 +94,10 @@ layout: base.njk
     <div class="about-picto">
       <img src="/img/about-statue.png" alt="Statue"/>
     </div>
+  </div>
+
+  <div class="about-cta">
+    <a class="cta" href="/{{ locale }}/contact">{{ i18n[locale]['aboutCTA2'] }}</a>
   </div>
 
   <!-- Method -->

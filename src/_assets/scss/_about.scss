@@ -247,4 +247,24 @@
       }
     }
   }
+
+  .about-cta {
+    text-align: center;
+
+    .cta {
+      text-decoration: none;
+      font-family: $montserrat;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 20px 50px;
+      background-color: $blue;
+      color: white;
+      border-radius: 5px;
+      box-shadow: 0 10px 10px -10px $gray1;
+
+      &:hover {
+        background-color: lighten($blue, 10%);
+      }
+    }
+  }
 }

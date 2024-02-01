@@ -12,10 +12,12 @@
 @import 'variables';
 @import 'nav';
 @import 'home';
+@import 'contact';
 @import 'about';
 @import 'projects';
 @import 'project';
 @import 'blog';
+@import 'page';
 @import '404';
 @import 'footer';
 
@@ -101,4 +103,11 @@ button:active {
 
 .site {
   flex-grow: 1;
+}
+
+.white-container {
+  background-color: white;
+  border: 1px solid $blue;
+  padding: 1rem;
+  border-radius: 5px;
 }

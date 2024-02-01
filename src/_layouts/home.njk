@@ -12,7 +12,7 @@ layout: base.njk
     <div class="frameworks">
       <img src="/img/symfony.svg" class="framework" alt="Symfony"/>
       <img src="/img/vue.svg" class="framework" alt="Vue.js"/>
-      <img src="/img/wordpress2.svg" class="framework" alt="Wordpress"/>
+      <img src="/img/wordpress.svg" class="framework" alt="Wordpress"/>
       <img src="/img/jamstack.svg" class="framework" alt="JAMstack"/>
     </div>
     {% if locale == "fr" -%}
@@ -69,38 +69,9 @@ layout: base.njk
 
   <div class="home-section home-contact" id="contact">
     <h2>Contact</h2>
-    <div class="home-contact-text">
-      <p class="text-center">
-        <strong>{{ i18n[locale]['contactLine1'] }}</strong>
-      </p>
-      <p class="text-center">
-        {{ i18n[locale]['contactLine2'] }}
-      </p>
-    </div>
-    <div class="home-contact-container white-container">
-      <form name="contact" method="post" netlify>
-        <div class="form-item">
-          <label for="contactName">{{ i18n[locale]['contactFormName'] }}</label>
-          <input type="text" name="name" id="contactName"/>
-        </div>
-        <div class="form-item">
-          <label for="contactEmail">{{ i18n[locale]['contactFormEmail'] }}</label>
-          <input type="email" name="email" id="contactEmail"/>
-        </div>
-        <div class="form-item">
-          <label for="contactPhone">{{ i18n[locale]['contactFormPhone'] }}</label>
-          <input type="text" name="phone" id="contactPhone"/>
-        </div>
-        <div class="form-item">
-          <label for="contactMessage">{{ i18n[locale]['contactFormMessage'] }}</label>
-          <textarea rows="8" name="message" id="contactMessage"></textarea>
-        </div>
-        <div class="form-item">
-          <input type="submit" value="{{ i18n[locale]['contactFormSend'] }}"/>
-        </div>
-      </form>
-    </div>
+    {% include './contactform.njk' %}
   </div>
+
 </div>
 
 {% set lastpost = collections[last_post_collection] | reverse | first %}

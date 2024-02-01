@@ -105,6 +105,18 @@
             <a href="tel:+33603351963">{{ i18n[locale]['contactTel'] | safe }}</a>
           </p>
         </div>
+        <div class="contact">
+          <p>
+            <strong>Divers</strong>
+          </p>
+          <p>
+            {% if locale == 'fr' %}
+              <a href="/fr/mentions-legales/">Mentions légales</a>
+            {% else %}
+              <a href="/en/legal/">Legal</a>
+            {% endif %}
+          </p>
+        </div>
       </div>
     </div>
 
