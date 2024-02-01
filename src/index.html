@@ -1,5 +1,15 @@
 <html>
   <head>
-    <meta http-equiv="refresh" content="0;/fr" />
+    <title>Fabien Lasserre - Full stack web developer</title>
   </head>
+  <body>
+    <script>
+      const langs = navigator.language;
+      if (langs.includes('en')) {
+        document.location.href = '/en/';
+      } else {
+        document.location.href = '/fr/';
+      }
+    </script>
+  </body>
 </html>
