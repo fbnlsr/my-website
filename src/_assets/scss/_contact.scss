@@ -4,6 +4,14 @@
   p {
     margin-top: 0;
     margin-bottom: 0.4rem;
+    text-align: center;
+
+    a,
+    a:visited,
+    a:active {
+      color: inherit;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -68,18 +76,6 @@
       &:last-child {
         margin-bottom: 50px;
       }
-    }
-  }
-
-  .contact-end-text {
-    margin-top: 70px;
-    text-align: center;
-
-    a,
-    a:visited,
-    a:active {
-      color: inherit;
-      text-decoration: underline;
     }
   }
 }

@@ -1,10 +1,9 @@
 <div class="contact-text">
-    <p class="text-center">
-        <strong>{{ i18n[locale]['contactLine1'] }}</strong>
-    </p>
-    <p class="text-center">
-        {{ i18n[locale]['contactLine2'] }}
-    </p>
+    {{ i18n[locale]['contactLine1'] | markdownify | safe}}
+
+    {{ i18n[locale]['contactLine2'] | markdownify | safe }}
+
+    {{ i18n[locale]['contactLine3'] | markdownify | safe }}
 </div>
 
 <div class="contact-container white-container">

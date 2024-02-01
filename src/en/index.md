@@ -12,4 +12,4 @@ aboutMe: |
 
 My name is Fabien and I’m a full stack web developer based in Bordeaux, France.
 
-**I'm currently available for freelance missions, feel free to [contact me](/en/#contact)!**
+<a class="cta cta-big cta-home" href="/en/#contact">Get in touch</a>

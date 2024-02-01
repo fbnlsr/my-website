@@ -52,7 +52,7 @@
     {% if hasCover -%}
       <meta property="og:image" content="{{ site.url }}/img/blog/{{ date | blogdate }}/cover.jpg"/>
     {% else -%}
-      <meta property="og:image" content="{{ site.url }}/img/primative-og.jpg"/>
+      <meta property="og:image" content="{{ site.url }}/img/primative-og.png"/>
     {% endif -%}
     {% if locale == 'fr' -%}
       <meta property="og:locale" content="fr_FR"/>
@@ -91,18 +91,10 @@
       <div class="left-side">
         <div class="contact">
           <p>
-            <strong>{{ i18n[locale]['email'] }}</strong>
+            <strong>{{ i18n[locale]['contact'] }}</strong>
           </p>
           <p>
             <a href="mailto:hello@primative.net">hello@primative.net</a>
-          </p>
-        </div>
-        <div class="contact">
-          <p>
-            <strong>{{ i18n[locale]['phone'] }}</strong>
-          </p>
-          <p>
-            <a href="tel:+33603351963">{{ i18n[locale]['contactTel'] | safe }}</a>
           </p>
         </div>
         <div class="contact">

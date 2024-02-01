@@ -13,8 +13,16 @@
     font-family: $nunito;
     font-size: 24px;
 
+    .cta-home {
+      margin-top: 20px;
+    }
+
     p {
       margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     a {
@@ -65,12 +73,16 @@
       color: #fff;
       font-family: $montserrat;
       text-decoration: none;
-      padding: 20px 50px;
+      padding: 15px 40px;
+      font-size: 18px;
       border-radius: 5px;
+      display: inline-block;
 
       &.cta-big {
         font-size: 24px;
         font-weight: 700;
+        padding: 18px 50px;
+        box-shadow: 0 10px 10px -10px $gray1;
       }
 
       &.cta-small {
@@ -257,6 +269,8 @@
 
       img {
         margin-bottom: 20px;
+        width: 220px;
+        height: 220px;
       }
 
       h1 {

@@ -36,6 +36,10 @@ body {
   overflow: initial;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background;
   color: $text;
