@@ -1,0 +1,46 @@
+---
+layout: "base.njk"
+---
+<h1>{{ i18n[locale]['notes'] }}</h1>
+
+<div class="blog-list is-clearfix">
+    {%- for post in collections["posts_" + locale] | reverse -%}
+        {%- set blocWidth = "" -%}
+        {%- if loop.index0 == 0 or loop.index0 % 3 == 0 -%}
+            {%- set blocWidth = "is-full" -%}
+        {%- else -%}
+            {% set blocWidth = "is-half" -%}
+        {%- endif -%}
+
+        <div class="blog-bloc {{ blocWidth }}">
+            {%- if post.data.hasCover -%}
+                <div class="blog-cover lazy" data-src="/img/blog/{{ post.date | blogdate }}/cover.jpg">
+                    {%- if post.data.draft == true -%}
+                        <div class="is-draft">draft</div>
+                    {%- endif -%}
+                    <a href="{{ post.url }}"></a>
+                </div>
+            {%- endif -%}
+            <div class="blog-excerpt">
+                <p class="title">
+                    <a href="{{ post.url }}">
+                        {%- if post.data.draft == true -%}[DRAFT] - {% endif -%}{{ post.data.title }}</a>
+                </p>
+                <p class="date">
+                    {% humandate post.data.date,
+                    locale %} - {{ post.content | readingTime }}.
+                    </p>
+                <div class="excerpt">
+                    {%- if post.data.excerpt -%}
+                        {{ post.data.excerpt | markdownify | emojify | safe }}
+                    {%- endif -%}
+                </div>
+                <div class="bottom">
+                    <p class="more">
+                        <a href="{{ post.url }}">{{ i18n[locale]['readmore'] }}</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    {%- endfor -%}
+</div>

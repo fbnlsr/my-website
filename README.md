@@ -4,7 +4,7 @@
 
 [https://primative.net](https://primative.net)
 
-This is my personal website. It was made using [Hugo](https://gohugo.io/).
+This is my personal website. It was made using [11ty](https://11ty.dev/).
 
 ## Build
 
@@ -12,31 +12,15 @@ This is my personal website. It was made using [Hugo](https://gohugo.io/).
 npm run build
 ```
 
-This will run `webpack` to build the CSS and Javascript, and `hugo` to generate the site.
+This will build the site in the `dist` directory.
 
 ## Serve
 
 ```bash
-npm run serve
+npm start
 ```
 
-This will do the same as `npm run build`, and run Hugo's built-in web server.
-
-## Watch
-
-```bash
-npm run watch
-```
-
-## Prod
-
-```bash
-npm run prod
-```
-
-Used by Netlify. It does the same thing as the `build` task and minifies assets.
-
-This will do the same as `npm run serve` and monitor changes for any `.scss` or `.js` file, thus rebuilding the site on any change.
+This will do the same as `npm run build`, and run 11ty's built-in web server.
 
 ## Commit emojis
 
@@ -46,7 +30,7 @@ This will do the same as `npm run serve` and monitor changes for any `.scss` or 
 | `:bug:`      |  🐛   | Fix bug                     |
 | `:sparkles:` |  ✨   | New feature                 |
 | `:art:`      |  🎨   | Clean code                  |
-| `:pencil2:`  |  ✏️   | Add text / write blog post  |
+| `:pencil2:`  |  ✏️    | Add text / write blog post  |
 | `:memo:`     |  📝   | Documentation related       |
 | `:iphone:`   |  📱   | Responsive design work      |
 | `:lipstick:` |  💄   | Updating UI and style files |

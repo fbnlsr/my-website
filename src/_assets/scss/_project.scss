@@ -1,0 +1,253 @@
+.project {
+  h1 {
+    font-weight: 300;
+    line-height: 100px;
+    margin-bottom: 2rem;
+  }
+
+  .is-showcase {
+    position: relative;
+    max-width: 960px;
+    margin: auto;
+    margin-bottom: 2rem;
+
+    .is-laptop {
+      max-width: 960px;
+      margin: auto;
+      height: 513px;
+      display: block;
+      position: relative;
+      background-image: url('/img/laptop.png');
+      background-position: top center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      .is-laptop-content {
+        color: $background;
+        max-width: 628px;
+        margin: auto;
+        top: 35px;
+        overflow: hidden;
+      }
+
+      @media only screen and (max-width: 965px) {
+        max-width: 600px;
+        height: 325px;
+
+        .is-laptop-content {
+          max-width: 395px;
+          top: 21px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+
+      &.laptop-only {
+        @media only screen and (max-width: 600px) {
+          display: block;
+          height: initial;
+          background-image: none;
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .is-mobile {
+      display: block;
+      position: absolute;
+      width: 200px;
+      height: 350px;
+      right: 20px;
+      bottom: 0px;
+      background-image: url('/img/mobile.png');
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .is-mobile-content {
+        width: 140px;
+        height: 248px;
+        top: 40px;
+        left: 30px;
+      }
+
+      @media only screen and (max-width: 965px) {
+        width: 100px;
+        height: 200px;
+        right: 170px;
+        bottom: 50px;
+
+        .is-mobile-content {
+          width: 79px;
+          height: 100px;
+          top: 23px;
+          left: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        position: relative;
+        top: initial;
+        left: initial;
+        right: initial;
+        bottom: initial;
+        margin: auto;
+        width: 200px;
+        height: 350px;
+
+        .is-mobile-content {
+          width: 140px;
+          height: 248px;
+          top: 40px;
+          left: 30px;
+        }
+      }
+    }
+
+    .slideshow-markers {
+      display: inline;
+      text-align: center;
+
+      .glide-dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        li {
+          width: 12px;
+          height: 12px;
+          background-color: $gray1;
+          border-radius: 50%;
+          margin: 0 5px;
+          list-style: none;
+
+          button {
+            display: none;
+          }
+
+          &.is-active {
+            background-color: $blue;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        position: relative;
+        top: 30px;
+      }
+    }
+  }
+
+  .is-description-block {
+    max-width: 960px;
+    margin: auto;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 769px) {
+      &.columns:not(.is-desktop) {
+        display: flex;
+      }
+    }
+
+    .column {
+      display: block;
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 0.75rem;
+
+      &.is-one-quarter {
+        flex: none;
+        width: 25%;
+      }
+    }
+
+    .is-long-description {
+      font-family: $nunito;
+      font-size: 18px;
+      margin-bottom: 1rem;
+
+      p {
+        margin-bottom: 1rem;
+
+        a {
+          color: inherit;
+          text-decoration: underline;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .is-client {
+      margin-bottom: 1rem;
+    }
+
+    .is-project-back-link {
+      a {
+        background-color: white;
+        color: $blue;
+        display: inline-block;
+        text-decoration: none;
+        padding: 8px 30px;
+        border: 1px solid $blue;
+        border-radius: 5px;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          background-color: $blue;
+          color: white;
+        }
+      }
+    }
+
+    .is-project-used {
+      display: block;
+      border-left: 4px solid $blue;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        font-family: $nunito;
+
+        li::before {
+          content: '\2022';
+          color: #1976d2;
+          font-weight: bold;
+          display: inline-block;
+          width: 0.75em;
+        }
+      }
+    }
+  }
+
+  .is-project-url-btn {
+    display: block;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+}

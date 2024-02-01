@@ -1,0 +1,98 @@
+---
+layout: base.njk
+---
+<div class="home">
+  <div class="home-section content">
+    {{ content | safe }}
+  </div>
+
+  <div class="home-section home-about">
+    <h2>{{ i18n[locale]['aboutMe'] }}</h2>
+    <div>{{ aboutMe | markdownify | safe }}</div>
+    <div class="frameworks">
+      <img src="/img/symfony.svg" class="framework" alt="Symfony"/>
+      <img src="/img/vue.svg" class="framework" alt="Vue.js"/>
+      <img src="/img/wordpress.svg" class="framework" alt="Wordpress"/>
+      <img src="/img/jamstack.svg" class="framework" alt="JAMstack"/>
+    </div>
+    {% if locale == "fr" -%}
+      <a class="cta cta-big" href="/fr/a-propos/">En savoir plus</a>
+    {%- else -%}
+      <a class="cta cta-big" href="/en/about/">Learn more</a>
+    {% endif -%}
+  </div>
+
+  <div class="home-section home-projects">
+    <h2>{{ i18n[locale]['projects']}}</h2>
+    <div class="home-projects-container">
+      <div class="home-projects-slide">
+        {% for i in range(0, 2) %}
+          {% for project in collections["projects_" + locale] | reverse %}
+            <div class="home-project">
+              <a href="{{ project.url }}">
+                <div><img class="cover" src="{{ project.data.projectImgDir }}/cover.jpg" alt="{{ project.data.title }} cover"/></div>
+                <p class="title">{{ project.data.title }}</p>
+                <p class="work">{{ project.data.tech }}</p>
+              </a>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="cta-container">
+      {% if locale == "fr" -%}
+        <a class="cta cta-small" href="/fr/projets/">Voir les projets</a>
+      {%- else -%}
+        <a class="cta cta-small" href="/en/projects/">View projects</a>
+      {% endif -%}
+    </div>
+  </div>
+
+  <div class="home-section home-blog">
+    <h2>{{ i18n[locale]['lastPosts'] }}</h2>
+    <div class="white-container">
+      {% for post in (collections["posts_" + locale] | reverse).slice(0, 3) %}
+        <div class="post">
+          <p class="post-title">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+          </p>
+          <p class="post-date">{% humandate post.data.date,
+            locale %} - {{ post.content | readingTime }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="home-blog-more">
+      <a href="/{{ locale }}/blog/">{{ i18n[locale]['morePosts'] }}</a>
+    </div>
+  </div>
+
+  <div class="home-section home-contact" id="contact">
+    <h2>Contact</h2>
+    {% include './contactform.njk' %}
+  </div>
+
+</div>
+
+{% set lastpost = collections[last_post_collection] | reverse | first %}
+<div id="heyListen">
+  <div class="card-image" style="background-image: url('/img/blog/{{ lastpost.date | blogdate }}/cover.jpg');">
+    <a href="#!" class="delete" id="closeListen" aria-label="Close">
+      <svg viewBox="0 0 24 24">
+        <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+      </svg>
+    </a>
+  </div>
+  <div class="card-content">
+    <div class="content">
+      <p>
+        <strong>{{ i18n[locale]['lastPost'] }}</strong>
+      </p>
+      <p>
+        <a href="{{ lastpost.url }}" aria-label="{{ lastpost.data.title }}">
+          <strong>{{ lastpost.data.title }}</strong>
+        </a>
+      </p>
+    </div>
+  </div>
+</div>

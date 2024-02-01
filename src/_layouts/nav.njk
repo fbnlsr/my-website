@@ -1,0 +1,35 @@
+<nav class="navbar" aria-label="main navigation">
+    <div class="navbar-menu">
+        <a href="/{{ locale }}/" class="logo-header"><img width="50" height="35" src="/img/logo.svg" alt="Primative logo"/></a>
+        {%- for item in site.headerLinks -%}
+            <a class="navbar-item {% if (page.url == "/" + locale + "/" and item.translationKey == "home") or page.url == "/" + locale + "/" + item.url[locale] + "/" or item.translationKey == category -%}is-active{%- endif -%}" href="/{{ locale }}/{{ item.url[locale] }}">{{ i18n[locale][item.translationKey] }}</a>
+        {%- endfor -%}
+    </div>
+    <div class="navbar-bottom">
+        {% if locale == "fr" %}
+            <a href="/en/">English</a>
+        {% else %}
+            <a href="/fr/">Français</a>
+        {% endif %}
+    </div>
+
+    <div id="mobileNav" class="nav-mobile">
+        <a class="navbar-item" href="/{{ locale }}/" class="logo-header"><img width="50" height="35" src="/img/logo.svg" alt="Primative logo"/></a>
+        {%- for item in site.headerLinks -%}
+            <a class="navbar-item {% if (page.url == "/" + locale + "/" and item.translationKey == "home") or page.url == "/" + locale + "/" + item.url[locale] + "/" or item.translationKey == category -%}is-active{%- endif -%}" href="/{{ locale }}/{{ item.url[locale] }}">{{ i18n[locale][item.translationKey] }}</a>
+        {%- endfor -%}
+        {% if locale == "fr" %}
+            <a class="navbar-item navbar-item-lang" href="/en/">English</a>
+        {% else %}
+            <a class="navbar-item navbar-item-lang" href="/fr/">Français</a>
+        {% endif %}
+    </div>
+
+    <div class="navbar-burger" data-target="mobileNav">
+        <a href="#!">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</nav>

@@ -1,0 +1,84 @@
+---
+layout: "base.njk"
+---
+<div class="project">
+    <h1>{{ title }}</h1>
+
+    <div class="is-showcase">
+        {%- if desktopScreenshots -%}
+            <div class="is-laptop {% if mobileScreenshots == null %}laptop-only{% endif %}">
+                <div class="is-laptop-content glide">
+                    <div data-glide-el="track" class="glide__track">
+                        <ul class="glide__slides">
+                            {%- for item in desktopScreenshots -%}
+                                <li class="glide__slide"><img src="{{ projectImgDir }}/{{ item }}" alt="Project image"></li>
+                            {%- endfor -%}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {%- endif -%}
+
+        {%- if mobileScreenshots -%}
+            <div class="is-mobile">
+                <div class="is-mobile-content glide">
+                    <div data-glide-el="track" class="glide__track">
+                        <ul class="glide__slides">
+                            {%- for item in mobileScreenshots -%}
+                                <li class="glide__slide"><img src="{{ projectImgDir }}/{{ item }}" alt="Project image"></li>
+                            {%- endfor -%}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {%- endif -%}
+
+        {%- if desktopScreenshots -%}
+            <div class="slideshow-markers">
+                <ul class="glide-dots">
+                    {%- for item in desktopScreenshots -%}
+                        <li class="glide-dot {% if loop.index0 == 0 -%}is-active{%- endif -%}" id="dot-{{ loop.index0 }}" data-slide-id="{{ loop.index0 }}"></li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        {%- endif -%}
+    </div>
+
+    <div class="is-description-block columns">
+        <div class="column">
+            <div class="is-long-description">
+                {{ content | safe }}
+            </div>
+            <div class="is-client">
+                <p>
+                    <strong>{{ i18n[locale]['projectClient'] }}</strong>
+                    {{ client }}</p>
+            </div>
+            <div class="is-project-back-link">
+                {%- if locale == "fr" -%}
+                    <p>
+                        <a href="/fr/projets">Retour aux projets</a>
+                    </p>
+                {%- else -%}
+                    <p>
+                        <a href="/en/projects">Back to projects</a>
+                    </p>
+                {%- endif -%}
+            </div>
+        </div>
+        {%- if techUsed -%}
+            <div class="column is-one-quarter">
+                <span class="is-project-used">
+                    <p>
+                        <strong>{{ i18n[locale]['thisProjectUsed'] | safe }}</strong>
+                    </p>
+                    <ul>
+                        {%- for tech in techUsed -%}
+                            <li>{{ tech }}</li>
+                        {%- endfor -%}
+                    </ul>
+                </span>
+            </div>
+        {%- endif -%}
+    </div>
+</div>

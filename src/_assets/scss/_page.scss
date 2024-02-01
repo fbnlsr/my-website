@@ -1,0 +1,35 @@
+.page-container {
+  max-width: 900px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: $nunito;
+  font-size: 18px;
+
+  h2 {
+    font-family: $montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    color: $blue;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-family: $nunito;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    margin-top: 1.6rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    color: $blue;
+    text-decoration: underline;
+  }
+}

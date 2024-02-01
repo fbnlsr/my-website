@@ -1,0 +1,134 @@
+---
+layout: base.njk
+---
+<div class="about">
+  <h1>{{ title }}</h1>
+
+  <div class="content">
+    {{ content | safe }}
+  </div>
+
+  <!-- Symfony / Vue.js -->
+  <div class="blue-container">
+    <div class="blue-content">
+      <h2>{{ aboutBox1Title }}</h2>
+      {{ aboutBox1Text | markdownify | safe }}
+      <div class="tools">
+        <img src="/img/symfony.svg" alt="Symfony"/>
+        <img src="/img/vue.svg" alt="Vue.js"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-container">
+    <div class="about-section">
+      <h3>{{ aboutSection1Title }}</h3>
+      {{ aboutSection1Text | markdownify | safe }}
+    </div>
+    <div class="about-picto">
+      <img src="/img/about-drum.png" alt="Drums"/>
+    </div>
+  </div>
+
+  <div class="about-container align-right">
+    <div class="about-picto">
+      <img src="/img/about-conductor.png" alt="Conductor"/>
+    </div>
+    <div class="about-section">
+      <h3>{{ aboutSection2Title }}</h3>
+      {{ aboutSection2Text | markdownify | safe }}
+    </div>
+  </div>
+
+  <div class="about-container">
+    <div class="about-section">
+      <h3>{{ aboutSection3Title }}</h3>
+      {{ aboutSection3Text | markdownify | safe }}
+    </div>
+    <div class="about-picto">
+      <img src="/img/about-tambourine.png" alt="Tambourine"/>
+    </div>
+  </div>
+
+  <div class="about-cta">
+    <a class="cta" href="/{{ locale }}/contact">{{ i18n[locale]['aboutCTA1'] }}</a>
+  </div>
+
+  <!-- WordPress / JAMStack -->
+  <div class="blue-container">
+    <div class="blue-content">
+      <h2>{{ aboutBox2Title }}</h2>
+      {{ aboutBox2Text | markdownify | safe }}
+      <div class="tools">
+        <img src="/img/wordpress.svg" alt="Wordpress"/>
+        <img src="/img/jamstack.svg" alt="JAMStack"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-container">
+    <div class="about-section">
+      <h3>{{ aboutSection4Title }}</h3>
+      {{ aboutSection4Text | markdownify | safe }}
+    </div>
+    <div class="about-picto">
+      <img src="/img/about-toolbox.png" alt="Toolbox"/>
+    </div>
+  </div>
+
+  <div class="about-container align-right">
+    <div class="about-picto">
+      <img src="/img/about-ruler.png" alt="Ruler"/>
+    </div>
+    <div class="about-section">
+      <h3>{{ aboutSection5Title }}</h3>
+      {{ aboutSection5Text | markdownify | safe }}
+    </div>
+  </div>
+
+  <div class="about-container">
+    <div class="about-section">
+      <h3>{{ aboutSection6Title }}</h3>
+      {{ aboutSection6Text | markdownify | safe }}
+    </div>
+    <div class="about-picto">
+      <img src="/img/about-statue.png" alt="Statue"/>
+    </div>
+  </div>
+
+  <div class="about-cta">
+    <a class="cta" href="/{{ locale }}/contact">{{ i18n[locale]['aboutCTA2'] }}</a>
+  </div>
+
+  <!-- Method -->
+  <div class="blue-container">
+    <div class="blue-content">
+      <h2>{{ aboutBox3Title }}</h2>
+      {{ aboutBox3Text | markdownify | safe }}
+      <div class="tools">
+        <img src="/img/light-bulb.png" alt="Zing!"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="methods-container">
+    <div id="method2" class="method">
+      <img id="picto1" class="picto" src="/img/planning.png" alt="Planning"/>
+      <h3>{{ method2Title }}</h3>
+      {{ method2Text | markdownify | safe}}
+    </div>
+
+    <div id="method1" class="method">
+      <img id="picto2" class="picto" src="/img/code.png" alt="Code"/>
+      <h3>{{ method1Title }}</h3>
+      {{ method1Text | markdownify | safe}}
+    </div>
+
+    <div id="method3" class="method">
+      <img id="picto3" class="picto" src="/img/time.png" alt="Time"/>
+      <h3>{{ method3Title }}</h3>
+      {{ method3Text | markdownify | safe}}
+    </div>
+
+  </div>
+</div>

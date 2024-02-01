@@ -1,0 +1,164 @@
+.projects {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 4rem;
+
+  .sample {
+    text-align: center;
+    margin: 0 4rem 3rem 4rem;
+    font-family: $nunito;
+    font-size: 20px;
+
+    a {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+
+  .project {
+    @include clearfix;
+    padding: 2rem;
+    border: 1px solid rgba($gray1, 0.3);
+    background-color: white;
+    border-radius: 5px;
+    margin: 4rem;
+    box-shadow: 0 10px 10px -10px $gray1;
+
+    &:hover {
+      .cover img {
+        opacity: 1;
+      }
+    }
+
+    .title {
+      position: relative;
+      left: 0;
+      padding-left: 1rem;
+      border-left: 4px solid $blue;
+      margin-bottom: 1rem;
+      transition: color 0.2s ease-out, background-color 0.2s ease-out;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: $montserrat;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .infos {
+      padding: 0 2rem 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .work {
+        font-weight: bold;
+        color: $gray1;
+        margin-bottom: 1rem;
+        font-family: $nunito;
+        font-size: 18px;
+      }
+
+      .description {
+        p {
+          margin-bottom: 1rem;
+          line-height: 1.4;
+          font-family: $nunito;
+          font-size: 18px;
+        }
+      }
+
+      .description,
+      .client,
+      .link {
+        margin-bottom: 1rem;
+      }
+
+      .is-project-btn {
+        text-align: left;
+        margin-bottom: 0;
+        text-decoration: none;
+      }
+    }
+
+    .cover {
+      display: block;
+      width: 300px;
+      height: 190px;
+      position: relative;
+      display: block;
+      border-radius: 5px;
+      flex-shrink: 0;
+      background-color: rgba($gray1, 0.2);
+
+      img {
+        display: block;
+        position: relative;
+        width: 300px;
+        height: 190px;
+        border-radius: 5px;
+        opacity: 0.8;
+        transition: all 0.2s ease-out;
+        opacity: 1;
+        transition: opacity 0.3s;
+        border: 1px solid rgba($gray1, 0.2);
+
+        &[data-src] {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .project {
+      margin-bottom: 4rem;
+      padding: 2rem 1rem;
+
+      .title {
+        text-align: center;
+        border-left: none;
+        padding-left: none;
+      }
+
+      .content {
+        flex-direction: column-reverse;
+      }
+
+      .cover {
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .infos {
+        width: initial;
+        max-width: 490px;
+        float: initial;
+        margin: auto;
+
+        .is-project-btn {
+          display: block;
+          margin: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .project {
+      margin: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .project {
+      .cover {
+        display: none;
+      }
+    }
+  }
+}
