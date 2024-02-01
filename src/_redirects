@@ -1,6 +1,3 @@
----
-permalink: _redirects
----
 /                                                           /en/
 /about/                                                     /en/about/
 /projects/                                                  /en/projects/
