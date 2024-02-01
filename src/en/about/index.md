@@ -3,7 +3,7 @@ layout: "about.njk"
 translationKey: "about"
 title: "Know-how"
 aboutBox1Title: "Tailor-made development"
-aboutBox1Text: "Thanks to Open Source frameworks **Symfony** and **Vue.js**, I help my clients with deploying solutions that are **efficient, modern and maintainable**."
+aboutBox1Text: "Thanks to the Open Source frameworks **Symfony** and **Vue.js**, I help my clients with deploying solutions that are **efficient, modern and maintainable**."
 aboutSection1Title: "Benefit from a fast and efficient API."
 aboutSection1Text: |
   By combining **Symfony** and **Vue.js** with an API, I can create dynamic applications that communicate efficiently. Whether for web interfaces, web applications, or integrated with third-party APIs, this approach offers an optimal flexibility.
@@ -26,13 +26,13 @@ aboutSection5Text: |
   Regardless of the problem at hand, I create **a custom theme** that closely aligns with the expressed needs. This approach simplifies the updates for your website and ensures an optimal compatibility with the newest versions of the **WordPress Core** and the plugins used.
 aboutSection6Title: "Static sites, a return to basics."
 aboutSection6Text: |
-  Because they excel in terms of **speed** and **security**, I use **static site generators** to offer solutions that enable a rapid deployment, while allowing updating content with ease and maintaining the source code. Thanks to **Gridsome** or **Eleventy**, it's possible to smoothly and afforably launch a fairly flexible, remarkably fast and extremely lightweight website.
+  Because they excel in terms of **speed** and **security**, I use **static site generators** to offer solutions that allow for a rapid deployment, all the while allowing for easy content updates and maintaining a clean code base. Thanks to **Gridsome** or **Eleventy**, it's possible to smoothly and afforably launch a website that stays flexible, remarkably fast and extremely lightweight.
 aboutBox3Title: "Methodology"
 aboutBox3Text: |
   I'm making use of my experience in **teamwork** and my penchant for effective **productivity methods** to deploy robust, developer-friendly, and maintainable code.
 method1Title: "Code"
 method1Text: |
-  I work with an **RWD / Mobile First** approach for the frontend. I ensure the robustness of my code with **unit tests**. When in a team, I help with PRs and **code review**.
+  I work with an **RWD / Mobile First** approach for the frontend. I ensure the robustness of my code with **unit testing**. When in a team, I help with PRs and **code review**.
 method2Title: "Workflow"
 method2Text: |
   Thanks to my **SCRUM experience**, I can work alone or in a team. I can also implement a **Continuous Integration** workflow that helps prevent regressions.
@@ -44,4 +44,4 @@ I mainly work with modern tools and frameworks, such as **Symfony, Vue.js, WordP
 
 I'm a web developper with over **15 years of experience**, and I've been a freelancer since 2012.
 
-I work with Open Source CMS, HTML, CSS, TypeScript, PHP and MySQL. My clients are web agencies or companies of all sizes.
+I work with Open Source CMS, HTML, CSS, TypeScript, PHP and MySQL. My clients are web agencies and companies of all sizes.
