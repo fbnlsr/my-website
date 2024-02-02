@@ -10,7 +10,7 @@ links:
     devto: "https://dev.to/fbnlsr/speed-up-your-website-in-1-minute-with-instant-page-49f1"
     medium: "https://medium.com/@fbnlsr/speed-up-your-website-in-1-minute-with-instant-page-b12c8d91db81"
 ---
-Behind this clickbait title lies a really nifty little tool. I stumbled upon this while browsing Hacker News a while back. Actually it's been active on this website [since february](https://github.com/fbnlsr/primative.net/commit/d862953f35a2ae0992ed11bd8c294bf8d7658a91) now but I never took to time talk about it. **Instant.page** is a tiny JavaScript library which is using *just-in-time preloading* – it preloads an anchor right before a user clicks on a hyperlink.
+Behind this clickbait title lies a really nifty little tool. I stumbled upon this while browsing Hacker News a while back. Actually it's been active on this website [since february](https://github.com/fbnlsr/my-website/commit/d862953f35a2ae0992ed11bd8c294bf8d7658a91) now but I never took to time talk about it. **Instant.page** is a tiny JavaScript library which is using *just-in-time preloading* – it preloads an anchor right before a user clicks on a hyperlink.
 
 The technique used if fairly simple: **Instant.page** calculates the time a user spends hovering a link (which is an obvious behavior when you want to click on something) and will start preloading said link if that time exceeds 65ms. Since [the average human perceives actions taking less than 100ms as instantaneous](https://www.nngroup.com/articles/response-times-3-important-limits/), **Instant.page** tricks the brain, hence allowing your users to get a faster, better experience.
 

@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e5c7f5ad-5764-42e2-9f03-aa8d74526160/deploy-status)](https://app.netlify.com/sites/primative/deploys)
 
-[https://primative.net](https://primative.net)
+[https://www.fabienlasserre.dev](https://www.fabienlasserre.dev)
 
 This is my personal website. It was made using [11ty](https://11ty.dev/).
 
