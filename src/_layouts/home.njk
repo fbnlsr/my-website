@@ -25,18 +25,20 @@ layout: base.njk
   <div class="home-section home-projects">
     <h2>{{ i18n[locale]['projects']}}</h2>
     <div class="home-projects-container">
-      <div class="home-projects-slide">
-        {% for i in range(0, 2) %}
-          {% for project in collections["projects_" + locale] | reverse %}
-            <div class="home-project">
-              <a href="{{ project.url }}">
-                <div><img class="cover" src="{{ project.data.projectImgDir }}/cover.jpg" alt="{{ project.data.title }} cover"/></div>
-                <p class="title">{{ project.data.title }}</p>
-                <p class="work">{{ project.data.tech }}</p>
-              </a>
-            </div>
-          {% endfor %}
-        {% endfor %}
+      <div class="home-projects-slide glide">
+        <div data-glide-el="track" class="glide__track">
+          <ul class="glide__slides">
+            {% for project in collections["projects_" + locale] | reverse %}
+              <li class="home-project glide__slide">
+                <a href="{{ project.url }}">
+                  <div><img class="cover" src="{{ project.data.projectImgDir }}/cover.jpg" alt="{{ project.data.title }} cover"/></div>
+                  <p class="title">{{ project.data.title }}</p>
+                  <p class="work">{{ project.data.tech }}</p>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
     </div>
 

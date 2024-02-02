@@ -94,6 +94,51 @@ domReady(() => {
   // Displaying page
   document.body.style.visibility = 'visible';
 
+  // Home carousel
+  const glideHomeContainer = getAll('.home-projects-slide');
+  let glideHome = null;
+
+  if (glideHomeContainer.length > 0) {
+    glideHome = new Glide('.home-projects-slide', {
+      type: 'carousel',
+      rewind: true,
+      gap: 0,
+      focusAt: 0,
+      autoplay: 2000,
+      perView: 8,
+      animationDuration: 600,
+      bound: true,
+      breakpoints: {
+        2000: {
+          perView: 6
+        },
+        1600: {
+          perView: 5
+        },
+        1300: {
+          perView: 4
+        },
+        1000: {
+          perView: 3,
+          focusAt: 'center',
+          autoplay: 3000
+        },
+        800: {
+          perView: 2,
+          focusAt: 'center',
+          bound: false,
+          autoplay: 3000
+        },
+        550: {
+          perView: 1,
+          focusAt: 'center',
+          bound: false,
+          autoplay: 3000
+        }
+      }
+    });
+  }
+
   // Project carousels
   const glide = getAll('.glide');
 
@@ -170,6 +215,9 @@ domReady(() => {
       }
       if (glideMobile) {
         glideMobile.mount();
+      }
+      if (glideHome) {
+        glideHome.mount();
       }
     };
   }
