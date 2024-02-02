@@ -22,9 +22,7 @@ Fabien Lasserre
 14 allée Jean Ribereau-Gayon
 33600 Pessac
 
-Tél : 06 03 35 19 63
-
-E-mail : hello@primative.net
+E-mail : hello@fabienlasserre.dev
 
 </div>
 
@@ -54,7 +52,7 @@ You can access your data, rectify it, request its deletion, or exercise your rig
 
 Visit the website cnil.fr for more information about your rights.
 
-To exercise these rights or for any questions regarding the processing of your data in this system, you can directly contact Fabien Lasserre at +336 0335 1963 or via email at hello@primative.net.
+To exercise these rights or for any questions regarding the processing of your data in this system, you can directly contact Fabien Lasserre at hello@fabienlasserre.dev.
 
 If you believe, after contacting us, that your "Information Technology and Liberties" rights are not being respected, you can file a complaint with the CNIL (French data protection authority).
 

@@ -22,9 +22,7 @@ Fabien Lasserre
 14 allée Jean Ribereau-Gayon
 33600 Pessac
 
-Tél : 06 03 35 19 63
-
-E-mail : hello@primative.net
+E-mail : hello@fabienlasserre.dev
 
 </div>
 
@@ -54,7 +52,7 @@ Vous pouvez accéder aux données vous concernant, les rectifier, demander leur 
 
 Consultez le site cnil.fr pour plus d’informations sur vos droits.
 
-Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez contacter Fabien Lasserre directement au 06 03 35 19 63 ou par e-mail hello@primative.net.
+Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez contacter Fabien Lasserre directement par e-mail hello@fabienlasserre.dev.
 
 Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés » ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.
 
