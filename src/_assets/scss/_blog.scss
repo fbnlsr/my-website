@@ -155,6 +155,12 @@
         margin-bottom: 1rem;
         font-family: $nunito;
         font-size: 18px;
+
+        a,
+        a:visited,
+        a:active {
+          color: $blue;
+        }
       }
 
       .bottom {
@@ -742,4 +748,38 @@
 .highlight pre {
   /* Avoid pushing up the copy buttons. */
   margin: 0;
+}
+
+body.dark-mode {
+  .blog-list {
+    .blog-bloc {
+      border: 1px solid $bgdark;
+      box-shadow: 0 10px 10px -10px #111;
+      background-color: darken($bgdark, 3%);
+    }
+  }
+
+  .blog-post {
+    .is-color-changer-container {
+      .is-color-changer {
+        &.is-white {
+          background-color: $bgdark;
+          border: 1px solid lighten($bgdark, 20%);
+        }
+        &.is-dark {
+          border: 1px solid lighten($bgdark, 20%);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .blog-post {
+      .title-container {
+        .title {
+          color: $textdark;
+        }
+      }
+    }
+  }
 }

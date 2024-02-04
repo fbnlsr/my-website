@@ -79,3 +79,14 @@
     }
   }
 }
+
+body.dark-mode {
+  .contact-container {
+    .form-item {
+      input,
+      textarea {
+        background-color: lighten($bgdark, 10%);
+      }
+    }
+  }
+}

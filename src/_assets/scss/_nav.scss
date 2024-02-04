@@ -232,3 +232,21 @@
     }
   }
 }
+
+body.dark-mode {
+  .navbar {
+    .navbar-burger {
+      span {
+        background-color: $textdark;
+      }
+    }
+
+    .nav-mobile {
+      background-color: $bgdark;
+    }
+
+    .navbar-bottom {
+      color: $gray1;
+    }
+  }
+}

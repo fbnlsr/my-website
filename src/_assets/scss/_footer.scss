@@ -90,3 +90,11 @@
     }
   }
 }
+
+body.dark-mode {
+  .site-footer {
+    background-color: darken($bgdark, 3%);
+    border-top: 1px solid $gray2;
+    color: $textdark;
+  }
+}

@@ -277,3 +277,31 @@
     }
   }
 }
+
+body.dark-mode {
+  .about {
+    .about-cta {
+      .cta {
+        box-shadow: 0 10px 10px -10px darken($bgdark, 20%);
+      }
+    }
+    .blue-container {
+      background-color: lighten($bgdark, 10%);
+    }
+
+    .about-container {
+      .about-section {
+        h3 {
+          color: $blue;
+        }
+      }
+    }
+    .methods-container {
+      .method {
+        background-color: darken($bgdark, 3%);
+        box-shadow: 0 0 5px #111;
+        border-color: darken($blue, 20%);
+      }
+    }
+  }
+}

@@ -253,3 +253,21 @@
     margin-bottom: 4rem;
   }
 }
+
+body.dark-mode {
+  .project {
+    .is-description-block {
+      .is-project-back-link {
+        a {
+          background-color: darken($bgdark, 3%);
+          color: $textdark;
+
+          &:hover {
+            background-color: $blue;
+            color: $bgdark;
+          }
+        }
+      }
+    }
+  }
+}

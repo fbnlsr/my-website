@@ -46,6 +46,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
+
+  &.dark-mode {
+    background-color: $bgdark;
+    color: $textdark;
+  }
 }
 
 h1 {
@@ -114,4 +119,44 @@ button:active {
   border: 1px solid $blue;
   padding: 1rem;
   border-radius: 5px;
+}
+
+.mode-switch {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 8999;
+
+  img {
+    width: 25px;
+  }
+
+  #darkSwitch {
+    display: block;
+  }
+
+  #lightSwitch {
+    display: none;
+  }
+}
+
+body.dark-mode {
+  .mode-switch {
+    #darkSwitch {
+      display: none;
+    }
+    #lightSwitch {
+      display: block;
+    }
+  }
+  .white-container {
+    background-color: darken($bgdark, 3%);
+    border: 1px solid darken($blue, 20%);
+  }
+}
+
+.is-hidden-mobile {
+  @media screen and (max-width: 768px) {
+    display: none !important;
+  }
 }

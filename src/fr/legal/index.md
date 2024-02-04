@@ -74,4 +74,6 @@ Le design, le logo et le contenu rédactionnel de ce site internet est l'entièr
 
 Les illustrations et pictogrammes de la page « À propos » sont fournis par https://www.freepik.com
 
+Les icônes de soleil/lune sont fournies par [https://github.com/jjaimealeman/my-theme-switcher](Jaime Aleman).
+
 </div>

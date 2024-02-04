@@ -88,6 +88,7 @@ window.addEventListener('scroll', () => {
 const modalCloses = getAll('.modal-background, .delete');
 const colorChanger = getAll('.is-color-changer');
 const langSwitcher = getAll('.is-lang-switcher');
+const modeSwitcher = getAll('.is-mode-switcher');
 
 // DOM is ready and waiting
 domReady(() => {
@@ -317,6 +318,21 @@ domReady(() => {
     const closeListen = document.getElementById('closeListen');
     closeListen.addEventListener('click', () => {
       heyListen.classList.remove('is-active');
+    });
+  }
+
+  // Dark/light mode switcher
+  if (modeSwitcher && modeSwitcher.length > 0) {
+    modeSwitcher.forEach((el) => {
+      el.addEventListener('click', (event) => {
+        document.body.classList.toggle('dark-mode');
+
+        if (document.body.classList.contains('dark-mode')) {
+          localStorage.setItem('mode', 'dark');
+        } else {
+          localStorage.setItem('mode', 'light');
+        }
+      });
     });
   }
 });

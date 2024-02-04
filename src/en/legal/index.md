@@ -74,4 +74,6 @@ The design, logo, and editorial content of this website are the sole property of
 
 The illustrations and icons on the "About" page are provided by https://www.freepik.com.
 
+Sun/moon icons courtesy of [https://github.com/jjaimealeman/my-theme-switcher](Jaime Aleman).
+
 </div>

@@ -378,7 +378,7 @@
   }
 
   .card-content {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
 
     p {
       margin-bottom: 1rem;
@@ -396,5 +396,39 @@
 
   @media screen and (max-width: 768px) {
     display: none;
+  }
+}
+
+body.dark-mode {
+  .home {
+    .content {
+      .cta {
+        background-color: $blue;
+        color: $textdark;
+      }
+
+      .cta-big {
+        box-shadow: 0 10px 10px -10px #111;
+      }
+    }
+    .home-section {
+      .cta {
+        background-color: $blue;
+        color: $textdark;
+      }
+
+      &.home-blog {
+        .post {
+          .post-date {
+            color: $gray2;
+          }
+        }
+      }
+    }
+  }
+
+  #heyListen {
+    background-color: darken($bgdark, 3%);
+    box-shadow: 0 0 10px #111;
   }
 }
