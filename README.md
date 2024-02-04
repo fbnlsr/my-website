@@ -4,6 +4,8 @@
 
 [https://www.fabienlasserre.dev](https://www.fabienlasserre.dev)
 
+[https://www.primative.net](https://www.primative.net)
+
 This is my personal website. It was made using [11ty](https://11ty.dev/).
 
 ## Build

@@ -297,10 +297,16 @@ body.dark-mode {
       }
     }
     .methods-container {
+      background-color: darken($bgdark, 3%);
+      border-color: darken($blue, 20%);
+
       .method {
         background-color: darken($bgdark, 3%);
         box-shadow: 0 0 5px #111;
-        border-color: darken($blue, 20%);
+
+        @media screen and (max-width: 800px) {
+          box-shadow: none;
+        }
       }
     }
   }
