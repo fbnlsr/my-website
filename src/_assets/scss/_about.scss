@@ -1,4 +1,5 @@
 .about {
+  margin-bottom: 50px;
   h1 {
     font-size: 52px;
     font-weight: 700;
@@ -12,8 +13,8 @@
     padding-right: 20px;
     margin: auto;
     font-family: $nunito;
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 22px;
+    line-height: 30px;
 
     p {
       margin-bottom: 1rem;
@@ -138,6 +139,7 @@
   .methods-container {
     max-width: 1200px;
     margin: auto;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -261,6 +263,13 @@
       color: white;
       border-radius: 5px;
       box-shadow: 0 10px 10px -10px $gray1;
+
+      &.cta-big {
+        font-size: 24px;
+        font-weight: 700;
+        padding: 18px 50px;
+        box-shadow: 0 10px 10px -10px $gray1;
+      }
 
       &:hover {
         background-color: lighten($blue, 10%);
