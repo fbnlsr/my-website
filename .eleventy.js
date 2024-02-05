@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/img/');
   eleventyConfig.addPassthroughCopy('./src/js/');
   eleventyConfig.addPassthroughCopy('./src/css/');
+  eleventyConfig.addPassthroughCopy('./src/fonts/');
   eleventyConfig.addPassthroughCopy('./src/_redirects');
 
   eleventyConfig.addWatchTarget('./src/_assets/scss');

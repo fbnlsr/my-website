@@ -25,14 +25,8 @@
     <link href="/{{ locale }}/blog/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.title }}">
 
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7COpen+Sans:400,700%7CUbuntu+Mono:400,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7COpen+Sans:400,700%7CUbuntu+Mono:400,700&display=swap" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400&display=swap" rel="stylesheet">
-    </noscript>
+    <link rel="preload" href="/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/nunitosans.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="256x256" href="/img/favicon-256x256.png">
@@ -62,7 +56,6 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" media="screen" href="{{ "/css/main.min.css" | url }}">
-    <link rel="stylesheet" media="screen" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css">
   </head>
   <body>
     <div class="mode-switch">
