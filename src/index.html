@@ -4,11 +4,22 @@
   </head>
   <body>
     <script>
-      const langs = navigator.language;
-      if (langs.includes('en')) {
-        document.location.href = '/en/';
+      let savedLang = localStorage.getItem('lang');
+      const availableLangs = ['en', 'fr'];
+
+      if (savedLang !== null && availableLangs.includes(savedLang)) {
+        if (savedLang === 'en') {
+          document.location.href = '/en/';
+        } else {
+          document.location.href = '/fr/';
+        }
       } else {
-        document.location.href = '/fr/';
+        const langs = navigator.language;
+        if (langs.includes('en')) {
+          document.location.href = '/en/';
+        } else {
+          document.location.href = '/fr/';
+        }
       }
     </script>
   </body>

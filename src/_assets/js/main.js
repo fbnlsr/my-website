@@ -335,4 +335,12 @@ domReady(() => {
       });
     });
   }
+
+  // Language switcher
+  const url = window.location.pathname;
+  if (url === '/en/') {
+    localStorage.setItem('lang', 'en');
+  } else if (url === '/fr/') {
+    localStorage.setItem('lang', 'fr');
+  }
 });
