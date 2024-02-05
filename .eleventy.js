@@ -2,6 +2,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const readingTime = require('eleventy-plugin-reading-time');
 const emojifyPlugin = require('eleventy-plugin-emojify');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const htmlmin = require('html-minifier');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/img/');
@@ -73,6 +74,20 @@ module.exports = function (eleventyConfig) {
 
       return str;
     }
+  });
+
+  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+    if (outputPath !== false && outputPath.endsWith('.html')) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+
+      return minified;
+    }
+
+    return content;
   });
 
   return {

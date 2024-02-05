@@ -166,7 +166,7 @@
 body.dark-mode {
   .projects {
     .project {
-      background-color: lighten($bgdark, 10%);
+      background-color: darken($bgdark, 3%);
       box-shadow: 0 10px 10px -10px #111;
     }
   }
