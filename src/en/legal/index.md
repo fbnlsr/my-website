@@ -62,7 +62,7 @@ If you believe, after contacting us, that your "Information Technology and Liber
 
 ## Cookies
 
-This website uses only one single cookie to save the background color of articles written in the Blog section. The site respects your privacy: no audience measurement or tracking is performed through cookies.
+This website does not store any cookie on your internet browser. The site respects your privacy: no audience measurement or tracking is performed through cookies.
 
 </div>
 

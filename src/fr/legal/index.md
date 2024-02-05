@@ -62,7 +62,7 @@ Si vous estimez, après nous avoir contactés, que vos droits « Informatique et
 
 ## Cookies
 
-Ce site internet utilise un seul et unique cookie permettant de sauvegarder la couleur de fond des articles rédigés dans la partie Blog. Le site respecte votre vie privée : aucune mesure d'audience ou de fréquentation n'est effectuée par l'intermédiaire de cookies.
+Ce site internet ne stocke aucun cookie sur votre navigateur. Le site respecte votre vie privée : aucune mesure d'audience ou de fréquentation n'est effectuée par l'intermédiaire de cookies.
 
 </div>
 

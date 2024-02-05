@@ -264,7 +264,7 @@ domReady(() => {
   }
 
   // Checking if a color is set for blog articles
-  const blogColor = getCookie('blogColor');
+  const blogColor = localStorage.getItem('blogColor');
   const blogPostContainer = document.getElementById('blogPostContainer');
   if (blogColor && blogPostContainer) {
     blogPostContainer.classList.add(blogColor);
@@ -279,10 +279,10 @@ domReady(() => {
         const { color } = changer.dataset;
         blogPostContainer.classList.remove('is-dark');
         blogPostContainer.classList.remove('is-sand');
-        setCookie('blogColor', '', -1);
+        localStorage.setItem('blogColor', '');
 
         if (color && color !== 'undefined') {
-          setCookie('blogColor', color, 365);
+          localStorage.setItem('blogColor', color);
           blogPostContainer.classList.add(color);
         }
       });
