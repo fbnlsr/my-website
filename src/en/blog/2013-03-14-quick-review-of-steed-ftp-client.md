@@ -4,7 +4,7 @@ date: 2013-01-14
 translationKey: "blogSteed"
 excerpt: "Let's take a look at Steed, a new FTP client for Windows that's aiming at being an alternative to the good old FileZilla."
 ---
-![Steed](/img/blog/2013-01-14/cover.jpg)
+![Steed](/img/blog/2013-01-14/cover.webp)
 
 As a web developer, much time is spent using an FTP client. And I'm sure you'll agree with me, not so much has been done in the past 15 years in this field. Wether used to backup, upload, or update a website, this piece of code has been used for decades to exchange files between computers. Such a simple protocol shouldn't be reserved to power users, and even some of the nerdiest of us like to use beautiful softwares. Today we're looking at [Steed](http://www.frenchfrysoftware.com/steed/), which got out of Beta in late 2012. Let's see if we can do better than your daddy's client and use 2013's standards with a protocol that's about to celebrate its 40th birthday.
 

@@ -13,13 +13,13 @@ client: "Ligne 13"
 projectUrl: "https://www.healthy-warriors.com/"
 projectImgDir: "/img/projects/healthy-warriors"
 desktopScreenshots:
-  - desktop1.jpg
-  - desktop2.jpg
-  - desktop3.jpg
+  - desktop1.webp
+  - desktop2.webp
+  - desktop3.webp
 mobileScreenshots:
-  - mobile1.jpg
-  - mobile2.jpg
-  - mobile3.jpg
+  - mobile1.webp
+  - mobile2.webp
+  - mobile3.webp
 description: |
   **Healthy Warriors** est une entreprise basée à Paris qui regroupe un centre de fitness, des professeurs qui proposent des cours de yoga ainsi qu'un café bien-être.
 

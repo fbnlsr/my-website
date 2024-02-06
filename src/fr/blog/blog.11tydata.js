@@ -28,7 +28,7 @@ module.exports = function () {
             .toString();
           const day = ('0' + data.page.date.getDate()).slice(-2).toString();
 
-          const path = `./src/img/blog/${year}-${month}-${day}/cover.jpg`;
+          const path = `./src/img/blog/${year}-${month}-${day}/cover.webp`;
 
           return fs.existsSync(path);
         } else {

@@ -20,11 +20,11 @@ client: "3DO2 / Notadoo"
 projectUrl: "https://notadoo-notaire-en-ligne.co/"
 projectImgDir: "/img/projects/notadoo"
 desktopScreenshots:
-  - desktop1.jpg
-  - desktop2.jpg
-  - desktop3.jpg
-  - desktop4.jpg
-  - desktop5.jpg
+  - desktop1.webp
+  - desktop2.webp
+  - desktop3.webp
+  - desktop4.webp
+  - desktop5.webp
 description: |
   **Notadoo** is a platform for notaries and their clients that help them digitize their workflow.
 ---

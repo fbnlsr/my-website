@@ -18,10 +18,10 @@ techUsed:
 client: "3DO2 / Enedis"
 projectImgDir: "/img/projects/pacman"
 desktopScreenshots:
-  - desktop1.jpg
-  - desktop2.jpg
-  - desktop3.jpg
-  - desktop4.jpg
+  - desktop1.webp
+  - desktop2.webp
+  - desktop3.webp
+  - desktop4.webp
 description: |
   **PACMAN** (Pilotage des Activités Cartographiques & Management) est un outil de suivi de performance utilisé en interne par les équipes d'Enedis.
 ---

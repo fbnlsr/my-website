@@ -12,7 +12,7 @@ client: "La Piscine"
 projectUrl: "https://www.lapiscine.pro/"
 projectImgDir: "/img/projects/piscine"
 desktopScreenshots:
-  - desktop1.jpg
+  - desktop1.webp
 description: |
   **La Piscine** est un centre de formation intensive qui permet à ses élèves de devenir développeur web, administrateur réseau ou encore designer. Entre 2018 et 2020, j'y ai enseigné le JavaScript et jQuery.
 ---

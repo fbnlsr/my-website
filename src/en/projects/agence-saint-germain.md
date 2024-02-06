@@ -14,13 +14,13 @@ client: "Ligne 13"
 projectUrl: "http://www.asgparis.com"
 projectImgDir: "/img/projects/agence-saint-germain"
 desktopScreenshots:
-  - desktop1.jpg
-  - desktop2.jpg
-  - desktop3.jpg
+  - desktop1.webp
+  - desktop2.webp
+  - desktop3.webp
 mobileScreenshots:
-  - mobile1.jpg
-  - mobile2.jpg
-  - mobile3.jpg
+  - mobile1.webp
+  - mobile2.webp
+  - mobile3.webp
 description: |
   **Agence Saint Germain** is a talent agency that features professional photographers, videomakers and make-up artists.
 

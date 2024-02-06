@@ -12,13 +12,13 @@ client: "Benjamin Gourven"
 projectUrl: "https://wingchungujan.fr/"
 projectImgDir: "/img/projects/wing-chun-gujan"
 desktopScreenshots:
-  - desktop1.jpg
-  - desktop2.jpg
-  - desktop3.jpg
+  - desktop1.webp
+  - desktop2.webp
+  - desktop3.webp
 mobileScreenshots:
-  - mobile1.jpg
-  - mobile2.jpg
-  - mobile3.jpg
+  - mobile1.webp
+  - mobile2.webp
+  - mobile3.webp
 description: |
   **Benjamin Gourven** is a self-defense instructor in Gujan, a small town in the south west of France. He wanted a website that would present his activities as well as allow him to showcase a few pictures of his martial arts seminars.
 ---

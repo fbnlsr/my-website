@@ -12,7 +12,7 @@ client: "La Piscine"
 projectUrl: "https://www.lapiscine.pro/"
 projectImgDir: "/img/projects/piscine"
 desktopScreenshots:
-  - desktop1.jpg
+  - desktop1.webp
 description: |
   **La Piscine** is a French training center offering intensive training for aspiring developers, designers and database administrators. Between 2018 and 2020, I tought JavaScript and jQuery there.
 ---

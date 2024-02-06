@@ -14,13 +14,13 @@ client: "NySB"
 projectUrl: "https://nysb.paris/"
 projectImgDir: "/img/projects/nysb"
 desktopScreenshots:
-  - desktop1.jpg
-  - desktop2.jpg
-  - desktop3.jpg
+  - desktop1.webp
+  - desktop2.webp
+  - desktop3.webp
 mobileScreenshots:
-  - mobile1.jpg
-  - mobile2.jpg
-  - mobile3.jpg
+  - mobile1.webp
+  - mobile2.webp
+  - mobile3.webp
 description: |
   **NySB** is a web and graphic design agency based in Paris. They work with a wide variety of clients and have a strong feeling for visual identity and typography work.
 

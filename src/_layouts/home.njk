@@ -31,7 +31,7 @@ layout: base.njk
             {% for project in collections["projects_" + locale] | reverse %}
               <li class="home-project glide__slide">
                 <a href="{{ project.url }}">
-                  <div><img class="cover" src="{{ project.data.projectImgDir }}/cover.jpg" alt="{{ project.data.title }} cover"/></div>
+                  <div><img class="cover" src="{{ project.data.projectImgDir }}/cover.webp" alt="{{ project.data.title }} cover"/></div>
                   <p class="title">{{ project.data.title }}</p>
                   <p class="work">{{ project.data.tech }}</p>
                 </a>
@@ -78,7 +78,7 @@ layout: base.njk
 
 {% set lastpost = collections[last_post_collection] | reverse | first %}
 <div id="heyListen">
-  <div class="card-image" style="background-image: url('/img/blog/{{ lastpost.date | blogdate }}/cover.jpg');">
+  <div class="card-image" style="background-image: url('/img/blog/{{ lastpost.date | blogdate }}/cover.webp');">
     <a href="#!" class="delete" id="closeListen" aria-label="Close">
       <svg viewBox="0 0 24 24">
         <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>

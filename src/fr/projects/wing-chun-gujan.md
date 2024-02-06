@@ -12,13 +12,13 @@ client: "Benjamin Gourven"
 projectUrl: "https://wingchungujan.fr/"
 projectImgDir: "/img/projects/wing-chun-gujan"
 desktopScreenshots:
-  - desktop1.jpg
-  - desktop2.jpg
-  - desktop3.jpg
+  - desktop1.webp
+  - desktop2.webp
+  - desktop3.webp
 mobileScreenshots:
-  - mobile1.jpg
-  - mobile2.jpg
-  - mobile3.jpg
+  - mobile1.webp
+  - mobile2.webp
+  - mobile3.webp
 description: |
   **Benjamin Gourven** est instructeur de self-défense à Gujan, une petite ville du Sud-Ouest. Il souhaitait un site internet simple, qui lui permette de présenter son activité et de mettre en avant quelques photos de ses séminaires.
 ---

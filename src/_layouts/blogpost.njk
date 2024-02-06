@@ -4,7 +4,7 @@ layout: "base.njk"
 <div class="blog-post" id="blogPostContainer">
     {%- if hasCover -%}
         <div class="title-container ">
-            <div class="background-cover" id="blog-post-cover" style="background-image: url('/img/blog/{{ date | blogdate }}/cover.jpg');">
+            <div class="background-cover" id="blog-post-cover" style="background-image: url('/img/blog/{{ date | blogdate }}/cover.webp');">
                 <div class="background-shroud">
                     <p class="title">
                         {%- if draft == true -%}[DRAFT] {% endif -%}{{ title }}
@@ -70,7 +70,7 @@ layout: "base.njk"
         {{ content | emojify | safe }}
     </article>
 
-    <img class="is-bullet-end-article" src="/img/bullet-big.png" alt="Bullet">
+    <img class="is-bullet-end-article" src="/img/bullet-big.webp" alt="Bullet">
 
     <div class="btn is-twitter-share">
         <a href="https://twitter.com/share?url={{ site.url + page.url }}&text={{ title }}&via=fbnlsr">{{ i18n[locale]['twitterShare'] | safe }}</a>
@@ -83,7 +83,7 @@ layout: "base.njk"
                 {%- if links.devto -%}
                     <li>
                         <a class="devto" href="{{ links.devto }}" aria-label="DevTo">
-                            <img src="/img/devto.jpg" alt="Dev.to">
+                            <img src="/img/devto.webp" alt="Dev.to">
                         </a>
                     </li>
                 {%- endif -%}
