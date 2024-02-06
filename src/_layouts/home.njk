@@ -10,10 +10,10 @@ layout: base.njk
     <h2>{{ i18n[locale]['aboutMe'] }}</h2>
     <div>{{ aboutMe | markdownify | safe }}</div>
     <div class="frameworks">
-      <img src="/img/symfony.svg" class="framework" alt="Symfony"/>
-      <img src="/img/vue.svg" class="framework" alt="Vue.js"/>
-      <img src="/img/wordpress.svg" class="framework" alt="Wordpress"/>
-      <img src="/img/jamstack.svg" class="framework" alt="JAMstack"/>
+      <img src="/img/symfony.svg" class="framework" width="100" height="100"  alt="Symfony"/>
+      <img src="/img/vue.svg" class="framework" width="100" height="100" alt="Vue.js"/>
+      <img src="/img/wordpress.svg" class="framework" width="100" height="100" alt="Wordpress"/>
+      <img src="/img/jamstack.svg" class="framework" width="100" height="100" alt="JAMstack"/>
     </div>
     {% if locale == "fr" -%}
       <a class="cta" href="/fr/a-propos/">En savoir plus</a>

@@ -61,8 +61,8 @@
   </head>
   <body>
     <div class="mode-switch">
-      <a id='darkSwitch' class="is-mode-switcher" href="#!"><img src="/img/moon.svg" alt="Dark mode"/></a>
-      <a id='lightSwitch' class="is-mode-switcher" href="#!"><img src="/img/sun.svg" alt="Light mode"></a>
+      <a id='darkSwitch' class="is-mode-switcher" href="#!"><img src="/img/moon.svg" height="25" width="25" alt="Dark mode"/></a>
+      <a id='lightSwitch' class="is-mode-switcher" href="#!"><img src="/img/sun.svg" height="25" width="25" alt="Light mode"></a>
     </div>
 
     <div class="go-to-top is-hidden-mobile" id="topArrow">
@@ -83,7 +83,7 @@
 
     {% if translationKey !== "404" %}
       <div class="footer-logo">
-        <img src="/img/logo.svg" alt="Logo"/>
+        <img src="/img/logo.svg" alt="Logo" width="100" height="70"/>
       </div>
     {% endif %}
 
@@ -155,6 +155,6 @@
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f5698ab0bfb64e2c9015cfdc78ed4349"}'></script>
 <!-- End Cloudflare Web Analytics -->
 
-<script src="{{ "/js/main.js" | url }}" defer></script>
+<script type="module" src="{{ "/js/main.js" | url }}" defer></script>
 </body>
 </html>
