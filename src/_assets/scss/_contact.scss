@@ -86,7 +86,8 @@ body.dark-mode {
     .form-item {
       input,
       textarea {
-        background-color: $bgdark2;
+        border-color: $bgdark2;
+        background-color: darken($bgdark2, 10%);
         color: $background;
       }
 
