@@ -152,10 +152,11 @@ domReady(() => {
     if (glideDesktopContainer.length > 0) {
       glideDesktop = new Glide('.is-laptop-content', {
         type: 'slider',
-        rewind: false,
+        rewind: true,
+        hoverpause: true,
         gap: 0,
         focusAt: 'center',
-        autoplay: 3000
+        autoplay: 5000
       });
     }
 

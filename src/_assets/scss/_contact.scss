@@ -9,7 +9,7 @@
     a,
     a:visited,
     a:active {
-      color: inherit;
+      color: $blue;
       text-decoration: underline;
     }
   }
@@ -36,6 +36,7 @@
 
     input,
     textarea {
+      font-family: $nunito;
       font-size: 16px;
       border: 1px solid $gray1;
       border-radius: 5px;
@@ -47,7 +48,7 @@
       background-color: $blue;
       color: white;
       align-self: flex-start;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 700;
       padding: 8px 40px;
       border: none;
@@ -85,7 +86,18 @@ body.dark-mode {
     .form-item {
       input,
       textarea {
-        background-color: lighten($bgdark, 10%);
+        background-color: $bgdark2;
+        color: $background;
+      }
+
+      input[type='submit'] {
+        background-color: $blue;
+        color: white;
+
+        &:hover {
+          cursor: pointer;
+          background-color: lighten($blue, 10%);
+        }
       }
     }
   }

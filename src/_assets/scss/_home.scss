@@ -62,23 +62,19 @@
     .cta {
       background-color: $blue;
       color: #fff;
-      font-family: $montserrat;
       text-decoration: none;
       padding: 15px 40px;
-      font-size: 18px;
+      font-size: 20px;
+      font-weight: 700;
       border-radius: 5px;
       display: inline-block;
+      transition: all 0.2s;
 
       &.cta-big {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 700;
         padding: 18px 50px;
         box-shadow: 0 10px 10px -10px $gray1;
-      }
-
-      &.cta-small {
-        font-size: 18px;
-        font-weight: 400;
       }
 
       &:hover {
@@ -402,21 +398,11 @@
 body.dark-mode {
   .home {
     .content {
-      .cta {
-        background-color: $blue;
-        color: $textdark;
-      }
-
       .cta-big {
         box-shadow: 0 10px 10px -10px #111;
       }
     }
     .home-section {
-      .cta {
-        background-color: $blue;
-        color: $textdark;
-      }
-
       &.home-blog {
         .post {
           .post-date {
