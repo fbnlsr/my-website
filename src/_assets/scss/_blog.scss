@@ -278,6 +278,10 @@
         height: calc(100vh - 140px);
         position: relative;
         transition: all 0.4s ease-in-out;
+
+        @media print {
+          height: initial;
+        }
       }
     }
 
@@ -314,6 +318,13 @@
       bottom: 15%;
       max-width: 80%;
       margin: auto;
+
+      @media print {
+        position: relative;
+        font-weight: 700;
+        bottom: initial;
+        text-shadow: none;
+      }
     }
 
     .date {
@@ -323,6 +334,10 @@
       right: 0;
       bottom: 0;
       color: lighten($gray1, 10%);
+
+      @media print {
+        position: relative;
+      }
     }
 
     .chevron {
@@ -333,6 +348,10 @@
       right: 0;
       bottom: 15px;
       color: lighten($gray1, 10%);
+    }
+
+    @media print {
+      height: initial;
     }
   }
 
@@ -376,6 +395,7 @@
     max-width: 900px;
     margin: auto;
     margin-top: 2rem;
+    position: relative;
 
     a {
       text-decoration: underline;
@@ -522,11 +542,21 @@
       margin: auto;
       margin-bottom: 1rem;
       border-radius: 5px;
+
+      @media print {
+        display: inline-block;
+        page-break-inside: avoid !important;
+      }
     }
 
     .is-blog-img {
       img {
         margin-bottom: 1.2rem;
+
+        @media print {
+          display: inline-block;
+          page-break-inside: avoid !important;
+        }
       }
 
       .is-blog-img-title {

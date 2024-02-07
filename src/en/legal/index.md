@@ -1,6 +1,7 @@
 ---
 layout: 'page.njk'
 permalink: '/en/legal/'
+metaDesc: 'Legal notice'
 ---
 # Legal notice
 

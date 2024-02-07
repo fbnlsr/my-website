@@ -1,6 +1,7 @@
 ---
 layout: "about.njk"
 translationKey: "about"
+metaDesc: "Je travaille principalement avec des outils et des frameworks modernes comme Symfony, Vue.js, WordPress, Gridsome, Eleventy... Je suis un développeur web avec plus de 15 ans d’expérience, et je suis freelance depuis 2012. Je travaille avec des CMS Open Source, HTML, CSS, TypeScript, PHP et MySQL. Mes clients sont des agences web ou des entreprises de toute taille."
 permalink: "/fr/a-propos/"
 title: "Savoir faire"
 aboutBox1Title: "Développement sur mesure"

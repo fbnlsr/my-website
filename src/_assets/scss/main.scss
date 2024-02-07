@@ -230,3 +230,15 @@ body.dark-mode {
     display: none !important;
   }
 }
+
+@media screen {
+  .noscreen {
+    display: none !important;
+  }
+}
+
+@media print {
+  .noprint {
+    display: none !important;
+  }
+}

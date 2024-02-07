@@ -1,8 +1,8 @@
 ---
 layout: "blog.njk"
 translationKey: "blog"
+date: "1970-01-01"
+metaDesc: "Thoughts about the practice of web development, its techniques and best practices, and others things I love."
 permalink: "/en/blog/"
-eleventyExcludeFromCollections: true
 title: "Blog"
-pagedesc: "Random thoughts about the practice of web development, its techniques and best practices, and things that I love."
 ---

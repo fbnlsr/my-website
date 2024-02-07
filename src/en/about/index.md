@@ -1,6 +1,7 @@
 ---
 layout: "about.njk"
 translationKey: "about"
+metaDesc: "I mainly work with modern tools and frameworks, such as Symfony, Vue.js, WordPress, Gridsome, Eleventy... I'm a web developper with over 15 years of experience, and I've been a freelancer since 2012. I work with Open Source CMS, HTML, CSS, TypeScript, PHP and MySQL. My clients are web agencies and companies of all sizes."
 title: "Know-how"
 aboutBox1Title: "Tailor-made development"
 aboutBox1Text: "Thanks to the Open Source frameworks **Symfony** and **Vue.js**, I help my clients with deploying solutions that are **efficient, modern and maintainable**."

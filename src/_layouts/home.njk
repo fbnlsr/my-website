@@ -29,13 +29,15 @@ layout: base.njk
         <div data-glide-el="track" class="glide__track">
           <ul class="glide__slides">
             {% for project in collections["projects_" + locale] | reverse %}
-              <li class="home-project glide__slide">
-                <a href="{{ project.url }}">
-                  <div><img class="cover" src="{{ project.data.projectImgDir }}/cover.webp" alt="{{ project.data.title }} cover"/></div>
-                  <p class="title">{{ project.data.title }}</p>
-                  <p class="work">{{ project.data.tech }}</p>
-                </a>
-              </li>
+              {% if project.data.translationKey !== 'projects' %}
+                <li class="home-project glide__slide">
+                  <a href="{{ project.url }}">
+                    <div><img class="cover" src="{{ project.data.projectImgDir }}/cover.webp" alt="{{ project.data.title }} cover"/></div>
+                    <p class="title">{{ project.data.title }}</p>
+                    <p class="work">{{ project.data.tech }}</p>
+                  </a>
+                </li>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>

@@ -6,15 +6,15 @@ layout: "base.njk"
         <div class="title-container ">
             <div class="background-cover" id="blog-post-cover" style="background-image: url('/img/blog/{{ date | blogdate }}/cover.webp');">
                 <div class="background-shroud">
-                    <p class="title">
+                    <h1 class="title">
                         {%- if draft == true -%}[DRAFT] {% endif -%}{{ title }}
-                    </p>
+                    </h1>
                     <p class="date">
                         {{ i18n[locale]['publishedOn']}}
                         {% humandate date,
                         locale %} - {{ content | readingTime }}.
                 </p>
-                    <p class="chevron bounce is-hidden-mobile">
+                    <p class="chevron bounce is-hidden-mobile noprint">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                         </svg>
@@ -24,7 +24,7 @@ layout: "base.njk"
             </div>
         </div>
         {%- if cover.author -%}
-            <p class="is-cover-author is-hidden-mobile">
+            <p class="is-cover-author noprint is-hidden-mobile">
                 {%- if cover.link -%}
                 Photo by <a href="{{ cover.link }}">
                     {%- endif -%}
@@ -53,14 +53,14 @@ layout: "base.njk"
     {%- if translationKey -%}
         {%- for otherPost in collections["posts_" + otherLocale] -%}
             {%- if otherPost.data.translationKey == translationKey -%}
-                <p class="is-translation-link">
+                <p class="is-translation-link noprint">
                     <a class="is-lang-switcher" data-lang="en" href="{{ otherPost.url }}">{{ i18n[locale]['postAlsoAvailable'] }}</a>
                 </p>
             {%- endif -%}
         {%- endfor -%}
     {%- endif -%}
 
-    <div class="is-color-changer-container">
+    <div class="is-color-changer-container noprint">
         <span class="is-color-changer is-white"></span>
         <span class="is-color-changer is-dark" data-color="is-dark"></span>
         <span class="is-color-changer is-sand" data-color="is-sand"></span>
@@ -70,14 +70,14 @@ layout: "base.njk"
         {{ content | emojify | safe }}
     </article>
 
-    <img class="is-bullet-end-article" src="/img/bullet-big.webp" alt="Bullet">
+    <img class="is-bullet-end-article noprint" src="/img/bullet-big.webp" alt="Bullet">
 
-    <div class="btn is-twitter-share">
+    <div class="btn is-twitter-share noprint">
         <a href="https://twitter.com/share?url={{ site.url + page.url }}&text={{ title }}&via=fbnlsr">{{ i18n[locale]['twitterShare'] | safe }}</a>
     </div>
 
     {%- if links.devto or links.medium -%}
-        <div class="links">
+        <div class="links noprint">
             <p>{{ i18n[locale]['postedTo'] }}</p>
             <ul>
                 {%- if links.devto -%}

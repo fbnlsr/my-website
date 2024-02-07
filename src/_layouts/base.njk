@@ -6,7 +6,16 @@
     <!-- General meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{%- if title -%}{{ title | escape }} | {{ i18n[locale]['sitename'] }}{%- else -%}{{ i18n[locale]['sitename'] }}{%- endif -%}"/>
+    {%- if metaDesc -%}
+      {%- set metaDescription = metaDesc -%}
+    {%- else -%}
+      {%- if title -%}
+        {%- set metaDescription = title + " | " + i18n[locale]['sitename'] -%}
+      {%- else -%}
+        {%- set metaDescription = i18n[locale]['sitename'] -%}
+      {%- endif -%}
+    {%- endif -%}
+    <meta name="description" content="{{ metaDescription }}"/>
     <meta name="author" content="Fabien Lasserre"/>
     <meta name="robots" content="index,follow"/>
 
@@ -17,6 +26,9 @@
         {{ i18n[locale]['sitename'] }}
       {%- endif -%}
     </title>
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
     <!-- Canonical URL -->
     <link rel="canonical" href={{ page.url | url | absoluteUrl(site.url) }}>
@@ -57,15 +69,15 @@
     {%- endif %}
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" media="screen" href="{{ "/css/main.min.css" | url }}">
+    <link rel="stylesheet" media="all" href="{{ "/css/main.min.css" | url }}">
   </head>
   <body>
-    <div class="mode-switch">
+    <div class="mode-switch noprint">
       <a id='darkSwitch' class="is-mode-switcher" href="#!"><img src="/img/moon.svg" height="25" width="25" alt="Dark mode"/></a>
       <a id='lightSwitch' class="is-mode-switcher" href="#!"><img src="/img/sun.svg" height="25" width="25" alt="Light mode"></a>
     </div>
 
-    <div class="go-to-top is-hidden-mobile" id="topArrow">
+    <div class="go-to-top is-hidden-mobile noprint" id="topArrow">
       <a href="#top" aria-label="Go to top">
         <svg viewBox="0 0 24 24">
           <path fill="currentColor" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"/>
@@ -87,7 +99,7 @@
       </div>
     {% endif %}
 
-    <footer class="site-footer footer">
+    <footer class="site-footer footer noprint">
       <div class="left-side">
         <div class="contact">
           <p>
