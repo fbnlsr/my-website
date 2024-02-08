@@ -9,7 +9,7 @@ aboutMe: |
 ---
 ![Hey it's me!](/img/me-250x250.webp)
 
-# 👋 Hi there!
+# <span class="wave">👋</span> Hi there!
 
 My name is Fabien and I’m a full stack web developer based in Bordeaux, France.
 

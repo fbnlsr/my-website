@@ -105,36 +105,30 @@ domReady(() => {
       rewind: true,
       gap: 0,
       focusAt: 0,
-      autoplay: 2000,
-      perView: 8,
+      autoplay: 3000,
+      perView: 7,
       animationDuration: 600,
       bound: true,
       breakpoints: {
-        2000: {
-          perView: 6
-        },
-        1600: {
+        2200: {
           perView: 5
         },
-        1300: {
+        1600: {
           perView: 4
         },
-        1000: {
+        1300: {
           perView: 3,
-          focusAt: 'center',
-          autoplay: 3000
+          focusAt: 'center'
         },
-        800: {
+        1000: {
           perView: 2,
           focusAt: 'center',
-          bound: false,
-          autoplay: 3000
+          bound: false
         },
-        550: {
+        700: {
           perView: 1,
           focusAt: 'center',
-          bound: false,
-          autoplay: 3000
+          bound: false
         }
       }
     });

@@ -9,7 +9,7 @@ aboutMe: |
 ---
 ![Hey c'est moi !](/img/me-250x250.webp)
 
-# 👋 Bonjour !
+# <span class="wave">👋</span> Bonjour !
 
 Je m’appelle Fabien et je suis développeur web full stack, basé à Bordeaux.
 

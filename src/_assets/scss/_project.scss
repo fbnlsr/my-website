@@ -202,6 +202,8 @@
 
     .is-project-back-link {
       a {
+        font-family: $nunito;
+        font-weight: 700;
         background-color: white;
         color: $blue;
         display: inline-block;
@@ -264,7 +266,6 @@ body.dark-mode {
 
           &:hover {
             background-color: $blue;
-            color: $bgdark;
           }
         }
       }
