@@ -15,7 +15,7 @@ layout: "base.njk"
 
             <div class="blog-bloc {{ blocWidth }}">
                 {%- if post.data.hasCover -%}
-                    <div class="blog-cover lazy" data-src="/img/blog/{{ post.date | blogdate }}/cover.webp">
+                    <div class="blog-cover lazy" data-src="/img/blog/{{ post.date | blogdate }}/cover-1000w.webp">
                         {%- if post.data.draft == true -%}
                             <div class="is-draft">draft</div>
                         {%- endif -%}
