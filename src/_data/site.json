@@ -4,40 +4,40 @@
     {
       "translationKey": "home",
       "url": {
-        "en": "",
-        "fr": ""
+        "en": "/en/",
+        "fr": "/fr/"
       },
       "external": false
     },
     {
       "translationKey": "about",
       "url": {
-        "en": "about",
-        "fr": "a-propos"
+        "en": "/en/about/",
+        "fr": "/fr/a-propos/"
       },
       "external": false
     },
     {
       "translationKey": "projects",
       "url": {
-        "en": "projects",
-        "fr": "projets"
+        "en": "/en/projects/",
+        "fr": "/fr/projets/"
       },
       "external": false
     },
     {
       "translationKey": "blog",
       "url": {
-        "en": "blog",
-        "fr": "blog"
+        "en": "/en/blog/",
+        "fr": "/fr/blog/"
       },
       "external": false
     },
     {
       "translationKey": "contact",
       "url": {
-        "en": "contact",
-        "fr": "contact"
+        "en": "/en/contact/",
+        "fr": "/fr/contact/"
       },
       "external": false
     }
