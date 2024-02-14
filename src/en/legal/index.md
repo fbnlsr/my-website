@@ -1,9 +1,9 @@
 ---
 layout: 'page.njk'
 permalink: '/en/legal/'
-metaDesc: 'Legal notice'
+metaDesc: 'Legal.'
 ---
-# Legal notice
+# Legal
 
 <div class="white-container">
 

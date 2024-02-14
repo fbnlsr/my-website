@@ -24,6 +24,10 @@
             <label for="contactMessage">{{ i18n[locale]['contactFormMessage'] }}</label>
             <textarea rows="8" name="message" id="contactMessage" required></textarea>
         </div>
+        <div class="form-item form-item-checkbox">
+            <input type="checkbox" id="legalAgreement" required/>
+            <label for="legalAgreement">{{ i18n[locale]['contactFormAgreement'] | markdownify | safe }}</label>
+        </div>
         <div class="form-item">
             <input type="submit" value="{{ i18n[locale]['contactFormSend'] }}"/>
         </div>

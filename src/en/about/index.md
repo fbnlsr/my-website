@@ -1,7 +1,7 @@
 ---
 layout: "about.njk"
 translationKey: "about"
-metaDesc: "I mainly work with modern tools and frameworks, such as Symfony, Vue.js, WordPress, Gridsome, Eleventy... I'm a web developper with over 15 years of experience, and I've been a freelancer since 2012. I work with Open Source CMS, HTML, CSS, TypeScript, PHP and MySQL. My clients are web agencies and companies of all sizes."
+metaDesc: "I mainly work with modern tools and frameworks, such as Symfony, Vue.js, WordPress, Eleventy... I'm a web developper with over 15 years of experience, and I've been a freelancer since 2012. I work with Open Source CMS, HTML, CSS, TypeScript, PHP and MySQL. My clients are web agencies and companies of all sizes."
 title: "Know-how"
 aboutBox1Title: "Tailor-made development"
 aboutBox1Text: "Thanks to the Open Source frameworks **Symfony** and **Vue.js**, I help my clients with deploying solutions that are **efficient, modern and maintainable**."
@@ -27,7 +27,7 @@ aboutSection5Text: |
   Regardless of the problem at hand, I create **a custom theme** that closely aligns with the expressed needs. This approach simplifies the updates for your website and ensures an optimal compatibility with the newest versions of the **WordPress Core** and the plugins used.
 aboutSection6Title: "Static sites, a return to basics."
 aboutSection6Text: |
-  Because they excel in terms of **speed** and **security**, I use **static site generators** to offer solutions that allow for a rapid deployment, all the while allowing for easy content updates and maintaining a clean code base. Thanks to **Gridsome** or **Eleventy**, it's possible to smoothly and afforably launch a website that stays flexible, remarkably fast and extremely lightweight.
+  Because they excel in terms of **speed** and **security**, I use **static site generators** to offer solutions that allow for a rapid deployment, all the while allowing for easy content updates and maintaining a clean code base. Thanks to **Eleventy**, it's possible to smoothly and afforably launch a website that stays flexible, remarkably fast and extremely lightweight.
 aboutBox3Title: "Methodology"
 aboutBox3Text: |
   I'm making use of my experience in **teamwork** and my penchant for effective **productivity methods** to deploy robust, developer-friendly, and maintainable code.
@@ -41,7 +41,7 @@ method3Title: "Standards"
 method3Text: |
   I adhere to **coding standards** and utilize tools such as **Prettier** or **PHPCS** to deliver code that meets standards and has a high level of **maintainability**.
 ---
-I mainly work with modern tools and frameworks, such as **Symfony, Vue.js, WordPress, Gridsome, Eleventy...**
+I mainly work with modern tools and frameworks, such as **Symfony, Vue.js, WordPress, Eleventy...**
 
 I'm a web developper with over **15 years of experience**, and I've been a freelancer since 2012.
 

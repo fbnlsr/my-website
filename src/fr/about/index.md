@@ -1,7 +1,7 @@
 ---
 layout: "about.njk"
 translationKey: "about"
-metaDesc: "Je travaille principalement avec des outils et des frameworks modernes comme Symfony, Vue.js, WordPress, Gridsome, Eleventy... Je suis un développeur web avec plus de 15 ans d’expérience, et je suis freelance depuis 2012. Je travaille avec des CMS Open Source, HTML, CSS, TypeScript, PHP et MySQL. Mes clients sont des agences web ou des entreprises de toute taille."
+metaDesc: "Je travaille principalement avec des outils et des frameworks modernes comme Symfony, Vue.js, WordPress,  Eleventy... Je suis un développeur web avec plus de 15 ans d’expérience, et je suis freelance depuis 2012. Je travaille avec des CMS Open Source, HTML, CSS, TypeScript, PHP et MySQL. Mes clients sont des agences web ou des entreprises de toute taille."
 permalink: "/fr/a-propos/"
 title: "Savoir faire"
 aboutBox1Title: "Développement sur mesure"
@@ -28,7 +28,7 @@ aboutSection5Text: |
   Quelque soit la problématique posée, je réalise un **thème sur mesure** qui répond au plus près au besoin exprimé. La mise à jour du site s’en retrouve facilitée, car cette indépendance technique permet de suivre au mieux les nouvelles versions du cœur de WordPress et des plugins utilisés.
 aboutSection6Title: "Les sites statiques, le retour aux sources."
 aboutSection6Text: |
-  Parce qu’ils sont inégalés en termes de **rapidité** et de **sécurité**, j’utilise des **générateurs de sites statiques** pour proposer des solutions qui peuvent être déployées rapidement, tout en bénéficiant d’une souplesse de mise à jour et de maintenabilité. Grâce à **Gridsome** ou **Eleventy**, il est possible de mettre en ligne, de manière fluide et à faible coût, un site internet rapide, flexible et extrêmement léger.
+  Parce qu’ils sont inégalés en termes de **rapidité** et de **sécurité**, j’utilise des **générateurs de sites statiques** pour proposer des solutions qui peuvent être déployées rapidement, tout en bénéficiant d’une souplesse de mise à jour et de maintenabilité. Grâce à **Eleventy**, il est possible de mettre en ligne, de manière fluide et à faible coût, un site internet rapide, flexible et extrêmement léger.
 aboutBox3Title: "Méthodologie"
 aboutBox3Text: |
   J’utilise mon expérience de **travail en équipe** et mon goût des **méthodes de productivité** efficaces pour déployer un code robuste, souple à prendre en main, et maintenable.
@@ -42,7 +42,7 @@ method3Title: "Conventions"
 method3Text: |
   J’utilise des **normes de codage** et des outils comme **Prettier** ou **PHPCS** afin de livrer du code répondant aux standards et avec un haut taux de **maintenabilité**.
 ---
-Je travaille principalement avec des outils et des frameworks modernes comme **Symfony, Vue.js, WordPress, Gridsome, Eleventy**...
+Je travaille principalement avec des outils et des frameworks modernes comme **Symfony, Vue.js, WordPress, Eleventy**...
 
 Je suis un développeur web avec plus de **15 ans d’expérience**, et je suis freelance depuis 2012.
 
