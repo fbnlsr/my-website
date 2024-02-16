@@ -77,4 +77,6 @@ The illustrations and icons on the "About" page are provided by https://www.free
 
 Sun/moon icons courtesy of [Jaime Aleman](https://github.com/jjaimealeman/my-theme-switcher).
 
+Photos on 404 page by [Daniel Jensen](https://unsplash.com/photos/persons-hand-over-brown-floral-field-during-daytime-UDleHDOhBZ8) and [Rahul Bhosale](https://unsplash.com/photos/man-standing-beside-camping-tent-wearing-headlamp-during-nighttime-yBgC-qVCxMg).
+
 </div>

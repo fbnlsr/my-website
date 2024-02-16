@@ -12,6 +12,12 @@
   }
 }
 
+body.dark-mode {
+  .not-found-container {
+    background: url('/img/404-dark.webp');
+  }
+}
+
 .not-found {
   font-size: 1.25rem;
   text-align: center;
@@ -27,10 +33,5 @@
 
   p {
     margin-bottom: 1rem;
-
-    &.not-found-copyright {
-      font-size: 0.7rem;
-      color: #555555;
-    }
   }
 }

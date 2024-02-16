@@ -77,4 +77,6 @@ Les illustrations et pictogrammes de la page « À propos » sont fournis par ht
 
 Les icônes de soleil/lune sont fournies par [Jaime Aleman](https://github.com/jjaimealeman/my-theme-switcher).
 
+Les photos sur la page 404 sont la propriété de [Daniel Jensen](https://unsplash.com/photos/persons-hand-over-brown-floral-field-during-daytime-UDleHDOhBZ8) et [Rahul Bhosale](https://unsplash.com/photos/man-standing-beside-camping-tent-wearing-headlamp-during-nighttime-yBgC-qVCxMg).
+
 </div>
