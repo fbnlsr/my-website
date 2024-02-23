@@ -215,6 +215,14 @@
 .blog-post {
   padding-bottom: 2rem;
 
+  &.is-sand {
+    article {
+      blockquote {
+        background-color: darken(#f5eddd, 5%);
+      }
+    }
+  }
+
   .is-color-changer-container {
     display: flex;
     flex-direction: row;
@@ -742,50 +750,20 @@
   left: -999999999px;
 }
 
-.copy-code-button {
-  color: #fcfcfc;
-  background-color: #282a36;
-  border: 0px;
-  border-radius: 3px 3px 0px 0px;
-
-  /* right-align */
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-
-  margin-bottom: -2px;
-  padding: 3px 8px;
-  font-size: 0.6em;
-}
-
-.copy-code-button:hover {
-  cursor: pointer;
-  background-color: #3a3c49;
-}
-
-.copy-code-button:focus {
-  /* Avoid an ugly focus outline on click in Chrome,
-       but darken the button for accessibility.
-       See https://stackoverflow.com/a/25298082/1481479 */
-  background-color: #e6e6e6;
-  outline: 0;
-}
-
-.copy-code-button:active {
-  background-color: #d9d9d9;
-}
-
-.highlight pre {
-  /* Avoid pushing up the copy buttons. */
-  margin: 0;
-}
-
 body.dark-mode {
   .blog-list {
     .blog-bloc {
       border: 1px solid $bgdark;
       box-shadow: 0 10px 10px -10px #111;
       background-color: darken($bgdark, 3%);
+    }
+  }
+
+  .blog-post:not(.is-sand) {
+    article {
+      blockquote {
+        background-color: darken($bgdark, 3%);
+      }
     }
   }
 
