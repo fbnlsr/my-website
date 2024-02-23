@@ -41,8 +41,8 @@ Personnellement, j’utilise donc cette structure :
 /dist
 /src
   /_assets
-  /js
-  /scss
+    /js
+    /scss
   /_data
   /_layouts
   /en
