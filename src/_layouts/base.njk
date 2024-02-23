@@ -53,8 +53,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 
     <!-- Facebook Open Graph -->
-    <meta property="og:title" content="{%- if title -%}{{ title | escape }} | {{ i18n[locale]['sitename'] }}{%- else -%}{{ i18n[locale]['sitename'] }}{%- endif -%}">
-    <meta property="og:description" content="{%- if excerpt -%}{{ excerpt | escape }} | {{ i18n[locale]['sitename'] }}{%- else -%}{{ i18n[locale]['sitename'] }}{%- endif -%}">
+    <meta property="og:title" content="{%- if title -%}{{ title | escape }} | {{ i18n[locale]['sitename'] }}{%- else -%}{{ i18n[locale]['sitename'] }}{%- endif -%}"/>
+    <meta property="og:description" content="{%- if excerpt -%}{{ excerpt | escape }} | {{ i18n[locale]['sitename'] }}{%- else -%}{{ i18n[locale]['sitename'] }}{%- endif -%}"/>
     <meta property="og:site_name" content="{{ i18n[locale]['sitename'] }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ site.url + page.url }}"/>
