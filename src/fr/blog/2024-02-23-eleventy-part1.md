@@ -17,7 +17,7 @@ Au fil des ans, le site internet que vous êtes en train de lire aura utilisé p
 
 ### Jekyll
 
-En premier, j'ai utilisé [Jekyll](https://jekyllrb.com). Précurseur de la mouvance JAMStack, Il a été créé il y a plus de 15 ans par Tom Preston-Werner, le fondateur de GitHub. Aujourd’hui, Jekyll est probablement le générateur de site statique le plus connu et le plus utilisé au monde. C'est vraiment un système formidable, et sa documentation est excellente. Seulement voilà : Jekyll demande de posséder et maintenir un environnement Ruby. Et si comme moi vous n'êtes pas un développeur utilisant cet écosystème au quotidien, cela peut devenir un peu fastidieux.
+En premier, j'ai utilisé [Jekyll](https://jekyllrb.com). Précurseur de la mouvance JAMStack, il a été créé il y a plus de 15 ans par Tom Preston-Werner, le fondateur de GitHub. Aujourd’hui, Jekyll est probablement le générateur de site statique le plus connu et le plus utilisé au monde. C'est vraiment un système formidable, et sa documentation est excellente. Seulement voilà : Jekyll demande de posséder et maintenir un environnement Ruby. Et si comme moi vous n'êtes pas un développeur utilisant cet écosystème au quotidien, cela peut devenir un peu fastidieux.
 
 ### Hugo
 
@@ -111,7 +111,7 @@ return {
 };
 ```
 
-Ici nous précisons que le moteur de template utilisé est Nunjucks, et que les fichiers qui doivent être considérés comme des templates par 11ty peuvent porter l’extension `.md`, `.njk`, `.html` ou `.11ty.js`. Ces fichiers là vont donc forcément passer par le moteur Nunjucks afin de générer leur contrepartie HTML ou autre (précisé dans le front-matter). Enfin, sous la clé dir nous précisons les dossiers utilisés pour l’input, la destination et les layouts.
+Ici nous précisons que le moteur de template utilisé est Nunjucks, et que les fichiers qui doivent être considérés comme des templates par 11ty peuvent porter l’extension `.md`, `.njk`, `.html` ou `.11ty.js`. Ces fichiers là vont donc forcément passer par le moteur Nunjucks afin de générer leur contrepartie HTML ou autre (précisé dans le front-matter). Enfin, sous la clé `dir` nous précisons les dossiers utilisés pour l’input, la destination et les layouts.
 
 Ainsi, la racine du projet peut se contenter de contenir tous les fichiers de configuration (`.eleventy.js`, `.gitignore`, `package.json`, etc…), le code source réside dans `/src` et le site généré va se retrouver dans `/dist`.
 
