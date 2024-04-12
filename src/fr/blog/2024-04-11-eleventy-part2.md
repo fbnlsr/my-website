@@ -2,7 +2,7 @@
 title: "Maîtriser Eleventy - Partie 2 : i18n et assets"
 date: 2024-04-11
 translationKey: "blog11typart2"
-excerpt: "Dans cette série d'articles, je partage mes recommandations sur à l'implémentation d'un environnement de travail serein pour développer des sites web statiques avec Eleventy."
+excerpt: "Dans cette seconde partie d'une série d'articles consacrés à Eleventy, je détaille comment je mets en place le support multilingue d'un site Eleventy, ainsi que la compilation des assets JS et SCSS."
 cover:
   author: "Susan Q Yin"
   link: "https://unsplash.com/@syinq"
