@@ -19,7 +19,9 @@ Commençons donc par la compilation du JavaScript et de la CSS. Pour cela, et co
 
 Pour JavaScript, nous allons avoir besoin de la dépendance `esbuild` :
 
-`npm install --save esbuild`
+```bash
+npm install --save esbuild
+```
 
 Nous créons ensuite le fichier `/src/scripts.11ty.js` avec le code suivant :
 
@@ -57,7 +59,9 @@ On peut voir ici l’une des grandes forces d’Eleventy : ce fichier va être a
 
 Le principe est le même pour nos assets CSS. Pour cela nous allons avoir besoin de la dépendance `sass` :
 
-`npm install --save sass`
+```bash
+npm install --save sass
+```
 
 Le fichier d’entrée sera `/src/styles.11ty.js` avec le contenu suivant :
 
@@ -196,7 +200,7 @@ Mais avant de pouvoir utiliser ce dictionnaire, il est nécessaire de spécifier
 
 Ce petit fichier JSON est primordial pour le support multilingue de notre site internet car il autorise l’utilisation de la clé `locale` partout dans nos templates. Cela permet donc de préciser à Eleventy que tout ce qui réside dans ce dossier possède une clé `locale` qui a pour valeur `en`.
 
-Nous pouvons désormais utiliser plusieurs langues pour des pages statiques. Par exemple, il est maintenant possible d’avoir une page `/en/about.md` et une page `/fr/about.md`. Ces deux pages possédant la clé `translateKey` à about, elles sont « reconnues » dans le menu principal et la distinction de la page active se fait correctement.
+Nous pouvons désormais utiliser plusieurs langues pour des pages statiques. Par exemple, il est maintenant possible d’avoir une page `/en/about.md` et une page `/fr/about.md`. Ces deux pages possédant la clé `translateKey` à `about`, elles sont « reconnues » dans le menu principal et la distinction de la page active se fait correctement.
 
 > Notez que j’utilise ici le même nom de fichier mais rien ne nous empêcherait d’utiliser `/en/about.md` et `/fr/a-propos.md`. C’est une simple convention que j’ai décidé d’appliquer.
 
@@ -206,6 +210,7 @@ Mais qu’en est-il pour les pages secondaires, et particulièrement les article
 
 La première chose à faire est donc de spécifier un fichier `blog.11tydata.js` (dans le dossier `/fr/blog/` par exemple) afin d’y ajouter le code suivant :
 
+{% raw %}
 ```js
 // /src/fr/blog/blog.11tydata.js
 require('dotenv').config();
@@ -251,6 +256,7 @@ module.exports = function () {
   };
 };
 ```
+{% endraw %}
 
 Ce fichier est un peu plus complexe que le simple `fr.json` que nous avons utilisé plus haut, mais il nous permet plusieurs choses :
 
@@ -277,7 +283,7 @@ La troisième clé enfin, `permalink`, permet une génération à la volée d’
 
 ### Lier des articles entre eux
 
-Grâce à tout ceci, il est désormais possible de lier des pages entre elles grâce à cette utilisation des clés `locale` et `translationKey`. Par exemple, dans le template qui permet d'afficher un article de blog, voici comment je fais la liaison avec un article rédigé dans les deux langues (Français et Anglais) :
+Grâce à tout ceci, il est désormais possible de lier des pages entre elles avec l'utilisation des clés `locale` et `translationKey`. Par exemple, dans le template qui permet d'afficher un article de blog, voici comment je fais la liaison avec un article rédigé dans les deux langues (Français et Anglais) :
 
 {% raw %}
 ```jinja2
@@ -301,7 +307,7 @@ Grâce à tout ceci, il est désormais possible de lier des pages entre elles gr
 
 ## Conclusion
 
-Nous pouvons donc désormais utiliser plusieurs langues sur notre site internet. Les traductions des contenus rédactionnels des pages se font directement grâce aux fichiers markdown qui se trouvent dans les dossiers idoines, et les données appartenant au reste du site (UI, boutons & co) sont traduites grâce au dictionnaire du site.
+Nous pouvons donc désormais utiliser plusieurs langues sur notre site internet. Les traductions des contenus rédactionnels des pages se font directement grâce aux fichiers markdown qui se trouvent dans les dossiers idoines, et les données appartenant au reste du site (UI, boutons & co) sont traduites grâce aux dictionnaires du site.
 
 Alors certes, la configuration peut paraître lourde et il aurait été agréable d’avoir un support directement intégré à Eleventy. Mais c’est aussi ce qui fait sa grande force : c’est un générateur de sites statique qui aime mettre le développeur à la barre, et il nous laisse trouver la meilleure solution (ou tout du moins la plus confortable) pour les problèmes que nous pouvons rencontrer.
 
