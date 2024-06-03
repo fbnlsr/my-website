@@ -445,7 +445,8 @@
     }
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.45rem;
+      opacity: 0.85;
     }
 
     ol,
@@ -512,6 +513,22 @@
       margin-bottom: 1rem;
       font-family: monospace;
       padding: 1rem;
+
+      code {
+        color: inherit;
+        white-space: inherit;
+        padding: initial;
+        border-radius: initial;
+        background-color: initial;
+      }
+    }
+
+    code {
+      background-color: var(--background);
+      color: var(--pink);
+      padding: 2px 4px;
+      border-radius: 4px;
+      white-space: nowrap;
     }
 
     hr {
