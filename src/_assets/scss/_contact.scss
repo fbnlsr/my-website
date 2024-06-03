@@ -26,6 +26,10 @@
     font-family: $nunito;
     margin-bottom: 1rem;
 
+    &.hidden {
+      display: none;
+    }
+
     &.form-item-checkbox {
       flex-direction: row;
 

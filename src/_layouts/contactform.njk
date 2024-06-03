@@ -7,7 +7,7 @@
 </div>
 
 <div class="contact-container white-container">
-    <form name="contact" netlify>
+    <form name="contact" method="POST" netlify-honeypot="yummyField" data-netlify="true">
         <div class="form-item">
             <label for="contactName">{{ i18n[locale]['contactFormName'] }}</label>
             <input type="text" name="name" id="contactName" required/>
@@ -19,6 +19,10 @@
         <div class="form-item">
             <label for="contactPhone">{{ i18n[locale]['contactFormPhone'] }}</label>
             <input type="text" name="phone" id="contactPhone" required/>
+        </div>
+        <div class="form-item hidden">
+            <label for="yummyField">{{ i18n[locale]['yummyField'] }}</label>
+            <input type="text" name="yummyField" id="yummyField"/>
         </div>
         <div class="form-item">
             <label for="contactMessage">{{ i18n[locale]['contactFormMessage'] }}</label>

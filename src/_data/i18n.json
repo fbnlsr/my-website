@@ -35,7 +35,8 @@
     "aboutCTA1": "J'ai besoin d'un développement sur mesure",
     "aboutCTA2": "J'ai besoin d'un site vitrine",
     "misc": "Divers",
-    "contactMeCTA": "Me contacter"
+    "contactMeCTA": "Me contacter",
+    "yummyField": "Ne remplissez PAS ce champ :"
   },
   "en": {
     "sitename": "Fabien Lasserre – Full stack web developer",
@@ -73,6 +74,7 @@
     "aboutCTA1": "I need a tailor-made development",
     "aboutCTA2": "I need a corporate website",
     "misc": "Misc",
-    "contactMeCTA": "Get in touch"
+    "contactMeCTA": "Get in touch",
+    "yummyField": "Do NOT fill this field:"
   }
 }
