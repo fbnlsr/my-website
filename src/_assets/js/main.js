@@ -5,30 +5,6 @@ let lastKnownScrollPosition = 0;
 let ticking = false;
 const topArrow = document.getElementById('topArrow');
 
-const setCookie = (cname, cvalue, exdays) => {
-  const d = new Date();
-  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-  const expires = `expires=${d.toUTCString()}`;
-  document.cookie = `${cname}=${cvalue};${expires};path=/`;
-};
-
-const getCookie = (cname) => {
-  const name = `${cname}=`;
-  const decodedCookie = decodeURIComponent(document.cookie);
-  const ca = decodedCookie.split(';');
-
-  for (let i = 0; i < ca.length; i += 1) {
-    let c = ca[i];
-    while (c.charAt(0) === ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) === 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return '';
-};
-
 const getAll = (selector) => {
   return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
 };
@@ -86,7 +62,6 @@ window.addEventListener('scroll', () => {
 });
 
 const modalCloses = getAll('.modal-background, .delete');
-const colorChanger = getAll('.is-color-changer');
 const langSwitcher = getAll('.is-lang-switcher');
 const modeSwitcher = getAll('.is-mode-switcher');
 
@@ -265,25 +240,6 @@ domReady(() => {
     blogPostContainer.classList.add(blogColor);
   }
 
-  // Blog article color changer
-  if (colorChanger && colorChanger.length > 0) {
-    colorChanger.forEach((el) => {
-      el.addEventListener('click', (event) => {
-        event.preventDefault();
-        const changer = event.target;
-        const { color } = changer.dataset;
-        blogPostContainer.classList.remove('is-dark');
-        blogPostContainer.classList.remove('is-sand');
-        localStorage.setItem('blogColor', '');
-
-        if (color && color !== 'undefined') {
-          localStorage.setItem('blogColor', color);
-          blogPostContainer.classList.add(color);
-        }
-      });
-    });
-  }
-
   if (langSwitcher && langSwitcher.length > 0) {
     langSwitcher.forEach((el) => {
       el.addEventListener('click', (event) => {
@@ -319,7 +275,7 @@ domReady(() => {
   // Dark/light mode switcher
   if (modeSwitcher && modeSwitcher.length > 0) {
     modeSwitcher.forEach((el) => {
-      el.addEventListener('click', (event) => {
+      el.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
 
         if (document.body.classList.contains('dark-mode')) {
@@ -338,4 +294,21 @@ domReady(() => {
   } else if (url === '/fr/') {
     localStorage.setItem('lang', 'fr');
   }
+
+  const updateParallax = () => {
+    const parallaxDiv = document.querySelector('.cover-container');
+    const scrollPosition = window.scrollY; // Get current scroll position
+    const elementOffsetTop = parallaxDiv.offsetTop; // Get element's position from the top of the page
+
+    // Calculate background position relative to scroll, adjusted by element's position on the page
+    const parallaxSpeed = 0.5; // Adjust multiplier to control speed
+    const backgroundPosition = (scrollPosition - elementOffsetTop) * parallaxSpeed;
+
+    // Apply the calculated position to the background
+    parallaxDiv.style.backgroundPositionY = `${backgroundPosition}px`;
+  };
+
+  updateParallax();
+
+  window.addEventListener('scroll', updateParallax);
 });
