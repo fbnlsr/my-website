@@ -15,7 +15,7 @@ layout: "base.njk"
             <div class="cover-container"
                  style="background-image: url('/img/blog/{{ date | blogdate }}/cover-1000w.webp');"></div>
             {%- if cover.author -%}
-                <p class="is-cover-author noprint is-hidden-mobile">
+                <p class="is-cover-author noprint">
                     {%- if cover.link -%}
                     Photo by <a href="{{ cover.link }}">
                         {%- endif -%}

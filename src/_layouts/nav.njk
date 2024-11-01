@@ -1,6 +1,6 @@
 <nav class="navbar noprint" aria-label="main navigation">
     <div class="navbar-menu">
-        <a href="/{{ locale }}/" class="logo-header"><img width="50" height="35" src="/img/logo.svg" alt="Primative logo"/></a>
+        <a href="/{{ locale }}/" class="logo-header"><img width="50" height="35" src="/img/logo.svg" alt="Logo"/></a>
         {%- for item in site.headerLinks -%}
             <a class="navbar-item {% if (page.url == "/" + locale + "/" and item.translationKey == "home") or page.url == "/" + locale + "/" + item.url[locale] + "/" or item.translationKey == category -%}is-active{%- endif -%}" href="{{ item.url[locale] }}">{{ i18n[locale][item.translationKey] }}</a>
         {%- endfor -%}
@@ -14,7 +14,7 @@
     </div>
 
     <div id="mobileNav" class="nav-mobile">
-        <a class="navbar-item" href="/{{ locale }}/" class="logo-header"><img width="50" height="35" src="/img/logo.svg" alt="Primative logo"/></a>
+        <a class="navbar-item" href="/{{ locale }}/" class="logo-header"><img width="50" height="35" src="/img/logo.svg" alt="Logo"/></a>
         {%- for item in site.headerLinks -%}
             <a class="navbar-item {% if (page.url == "/" + locale + "/" and item.translationKey == "home") or page.url == "/" + locale + "/" + item.url[locale] + "/" or item.translationKey == category -%}is-active{%- endif -%}" href="{{ item.url[locale] }}">{{ i18n[locale][item.translationKey] }}</a>
         {%- endfor -%}
