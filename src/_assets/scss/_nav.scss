@@ -7,30 +7,12 @@
     position: relative;
     max-width: 800px;
     margin: auto;
-    border-bottom: 1px solid $blue;
     font-size: 16px;
     font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 35px;
-  }
-
-  .navbar-bottom {
-    max-width: 800px;
-    margin: auto;
-    text-align: right;
-    font-size: 16px;
-    color: $gray2;
-
-    a {
-      color: inherit;
-      text-decoration: none;
-
-      &:hover {
-        color: $blue;
-      }
-    }
   }
 
   .logo-header {
@@ -87,25 +69,22 @@
       height: initial;
     }
 
-    .navbar-item-lang {
-      font-size: 30px;
-      color: $gray2;
-    }
-
     &.is-active {
       top: 0;
+    }
+
+    .lang-choser {
+      position: initial;
     }
   }
 
   .navbar-burger {
     display: none;
     position: fixed;
-    top: 0;
     width: 32px;
     height: 26px;
     right: 1rem;
     background-color: transparent;
-    z-index: 2000;
     margin: 0;
     padding: 0;
     border: none;
@@ -139,11 +118,11 @@
       border-radius: 2px;
 
       &:first-child {
-        transform-origin: 0% 0%;
+        transform-origin: 0 0;
       }
 
       &:last-child {
-        transform-origin: 0% 100%;
+        transform-origin: 0 100%;
       }
     }
 
@@ -207,6 +186,7 @@
       &.is-active {
         color: $background;
         background-color: $blue;
+
         a {
           border-bottom: 2px solid $blue;
         }

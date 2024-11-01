@@ -438,6 +438,10 @@
 
   .is-bullet-end-article {
     display: block;
+    width: 12px;
+    height: 12px;
+    background-color: $text;
+    border-radius: 50%;
     margin: 3rem auto;
   }
 
@@ -581,6 +585,10 @@ body.dark-mode {
       blockquote {
         background-color: darken($bgdark, 3%);
       }
+    }
+
+    .is-bullet-end-article {
+      background-color: #f0f0f0;
     }
   }
 

@@ -49,7 +49,7 @@ layout: "base.njk"
         {{ content | emojify | safe }}
     </article>
 
-    <img class="is-bullet-end-article noprint" src="/img/bullet-big.webp" alt="Bullet">
+    <div class="is-bullet-end-article noprint"></div>
 
     <div class="btn is-twitter-share noprint">
         <a href="https://twitter.com/share?url={{ site.url + page.url }}&text={{ title }}&via=fbnlsr">{{ i18n[locale]['twitterShare'] | safe }}</a>
