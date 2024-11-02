@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 .footer-logo {
   text-align: center;
   margin-top: 50px;
@@ -9,11 +12,11 @@
 }
 
 .site-footer {
-  background-color: $footerbg;
-  border-top: 1px solid $gray1;
+  background-color: variables.$footerbg;
+  border-top: 1px solid variables.$gray1;
   padding: 1rem 3rem;
   font-size: 0.8rem;
-  color: $gray2;
+  color: variables.$gray2;
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -48,7 +51,7 @@
     font-weight: bold;
 
     &.is-active {
-      border-bottom: 1px solid $gray2;
+      border-bottom: 1px solid variables.$gray2;
     }
   }
 
@@ -93,8 +96,8 @@
 
 body.dark-mode {
   .site-footer {
-    background-color: darken($bgdark, 3%);
-    border-top: 1px solid $gray2;
-    color: $textdark;
+    background-color: color.adjust(variables.$bgdark, $lightness: -3%, $space: hsl);
+    border-top: 1px solid variables.$gray2;
+    color: variables.$textdark;
   }
 }

@@ -1,9 +1,10 @@
-const esbuild = require('esbuild');
-const { NODE_ENV = 'production' } = process.env;
+import esbuild from 'esbuild';
 
-const isProduction = NODE_ENV === 'production';
+const { ELEVENTY_ENV = 'production' } = process.env;
 
-module.exports = class {
+const isProduction = ELEVENTY_ENV === 'production';
+
+export default class {
   data() {
     return {
       permalink: false,

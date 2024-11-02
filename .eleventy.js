@@ -1,10 +1,11 @@
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const readingTime = require('eleventy-plugin-reading-time');
-const emojifyPlugin = require('eleventy-plugin-emojify');
-const pluginRss = require('@11ty/eleventy-plugin-rss');
-const htmlmin = require('html-minifier');
+import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
+import readingTime from 'eleventy-plugin-reading-time';
+import emojifyPlugin from 'eleventy-plugin-emojify';
+import pluginRss from '@11ty/eleventy-plugin-rss';
+import htmlmin from 'html-minifier';
+import markdownIt from 'markdown-it';
 
-module.exports = function (eleventyConfig) {
+export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/img/');
   eleventyConfig.addPassthroughCopy('./src/js/');
   eleventyConfig.addPassthroughCopy('./src/css/');
@@ -20,7 +21,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   // Markdown filter for applying to the "description" inside projects front matter
-  const markdownIt = require('markdown-it');
   const markdownItOptions = {
     html: true,
     breaks: true,
@@ -37,6 +37,7 @@ module.exports = function (eleventyConfig) {
     function pad(n) {
       return n < 10 ? '0' + n : n;
     }
+
     const postDate = new Date(date);
 
     return (
@@ -76,15 +77,15 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+  eleventyConfig.addTransform('htmlmin', function(content, outputPath) {
+
     if (outputPath !== false && outputPath.endsWith('.html')) {
-      let minified = htmlmin.minify(content, {
+
+      return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true
       });
-
-      return minified;
     }
 
     return content;

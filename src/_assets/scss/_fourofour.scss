@@ -1,10 +1,11 @@
+@use "variables";
+
 .not-found-container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  background: url('/img/404.webp');
-  background-position: center center;
+  background: url('/img/404.webp') center center;
   background-size: cover;
 
   @media screen and (max-width: 768px) {
@@ -28,7 +29,7 @@ body.dark-mode {
   padding: 2rem;
 
   a {
-    color: $blue;
+    color: variables.$blue;
   }
 
   p {

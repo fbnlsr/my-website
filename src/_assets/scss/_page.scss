@@ -1,9 +1,11 @@
+@use "variables";
+
 .page-container {
   max-width: 900px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-  font-family: $nunito;
+  font-family: variables.$nunito;
   font-size: 18px;
 
   .white-container {
@@ -15,15 +17,15 @@
   }
 
   h2 {
-    font-family: $montserrat;
+    font-family: variables.$montserrat;
     font-size: 24px;
     font-weight: 700;
-    color: $blue;
+    color: variables.$blue;
     margin-bottom: 1rem;
   }
 
   h3 {
-    font-family: $nunito;
+    font-family: variables.$nunito;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 0.6rem;
@@ -37,7 +39,7 @@
   a,
   a:visited,
   a:active {
-    color: $blue;
+    color: variables.$blue;
     text-decoration: underline;
   }
 }

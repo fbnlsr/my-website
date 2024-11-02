@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 .contact-text {
   margin-bottom: 2rem;
 
@@ -9,7 +12,7 @@
     a,
     a:visited,
     a:active {
-      color: $blue;
+      color: variables.$blue;
       text-decoration: underline;
     }
   }
@@ -23,7 +26,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-family: $nunito;
+    font-family: variables.$nunito;
     margin-bottom: 1rem;
 
     &.hidden {
@@ -53,16 +56,16 @@
 
     input,
     textarea {
-      font-family: $nunito;
+      font-family: variables.$nunito;
       font-size: 16px;
-      border: 1px solid $gray1;
+      border: 1px solid variables.$gray1;
       border-radius: 5px;
       padding: 10px;
     }
 
     input[type='submit'] {
       display: inline-block;
-      background-color: $blue;
+      background-color: variables.$blue;
       color: white;
       align-self: flex-start;
       font-size: 20px;
@@ -71,14 +74,14 @@
       border: none;
 
       &:hover {
-        background-color: lighten($blue, 10%);
+        background-color: color.adjust(variables.$blue, $lightness: 10%, $space: hsl);
       }
     }
   }
 }
 
 .contact-page-container {
-  font-family: $nunito;
+  font-family: variables.$nunito;
   font-size: 20px;
   max-width: 1000px;
   margin: auto;
@@ -88,6 +91,7 @@
 
   .contact-text {
     text-align: center;
+
     p {
       margin-bottom: 1rem;
 
@@ -103,18 +107,18 @@ body.dark-mode {
     .form-item {
       input,
       textarea {
-        border-color: $bgdark2;
-        background-color: darken($bgdark2, 10%);
-        color: $background;
+        border-color: variables.$bgdark2;
+        background-color: color.adjust(variables.$bgdark2, $lightness: -10%, $space: hsl);
+        color: variables.$background;
       }
 
       input[type='submit'] {
-        background-color: $blue;
+        background-color: variables.$blue;
         color: white;
 
         &:hover {
           cursor: pointer;
-          background-color: lighten($blue, 10%);
+          background-color: color.adjust(variables.$blue, $lightness: 10%, $space: hsl);
         }
       }
     }

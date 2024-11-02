@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 // Thanks to Jake Jarvis for this codepen: https://codepen.io/jakejarvis/pen/pBZWZw
 @keyframes wave-animation {
   0% {
@@ -5,7 +8,8 @@
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
@@ -20,7 +24,8 @@
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
+  /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
   }
@@ -29,7 +34,7 @@
 .home {
   .content {
     text-align: center;
-    font-family: $nunito;
+    font-family: variables.$nunito;
     font-size: 24px;
 
     .wave {
@@ -57,21 +62,21 @@
     }
 
     h1 {
-      font-family: $montserrat;
+      font-family: variables.$montserrat;
       font-size: 50px;
-      color: $blue;
+      color: variables.$blue;
     }
 
     img {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
       border-radius: 50%;
       margin-bottom: 40px;
     }
   }
 
   h2 {
-    font-family: $montserrat;
+    font-family: variables.$montserrat;
     text-align: left;
     font-size: 36px;
     font-weight: 700;
@@ -80,23 +85,19 @@
   }
 
   .home-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-family: $nunito;
+    font-family: variables.$nunito;
     font-size: 24px;
     line-height: 35px;
-    margin-bottom: 70px;
     max-width: 1200px;
     margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 30px 20px;
 
     .text-center {
       text-align: center;
     }
 
     .cta {
-      background-color: $blue;
+      background-color: variables.$blue;
       color: #fff;
       text-decoration: none;
       padding: 15px 40px;
@@ -110,11 +111,11 @@
         font-size: 28px;
         font-weight: 700;
         padding: 18px 50px;
-        box-shadow: 0 10px 10px -10px $gray1;
+        box-shadow: 0 10px 10px -10px variables.$gray1;
       }
 
       &:hover {
-        background-color: lighten($blue, 5%);
+        background-color: color.adjust(variables.$blue, $lightness: 5%, $space: hsl);
       }
     }
 
@@ -123,9 +124,7 @@
 
       .frameworks {
         max-width: 600px;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 100px;
+        margin: 50px auto 100px;
         display: flex;
         justify-content: space-between;
 
@@ -137,8 +136,6 @@
 
     &.home-projects {
       max-width: 100%;
-      padding-left: 0;
-      padding-right: 0;
       margin-top: 50px;
       margin-bottom: 50px;
       padding-left: 20px;
@@ -148,9 +145,7 @@
         max-width: 1200px;
         padding-left: 20px;
         padding-right: 20px;
-        margin: auto;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
+        margin: 1rem auto 3rem;
       }
 
       .home-projects-container {
@@ -179,7 +174,7 @@
           }
 
           .title {
-            font-family: $montserrat;
+            font-family: variables.$montserrat;
             font-size: 20px;
             font-weight: 700;
             line-height: 28px;
@@ -188,10 +183,10 @@
           }
 
           .work {
-            font-family: $nunito;
+            font-family: variables.$nunito;
             font-size: 14px;
             font-weight: 400;
-            color: $gray2;
+            color: variables.$gray2;
             margin-bottom: 0;
             margin-top: 0;
             line-height: 1rem;
@@ -199,7 +194,7 @@
 
           &:hover {
             .cover {
-              box-shadow: -10px 10px 0 $blue;
+              box-shadow: -10px 10px 0 variables.$blue;
               top: -10px;
               right: -10px;
             }
@@ -234,7 +229,7 @@
         }
 
         .post-title {
-          font-family: $nunito;
+          font-family: variables.$nunito;
           font-size: 18px;
           line-height: 24px;
           margin: 0;
@@ -252,7 +247,7 @@
             width: 7px;
             height: 7px;
             border-radius: 50%;
-            background-color: $blue;
+            background-color: variables.$blue;
             position: absolute;
             left: 0;
             top: 8px;
@@ -260,11 +255,11 @@
         }
 
         .post-date {
-          font-family: $nunito;
+          font-family: variables.$nunito;
           font-size: 14px;
           line-height: 1rem;
           margin: 0;
-          color: $gray2;
+          color: variables.$gray2;
           padding-left: 15px;
         }
       }
@@ -273,7 +268,7 @@
         text-align: right;
 
         a {
-          color: $blue;
+          color: variables.$blue;
           font-size: 20px;
         }
       }
@@ -297,7 +292,8 @@
       font-size: 22px;
 
       img {
-        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
       }
 
       h1 {
@@ -379,7 +375,7 @@
   transition: bottom 0.8s cubic-bezier(0.53, -0.13, 0.51, 1.18);
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 0 10px $gray1;
+  box-shadow: 0 0 10px variables.$gray1;
 
   &.is-active {
     bottom: 30px;
@@ -420,7 +416,7 @@
 
     a {
       text-decoration: none;
-      color: $blue;
+      color: variables.$blue;
     }
   }
 
@@ -436,11 +432,12 @@ body.dark-mode {
         box-shadow: 0 10px 10px -10px #111;
       }
     }
+
     .home-section {
       &.home-blog {
         .post {
           .post-date {
-            color: $gray2;
+            color: variables.$gray2;
           }
         }
       }
@@ -448,7 +445,7 @@ body.dark-mode {
   }
 
   #heyListen {
-    background-color: darken($bgdark, 3%);
+    background-color: color.adjust(variables.$bgdark, $lightness: -3%, $space: hsl);
     box-shadow: 0 0 10px #111;
   }
 }

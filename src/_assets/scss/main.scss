@@ -1,10 +1,18 @@
-@mixin clearfix {
-  &:after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-}
+@use "sass:color";
+@use 'dracula_prism';
+@use 'dracula';
+@use '../../../node_modules/@glidejs/glide/src/assets/sass/glide.core';
+@use 'variables';
+@use 'nav';
+@use 'home';
+@use 'contact';
+@use 'about';
+@use 'projects';
+@use 'project';
+@use 'blog';
+@use 'page';
+@use 'fourofour';
+@use 'footer';
 
 @font-face {
   font-family: 'Montserrat';
@@ -75,22 +83,6 @@
   U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@import 'dracula_prism';
-@import 'dracula';
-@import '../../../node_modules/@glidejs/glide/src/assets/sass/glide.core';
-@import '../../../node_modules/@glidejs/glide/src/assets/sass/glide.theme';
-@import 'variables';
-@import 'nav';
-@import 'home';
-@import 'contact';
-@import 'about';
-@import 'projects';
-@import 'project';
-@import 'blog';
-@import 'page';
-@import '404';
-@import 'footer';
-
 * {
   padding: 0;
   margin: 0;
@@ -111,15 +103,15 @@ html {
 }
 
 body {
-  background-color: $background;
-  color: $text;
+  background-color: variables.$background;
+  color: variables.$text;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
 
   &.dark-mode {
-    background-color: $bgdark;
-    color: $textdark;
+    background-color: variables.$bgdark;
+    color: variables.$textdark;
   }
 }
 
@@ -131,7 +123,7 @@ h1 {
 }
 
 hr {
-  background-color: $blue;
+  background-color: variables.$blue;
 }
 
 img {
@@ -144,15 +136,15 @@ img {
   text-align: center;
   margin-bottom: 3rem;
   border-radius: 4px;
-  color: $blue;
+  color: variables.$blue;
   outline: 0;
 
   a {
     text-align: center;
     border-radius: 4px;
-    border: 1px solid $blue;
+    border: 1px solid variables.$blue;
     padding: 0.5rem 0.75rem;
-    color: $blue;
+    color: variables.$blue;
     transition: color 0.2s ease-out, background-color 0.2s ease-out;
 
     &:hover,
@@ -162,8 +154,8 @@ img {
     }
 
     &:hover {
-      background-color: $blue;
-      color: $background;
+      background-color: variables.$blue;
+      color: variables.$background;
     }
   }
 }
@@ -186,7 +178,7 @@ button:active {
 
 .white-container {
   background-color: white;
-  border: 1px solid $blue;
+  border: 1px solid variables.$blue;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -229,8 +221,8 @@ body.dark-mode {
   }
 
   .white-container {
-    background-color: darken($bgdark, 3%);
-    border: 1px solid darken($blue, 20%);
+    background-color: color.adjust(variables.$bgdark, $lightness: 3%, $space: hsl);
+    border: 1px solid color.adjust(variables.$blue, $lightness: 20%, $space: hsl);
   }
 }
 

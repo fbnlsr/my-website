@@ -5,10 +5,10 @@ permalink: '/fr/blog/feed.xml'
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>{{ i18n[locale]['sitename'] }}</title>
     <subtitle></subtitle>
-    <link href="{{ site.url }}{{ permalink }}" rel="self"/>
-    <link href="{{ site.url }}/"/>
+    <link href="{{ site.url }}{{ permalink }}" rel="self" />
+    <link href="{{ site.url }}/" />
     {% if collections["posts_fr"] | length %}
-        <updated>{{ collections["posts_fr"] | rssLastUpdatedDate }}</updated>
+        <updated>{{ collections["posts_fr"] | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
     {% endif %}
     <id>{{ site.url }}</id>
     <author>
@@ -19,13 +19,13 @@ permalink: '/fr/blog/feed.xml'
         {% set absolutePostUrl %}{{ site.url }}{{ post.url | url }}{% endset %}
         <entry>
             <title>{{ post.data.title }}</title>
-            <link href="{{ absolutePostUrl }}"/>
-            <updated>{{ post.date | rssDate }}</updated>
+            <link href="{{ absolutePostUrl }}" />
+            <updated>{{ post.date | dateToRfc3339 }}</updated>
             <id>{{ absolutePostUrl }}</id>
             <content type="html">
                 <![CDATA[
-      {{ post.templateContent | safe }}
-    ]]>
+                {{ post.templateContent | safe }}
+                ]]>
             </content>
         </entry>
     {% endfor %}

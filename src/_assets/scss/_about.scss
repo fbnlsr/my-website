@@ -1,5 +1,9 @@
+@use "sass:color";
+@use "variables";
+
 .about {
   margin-bottom: 50px;
+
   h1 {
     font-size: 52px;
     font-weight: 700;
@@ -12,7 +16,7 @@
     padding-left: 20px;
     padding-right: 20px;
     margin: auto;
-    font-family: $nunito;
+    font-family: variables.$nunito;
     font-size: 22px;
     line-height: 30px;
 
@@ -26,7 +30,7 @@
     margin-bottom: 150px;
     padding: 50px;
     color: white;
-    background-color: $blue;
+    background-color: variables.$blue;
     display: flex;
 
     &.no-pic {
@@ -37,12 +41,12 @@
       max-width: 1000px;
       margin: auto;
       text-align: center;
-      font-family: $nunito;
+      font-family: variables.$nunito;
       font-size: 22px;
       line-height: 1.8;
 
       h2 {
-        font-family: $montserrat;
+        font-family: variables.$montserrat;
         font-size: 32px;
         line-height: 1;
         font-weight: 700;
@@ -75,7 +79,7 @@
     margin: auto;
     margin-top: 40px;
     margin-bottom: 100px;
-    font-family: $nunito;
+    font-family: variables.$nunito;
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
@@ -92,7 +96,7 @@
       h3 {
         font-size: 24px;
         font-weight: 700;
-        color: $blue;
+        color: variables.$blue;
         margin-bottom: 1rem;
       }
 
@@ -147,16 +151,16 @@
     .method {
       width: 350px;
       border-radius: 5px;
-      border: 1px solid $blue;
+      border: 1px solid variables.$blue;
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-family: $nunito;
+      font-family: variables.$nunito;
       font-size: 18px;
       line-height: 1.4;
       background-color: white;
-      box-shadow: 0 0 5px $gray1;
+      box-shadow: 0 0 5px variables.$gray1;
       position: relative;
       padding: 40px 20px;
       margin-top: 50px;
@@ -182,7 +186,7 @@
       }
 
       h3 {
-        font-family: $montserrat;
+        font-family: variables.$montserrat;
         font-size: 36px;
         font-weight: 700;
         margin-bottom: 1rem;
@@ -198,7 +202,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      align-items: center;
 
       .method {
         margin-top: 40px;
@@ -208,7 +211,7 @@
     @media screen and (max-width: 800px) {
       background-color: white;
       padding-top: 30px;
-      border: 1px solid $blue;
+      border: 1px solid variables.$blue;
       border-radius: 5px;
       margin-left: 20px;
       margin-right: 20px;
@@ -229,7 +232,7 @@
           width: 50%;
           margin: auto;
           height: 1px;
-          background-color: $gray1;
+          background-color: variables.$gray1;
           position: relative;
           top: 40px;
         }
@@ -255,24 +258,24 @@
 
     .cta {
       text-decoration: none;
-      font-family: $montserrat;
+      font-family: variables.$montserrat;
       font-size: 20px;
       font-weight: 700;
       padding: 20px 50px;
-      background-color: $blue;
+      background-color: variables.$blue;
       color: white;
       border-radius: 5px;
-      box-shadow: 0 10px 10px -10px $gray1;
+      box-shadow: 0 10px 10px -10px variables.$gray1;
 
       &.cta-big {
         font-size: 24px;
         font-weight: 700;
         padding: 18px 50px;
-        box-shadow: 0 10px 10px -10px $gray1;
+        box-shadow: 0 10px 10px -10px variables.$gray1;
       }
 
       &:hover {
-        background-color: lighten($blue, 10%);
+        background-color: color.adjust(variables.$blue, $lightness: 10%, $space: hsl);
       }
 
       @media screen and (max-width: 600px) {
@@ -291,25 +294,27 @@ body.dark-mode {
   .about {
     .about-cta {
       .cta {
-        box-shadow: 0 10px 10px -10px darken($bgdark, 20%);
+        box-shadow: 0 10px 10px -10px color.adjust(variables.$bgdark, $lightness: -20%, $space: hsl);
       }
     }
+
     .blue-container {
-      background-color: lighten($bgdark, 10%);
+      background-color: color.adjust(variables.$bgdark, $lightness: 10%, $space: hsl);
     }
 
     .about-container {
       .about-section {
         h3 {
-          color: $blue;
+          color: variables.$blue;
         }
       }
     }
+
     .methods-container {
-      border-color: darken($blue, 20%);
+      border-color: color.adjust(variables.$blue, $lightness: -20%, $space: hsl);
 
       .method {
-        background-color: darken($bgdark, 3%);
+        background-color: color.adjust(variables.$bgdark, $lightness: -3%, $space: hsl);
         box-shadow: 0 0 5px #111;
 
         @media screen and (max-width: 800px) {
@@ -318,7 +323,7 @@ body.dark-mode {
       }
 
       @media screen and (max-width: 800px) {
-        background-color: darken($bgdark, 3%);
+        background-color: color.adjust(variables.$bgdark, $lightness: -3%, $space: hsl);
       }
     }
   }

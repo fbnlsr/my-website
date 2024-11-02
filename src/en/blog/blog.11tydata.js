@@ -1,5 +1,7 @@
-require('dotenv').config();
-const fs = require('fs');
+import dotenv from 'dotenv';
+import fs from 'fs';
+
+dotenv.config();
 
 const isDevEnv = process.env.ELEVENTY_ENV === 'development';
 const todaysDate = new Date();
@@ -10,17 +12,17 @@ function showDraft(data) {
   return isDevEnv || (!isDraft && !isFutureDate);
 }
 
-module.exports = function () {
+export default function() {
   return {
     eleventyComputed: {
-      eleventyExcludeFromCollections: function (data) {
+      eleventyExcludeFromCollections: function(data) {
         if (showDraft(data)) {
           return data.eleventyExcludeFromCollections;
         } else {
           return true;
         }
       },
-      hasCover: function (data) {
+      hasCover: function(data) {
         if (data.page.date) {
           const year = data.page.date.getFullYear().toString();
           const month = ('0' + (data.page.date.getMonth() + 1))

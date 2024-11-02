@@ -295,17 +295,21 @@ domReady(() => {
     localStorage.setItem('lang', 'fr');
   }
 
+  // Blog cover parallax
   const updateParallax = () => {
     const parallaxDiv = document.querySelector('.cover-container');
-    const scrollPosition = window.scrollY; // Get current scroll position
-    const elementOffsetTop = parallaxDiv.offsetTop; // Get element's position from the top of the page
 
-    // Calculate background position relative to scroll, adjusted by element's position on the page
-    const parallaxSpeed = 0.5; // Adjust multiplier to control speed
-    const backgroundPosition = (scrollPosition - elementOffsetTop) * parallaxSpeed;
+    if (parallaxDiv) {
+      const scrollPosition = window.scrollY;
+      const elementOffsetTop = parallaxDiv.offsetTop;
 
-    // Apply the calculated position to the background
-    parallaxDiv.style.backgroundPositionY = `${backgroundPosition}px`;
+      // Calculate background position relative to scroll, adjusted by element's position on the page
+      const parallaxSpeed = 0.2;
+      const backgroundPosition = (scrollPosition - elementOffsetTop) * parallaxSpeed;
+
+      // Apply the calculated position to the background
+      parallaxDiv.style.backgroundPositionY = `${backgroundPosition}px`;
+    }
   };
 
   updateParallax();

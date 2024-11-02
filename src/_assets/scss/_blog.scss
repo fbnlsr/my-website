@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 @keyframes bounce {
   0%,
   20%,
@@ -36,14 +39,13 @@
       font-weight: bold;
       font-size: 1.5rem;
       line-height: 1.5rem;
-      margin-bottom: 0;
 
       a,
       a:visited,
       a:active,
       a:hover {
         text-decoration: none;
-        color: $blue;
+        color: variables.$blue;
       }
     }
 
@@ -84,9 +86,9 @@
 
       .title {
         font-size: 1.2rem;
-        font-family: $montserrat;
+        font-family: variables.$montserrat;
         font-weight: 600;
-        color: $blue;
+        color: variables.$blue;
 
         a,
         a:visited,
@@ -97,7 +99,7 @@
       }
 
       .date {
-        color: $gray1;
+        color: variables.$gray1;
         text-transform: uppercase;
         font-size: 0.8rem;
       }
@@ -110,8 +112,8 @@
   position: fixed;
   bottom: 60px;
   right: 50px;
-  background-color: $blue;
-  color: $background;
+  background-color: variables.$blue;
+  color: variables.$background;
   width: 25px;
   height: 25px;
   border-radius: 4px;
@@ -136,7 +138,7 @@
     &:hover,
     &:visited,
     &:active {
-      color: $blue;
+      color: variables.$blue;
     }
   }
 
@@ -168,6 +170,10 @@
   .title {
     text-align: center;
     font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     @media print {
       position: relative;
@@ -178,7 +184,7 @@
 
     .date {
       text-align: center;
-      color: lighten($gray1, 10%);
+      color: color.adjust(variables.$gray1, $lightness: 10%, $space: hsl);
 
       @media print {
         position: relative;
@@ -191,7 +197,7 @@
   }
 
   .is-cover-author {
-    color: $gray1;
+    color: variables.$gray1;
     font-size: 0.8rem;
     text-align: right;
     position: relative;
@@ -213,7 +219,7 @@
 
   .date {
     text-align: center;
-    color: $gray1;
+    color: variables.$gray1;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -225,12 +231,12 @@
     font-size: 0.9rem;
 
     a {
-      color: $blue;
+      color: variables.$blue;
     }
   }
 
   article {
-    font-family: $nunito;
+    font-family: variables.$nunito;
     font-size: 1.25rem;
     padding: 0 1rem;
     max-width: 900px;
@@ -239,7 +245,7 @@
 
     a {
       text-decoration: underline;
-      color: $blue;
+      color: variables.$blue;
     }
 
     p,
@@ -309,8 +315,8 @@
 
     blockquote {
       position: relative;
-      border-left: 4px solid $blue;
-      background-color: $footerbg;
+      border-left: 4px solid variables.$blue;
+      background-color: variables.$footerbg;
       font-style: italic;
       max-width: 850px;
       padding: 1rem;
@@ -322,7 +328,7 @@
         top: -6rem;
         left: 0;
         font-size: 8rem;
-        color: darken($footerbg, 5%);
+        color: color.adjust(variables.$footerbg, $lightness: -5%);
       }
 
       &:after {
@@ -331,7 +337,7 @@
         bottom: -9rem;
         right: 1rem;
         font-size: 8rem;
-        color: darken($footerbg, 5%);
+        color: color.adjust(variables.$footerbg, $lightness: -5%);
       }
 
       p:last-child {
@@ -372,7 +378,7 @@
       margin: auto;
 
       th {
-        border-bottom: 1px solid $text;
+        border-bottom: 1px solid variables.$text;
       }
 
       th,
@@ -420,7 +426,7 @@
         text-align: center;
         font-weight: normal;
         font-size: 0.9rem;
-        color: $gray2;
+        color: variables.$gray2;
         position: relative;
         top: -0.8rem;
       }
@@ -428,7 +434,7 @@
 
     .footnotes {
       font-size: 0.8rem;
-      color: $gray1;
+      color: variables.$gray1;
     }
 
     &.media {
@@ -440,7 +446,7 @@
     display: block;
     width: 12px;
     height: 12px;
-    background-color: $text;
+    background-color: variables.$text;
     border-radius: 50%;
     margin: 3rem auto;
   }
@@ -529,7 +535,8 @@
       font-size: 1.8rem;
       text-shadow: none;
       padding: 1rem;
-      margin-bottom: 0;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       font-weight: bold;
       position: relative;
       height: initial;
@@ -575,15 +582,15 @@
 body.dark-mode {
   .blog-list {
     .blog-bloc {
-      border: 1px solid $bgdark;
-      background-color: darken($bgdark, 3%);
+      border: 1px solid variables.$bgdark;
+      background-color: color.adjust(variables.$bgdark, $lightness: -3%, $space: hsl);
     }
   }
 
   .blog-post {
     article {
       blockquote {
-        background-color: darken($bgdark, 3%);
+        background-color: color.adjust(variables.$bgdark, $lightness: -3%, $space: hsl);
       }
     }
 
@@ -596,7 +603,7 @@ body.dark-mode {
     .blog-post {
       .title-container {
         .title {
-          color: $textdark;
+          color: variables.$textdark;
         }
       }
     }

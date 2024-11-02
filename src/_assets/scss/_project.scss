@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 .project {
   h1 {
     font-weight: 300;
@@ -8,8 +11,7 @@
   .is-showcase {
     position: relative;
     max-width: 960px;
-    margin: auto;
-    margin-bottom: 2rem;
+    margin: auto auto 2rem;
 
     .is-laptop {
       max-width: 960px;
@@ -23,7 +25,7 @@
       background-repeat: no-repeat;
 
       .is-laptop-content {
-        color: $background;
+        color: variables.$background;
         max-width: 628px;
         margin: auto;
         top: 35px;
@@ -37,7 +39,7 @@
         .is-laptop-content {
           max-width: 395px;
           top: 21px;
-          border: 1px solid $gray1;
+          border: 1px solid variables.$gray1;
           border-radius: 5px;
         }
       }
@@ -63,7 +65,7 @@
       width: 200px;
       height: 350px;
       right: 20px;
-      bottom: 0px;
+      bottom: 0;
       background-image: url('/img/mobile.webp');
       background-position: top center;
       background-size: cover;
@@ -126,7 +128,7 @@
         li {
           width: 12px;
           height: 12px;
-          background-color: $gray1;
+          background-color: variables.$gray1;
           border-radius: 50%;
           margin: 0 5px;
           list-style: none;
@@ -136,7 +138,7 @@
           }
 
           &.is-active {
-            background-color: $blue;
+            background-color: variables.$blue;
           }
 
           &:last-child {
@@ -178,7 +180,7 @@
     }
 
     .is-long-description {
-      font-family: $nunito;
+      font-family: variables.$nunito;
       font-size: 18px;
       margin-bottom: 1rem;
 
@@ -202,19 +204,19 @@
 
     .is-project-back-link {
       a {
-        font-family: $nunito;
+        font-family: variables.$nunito;
         font-weight: 700;
         background-color: white;
-        color: $blue;
+        color: variables.$blue;
         display: inline-block;
         text-decoration: none;
         padding: 8px 30px;
-        border: 1px solid $blue;
+        border: 1px solid variables.$blue;
         border-radius: 5px;
         transition: all 0.2s ease-out;
 
         &:hover {
-          background-color: $blue;
+          background-color: variables.$blue;
           color: white;
         }
       }
@@ -222,7 +224,7 @@
 
     .is-project-used {
       display: block;
-      border-left: 4px solid $blue;
+      border-left: 4px solid variables.$blue;
       padding-left: 1rem;
       padding-bottom: 1rem;
 
@@ -236,7 +238,7 @@
 
       ul {
         list-style: none;
-        font-family: $nunito;
+        font-family: variables.$nunito;
 
         li::before {
           content: '\2022';
@@ -261,11 +263,11 @@ body.dark-mode {
     .is-description-block {
       .is-project-back-link {
         a {
-          background-color: darken($bgdark, 3%);
-          color: $textdark;
+          background-color: color.adjust(variables.$bgdark, $lightness: 3%, $space: hsl);
+          color: variables.$textdark;
 
           &:hover {
-            background-color: $blue;
+            background-color: variables.$blue;
           }
         }
       }
