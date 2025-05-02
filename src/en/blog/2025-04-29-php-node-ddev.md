@@ -233,4 +233,4 @@ Keep in mind that you may still want to use `ddev ssh` for running Composer, as 
 
 So there you have it! A simple, portable development environment you can use anywhere and share with others.
 
-**Happy coding!**
+Happy coding!

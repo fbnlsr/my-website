@@ -14,7 +14,7 @@ Depuis un peu plus d'un an maintenant, j'utilise [DDEV](https://ddev.com/) dès 
 ---
 
 Ma stack web de prédilection est Symfony en mode API (soit en RESTful ou avec GraphQL) et un frontend qui utilise Vue.js. J'utilisais auparavant [NVM](https://github.com/nvm-sh/nvm) ou [Volta](https://volta.sh/) avec une version de Node installée localement, mais je désirais quelque chose de totalement portable - quelque chose où je peux simplement cloner un dépôt, lancer
-`ddev start` et me mettre au travail. Pour cela, nous allons suivre les étapes suivantes :
+`ddev start` et me mettre au travail. Pour cela, nous allons suivre les étapes suivantes&nbsp;:
 
 - Mettre en place le conteneur PHP et Symfony
 - Geler la version de Node et installer Vue.js
@@ -25,7 +25,7 @@ Pour ce projet, nous allons utiliser un domaine fictif - disons `tinydev.ddev.si
 `api.tinydev.ddev.site` et l'app web sur
 `app.tinydev.ddev.site`. Je pars du principe que vous avez déjà Docker et [DDEV installé](https://ddev.com/get-started/) et prêt à l'emploi.
 
-Pour que les choses soient bien rangées, nous allons utiliser la structure de dossier suivante :
+Pour que les choses soient bien rangées, nous allons utiliser la structure de dossier suivante&nbsp;:
 
 ```conf
 /.ddev
@@ -45,7 +45,7 @@ Commençons par initialiser le projet grâce à `ddev config`, en prenant soin d
 `symfony` comme type d'application. Le docroot pour notre projet sera `backend/public`.
 
 Une fois configuré, ouvrez `/.ddev/config.yaml` et ajoutez les hosts additionels (`api.tinydev` et
-`app.tinydev`). Le fichier de configuration devrait ressembler à ceci :
+`app.tinydev`). Le fichier de configuration devrait ressembler à ceci&nbsp;:
 
 ```yaml
 name: tinydev
@@ -74,7 +74,7 @@ Démarrez DDEV avec `ddev start`, et entrez dans le conteneur grâce à
 > rm -rf backend && composer create-project symfony/skeleton:"7.2.x" backend
 ```
 
-Une fois installé, créez un contrôleur simple pour vérifier que tout fonctionne correctement :
+Une fois installé, créez un contrôleur simple pour vérifier que tout fonctionne correctement&nbsp;:
 
 ```php
 <?php
@@ -113,14 +113,14 @@ nodejs_version: '22'
 ```
 
 Redémarrez DDEV (`ddev restart`) et entrez dans le conteneur avec
-`ddev ssh`. Nous allons maintenant installer Vue.js dans le dossier `webapp` :
+`ddev ssh`. Nous allons maintenant installer Vue.js dans le dossier `webapp`&nbsp;:
 
 ```bash
 > npm create vue@latest
 ```
 
 Choisissez les options qui vous conviennent, mais spécifiez
-`webapp` comme nom de projet, car c'est ce nom qui sera utilisé comme dossier de destination pour les fichiers de l'app Vue.js. Vous pouvez ensuite installer l'application elle-même :
+`webapp` comme nom de projet, car c'est ce nom qui sera utilisé comme dossier de destination pour les fichiers de l'app Vue.js. Vous pouvez ensuite installer l'application elle-même&nbsp;:
 
 ```bash
 > cd webapp && npm install
@@ -164,7 +164,7 @@ server {
 }
 ```
 
-Nous devons aussi éditer `vite.config.ts` pour autoriser ce nouvel hôte :
+Nous devons aussi éditer `vite.config.ts` pour autoriser ce nouvel hôte&nbsp;:
 
 ```ts
 // /webapp/vite.config.ts
@@ -202,9 +202,9 @@ Finissons ce tutoriel en ajoutant un peu de magie pour améliorer notre DX grâc
 
 ## Améliorer la DX grâce à un Makefile
 
-Devoir entrer dans le conteneur à chaque fois que nous voulons lancer le serveur web Vite peut rapidement devenir contraignant. De même, il serait bien plus pratique de ne pas avoir à le faire dès que nous voulons lancer des commandes symfony comme lancer une migration ou vider le cache. Heureusement, nous pouvons nous faciliter la tâche avec un Makefile et des raccourcis très pratiques :
+Devoir entrer dans le conteneur à chaque fois que nous voulons lancer le serveur web Vite peut rapidement devenir contraignant. De même, il serait bien plus pratique de ne pas avoir à le faire dès que nous voulons lancer des commandes symfony comme lancer une migration ou vider le cache. Heureusement, nous pouvons nous faciliter la tâche avec un Makefile et des raccourcis très pratiques&nbsp;:
 
-**Important :** Pensez à utiliser des tabs (et non des espaces) pour l'indentation de votre fichier !
+**Important&nbsp;:** Pensez à utiliser des tabs (et non des espaces) pour l'indentation de votre fichier !
 
 ```makefile
 # /Makefile
@@ -235,4 +235,4 @@ Gardez à l'esprit que vous devrez tout de même utiliser `ddev ssh` pour exécu
 
 Et voilà ! Un environnement de développement simple et portable que vous pouvez utiliser n'importe où et partager avec d'autres.
 
-**Codez bien !**
+Happy coding!
