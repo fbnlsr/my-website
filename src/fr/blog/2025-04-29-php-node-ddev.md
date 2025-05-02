@@ -8,22 +8,18 @@ cover:
   link: "https://unsplash.com/@samthewam24"
 ---
 
-Depuis un peu plus d'un an maintenant, j'utilise [DDEV](https://ddev.com/) dès que j'ai besoin de mettre en place un environnement de développement. Grâce à un simple fichier
-`.yaml`, cet outil très pratique est capable de fournir un espace de travail en conteneur avec PHP, une base de données MariaDB/PostreSQL, et Mailpit. C'est parfait pour des projets de toute taille, du simple site vitrine WordPress à l'application Symfony la plus complexe. Cependant, il n'est pas vraiment conçu pour être utilisé avec Node par défaut. Tout du moins, même s'il embarque Node de base, si vous souhaitez utiliser un backend PHP avec un frontend en TypeScript, cela demande un peu de configuration, comme nous allons le voir dans cet article. Il est inspiré de celui d'Andy Blum sur le blog de [Lullabot](https://www.lullabot.com/articles/nodejs-development-ddev). Mon approche est similaire, mais simplifiée.
+Depuis un peu plus d'un an maintenant, j'utilise [DDEV](https://ddev.com/) dès que j'ai besoin de mettre en place un environnement de développement. Grâce à un simple fichier `.yaml`, cet outil très pratique est capable de fournir un espace de travail en conteneur avec PHP, une base de données MariaDB/PostreSQL, et Mailpit. C'est parfait pour des projets de toute taille, du simple site vitrine WordPress à l'application Symfony la plus complexe. Cependant, il n'est pas vraiment conçu pour être utilisé avec Node par défaut. Tout du moins, même s'il embarque Node de base, si vous souhaitez utiliser un backend PHP avec un frontend en TypeScript, cela demande un peu de configuration, comme nous allons le voir dans cet article. Il est inspiré de celui d'Andy Blum sur le blog de [Lullabot](https://www.lullabot.com/articles/nodejs-development-ddev). Mon approche est similaire, mais simplifiée.
 
 ---
 
-Ma stack web de prédilection est Symfony en mode API (soit en RESTful ou avec GraphQL) et un frontend qui utilise Vue.js. J'utilisais auparavant [NVM](https://github.com/nvm-sh/nvm) ou [Volta](https://volta.sh/) avec une version de Node installée localement, mais je désirais quelque chose de totalement portable - quelque chose où je peux simplement cloner un dépôt, lancer
-`ddev start` et me mettre au travail. Pour cela, nous allons suivre les étapes suivantes&nbsp;:
+Ma stack web de prédilection est Symfony en mode API (soit en RESTful ou avec GraphQL) et un frontend qui utilise Vue.js. J'utilisais auparavant [NVM](https://github.com/nvm-sh/nvm) ou [Volta](https://volta.sh/) avec une version de Node installée localement, mais je désirais quelque chose de totalement portable - quelque chose où je peux simplement cloner un dépôt, lancer `ddev start` et me mettre au travail. Pour cela, nous allons suivre les étapes suivantes&nbsp;:
 
 - Mettre en place le conteneur PHP et Symfony
 - Geler la version de Node et installer Vue.js
 - Ajouter un reverse proxy pour accéder au frontend
 - Améliorer la DX grâce à un Makefile
 
-Pour ce projet, nous allons utiliser un domaine fictif - disons `tinydev.ddev.site` - et avoir l'API sur
-`api.tinydev.ddev.site` et l'app web sur
-`app.tinydev.ddev.site`. Je pars du principe que vous avez déjà Docker et [DDEV installé](https://ddev.com/get-started/) et prêt à l'emploi.
+Pour ce projet, nous allons utiliser un domaine fictif - disons `tinydev.ddev.site` - et avoir l'API sur `api.tinydev.ddev.site` et l'app web sur `app.tinydev.ddev.site`. Je pars du principe que vous avez déjà Docker et [DDEV installé](https://ddev.com/get-started/) et prêt à l'emploi.
 
 Pour que les choses soient bien rangées, nous allons utiliser la structure de dossier suivante&nbsp;:
 
@@ -36,16 +32,13 @@ Pour que les choses soient bien rangées, nous allons utiliser la structure de d
  - Le projet Vue.js...
 ```
 
-Le dossier `.ddev` va contenir le fichier de configuration de DDEV (`config.yaml`), l'API Symfony sera dans
-`/backend` et l'app front sera dans `/webapp`.
+Le dossier `.ddev` va contenir le fichier de configuration de DDEV (`config.yaml`), l'API Symfony sera dans `/backend` et l'app front sera dans `/webapp`.
 
 ## Mise en place de l'app Symfony
 
-Commençons par initialiser le projet grâce à `ddev config`, en prenant soin de sélectionner
-`symfony` comme type d'application. Le docroot pour notre projet sera `backend/public`.
+Commençons par initialiser le projet grâce à `ddev config`, en prenant soin de sélectionner `symfony` comme type d'application. Le docroot pour notre projet sera `backend/public`.
 
-Une fois configuré, ouvrez `/.ddev/config.yaml` et ajoutez les hosts additionels (`api.tinydev` et
-`app.tinydev`). Le fichier de configuration devrait ressembler à ceci&nbsp;:
+Une fois configuré, ouvrez `/.ddev/config.yaml` et ajoutez les hosts additionels (`api.tinydev` et `app.tinydev`). Le fichier de configuration devrait ressembler à ceci&nbsp;:
 
 ```yaml
 name: tinydev
@@ -65,10 +58,7 @@ web_environment: []
 corepack_enable: false
 ```
 
-Démarrez DDEV avec `ddev start`, et entrez dans le conteneur grâce à
-`ddev ssh`. Nous allons [installer Symfony](https://symfony.com/doc/current/setup.html) dans le dossier
-`backend` (au moment où j'écris ces lignes la dernière version de Symfony est la 7.2). Nous allons devoir effacer le dossier
-`backend` pour que Composer puisse l'initialiser correctement.
+Démarrez DDEV avec `ddev start`, et entrez dans le conteneur grâce à `ddev ssh`. Nous allons [installer Symfony](https://symfony.com/doc/current/setup.html) dans le dossier`backend` (au moment où j'écris ces lignes la dernière version de Symfony est la 7.2). Nous allons devoir effacer le dossier `backend` pour que Composer puisse l'initialiser correctement.
 
 ```bash
 > rm -rf backend && composer create-project symfony/skeleton:"7.2.x" backend
@@ -96,43 +86,35 @@ final class HomeController extends AbstractController
 }
 ```
 
-Vous pouvez naviguer à l'adresse
-`https://tinydev.ddev.site` et vous devriez voir le message « Hello, World! ». Si ce n'est pas le cas, n'hésitez pas à redémarrer DDEV avec
-`ddev restart`.
+Vous pouvez naviguer à l'adresse `https://tinydev.ddev.site` et vous devriez voir le message « Hello, World! ». Si ce n'est pas le cas, n'hésitez pas à redémarrer DDEV avec `ddev restart`.
 
-À ce moment,
-`https://api.tinydev.ddev.site` pointe toujours vers l'application Symfony. Nous allons régler cela tout de suite.
+À ce moment, `https://api.tinydev.ddev.site` pointe toujours vers l'application Symfony. Nous allons régler cela tout de suite.
 
 ## Geler la version de Node et installer Vue.js
 
-Par défaut, DDEV embarque Node v22. Nous allons geler cette version pour éviter les mauvaises surprises pendant la phase de développement. Cela peut être fait très facilement dans
-`/.ddev/config.yaml`
+Par défaut, DDEV embarque Node v22. Nous allons geler cette version pour éviter les mauvaises surprises pendant la phase de développement. Cela peut être fait très facilement dans `/.ddev/config.yaml`
 
 ```yaml
 nodejs_version: '22'
 ```
 
-Redémarrez DDEV (`ddev restart`) et entrez dans le conteneur avec
-`ddev ssh`. Nous allons maintenant installer Vue.js dans le dossier `webapp`&nbsp;:
+Redémarrez DDEV (`ddev restart`) et entrez dans le conteneur avec `ddev ssh`. Nous allons maintenant installer Vue.js dans le dossier `webapp`&nbsp;:
 
 ```bash
 > npm create vue@latest
 ```
 
-Choisissez les options qui vous conviennent, mais spécifiez
-`webapp` comme nom de projet, car c'est ce nom qui sera utilisé comme dossier de destination pour les fichiers de l'app Vue.js. Vous pouvez ensuite installer l'application elle-même&nbsp;:
+Choisissez les options qui vous conviennent, mais spécifiez `webapp` comme nom de projet, car c'est ce nom qui sera utilisé comme dossier de destination pour les fichiers de l'app Vue.js. Vous pouvez ensuite installer l'application elle-même&nbsp;:
 
 ```bash
 > cd webapp && npm install
 ```
 
-Naviguons maintenant vers
-`https://app.tinydev.ddev.site` pour voir... rien ? C'est normal. L'app est installée, mais elle n'est pas encore accessible.
+Naviguons maintenant vers `https://app.tinydev.ddev.site` pour voir... rien ? C'est normal. L'app est installée, mais elle n'est pas encore accessible.
 
 ## Ajouter un reverse proxy pour accéder au frontend
 
-Pour solutioner ce problème, nous allons ajouter un fichier de configuration nginx dans
-`/.ddev/nginx_full/app.tinydev.conf`:
+Pour solutioner ce problème, nous allons ajouter un fichier de configuration nginx dans `/.ddev/nginx_full/app.tinydev.conf`:
 
 ```conf
 server {
@@ -187,16 +169,13 @@ export default defineConfig({
 });
 ```
 
-Redémarrez DDEV à nouveau (`ddev restart`), allez dans le conteneur (`ddev ssh`), et lancez
-`npm run dev` dans le dossier `/webapp`. N'oubliez pas d'exécuter `npm install` si cela n'est pas déjà fait.
+Redémarrez DDEV à nouveau (`ddev restart`), allez dans le conteneur (`ddev ssh`), et lancez `npm run dev` dans le dossier `/webapp`. N'oubliez pas d'exécuter `npm install` si cela n'est pas déjà fait.
 
-Si vous naviguez désormais sur
-`https://app.tinydev.ddev.site`, vous devriez voir la page de présentation par défaut d'un nouveau projet Vite.
+Si vous naviguez désormais sur `https://app.tinydev.ddev.site`, vous devriez voir la page de présentation par défaut d'un nouveau projet Vite.
 
 Vous avez désormais un projet utilisant Symfony et Vue.js, et entièrement conteneurisé grâce à DDEV ! Félicitations ! :tada:
 
-Vous pouvez maintenant accéder à votre web app sur
-`https://app.tinydev.ddev.site`, en effectuant des appels à votre API qui se trouve sur `https://api.tinydev.ddev.site`.
+Vous pouvez maintenant accéder à votre web app sur `https://app.tinydev.ddev.site`, en effectuant des appels à votre API qui se trouve sur `https://api.tinydev.ddev.site`.
 
 Finissons ce tutoriel en ajoutant un peu de magie pour améliorer notre DX grâce à un simple fichier Makefile.
 
@@ -230,8 +209,7 @@ migration:
     ddev exec --dir $(API_FOLDER) php bin/console make:migration
 ```
 
-Gardez à l'esprit que vous devrez tout de même utiliser `ddev ssh` pour exécuter des commandes Composer, car
-`ddev composer` s'exécute à la racine du projet par défaut.
+Gardez à l'esprit que vous devrez tout de même utiliser `ddev ssh` pour exécuter des commandes Composer, car `ddev composer` s'exécute à la racine du projet par défaut.
 
 Et voilà ! Un environnement de développement simple et portable que vous pouvez utiliser n'importe où et partager avec d'autres.
 
