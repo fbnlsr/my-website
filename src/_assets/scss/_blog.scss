@@ -23,7 +23,7 @@
 
 .blog-list {
   text-align: center;
-  max-width: 960px;
+  max-width: 900px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -239,7 +239,7 @@
     font-family: variables.$nunito;
     font-size: 1.25rem;
     padding: 0 1rem;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 2rem auto auto;
     position: relative;
 
@@ -258,7 +258,7 @@
     ol,
     ul,
     blockquote {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       text-align: left;
       margin-bottom: 1rem;
@@ -318,7 +318,7 @@
       border-left: 4px solid variables.$blue;
       background-color: variables.$footerbg;
       font-style: italic;
-      max-width: 850px;
+      max-width: 900px;
       padding: 1rem;
       margin: 1.5rem auto;
 
@@ -346,7 +346,7 @@
     }
 
     pre {
-      max-width: 850px;
+      max-width: 1200px;
       margin: auto;
       margin-bottom: 1rem;
       font-family: monospace;
@@ -362,15 +362,32 @@
     }
 
     code {
-      background-color: var(--background);
       color: var(--pink);
-      padding: 2px 4px;
       border-radius: 4px;
       white-space: nowrap;
     }
 
     hr {
-      margin: 1rem auto;
+      height: 1px;
+      border: none;
+      margin: 3rem auto;
+      max-width: 400px;
+      position: relative;
+      overflow: visible;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 12px;
+        background-color: variables.$background;
+        position: absolute;
+        top: -6px;
+        left: calc(50% - 4px);
+        border-left: 1px solid variables.$blue;
+        border-right: 1px solid variables.$blue;
+        transform: skew(-30deg);
+      }
     }
 
     table {
@@ -492,43 +509,11 @@
     margin: 2rem auto;
   }
 
-  &.is-dark {
-    background-color: #1b1b1b;
-    color: #f0f0f0;
-
-    .is-color-changer {
-      box-shadow: 0 0 1px #999;
-
-      &:hover {
-        box-shadow: 0 0 4px #999;
-      }
-    }
-
-    strong {
-      color: inherit;
-    }
-
-    article {
-      blockquote {
-        background-color: #444;
-        color: #f0f0f0;
-      }
-    }
-  }
-
   @media only screen and (max-width: 768px) {
     position: relative;
     top: -60px;
     padding-top: 60px;
     margin-bottom: -60px;
-
-    &.is-dark {
-      .title-container {
-        .title {
-          color: #f0f0f0;
-        }
-      }
-    }
 
     .title {
       line-height: initial;
@@ -589,6 +574,12 @@ body.dark-mode {
 
   .blog-post {
     article {
+      hr {
+        &:before {
+          background-color: variables.$bgdark;
+        }
+      }
+
       blockquote {
         background-color: color.adjust(variables.$bgdark, $lightness: -3%, $space: hsl);
       }
