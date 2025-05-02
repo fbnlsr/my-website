@@ -8,7 +8,7 @@ cover:
   link: "https://unsplash.com/@samthewam24"
 ---
 
-For the past three years or so, [DDEV](https://ddev.com/) has been my go-to tool for setting up a development environment. With a simple
+For the past year or so, [DDEV](https://ddev.com/) has been my go-to tool for setting up a development environment. With a simple
 `.yaml` file, this nifty tool is capable of providing a containerized workbench with PHP, a MariaDB/PostreSQL database, and Mailpit. It's perfect for anything from WordPress to the most complex Symfony app. However, out of the box it's not tailored to be used alongside Node. Granted, it does come bundled with Node pre-installed, but if you want to use your PHP backend with a TypeScript frontend, it requires a tiny bit of configuration. This is what this article is about. It is inspired by Andy Blum's blog post over at [Lullabot](https://www.lullabot.com/articles/nodejs-development-ddev). My approach is similar but a bit simpler.
 
 ---
