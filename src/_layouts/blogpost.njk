@@ -17,7 +17,7 @@ layout: "base.njk"
             {%- if cover.author -%}
                 <p class="is-cover-author noprint">
                     {%- if cover.link -%}
-                    Photo by <a href="{{ cover.link }}">
+                    Photo {% if locale == 'fr' %}par{% else %}by{% endif %} <a href="{{ cover.link }}">
                         {%- endif -%}
                         {{ cover.author -}}
                         {%- if cover.link -%}
