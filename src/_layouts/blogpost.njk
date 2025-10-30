@@ -49,12 +49,6 @@ layout: "base.njk"
         {{ content | emojify | safe }}
     </article>
 
-    <div class="is-bullet-end-article noprint"></div>
-
-    <div class="btn is-twitter-share noprint">
-        <a href="https://twitter.com/share?url={{ site.url + page.url }}&text={{ title }}&via=fbnlsr">{{ i18n[locale]['twitterShare'] | safe }}</a>
-    </div>
-
     {%- if links.devto or links.medium -%}
         <div class="links noprint">
             <p>{{ i18n[locale]['postedTo'] }}</p>
