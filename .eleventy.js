@@ -2,7 +2,7 @@ import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import readingTime from 'eleventy-plugin-reading-time';
 import emojifyPlugin from 'eleventy-plugin-emojify';
 import pluginRss from '@11ty/eleventy-plugin-rss';
-import htmlmin from 'html-minifier';
+import htmlmin from 'html-minifier-next';
 import markdownIt from 'markdown-it';
 
 export default function(eleventyConfig) {
