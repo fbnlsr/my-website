@@ -27,6 +27,10 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
 
   .year {
     font-weight: 300;
@@ -63,13 +67,7 @@
   .blog-bloc {
     padding: 0;
     text-align: left;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    border-radius: 5px;
     flex: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
     float: left;
 
     .blog-title-container {
@@ -81,7 +79,7 @@
       flex-direction: column;
 
       p:not(:last-child) {
-        margin-bottom: 1rem;
+        margin-bottom: .25rem;
       }
 
       .title {
@@ -557,10 +555,8 @@
 
 body.dark-mode {
   .blog-list {
-    .blog-bloc {
-      border: 1px solid variables.$bgdark;
-      background-color: color.adjust(variables.$bgdark, $lightness: -3%, $space: hsl);
-    }
+    background-color: color.adjust(variables.$bgdark, $lightness: -3%, $space: hsl);
+    border: 1px solid variables.$bgblue;
   }
 
   .blog-post {

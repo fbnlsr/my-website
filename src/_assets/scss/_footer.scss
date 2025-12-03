@@ -1,16 +1,6 @@
 @use "sass:color";
 @use "variables";
 
-.footer-logo {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
-
-  img {
-    width: 100px;
-  }
-}
-
 .site-footer {
   background-color: variables.$footerbg;
   border-top: 1px solid variables.$gray1;
@@ -20,6 +10,7 @@
   height: 70px;
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 
   .left-side,
   .right-side {
